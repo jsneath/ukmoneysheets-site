@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SoftCta from '../../components/SoftCta.astro';
+
+const guides = (await getCollection('guides')).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title, 'en-GB')
+);
+
+const description =
+  'Free UK money guides from UkMoneySheets — Google Sheets budgeting, Self Assessment records, landlord tracking, crypto CGT logs, and more.';
+---
+
+<BaseLayout title="Guides" description={description} canonicalPath="/guides/">
+  <div class="wrap">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>/</span><span>Guides</span>
+    </nav>
+
+    <header class="page-header">
+      <h1>Guides</h1>
+      <p>
+        Practical UK personal-finance explainers. General information only — check
+        <a href="https://www.gov.uk" rel="noopener noreferrer" target="_blank">GOV.UK</a>
+        for current rules.
+      </p>
+    </header>
+
+    <div class="card-grid">
+      {
+        guides.map((guide) => (
+          <article class="card">
+            <h2>
+              <a href={`/guides/${guide.slug}/`}>{guide.data.title}</a>
+            </h2>
+            <p>{guide.data.description}</p>
+            <a class="more" href={`/guides/${guide.slug}/`}>Read guide →</a>
+          </article>
+        ))
+      }
+    </div>
+
+    <SoftCta />
+  </div>
+</BaseLayout>

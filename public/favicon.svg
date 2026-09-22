@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="UkMoneySheets">
-  <rect width="64" height="64" rx="12" fill="#0f2744"/>
-  <text x="32" y="44" text-anchor="middle" font-size="36" font-family="Georgia, serif" font-weight="700" fill="#c4a35a">£</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#062638"/>
+  <rect x="6" y="6" width="9" height="9" rx="1.5" fill="#08616A"/>
+  <rect x="17" y="6" width="9" height="9" rx="1.5" fill="#08616A"/>
+  <rect x="6" y="17" width="9" height="9" rx="1.5" fill="#DDEDE7"/>
+  <rect x="17" y="17" width="9" height="9" rx="1.5" fill="#DDEDE7"/>
 </svg>

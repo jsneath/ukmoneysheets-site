@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/guides/",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/guides/:slug/",
+      "destination": "/guides/:slug",
+      "permanent": true
+    }
+  ]
+}

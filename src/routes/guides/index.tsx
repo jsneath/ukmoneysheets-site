@@ -2,19 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GuideCard } from "@/components/guide-card";
 import { ShopCta } from "@/components/shop-cta";
 import { guides } from "@/lib/guides";
-import { SITE } from "@/lib/site";
+import { SITE, pageHead } from "@/lib/site";
+
+const GUIDES_META =
+  "Practical UK personal-finance explainers for Google Sheets. General information only — check GOV.UK for current rules.";
 
 export const Route = createFileRoute("/guides/")({
-  head: () => ({
-    meta: [
-      { title: `Guides | ${SITE.name}` },
-      {
-        name: "description",
-        content:
-          "Practical UK personal-finance explainers for Google Sheets. General information only — check GOV.UK for current rules.",
-      },
-    ],
-  }),
+  head: () =>
+    pageHead({
+      title: `Guides | ${SITE.name}`,
+      description: GUIDES_META,
+      path: "/guides",
+    }),
   component: GuidesIndex,
 });
 

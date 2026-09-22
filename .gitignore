@@ -1,19 +1,33 @@
-# build
+# build / framework
 dist/
+.output/
+.nitro/
+.vinxi/
+.tanstack/
 .astro/
 
 # deps
 node_modules/
 
-# logs / env
+# logs / env secrets
 npm-debug.log*
 .env
 .env.*
 !.env.example
+!.env.production
 
 # OS / editor
 .DS_Store
 *.swp
 .idea/
 .vscode/
+
+# Vercel local link
 .vercel
+
+# Grok / local-only artifacts
+.grok/
+screenshots/
+artifacts/
+.node_modules.lock
+.project_id

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ukmoneysheets.co.uk/sitemap-index.xml
+Sitemap: https://ukmoneysheets-site.vercel.app/sitemap.xml

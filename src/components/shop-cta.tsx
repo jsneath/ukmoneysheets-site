@@ -5,16 +5,21 @@ import { cn } from "@/lib/utils";
 
 export function ShopCta({
   tone = "navy",
-  title = "Ready-made Google Sheets on Etsy",
-  body = "UK categories, GBP and tax years from 6 April. Copy the file into your own Drive — no Excel, no US 401(k) placeholders.",
+  title = "Shop UK Google Sheets on Etsy",
+  body = "Calm templates for British tax years, GBP and household bills. Google Sheets only — never Excel. Soft next step when a ready-made file helps.",
+  ctaLabel = "Browse UkMoneySheets on Etsy",
+  href,
   className,
 }: {
   tone?: "navy" | "mint";
   title?: string;
   body?: string;
+  ctaLabel?: string;
+  href?: string;
   className?: string;
 }) {
   const navy = tone === "navy";
+  const link = href ?? SITE.shopUrl;
   return (
     <aside
       className={cn(
@@ -47,13 +52,9 @@ export function ShopCta({
       >
         {body}
       </p>
-      <Button
-        asChild
-        variant={navy ? "ivory" : "default"}
-        className="mt-6"
-      >
-        <a href={SITE.shopUrl} target="_blank" rel="noopener noreferrer">
-          Visit the shop
+      <Button asChild variant={navy ? "ivory" : "default"} className="mt-6">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {ctaLabel}
           <ArrowUpRight />
         </a>
       </Button>

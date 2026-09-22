@@ -5,17 +5,15 @@ import { ShopCta } from "@/components/shop-cta";
 import { LedgerPreview } from "@/components/ledger-preview";
 import { Button } from "@/components/ui/button";
 import { featuredGuides } from "@/lib/guides";
-import { SITE } from "@/lib/site";
+import { SITE, pageHead } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      {
-        title: `${SITE.name} — Google Sheets for UK tax, salaries and savings`,
-      },
-      { name: "description", content: SITE.description },
-    ],
-  }),
+  head: () =>
+    pageHead({
+      title: `${SITE.name} — Google Sheets for UK tax, salaries and savings`,
+      description: SITE.metaDescription,
+      path: "/",
+    }),
   component: Home,
 });
 
@@ -69,7 +67,7 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Browse the shop
+                  Browse UkMoneySheets on Etsy
                   <ArrowUpRight />
                 </a>
               </Button>
@@ -78,6 +76,10 @@ function Home() {
           <LedgerPreview />
         </div>
       </section>
+
+      <p className="mx-auto max-w-6xl px-5 py-3 text-center text-xs tracking-[0.08em] text-muted sm:px-8">
+        As seen in your tax year — categories and dates that match 6 April to 5 April, not a US fiscal calendar.
+      </p>
 
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
         <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">

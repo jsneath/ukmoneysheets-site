@@ -6,7 +6,7 @@ import { ShopCta } from "@/components/shop-cta";
 import { Button } from "@/components/ui/button";
 import { getGuide, relatedGuides } from "@/lib/guides";
 import { getArticle } from "@/lib/articles";
-import { SITE } from "@/lib/site";
+import { SITE, pageHead } from "@/lib/site";
 
 export const Route = createFileRoute("/guides/$slug")({
   loader: ({ params }) => {
@@ -15,19 +15,22 @@ export const Route = createFileRoute("/guides/$slug")({
     if (!guide || !article) throw notFound();
     return { guide, article };
   },
-  head: ({ loaderData }) => ({
-    meta: [
-      {
-        title: loaderData
-          ? `${loaderData.guide.title} | ${SITE.name}`
-          : SITE.name,
-      },
-      {
-        name: "description",
-        content: loaderData?.guide.description ?? SITE.description,
-      },
-    ],
-  }),
+  head: ({ loaderData }) => {
+    if (!loaderData) {
+      return pageHead({
+        title: SITE.name,
+        description: SITE.description,
+        path: "/guides",
+      });
+    }
+    const { guide } = loaderData;
+    return pageHead({
+      title: `${guide.title} | ${SITE.name}`,
+      description: guide.metaDescription,
+      path: `/guides/${guide.slug}`,
+      type: "article",
+    });
+  },
   component: GuidePage,
 });
 
@@ -39,23 +42,35 @@ function GuidePage() {
     <>
       <article>
         <header className="border-b border-line bg-mint/40">
-          <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8 sm:py-16">
-            <Link
-              to="/guides"
-              className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-teal no-underline"
-            >
-              <ArrowLeft className="size-4" />
-              All guides
-            </Link>
-            <p className="mt-6 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-              {guide.category}
-            </p>
-            <h1 className="mt-3 font-display text-[2.15rem] leading-[1.12] font-semibold tracking-[-0.03em] text-navy sm:text-5xl">
-              {guide.title}
-            </h1>
-            <p className="mt-5 text-lg leading-relaxed text-muted">
-              {guide.description}
-            </p>
+          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center">
+            <div>
+              <Link
+                to="/guides"
+                className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-teal no-underline"
+              >
+                <ArrowLeft className="size-4" />
+                All guides
+              </Link>
+              <p className="mt-6 text-xs font-semibold tracking-[0.16em] text-teal uppercase">
+                {guide.category}
+              </p>
+              <h1 className="mt-3 font-display text-[2.15rem] leading-[1.12] font-semibold tracking-[-0.03em] text-navy sm:text-5xl">
+                {guide.title}
+              </h1>
+              <p className="mt-5 text-lg leading-relaxed text-muted">
+                {guide.description}
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-xl bg-paper hairline">
+              <img
+                src={guide.image}
+                alt=""
+                width={960}
+                height={960}
+                decoding="async"
+                className="aspect-square w-full object-cover object-top"
+              />
+            </div>
           </div>
         </header>
 
@@ -79,7 +94,7 @@ function GuidePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                UkMoneySheets on Etsy
+                Browse UkMoneySheets on Etsy
                 <ArrowUpRight />
               </a>
             </Button>
@@ -103,7 +118,15 @@ function GuidePage() {
       ) : null}
 
       <section className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
-        <ShopCta tone="navy" />
+        <ShopCta
+          tone="navy"
+          title="Shop UK Google Sheets on Etsy"
+          body={
+            guide.shopLine ??
+            "Browse UkMoneySheets on Etsy for calm UK Google Sheets templates."
+          }
+          ctaLabel="Browse UkMoneySheets on Etsy"
+        />
       </section>
     </>
   );

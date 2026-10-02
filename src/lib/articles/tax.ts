@@ -77,10 +77,9 @@ That guide is about *what* to track. This page is about *registering in time* an
 
 ## How UkMoneySheets fits
 
-If you want a ready-made **Google Sheets** layout (not Excel) for side-hustle income and Self Assessment prep, browse [UkMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets):
+If you want a ready-made **Google Sheets** layout (not Excel) for side-hustle income and Self Assessment prep, the filing-year sheet is the **UK Side Hustle Tax Spreadsheet** on [UkMoneySheets on Etsy](https://www.etsy.com/listing/4462593252).
 
-- **UK Side Hustle Tax Spreadsheet** / Self Assessment SA103 trackers
-- **Side Hustle Bookkeeping Bundle** if you want more than one year or extra tabs
+A **Side Hustle Bookkeeping Bundle** is a separate product if you want more than one year or extra tabs. It is not this link.
 
 Delivery is typically a PDF with a Sheets link — then **File → Make a copy** into your Drive.
 
@@ -109,7 +108,7 @@ No. Checklist and education only.
 1. Open [register for Self Assessment](https://www.gov.uk/register-for-self-assessment) today if the checker says you need a return
 2. Start (or copy) a 2025/26 income and expense sheet
 3. Read the full tracking guide: [UK Self Assessment for Side Hustles (SA103)](/guides/uk-self-assessment-side-hustle-sa103)
-4. If you want a UK Google Sheets template, grab a side-hustle / SA tracker from [UkMoneySheets](https://www.etsy.com/shop/UkMoneySheets)
+4. If you want a UK Google Sheets template, grab a side-hustle / SA tracker from [UkMoneySheets](https://www.etsy.com/listing/4462593252)
 
 October is for registering. January is for filing with clean numbers.`;
 
@@ -241,7 +240,7 @@ At year end, Sam filters \`Tax year = 2026/27\`, sums income and expenses, and u
 
 ## How the UkMoneySheets SA103 sheet fits
 
-If you want a ready-made layout instead of building columns from scratch, [UkMoneySheets](https://www.etsy.com/shop/UkMoneySheets) sells UK-focused **Google Sheets** (not Excel) for side-hustle bookkeeping and Self Assessment prep.
+If you want a ready-made layout instead of building columns from scratch, the [UK Side Hustle Tax Spreadsheet 2026/27 on UkMoneySheets](https://www.etsy.com/listing/4533504008) is a Google Sheets file (not Excel) for side-hustle bookkeeping and Self Assessment prep in the current tax year.
 
 Worth knowing about the shop’s products:
 
@@ -272,7 +271,7 @@ No. This article and any UkMoneySheets template are for organisation and educati
 
 If you are starting from a blank grid, set up the minimum columns above and log weekly.
 
-If you would rather start from a UK tax-year template aimed at side hustles and SA103, grab the **UK Side Hustle Tax Spreadsheet 2026/27** (and related Self Assessment / bookkeeping listings) from [UkMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets).
+If you would rather start from a UK tax-year template aimed at side hustles and SA103, grab the **UK Side Hustle Tax Spreadsheet 2026/27** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4533504008).
 
 Then keep the habit: small weekly updates beat a March scramble — and always double-check figures against [GOV.UK](https://www.gov.uk) before you submit.`;
 
@@ -357,7 +356,7 @@ A personal tracker (or specialist UK crypto tax software) is where you reconcile
 
 ## How the UkMoneySheets crypto tracker fits
 
-[UkMoneySheets](https://www.etsy.com/shop/UkMoneySheets) sells a **UK Crypto Portfolio Tracker 2025/26 | Section 104 Estimate | Google Sheets**.
+[UkMoneySheets](https://www.etsy.com/listing/4459672655) sells a **UK Crypto Portfolio Tracker 2025/26 | Section 104 Estimate | Google Sheets**.
 
 It is Google Sheets (not Excel), delivered typically via a PDF with a Sheets link so you can **File → Make a copy**.
 
@@ -389,4 +388,4 @@ No. Education and organisation only.
 
 Export every exchange CSV you can find. Start one sterling transaction log with the columns above. Back up wallet addresses and tx ids.
 
-If you want a UK-oriented Google Sheets layout aimed at portfolio logging and Section 104-style estimates, get the **UK Crypto Portfolio Tracker** from [UkMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets), make your own copy, and treat every gain figure as an estimate until you (or your adviser) apply the live rules.`;
+If you want a UK-oriented Google Sheets layout aimed at portfolio logging and Section 104-style estimates, get the **UK Crypto Portfolio Tracker** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4459672655), make your own copy, and treat every gain figure as an estimate until you (or your adviser) apply the live rules.`;

@@ -90,7 +90,7 @@ function GuidePage() {
             </p>
             <Button asChild variant="link" className="mt-3 px-0">
               <a
-                href={SITE.shopUrl}
+                href={guide.ctaUrl ?? SITE.shopUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -126,6 +126,7 @@ function GuidePage() {
             "Browse UkMoneySheets on Etsy for calm UK Google Sheets templates."
           }
           ctaLabel="Browse UkMoneySheets on Etsy"
+          href={guide.ctaUrl ?? SITE.shopUrl}
         />
       </section>
     </>

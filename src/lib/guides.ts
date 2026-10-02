@@ -12,6 +12,8 @@ export type GuideMeta = {
   image: string;
   /** Soft shop CTA one-liner; omit hard Christmas chrome. */
   shopLine?: string;
+  /** Buyer link for this guide. Omit to keep the shop URL. */
+  ctaUrl?: string;
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -27,6 +29,7 @@ const FEATURED_ORDER = [
 export const guides: GuideMeta[] = [
   {
     slug: "cash-isa-12k-under-65-planner",
+    ctaUrl: "https://www.etsy.com/listing/4461347110",
     title:
       "Cash ISA Allowance Planner for Under-65s: Last Full Year Before the £12k Cap (UK)",
     description:
@@ -46,6 +49,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "help-to-save-deposit-bonus-tracker",
+    ctaUrl: "https://www.etsy.com/listing/4563932731",
     title:
       "Help to Save Tracker: Monthly Deposits and 2-Year / 4-Year Bonus Planner (UK)",
     description:
@@ -65,6 +69,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "register-self-assessment-5-october",
+    ctaUrl: "https://www.etsy.com/listing/4462593252",
     title:
       "Register for Self Assessment by 5 October: Checklist + Spreadsheet Setup (UK)",
     description:
@@ -84,6 +89,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-monthly-budget-google-sheets",
+    ctaUrl: "https://www.etsy.com/listing/4460132151",
     title: "How to Use a UK Monthly Budget Spreadsheet in Google Sheets",
     description:
       "Copy a UK-ready Google Sheet, set categories for real UK bills (rent or mortgage, council tax, utilities, groceries), enter take-home pay and planned amounts, then log actual spend weekly and adjust.",
@@ -102,6 +108,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "house-deposit-lisa-planner",
+    ctaUrl: "https://www.etsy.com/listing/4463017307",
     title: "House Deposit and LISA Tracker: A Simple First-Time Buyer Planner (UK)",
     description:
       "Pick a target house price and deposit percentage, work out how much you need to save, then track monthly transfers and Lifetime ISA (LISA) contributions in one Google Sheet so the bonus and the timeline stay visible.",
@@ -120,6 +127,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "mortgage-overpayment-calculator",
+    ctaUrl: "https://www.etsy.com/listing/4563937681",
     title: "Mortgage Overpayment Calculator: See Interest Saved in Google Sheets (UK)",
     description:
       "Enter your balance, rate, term, and a planned extra payment in a Google Sheet to compare “stick to the schedule” versus overpaying — then check your lender’s overpayment limits and any early repayment charge before you send money.",
@@ -154,6 +162,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-christmas-savings-tracker",
+    ctaUrl: "https://www.etsy.com/listing/4568011416",
     title: "UK Christmas Savings Tracker: Gift List Plus January Bills",
     description:
       "List every gift and Christmas cost with a budget cap, save a little each week from autumn, and set aside a January buffer for rent, council tax, and energy so December cheer does not become February stress.",
@@ -171,6 +180,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-crypto-section-104",
+    ctaUrl: "https://www.etsy.com/listing/4459672655",
     title: "UK Crypto Portfolio Tracker: What to Log for Section 104 and CGT",
     description:
       "To prepare for UK Capital Gains Tax on crypto, log every acquisition and disposal in sterling — date, asset, quantity, GBP value, and fees — so you can support Section 104 pooling and same-day / 30-day matching when you work out gains.",
@@ -188,6 +198,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-landlord-section-24",
+    ctaUrl: "https://www.etsy.com/listing/4467684075",
     title: "UK Landlord Spreadsheet: Track Rental Income for Self Assessment",
     description:
       "To report UK rental income on Self Assessment, keep a clear record of rent received, allowable expenses, and residential finance costs by tax year — then use those totals when you complete the UK property pages.",
@@ -205,6 +216,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-self-assessment-side-hustle-sa103",
+    ctaUrl: "https://www.etsy.com/listing/4533504008",
     title:
       "UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)",
     description:

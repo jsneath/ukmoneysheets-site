@@ -152,7 +152,7 @@ Consistency beats a perfect spreadsheet you never open.
 
 ## How the UkMoneySheets monthly budget sheet fits
 
-If you would rather start from a UK-ready layout than build columns yourself, [UkMoneySheets](https://www.etsy.com/shop/UkMoneySheets) sells a **UK Monthly Budget Spreadsheet for Google Sheets | Bills, Expenses & Savings**.
+If you would rather start from a UK-ready layout than build columns yourself, [UkMoneySheets](https://www.etsy.com/listing/4460132151) sells a **UK Monthly Budget Spreadsheet for Google Sheets | Bills, Expenses & Savings**.
 
 It is built for Google Sheets (not Excel). Delivery is typically a PDF that gives you the Sheets link so you can make a copy in your own Drive.
 
@@ -187,7 +187,7 @@ No. This article and any UkMoneySheets template are for organisation and educati
 
 You can build the structure above in a blank Google Sheet this weekend.
 
-If you want a ready-made UK layout for bills, expenses, and savings, grab the **UK Monthly Budget Spreadsheet for Google Sheets** from [UkMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets), make your own copy, and keep the fifteen-minute weekly review.
+If you want a ready-made UK layout for bills, expenses, and savings, grab the **UK Monthly Budget Spreadsheet for Google Sheets** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4460132151), make your own copy, and keep the fifteen-minute weekly review.
 
 The sheet holds the plan. You make it true.`;
 

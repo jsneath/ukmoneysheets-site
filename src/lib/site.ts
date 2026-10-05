@@ -7,7 +7,7 @@ export const SITE = {
     "UK Google Sheets for tax, salaries and savings. Free guides plus calm templates for British tax years, GBP and council tax.",
   shopUrl: "https://www.etsy.com/shop/UkMoneySheets",
   location: "Built in Kent",
-  url: "https://ukmoneysheets-site.vercel.app",
+  url: "https://www.ukmoneysheets.co.uk",
 } as const;
 
 export const NAV = [

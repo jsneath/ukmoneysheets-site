@@ -10,6 +10,8 @@ export type GuideMeta = {
   related: string[];
   /** Card + optional header preview under /guides/{slug}.jpg */
   image: string;
+  /** Short descriptive alt for guide cards (home, /guides, related). */
+  imageAlt: string;
   /** Per-page social card (1200×630). Falls back to /og.jpg. */
   ogImage?: string;
   /** Alt text for og:image. */
@@ -53,6 +55,20 @@ export const guides: GuideMeta[] = [
     category: "Savings",
     featured: true,
     image: "/guides/cash-isa-12k-under-65-planner.jpg",
+    imageAlt: "Cash ISA allowance planner for 2026/27: Google Sheets dashboard preview, sample data",
+    ogImage: "/og/cash-isa-12k-under-65-planner.jpg",
+    ogImageAlt: "Cash ISA allowance planner for 2026/27 \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/cash-isa-12k-under-65-planner/1.webp",
+        alt: "Real Google Sheets screenshot: plan regular saving in Google Sheets, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/cash-isa-12k-under-65-planner/2.webp",
+        alt: "Plan your 2026/27 Cash ISA allowance: Overall ISA allowance is £20,000 for 2026/27; From 6 April 2027: £12,000 cash limit if under 65; Allowances reset each 6 April and don't roll over; Log each subscription with its date and amount; Check your remaining allowance before paying in",
+      },
+    },
     shopLine:
       "Browse UK Google Sheets for budgeting and savings alongside your ISA plan on Etsy.",
     related: [
@@ -73,6 +89,20 @@ export const guides: GuideMeta[] = [
     category: "Savings",
     featured: true,
     image: "/guides/help-to-save-deposit-bonus-tracker.jpg",
+    imageAlt: "Help to Save deposits and bonus planner: Google Sheets dashboard preview, sample data",
+    ogImage: "/og/help-to-save-deposit-bonus-tracker.jpg",
+    ogImageAlt: "Help to Save deposits and bonus planner \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/help-to-save-deposit-bonus-tracker/1.webp",
+        alt: "Real Google Sheets screenshot: find a monthly amount you can afford, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/help-to-save-deposit-bonus-tracker/2.webp",
+        alt: "Help to Save: what to track: Pay in £1 to £50 each calendar month; Bonus is 50p for every £1 saved (50%); Bonuses come after year 2 and year 4; Log deposits, withdrawals and highest balance; Treat bonus figures as estimates",
+      },
+    },
     shopLine:
       "Browse UkMoneySheets on Etsy for UK Google Sheets that sit beside your Help to Save habit.",
     related: [
@@ -93,6 +123,7 @@ export const guides: GuideMeta[] = [
     category: "Tax",
     featured: true,
     image: "/guides/register-self-assessment-5-october.jpg",
+    imageAlt: "Register for Self Assessment by 5 October: Google Sheets dashboard preview, sample data",
     ogImage: "/og/register-self-assessment-5-october.jpg",
     ogImageAlt: "Register for Self Assessment by 5 October \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
@@ -125,6 +156,7 @@ export const guides: GuideMeta[] = [
     category: "Budgeting",
     featured: true,
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
+    imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-monthly-budget-google-sheets.jpg",
     ogImageAlt: "UK monthly budget in Google Sheets \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
@@ -157,6 +189,7 @@ export const guides: GuideMeta[] = [
     category: "Property",
     featured: true,
     image: "/guides/house-deposit-lisa-planner.jpg",
+    imageAlt: "House deposit and LISA planner: Google Sheets dashboard preview, sample data",
     ogImage: "/og/house-deposit-lisa-planner.jpg",
     ogImageAlt: "House deposit and LISA planner \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
@@ -189,6 +222,7 @@ export const guides: GuideMeta[] = [
     category: "Property",
     featured: true,
     image: "/guides/mortgage-overpayment-calculator.jpg",
+    imageAlt: "Mortgage overpayment calculator: Google Sheets dashboard preview, sample data",
     ogImage: "/og/mortgage-overpayment-calculator.jpg",
     ogImageAlt: "Mortgage overpayment calculator \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
@@ -219,6 +253,20 @@ export const guides: GuideMeta[] = [
       "Google Sheets vs Excel for UK household budgeting: when Sheets wins for couples and phones, and when Excel still fits.",
     category: "Guides",
     image: "/guides/sheets-vs-excel-uk-budgeting.jpg",
+    imageAlt: "Google Sheets vs Excel for UK budgets: Google Sheets dashboard preview, sample data",
+    ogImage: "/og/sheets-vs-excel-uk-budgeting.jpg",
+    ogImageAlt: "Google Sheets vs Excel for UK budgets \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/sheets-vs-excel-uk-budgeting/1.webp",
+        alt: "Real Google Sheets screenshot: a real Google Sheet, open in the browser, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/sheets-vs-excel-uk-budgeting/2.webp",
+        alt: "Choosing for a UK household budget: Share one live link with a partner; Make quick edits on your phone; Free with a Google account for personal use; Need heavy offline desktop work? Excel may suit; Whichever you pick, start from a UK layout",
+      },
+    },
     shopLine: "Browse UkMoneySheets on Etsy — Google Sheets only, never Excel.",
     related: [
       "uk-monthly-budget-google-sheets",
@@ -236,6 +284,7 @@ export const guides: GuideMeta[] = [
       "UK Christmas savings tracker: gift list, weekly save-up, and a January buffer for rent and bills in Google Sheets.",
     category: "Savings",
     image: "/guides/uk-christmas-savings-tracker.jpg",
+    imageAlt: "Christmas savings tracker: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-christmas-savings-tracker.jpg",
     ogImageAlt: "Christmas savings tracker \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
@@ -267,6 +316,7 @@ export const guides: GuideMeta[] = [
       "Log UK crypto trades for Section 104 and CGT: date, quantity, GBP value and fees in a simple spreadsheet.",
     category: "Tax",
     image: "/guides/uk-crypto-section-104.jpg",
+    imageAlt: "Crypto records for Section 104 and CGT: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-crypto-section-104.jpg",
     ogImageAlt: "Crypto records for Section 104 and CGT \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
@@ -298,6 +348,7 @@ export const guides: GuideMeta[] = [
       "Track UK rental income and expenses for Self Assessment and Section 24 finance costs in Google Sheets.",
     category: "Property",
     image: "/guides/uk-landlord-section-24.jpg",
+    imageAlt: "Landlord records for Self Assessment: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-landlord-section-24.jpg",
     ogImageAlt: "Landlord records for Self Assessment \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
@@ -330,6 +381,7 @@ export const guides: GuideMeta[] = [
       "Track side-hustle income and expenses for UK Self Assessment (SA103) in a simple tax-year spreadsheet.",
     category: "Tax",
     image: "/guides/uk-self-assessment-side-hustle-sa103.jpg",
+    imageAlt: "Side hustle records for SA103: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-self-assessment-side-hustle-sa103.jpg",
     ogImageAlt: "Side hustle records for SA103 \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,

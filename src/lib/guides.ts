@@ -71,11 +71,11 @@ export const guides: GuideMeta[] = [
     slug: "register-self-assessment-5-october",
     ctaUrl: "https://www.etsy.com/listing/4462593252",
     title:
-      "Register for Self Assessment by 5 October: Checklist + Spreadsheet Setup (UK)",
+      "Missed the 5 October Self Assessment Deadline? Register Late + Spreadsheet Setup (UK)",
     description:
-      "New to Self Assessment for 2025/26? Register by 5 October 2026, then set up a simple UK income and expense spreadsheet before January.",
+      "If you needed to tell HMRC about Self Assessment by 5 October after the tax year ended and you missed it, register as soon as you can, watch for a failure-to-notify risk if tax is still unpaid at 31 January, and start a simple UK income and expense spreadsheet before you file.",
     metaDescription:
-      "Register for Self Assessment by 5 October 2026. Checklist plus spreadsheet setup for new UK taxpayers. Check GOV.UK.",
+      "Missed 5 October Self Assessment registration? Register late, check GOV.UK on penalties, and set up a UK spreadsheet before January.",
     category: "Tax",
     featured: true,
     image: "/guides/register-self-assessment-5-october.jpg",

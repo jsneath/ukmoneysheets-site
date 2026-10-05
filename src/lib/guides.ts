@@ -8,8 +8,22 @@ export type GuideMeta = {
   category: string;
   featured?: boolean;
   related: string[];
-  /** Style B product preview under /guides/{slug}.jpg */
+  /** Card + optional header preview under /guides/{slug}.jpg */
   image: string;
+  /** Per-page social card (1200×630). Falls back to /og.jpg. */
+  ogImage?: string;
+  /** Alt text for og:image. */
+  ogImageAlt?: string;
+  /** In-body figures (after intro + near checklist). */
+  inGuideImages?: {
+    afterIntro: { src: string; alt: string };
+    nearChecklist: { src: string; alt: string };
+  };
+  /**
+   * When false, guide detail hides the square header image (cards still use
+   * `image`). Used when Nia's titled heroes would sit beside the H1.
+   */
+  showHeaderImage?: boolean;
   /** Soft shop CTA one-liner; omit hard Christmas chrome. */
   shopLine?: string;
   /** Buyer link for this guide. Omit to keep the shop URL. */
@@ -79,6 +93,19 @@ export const guides: GuideMeta[] = [
     category: "Tax",
     featured: true,
     image: "/guides/register-self-assessment-5-october.jpg",
+    ogImage: "/og/register-self-assessment-5-october.jpg",
+    ogImageAlt: "Register for Self Assessment by 5 October \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/register-self-assessment-5-october/1.webp",
+        alt: "Real Google Sheets screenshot: records ready for your 2025/26 return, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/register-self-assessment-5-october/2.webp",
+        alt: "Registering for Self Assessment: Check on GOV.UK whether you need to register; Register by 5 October after the tax year ends; Keep your UTR safe when HMRC sends it; Set up your income and expenses sheet; Online returns are due by 31 January",
+      },
+    },
     shopLine:
       "Browse side-hustle and Self Assessment Google Sheets on UkMoneySheets Etsy.",
     related: [
@@ -98,6 +125,19 @@ export const guides: GuideMeta[] = [
     category: "Budgeting",
     featured: true,
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
+    ogImage: "/og/uk-monthly-budget-google-sheets.jpg",
+    ogImageAlt: "UK monthly budget in Google Sheets \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/uk-monthly-budget-google-sheets/1.webp",
+        alt: "Real Google Sheets screenshot: inside a uk monthly budget sheet, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/uk-monthly-budget-google-sheets/2.webp",
+        alt: "Set up your monthly budget: Make a copy into your own Google Drive; Enter your monthly take-home pay; Add planned amounts for rent, council tax and bills; Log what you actually spend each week; Review the month and adjust next month's plan",
+      },
+    },
     shopLine:
       "Get the UK Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
     related: [
@@ -117,6 +157,19 @@ export const guides: GuideMeta[] = [
     category: "Property",
     featured: true,
     image: "/guides/house-deposit-lisa-planner.jpg",
+    ogImage: "/og/house-deposit-lisa-planner.jpg",
+    ogImageAlt: "House deposit and LISA planner \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/house-deposit-lisa-planner/1.webp",
+        alt: "Real Google Sheets screenshot: inside a first-time buyer planner, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/house-deposit-lisa-planner/2.webp",
+        alt: "Plan your house deposit: Set your target property price; Choose the deposit percentage you're aiming for; Add what you can save each month; Track Lifetime ISA payments on their own line; Budget for moving costs as well as the deposit",
+      },
+    },
     shopLine:
       "Get the House Deposit Savings Planner (FTB & LISA) on UkMoneySheets Etsy.",
     related: [
@@ -136,6 +189,19 @@ export const guides: GuideMeta[] = [
     category: "Property",
     featured: true,
     image: "/guides/mortgage-overpayment-calculator.jpg",
+    ogImage: "/og/mortgage-overpayment-calculator.jpg",
+    ogImageAlt: "Mortgage overpayment calculator \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/mortgage-overpayment-calculator/1.webp",
+        alt: "Real Google Sheets screenshot: inside a mortgage overpayment calculator, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/mortgage-overpayment-calculator/2.webp",
+        alt: "Before you overpay: Enter your balance, interest rate and term; Add a monthly or one-off overpayment; Compare interest saved and the new end date; Check your lender's overpayment allowance; Ask about early repayment charges first",
+      },
+    },
     shopLine:
       "Get the Mortgage Overpayment Calculator for Google Sheets on UkMoneySheets Etsy.",
     related: [
@@ -170,6 +236,19 @@ export const guides: GuideMeta[] = [
       "UK Christmas savings tracker: gift list, weekly save-up, and a January buffer for rent and bills in Google Sheets.",
     category: "Savings",
     image: "/guides/uk-christmas-savings-tracker.jpg",
+    ogImage: "/og/uk-christmas-savings-tracker.jpg",
+    ogImageAlt: "Christmas savings tracker \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/uk-christmas-savings-tracker/1.webp",
+        alt: "Real Google Sheets screenshot: inside a christmas savings tracker, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/uk-christmas-savings-tracker/2.webp",
+        alt: "Plan Christmas without the January shock: Set one total budget for Christmas; List gifts by person; Add food, travel and decorations; Track spent against planned as you buy; Put January bills in the plan too",
+      },
+    },
     // Soft evergreen shop line only — no Christmas chrome CTA
     shopLine: "Browse UkMoneySheets on Etsy for calm UK Google Sheets templates.",
     related: [
@@ -188,6 +267,19 @@ export const guides: GuideMeta[] = [
       "Log UK crypto trades for Section 104 and CGT: date, quantity, GBP value and fees in a simple spreadsheet.",
     category: "Tax",
     image: "/guides/uk-crypto-section-104.jpg",
+    ogImage: "/og/uk-crypto-section-104.jpg",
+    ogImageAlt: "Crypto records for Section 104 and CGT \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/uk-crypto-section-104/1.webp",
+        alt: "Real Google Sheets screenshot: a 2025/26 crypto portfolio tracker, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/uk-crypto-section-104/2.webp",
+        alt: "What to log for each crypto transaction: Date and type: buy, sell, swap or spend; Which coin and how much; The value in pounds at the time; Any fees you paid; Pooled cost for each coin (Section 104)",
+      },
+    },
     shopLine:
       "Get the UK Crypto Portfolio Tracker for Google Sheets on UkMoneySheets Etsy.",
     related: [
@@ -206,6 +298,19 @@ export const guides: GuideMeta[] = [
       "Track UK rental income and expenses for Self Assessment and Section 24 finance costs in Google Sheets.",
     category: "Property",
     image: "/guides/uk-landlord-section-24.jpg",
+    ogImage: "/og/uk-landlord-section-24.jpg",
+    ogImageAlt: "Landlord records for Self Assessment \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/uk-landlord-section-24/1.webp",
+        alt: "Real Google Sheets screenshot: a 2025/26 rental income tracker, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/uk-landlord-section-24/2.webp",
+        alt: "Landlord records to keep: Rent received for each property; Allowable costs like repairs and agent fees; Mortgage interest logged separately (Section 24); Dates and receipts for every cost; Totals ready for the SA105 property pages",
+      },
+    },
     shopLine:
       "Get the UK Landlord Spreadsheet for Self Assessment on UkMoneySheets Etsy.",
     related: [
@@ -225,6 +330,19 @@ export const guides: GuideMeta[] = [
       "Track side-hustle income and expenses for UK Self Assessment (SA103) in a simple tax-year spreadsheet.",
     category: "Tax",
     image: "/guides/uk-self-assessment-side-hustle-sa103.jpg",
+    ogImage: "/og/uk-self-assessment-side-hustle-sa103.jpg",
+    ogImageAlt: "Side hustle records for SA103 \u2014 UkMoneySheets Google Sheets guide",
+    showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/uk-self-assessment-side-hustle-sa103/1.webp",
+        alt: "Real Google Sheets screenshot: a 2026/27 side hustle tracker, sample data",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/uk-self-assessment-side-hustle-sa103/2.webp",
+        alt: "What to track for SA103: Income from each platform or client; Allowable business expenses, with receipts; Mileage and use of home, if you claim them; The date of every entry; Running totals so the return is quicker",
+      },
+    },
     shopLine:
       "Get the UK Side Hustle Tax Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
     related: [

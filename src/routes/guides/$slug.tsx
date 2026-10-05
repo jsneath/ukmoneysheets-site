@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
-import { Markdown } from "@/components/markdown";
+import { GuideBody } from "@/components/guide-body";
 import { GuideCard } from "@/components/guide-card";
 import { ShopCta } from "@/components/shop-cta";
 import { Button } from "@/components/ui/button";
@@ -29,6 +29,8 @@ export const Route = createFileRoute("/guides/$slug")({
       description: guide.metaDescription,
       path: `/guides/${guide.slug}`,
       type: "article",
+      image: guide.ogImage,
+      imageAlt: guide.ogImageAlt,
     });
   },
   component: GuidePage,
@@ -37,12 +39,19 @@ export const Route = createFileRoute("/guides/$slug")({
 function GuidePage() {
   const { guide, article } = Route.useLoaderData();
   const related = relatedGuides(guide.slug);
+  const showHeaderImage = guide.showHeaderImage !== false;
 
   return (
     <>
       <article>
         <header className="border-b border-line bg-mint/40">
-          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center">
+          <div
+            className={
+              showHeaderImage
+                ? "mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center"
+                : "mx-auto max-w-3xl px-5 py-12 sm:px-8 sm:py-16"
+            }
+          >
             <div>
               <Link
                 to="/guides"
@@ -61,21 +70,23 @@ function GuidePage() {
                 {guide.description}
               </p>
             </div>
-            <div className="overflow-hidden rounded-xl bg-paper hairline">
-              <img
-                src={guide.image}
-                alt=""
-                width={960}
-                height={960}
-                decoding="async"
-                className="aspect-square w-full object-cover object-top"
-              />
-            </div>
+            {showHeaderImage ? (
+              <div className="overflow-hidden rounded-xl bg-paper hairline">
+                <img
+                  src={guide.image}
+                  alt=""
+                  width={960}
+                  height={960}
+                  decoding="async"
+                  className="aspect-square w-full object-cover object-top"
+                />
+              </div>
+            ) : null}
           </div>
         </header>
 
         <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8 sm:py-16">
-          <Markdown source={article} />
+          <GuideBody source={article} images={guide.inGuideImages} />
 
           <div className="mt-14 rounded-xl border border-line bg-paper px-6 py-6 sm:px-7">
             <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">

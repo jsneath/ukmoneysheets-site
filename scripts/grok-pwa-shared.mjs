@@ -16,6 +16,7 @@ const SHARE_META_KEYS = new Set([
   "og:image",
   "og:image:width",
   "og:image:height",
+  "og:image:alt",
   "og:type",
   "og:url",
   "og:site_name",
@@ -339,31 +340,56 @@ export function grokOgHeadTags({
   site = {},
   documentTitle = "",
   cwd = process.cwd(),
+  pageMeta = {},
 } = {}) {
-  const title = resolveOgTitle(site, appName, host, documentTitle);
+  // Page-authored share meta (from TanStack route head) wins over site.json defaults.
+  const page = pageMeta && typeof pageMeta === "object" ? pageMeta : {};
+  const title =
+    String(page["og:title"] ?? page["twitter:title"] ?? "").trim() ||
+    resolveOgTitle(site, appName, host, documentTitle);
   const publicHost = resolvePublicHost(host);
   const tags = [
     `<meta name="twitter:card" content="summary_large_image">`,
     `<meta property="og:title" content="${escapeHtml(title)}">`,
+    `<meta name="twitter:title" content="${escapeHtml(title)}">`,
   ];
-  const description = String(site.description ?? "").trim();
+  const description =
+    String(page["og:description"] ?? page["twitter:description"] ?? "").trim() ||
+    String(site.description ?? "").trim();
   if (description) {
     tags.push(`<meta property="og:description" content="${escapeHtml(description)}">`);
+    tags.push(`<meta name="twitter:description" content="${escapeHtml(description)}">`);
   }
   if (String(site.type ?? "").toLowerCase() === "x:game") {
     tags.push(`<meta property="og:type" content="x:game">`);
+  } else if (page["og:type"]) {
+    tags.push(`<meta property="og:type" content="${escapeHtml(page["og:type"])}">`);
   }
-  if (publicHost) {
+  if (page["og:url"]) {
+    tags.push(`<meta property="og:url" content="${escapeHtml(page["og:url"])}">`);
+  }
+  let image = String(page["og:image"] ?? page["twitter:image"] ?? "").trim();
+  if (!image && publicHost) {
     const asset = resolveOgCardAsset(site, cwd);
     const custom = Boolean(asset);
-    let image = custom
+    image = custom
       ? `https://${publicHost}${asset.startsWith("/") ? asset : `/${asset}`}`
       : `${ogServiceUrl()}/v1/card.png?host=${encodeURIComponent(publicHost)}&title=${encodeURIComponent(title)}`;
     const color = !custom ? placeholderCardColor(site) : "";
     if (color) image += `&color=${encodeURIComponent(color)}`;
+  }
+  if (image) {
+    const width = String(page["og:image:width"] ?? "1200").trim() || "1200";
+    const height = String(page["og:image:height"] ?? "630").trim() || "630";
     tags.push(`<meta property="og:image" content="${escapeHtml(image)}">`);
-    tags.push(`<meta property="og:image:width" content="1200">`);
-    tags.push(`<meta property="og:image:height" content="630">`);
+    tags.push(`<meta property="og:image:width" content="${escapeHtml(width)}">`);
+    tags.push(`<meta property="og:image:height" content="${escapeHtml(height)}">`);
+    if (page["og:image:alt"]) {
+      tags.push(`<meta property="og:image:alt" content="${escapeHtml(page["og:image:alt"])}">`);
+    }
+    tags.push(`<meta name="twitter:image" content="${escapeHtml(image)}">`);
+  }
+  if (publicHost) {
     const banner = String(site.banner ?? "").trim();
     if (banner) {
       const bannerUrl = `https://${publicHost}${banner.startsWith("/") ? banner : `/${banner}`}`;
@@ -373,6 +399,23 @@ export function grokOgHeadTags({
     }
   }
   return tags;
+}
+
+/** Map of share meta key → content, taken from page-authored <meta> tags. */
+export function extractShareMetaContents(html) {
+  /** @type {Record<string, string>} */
+  const found = {};
+  String(html).replace(/<meta\b[^>]*>/gi, (tag) => {
+    const keyMatch = tag.match(/\b(?:property|name)\s*=\s*["']([^"']+)["']/i);
+    const contentMatch = tag.match(/\bcontent\s*=\s*["']([^"']*)["']/i);
+    if (!keyMatch || !contentMatch) return tag;
+    const key = String(keyMatch[1]).toLowerCase();
+    if (!SHARE_META_KEYS.has(key)) return tag;
+    const content = unescapeHtml(contentMatch[1]).trim();
+    if (content) found[key] = content;
+    return tag;
+  });
+  return found;
 }
 
 export function stripShareMetaTags(html) {
@@ -432,6 +475,9 @@ export function injectGrokPwaHead(html, ctx = {}) {
     host,
     documentTitle,
   );
+  // Capture per-page og/twitter tags from the SSR document before the platform
+  // strip — otherwise every route collapses to site.json + /og.jpg.
+  const pageMeta = extractShareMetaContents(html);
   let next = stripShareMetaTags(html);
 
   const missing = grokPwaHeadTags(appName)
@@ -444,7 +490,7 @@ export function injectGrokPwaHead(html, ctx = {}) {
 
   next = insertAfterHeadOpen(
     next,
-    grokOgHeadTags({ host, appName, site, documentTitle, cwd }).join(""),
+    grokOgHeadTags({ host, appName, site, documentTitle, cwd, pageMeta }).join(""),
   );
 
   if (!next.includes("/grok-app-builder/extensions.js")) {

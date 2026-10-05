@@ -102,16 +102,35 @@ test("does not duplicate x:creator tags", () => {
   assert.equal(twice.split('property="x:creator:id"').length - 1, 1);
 });
 
-test("platform chrome overwrites share-card metas and always sets og:title", () => {
+test("platform chrome keeps page og tags and upgrades twitter:card", () => {
+  const empty = mkdtempSync(join(tmpdir(), "grok-og-page-meta-"));
   const html =
-    '<html><head><title>Hello World</title><meta property="og:title" content="Old"><meta name="twitter:card" content="summary"></head></html>';
-  const out = injectGrokPwaHead(html, { appName: "Wild Race" });
+    '<html><head><title>Hello World</title><meta property="og:title" content="Guide Title | Site"><meta property="og:image" content="https://www.example.com/og/guide.jpg"><meta name="twitter:card" content="summary"></head></html>';
+  const out = injectGrokPwaHead(html, {
+    appName: "Wild Race",
+    cwd: empty,
+    site: { title: "Site Default" },
+  });
   assert.match(out, /name="twitter:card" content="summary_large_image"/);
-  assert.match(out, /property="og:title" content="Hello World"/);
-  assert.doesNotMatch(out, /content="Old"/);
+  // Page-authored share meta wins over site.json / document title defaults.
+  assert.match(out, /property="og:title" content="Guide Title \| Site"/);
+  assert.match(out, /property="og:image" content="https:\/\/www\.example\.com\/og\/guide\.jpg"/);
+  assert.match(out, /name="twitter:image" content="https:\/\/www\.example\.com\/og\/guide\.jpg"/);
   assert.doesNotMatch(out, /content="summary"/);
+  assert.doesNotMatch(out, /content="Site Default"/);
   assert.equal(out.split('name="twitter:card"').length - 1, 1);
   assert.equal(out.split('property="og:title"').length - 1, 1);
+});
+
+test("without page og tags, platform still sets og:title from the document", () => {
+  const empty = mkdtempSync(join(tmpdir(), "grok-og-doc-title-"));
+  const html = "<html><head><title>Hello World</title></head></html>";
+  const out = injectGrokPwaHead(html, {
+    appName: "Wild Race",
+    cwd: empty,
+    site: {},
+  });
+  assert.match(out, /property="og:title" content="Hello World"/);
   assert.doesNotMatch(out, /property="og:image"/);
 });
 

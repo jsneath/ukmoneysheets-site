@@ -8,6 +8,9 @@ export const SITE = {
   shopUrl: "https://www.etsy.com/shop/UkMoneySheets",
   location: "Built in Kent",
   url: "https://www.ukmoneysheets.co.uk",
+  /** Default social card (home, /guides, guides without a per-page image). */
+  ogImage: "/og.jpg",
+  ogImageAlt: "Simple Google Sheets for UK money — UkMoneySheets Google Sheets guide",
 } as const;
 
 export const NAV = [
@@ -25,14 +28,23 @@ export function pageHead({
   description,
   path,
   type = "website",
+  image,
+  imageAlt,
 }: {
   title: string;
   description: string;
   path: string;
   type?: "website" | "article";
+  /** Absolute URL or site-root path for og:image / twitter:image. */
+  image?: string;
+  imageAlt?: string;
 }) {
   const url = path === "/" ? SITE.url : absoluteUrl(path);
-  const image = `${SITE.url}/og.jpg`;
+  const imagePath = image ?? SITE.ogImage;
+  const imageUrl = imagePath.startsWith("http")
+    ? imagePath
+    : absoluteUrl(imagePath);
+  const alt = imageAlt ?? SITE.ogImageAlt;
   return {
     meta: [
       { title },
@@ -41,12 +53,15 @@ export function pageHead({
       { property: "og:description", content: description },
       { property: "og:type", content: type },
       { property: "og:url", content: url },
-      { property: "og:image", content: image },
+      { property: "og:image", content: imageUrl },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: alt },
       { property: "og:locale", content: "en_GB" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
-      { name: "twitter:image", content: image },
+      { name: "twitter:image", content: imageUrl },
     ],
     links: [{ rel: "canonical", href: url }],
   };

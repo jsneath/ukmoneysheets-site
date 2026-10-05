@@ -30,7 +30,7 @@ export function GuideCard({
       <div className="relative aspect-[16/10] overflow-hidden bg-mint/40">
         <img
           src={guide.image}
-          alt=""
+          alt={guide.imageAlt}
           width={960}
           height={600}
           loading="lazy"

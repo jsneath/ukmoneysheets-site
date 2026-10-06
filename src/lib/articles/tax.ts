@@ -1,89 +1,82 @@
-export const registerSa = `> This article is general information about registration and record-keeping, not personalised tax advice. Rules change. Confirm everything on GOV.UK or with a qualified adviser before you act.
+export const registerSa = `> This article is general information about registering for Self Assessment and keeping records, not personalised tax advice. Rules change. Check GOV.UK or speak to a qualified adviser before you act.
 
-## Who this is for
+If you have new untaxed income, such as a side hustle, freelance work or rental income, you may need to register for Self Assessment so HMRC knows to expect a tax return from you. This guide covers how to register on GOV.UK, what the 5 October deadline means, what happens if you register late, and how to set up simple records in Google Sheets before you file.
 
-This is for people in the UK who may need Self Assessment for a tax year that has already ended (6 April to 5 April) and who have either:
+## How to register for Self Assessment
 
-- never sent a tax return before, or
-- registered before but did not need to send a return for the year before that
+### 1. Check whether you need to register
 
-Typical first-timers include PAYE employees with a new **side hustle**, freelancers, and sole traders. Other reasons exist too (property income, certain gains, and more). Do not guess from a blog — use HMRC’s checker.
+GOV.UK says you must send a tax return if, in the last tax year (6 April to 5 April), any of these applied: you were self-employed as a sole trader and earned more than **£1,000** (before taking off anything you can claim tax relief on), you were a partner in a business partnership, or you had Capital Gains Tax to pay, among other reasons. Untaxed income such as rent, tips, savings interest or dividends can also mean you need a return.
 
-GOV.UK currently says you must send a return if, in the last tax year, you were self-employed as a sole trader and earned more than **£1,000** (before reliefs), among other triggers. Re-check that page for the live list — thresholds and reasons can change.
+The list changes, so read [who must send a tax return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) and use GOV.UK's checker rather than relying on a blog post.
 
-Savings interest alone is a separate rabbit hole. If that is your only question, use GOV.UK’s checker rather than treating this side-hustle checklist as the whole answer.
+You need to **tell HMRC** (register) if you need a return and you have either:
 
-## The 5 October rule (and what “late” means)
+- not sent a tax return before, or
+- registered before but did not need to send a return for the previous tax year
 
-The registration date is **not** the same as the filing date.
+### 2. Register on GOV.UK
 
-| Deadline pattern | What it usually is | Official page |
+Start at [Check how to register for Self Assessment](https://www.gov.uk/register-for-self-assessment). The service takes you through the right route for your situation (for example, sole traders register as self-employed). If you have registered before but did not send a return last year, GOV.UK says you may need to **reactivate** your Self Assessment account, and the service explains how.
+
+You do not need a finished spreadsheet before you register.
+
+### 3. Wait for your UTR by post
+
+When you register, HMRC gives you a **Unique Taxpayer Reference (UTR)**, a 10-digit number. GOV.UK's [Find your UTR number](https://www.gov.uk/find-utr-number) page says you will usually get it **by post around 15 days** after you register (longer if you live overseas). Once you have one, you can also find it in your Personal Tax Account or the HMRC app.
+
+You need your UTR to file online, so keep the letter somewhere safe.
+
+## What the 5 October deadline means
+
+5 October is the yearly **notify date**, not the filing date. You must tell HMRC by **5 October after the end of the tax year** in which you need to file. For the 2025/26 tax year (6 April 2025 to 5 April 2026), that date was **5 October 2026**.
+
+| Date (2025/26 tax year) | What it is | Official page |
 | --- | --- | --- |
-| **5 October** after the tax year ends | Tell HMRC you need to file if you are new (or need to re-engage) — by registering for Self Assessment | [Register](https://www.gov.uk/register-for-self-assessment) |
-| **31 October** after the tax year ends | Paper return deadline (if you file on paper) | [Deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines) |
-| **31 January** following | Online return and payment deadline for tax owed | [Deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines) |
+| **5 October 2026** | Tell HMRC you need to file, by registering for Self Assessment | [Register](https://www.gov.uk/register-for-self-assessment) |
+| **31 October 2026** | Paper return deadline, if you file on paper | [Deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines) |
+| **31 January 2027** | Online return deadline, and the deadline to pay the tax you owe | [Deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines) |
 
-On GOV.UK, the recurring pattern is: you must tell HMRC by **5 October** after the end of the tax year in which you had the untaxed income / Self Assessment trigger, if you have not sent a return before (or you need to re-engage after a year with no return). Always re-check the live [register](https://www.gov.uk/register-for-self-assessment) and [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines) pages for the dates that apply to *your* tax year.
+The same pattern repeats each year: 5 October to register, 31 October for paper returns, 31 January for online returns and payment. Check the [deadlines page](https://www.gov.uk/self-assessment-tax-returns/deadlines) for the dates that apply to your tax year.
 
-### If you already missed 5 October
+## Missed 5 October?
 
-You can still register. GOV.UK’s practical message is to **register as soon as possible**.
+Here is what GOV.UK says if you register after 5 October. This is general information, so check the linked pages for your own situation.
 
-What can change when you register late (confirm on GOV.UK — do not treat blog summaries as final):
+- **You can still register.** Use the same [GOV.UK registration service](https://www.gov.uk/register-for-self-assessment) and register as soon as you can.
+- **Your filing deadline may be later.** GOV.UK says HMRC will send you a letter or email with a different deadline to send your return, which will be 3 months from the date on that letter or email ([Deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)). HMRC's own guidance explains that for an online return this is the later of 3 months from the notice or 31 January, so go by the date HMRC gives you.
+- **The tax is still due on 31 January 2027.** For the 2025/26 tax year, GOV.UK says you must still pay the tax you owe by 11:59pm on 31 January 2027 or you will get a penalty. Registering late does not move the payment date.
+- **The failure-to-notify penalty depends on unpaid tax.** GOV.UK says that if you register after 5 October and do not pay all of your tax bill by 31 January, you may get a "failure to notify" penalty, based on the amount still left to pay ([Penalties](https://www.gov.uk/self-assessment-tax-returns/penalties)). HMRC's guidance says no failure-to-notify penalty is payable if all the tax is paid in full by that date.
 
-- **Failure to notify:** if you register after 5 October and you do **not** pay all of the tax you owe by **31 January**, you may get a “failure to notify” penalty. GOV.UK links that penalty to tax still left to pay and says you receive it within 12 months after HMRC receives your return — see [Penalties](https://www.gov.uk/self-assessment-tax-returns/penalties).
-- **Filing date:** if you register after 5 October, GOV.UK says HMRC will send a letter or email with a different deadline to send your return (often described as **3 months** from the date on that letter or email).
-- **Payment date:** you must still **pay** any tax due by **31 January** (11:59pm on the deadline GOV.UK shows for that year) or you can get a late-payment penalty. Late registration does not move the usual payment deadline.
+## Records checklist: set up your spreadsheet
 
-Registering promptly still matters because you need a **Unique Taxpayer Reference (UTR)** before you can file online.
+Start your records the same week you register, so you are not rebuilding a year of income from bank statements in January.
 
-## Checklist: register late, get your UTR, gather records
+### 1. Gather records for the tax year you are reporting
 
-Work through this in order even if 5 October has passed.
+You will need figures for income and allowable expenses, plus proof. Digital records are fine if they are accurate. See GOV.UK's guidance on [business records if you are self-employed](https://www.gov.uk/self-employed-records).
 
-### 1. Confirm you need a return
+### 2. Set up one row per transaction
 
-Use [who must send a tax return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) and HMRC’s checker. Keep a note of the date you checked.
-
-### 2. Register (or reactivate) on GOV.UK today
-
-Start at [Check how to register for Self Assessment](https://www.gov.uk/register-for-self-assessment). Sole traders usually register as self-employed through that journey. If you registered before but skipped a year, GOV.UK notes you may need to reactivate inside the service.
-
-Do not wait for a perfect spreadsheet before you register.
-
-### 3. Watch for your UTR
-
-HMRC issues a Unique Taxpayer Reference. GOV.UK’s [Find your UTR number](https://www.gov.uk/find-utr-number) page currently says you will usually get your UTR **by post around 15 days** after you register (longer if you live overseas). Timing can vary by how you registered and what HMRC shows in your Personal Tax Account or the HMRC app — check GOV.UK’s live guidance on what to expect after registration rather than relying on a fixed wait.
-
-### 4. Gather records for the tax year you are reporting
-
-You will need figures for income and allowable expenses (and proof). Digital records are fine if they are accurate. See [business records if you are self-employed](https://www.gov.uk/self-employed-records).
-
-### 5. Set up a spreadsheet the same week you register
-
-A blank brain dump in Notes will not survive January. Use columns for date, source, income/expense, category, amount (GBP), and a tax-year tag (for example \`2025/26\`).
-
-### 6. Diary January — and any later filing date HMRC gives you
-
-Online filing and payment of tax owed usually fall on **31 January** after the tax year. If you registered late, also diary any **different return deadline** in HMRC’s letter or email. Re-check [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines) before you rely on any date.
-
-## What to track from day one (then read the full SA103 guide)
-
-Minimum useful log for a side hustle:
+Minimum useful columns for a side hustle:
 
 1. **Date**
 2. **Source / client / platform**
-3. **Type** — income or expense
+3. **Type** (income or expense)
 4. **Category**
 5. **Amount (GBP)**
-6. **Tax year** — e.g. 2025/26
+6. **Tax year** (for example \`2025/26\`)
 7. **Notes / invoice ref**
 
-Log weekly. Reconcile to bank, Stripe, or Etsy payouts monthly.
+### 3. Keep it up to date
 
-For a fuller walkthrough of SA103-style bookkeeping, columns, and common expense categories, read [UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)](/guides/uk-self-assessment-side-hustle-sa103).
+Log weekly. Reconcile against your bank, Stripe or Etsy payouts monthly.
 
-That guide is about *what* to track. This page is about *registering (including late)* and starting the sheet before January.
+### 4. Put your deadlines in the diary
+
+Add 31 January for online filing and payment. If you registered late, also add any different return deadline from HMRC's letter or email.
+
+For a fuller walkthrough of SA103-style bookkeeping and common expense categories, read [UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)](/guides/uk-self-assessment-side-hustle-sa103). That guide covers *what* to track. This page covers *registering* and getting your records started.
 
 ## How UkMoneySheets fits
 
@@ -91,7 +84,7 @@ If you want a ready-made **Google Sheets** layout (not Excel) for side-hustle in
 
 A **Side Hustle Bookkeeping Bundle** is a separate product if you want more than one year or extra tabs. It is not this link.
 
-Delivery is typically a PDF with a Sheets link — then **File → Make a copy** into your Drive.
+Delivery is typically a PDF with a Sheets link. You then use **File → Make a copy** to save it into your Drive.
 
 A template organises numbers. It does not register you with HMRC, file your return, or replace GOV.UK.
 
@@ -99,28 +92,27 @@ A template organises numbers. It does not register you with HMRC, file your retu
 
 ### Is 5 October the same as the tax return deadline?
 
-No. 5 October is when many first-timers must **tell HMRC** they need a return. Online filing is usually **31 January** on the current GOV.UK deadlines page — always re-check for your tax year.
+No. 5 October is when you must **tell HMRC** you need a return if you are new to Self Assessment or did not need to file last year. For 2025/26, online filing and payment are due by **31 January 2027**. Check the [deadlines page](https://www.gov.uk/self-assessment-tax-returns/deadlines) for your tax year.
 
-### I missed 5 October — am I banned from registering?
+### Can I still register after 5 October?
 
-No. Register as soon as you can on [GOV.UK](https://www.gov.uk/register-for-self-assessment). Late notification can mean a penalty in some cases, especially if tax is still unpaid at 31 January. See [penalties](https://www.gov.uk/self-assessment-tax-returns/penalties).
+Yes. Register as soon as you can on [GOV.UK](https://www.gov.uk/register-for-self-assessment). See the "Missed 5 October?" section above and GOV.UK's [penalties page](https://www.gov.uk/self-assessment-tax-returns/penalties).
 
 ### What if I only started my side hustle recently?
 
-If your income in the tax year that has ended triggers a return under GOV.UK’s rules, the registration date still matters. Check [who must send a tax return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) for your facts.
+What matters is your income in the tax year that has ended. If it means you need a return under GOV.UK's rules, the 5 October notify date applies. Check [who must send a tax return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) for your own facts.
 
 ### Is this tax advice?
 
-No. Checklist and education only.
+No. This is general information and a record-keeping checklist only.
 
-## Soft next step
+## Next steps
 
-1. Open [register for Self Assessment](https://www.gov.uk/register-for-self-assessment) today if the checker says you need a return — even if 5 October has passed
-2. Start (or copy) an income and expense sheet for the tax year you are reporting
-3. Read the full tracking guide: [UK Self Assessment for Side Hustles (SA103)](/guides/uk-self-assessment-side-hustle-sa103)
-4. If you want a UK Google Sheets template, grab a side-hustle / SA tracker from [UkMoneySheets](https://www.etsy.com/listing/4462593252)
-
-Missed October? Register now. January is for filing with clean numbers — and for paying on time if you owe tax.`;
+1. Check whether you need a return, then [register for Self Assessment on GOV.UK](https://www.gov.uk/register-for-self-assessment)
+2. Look out for your UTR by post
+3. Start (or copy) an income and expense sheet for the tax year you are reporting
+4. Read the full tracking guide: [UK Self Assessment for Side Hustles (SA103)](/guides/uk-self-assessment-side-hustle-sa103)
+5. If you want a UK Google Sheets template, see the side-hustle tax tracker from [UkMoneySheets](https://www.etsy.com/listing/4462593252)`;
 
 export const sideHustle = `> This article is general information about record-keeping, not personalised tax advice. Rules change. Check current guidance on GOV.UK or speak to a qualified adviser before you file.
 

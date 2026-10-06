@@ -115,15 +115,15 @@ export const guides: GuideMeta[] = [
     slug: "register-self-assessment-5-october",
     ctaUrl: "https://www.etsy.com/listing/4462593252",
     title:
-      "Missed the 5 October Self Assessment Deadline? Register Late + Spreadsheet Setup (UK)",
+      "How to Register for Self Assessment (UK): Deadlines, Late Registration + Spreadsheet Setup",
     description:
-      "If you needed to tell HMRC about Self Assessment by 5 October after the tax year ended and you missed it, register as soon as you can, watch for a failure-to-notify risk if tax is still unpaid at 31 January, and start a simple UK income and expense spreadsheet before you file.",
+      "How to register for Self Assessment on GOV.UK, what the 5 October notify date means, what happens if you register late, and how to set up simple income and expense records in Google Sheets before you file.",
     metaDescription:
-      "Missed 5 October Self Assessment registration? Register late, check GOV.UK on penalties, and set up a UK spreadsheet before January.",
+      "Register for Self Assessment, what the 5 October deadline means, what happens if you register late, and how to set up your records in Google Sheets.",
     category: "Tax",
     featured: true,
     image: "/guides/register-self-assessment-5-october.jpg",
-    imageAlt: "Register for Self Assessment by 5 October: Google Sheets dashboard preview, sample data",
+    imageAlt: "Register for Self Assessment: Google Sheets dashboard preview, sample data",
     ogImage: "/og/register-self-assessment-5-october.jpg",
     ogImageAlt: "Register for Self Assessment by 5 October \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,

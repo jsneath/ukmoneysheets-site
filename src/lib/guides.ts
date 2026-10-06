@@ -124,8 +124,8 @@ export const guides: GuideMeta[] = [
     featured: true,
     image: "/guides/register-self-assessment-5-october.jpg",
     imageAlt: "Register for Self Assessment: Google Sheets dashboard preview, sample data",
-    ogImage: "/og/register-self-assessment-5-october.jpg",
-    ogImageAlt: "Register for Self Assessment by 5 October \u2014 UkMoneySheets Google Sheets guide",
+    ogImage: "/og/register-self-assessment-5-october.jpg?v=2",
+    ogImageAlt: "Register for Self Assessment \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -133,8 +133,8 @@ export const guides: GuideMeta[] = [
         alt: "Real Google Sheets screenshot: records ready for your 2025/26 return, sample data",
       },
       nearChecklist: {
-        src: "/guides/inguide/register-self-assessment-5-october/2.webp",
-        alt: "Registering for Self Assessment: Check on GOV.UK whether you need to register; Register by 5 October after the tax year ends; Keep your UTR safe when HMRC sends it; Set up your income and expenses sheet; Online returns are due by 31 January",
+        src: "/guides/inguide/register-self-assessment-5-october/2.webp?v=2",
+        alt: "Registering for Self Assessment: Check on GOV.UK whether you need to register; Usual deadline: 5 October after the tax year ends; Missed it? Register as soon as you can; Keep your UTR safe when HMRC sends it; Online filing and payment: 31 January; Late payment can bring penalties",
       },
     },
     shopLine:

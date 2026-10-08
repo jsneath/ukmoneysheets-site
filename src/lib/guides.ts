@@ -415,10 +415,21 @@ export const guides: GuideMeta[] = [
     metaDescription:
       "Does your side hustle or rental income put you in Making Tax Digital from April 2027? Add up 2025/26 gross income against £30k and plan quarterly updates.",
     category: "Tax",
-    // No Nia pack yet: reuse the SA103 card; og falls back to /og.jpg.
-    image: "/guides/uk-self-assessment-side-hustle-sa103.jpg",
-    imageAlt: "Side hustle records for SA103: Google Sheets dashboard preview, sample data",
+    image: "/guides/making-tax-digital-30k-april-2027.jpg",
+    imageAlt: "Making Tax Digital £30k qualifying income check: Google Sheets dashboard preview, sample data",
+    ogImage: "/og/making-tax-digital-30k-april-2027.jpg",
+    ogImageAlt: "Making Tax Digital £30k qualifying income check — UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/making-tax-digital-30k-april-2027/1.webp",
+        alt: "Real Google Sheets screenshot: log gross income and expenses as you go, sample data (a record-keeping sheet, not MTD software)",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/making-tax-digital-30k-april-2027/2.webp",
+        alt: "Check if MTD applies to you: Add self-employment and property income together; Use turnover before expenses, not profit; PAYE salary, dividends and pensions don't count; Jointly owned rental? Count only your share; Over £30k: digital records + quarterly updates; A Google Sheet holds records; bridging software sends updates",
+      },
+    },
     faqSchema: true,
     shopLine:
       "Get the UK Side Hustle Tax Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
@@ -437,10 +448,21 @@ export const guides: GuideMeta[] = [
     metaDescription:
       "Work out your adjusted net income, see how pension and Gift Aid lower it, and check the £100k childcare limit and the £60k–£80k Child Benefit charge.",
     category: "Tax",
-    // No Nia pack yet: reuse the monthly budget card (matches the CTA listing); og falls back to /og.jpg.
-    image: "/guides/uk-monthly-budget-google-sheets.jpg",
-    imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
+    image: "/guides/adjusted-net-income-100k-childcare-hicbc.jpg",
+    imageAlt: "The £100k childcare cliff and adjusted net income: Google Sheets dashboard preview, sample data",
+    ogImage: "/og/adjusted-net-income-100k-childcare-hicbc.jpg",
+    ogImageAlt: "The £100k childcare cliff and adjusted net income — UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
+    inGuideImages: {
+      afterIntro: {
+        src: "/guides/inguide/adjusted-net-income-100k-childcare-hicbc/1.webp",
+        alt: "Real Google Sheets screenshot: map take-home pay and monthly outgoings, sample data (a budget planner, not an ANI calculator)",
+      },
+      nearChecklist: {
+        src: "/guides/inguide/adjusted-net-income-100k-childcare-hicbc/2.webp",
+        alt: "Work out your adjusted net income: Start with all taxable income, not just salary; Include bonus, savings interest and dividends; Each parent is tested on their own; Over £100k: no Tax-Free Childcare or 30 hours (England); Relief-at-source pension: £1 paid = £1.25 off; HICBC: 1% per £200 over £60k, all of it at £80k",
+      },
+    },
     faqSchema: true,
     shopLine:
       "Get the UK Salary / Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",

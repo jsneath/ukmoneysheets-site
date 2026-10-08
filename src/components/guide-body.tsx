@@ -26,7 +26,7 @@ function Figure({
 }
 
 function isChecklistHeading(text: string) {
-  return /checklist|what to (track|log|keep)|before you overpay|plan your house|plan christmas|registering for self|set up your monthly/i.test(
+  return /checklist|what to (track|log|keep)|before you overpay|plan your house|plan christmas|registering for self|set up your monthly|^add it up:|^work it out:/i.test(
     text,
   );
 }

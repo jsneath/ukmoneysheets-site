@@ -30,6 +30,8 @@ export type GuideMeta = {
   shopLine?: string;
   /** Buyer link for this guide. Omit to keep the shop URL. */
   ctaUrl?: string;
+  /** Emit FAQPage JSON-LD from the article's "## FAQ" section. */
+  faqSchema?: boolean;
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -401,6 +403,28 @@ export const guides: GuideMeta[] = [
       "register-self-assessment-5-october",
       "uk-landlord-section-24",
       "uk-crypto-section-104",
+    ],
+  },
+  {
+    slug: "adjusted-net-income-100k-childcare-hicbc",
+    ctaUrl: "https://www.etsy.com/listing/4460132151",
+    title: "£100k Childcare Cliff: Work Out Your Adjusted Net Income (UK)",
+    description:
+      "You lose Tax-Free Childcare and England's 30 hours of free childcare if you or your partner expect adjusted net income over £100,000 this tax year — and that's your total taxable income (pay, bonus, savings interest, dividends, side-hustle profit) minus certain reliefs, not your salary. Paying into a relief-at-source pension lowers it by the grossed-up amount (£1 paid = £1.25 off), as does Gift Aid, while net-pay and salary-sacrifice contributions are already out of your taxable pay. The same figure sets the High Income Child Benefit Charge (1% for every £200 over £60,000, all of it at £80,000) — and the Conservative pledge to scrap the £100k cliff hasn't changed any of these rules.",
+    metaDescription:
+      "Work out your adjusted net income, see how pension and Gift Aid lower it, and check the £100k childcare limit and the £60k–£80k Child Benefit charge.",
+    category: "Tax",
+    // No Nia pack yet: reuse the monthly budget card (matches the CTA listing); og falls back to /og.jpg.
+    image: "/guides/uk-monthly-budget-google-sheets.jpg",
+    imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
+    showHeaderImage: false,
+    faqSchema: true,
+    shopLine:
+      "Get the UK Salary / Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+    related: [
+      "uk-monthly-budget-google-sheets",
+      "uk-self-assessment-side-hustle-sa103",
+      "register-self-assessment-5-october",
     ],
   },
 ];

@@ -1,7 +1,7 @@
 import { cashIsa, christmas, helpToSave } from "./savings";
 import { monthlyBudget, sheetsVsExcel } from "./budgeting";
 import { houseDeposit, landlord, mortgage } from "./property";
-import { crypto, registerSa, sideHustle } from "./tax";
+import { anic100k, crypto, registerSa, sideHustle } from "./tax";
 
 export const articles: Record<string, string> = {
   "cash-isa-12k-under-65-planner": cashIsa,
@@ -15,6 +15,7 @@ export const articles: Record<string, string> = {
   "uk-crypto-section-104": crypto,
   "uk-landlord-section-24": landlord,
   "uk-self-assessment-side-hustle-sa103": sideHustle,
+  "adjusted-net-income-100k-childcare-hicbc": anic100k,
 };
 
 export function getArticle(slug: string) {

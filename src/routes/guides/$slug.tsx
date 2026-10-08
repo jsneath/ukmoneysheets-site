@@ -6,6 +6,7 @@ import { ShopCta } from "@/components/shop-cta";
 import { Button } from "@/components/ui/button";
 import { getGuide, relatedGuides } from "@/lib/guides";
 import { getArticle } from "@/lib/articles";
+import { faqJsonLdScript } from "@/lib/faq";
 import { SITE, pageHead } from "@/lib/site";
 
 export const Route = createFileRoute("/guides/$slug")({
@@ -23,8 +24,8 @@ export const Route = createFileRoute("/guides/$slug")({
         path: "/guides",
       });
     }
-    const { guide } = loaderData;
-    return pageHead({
+    const { guide, article } = loaderData;
+    const head = pageHead({
       title: `${guide.title} | ${SITE.name}`,
       description: guide.metaDescription,
       path: `/guides/${guide.slug}`,
@@ -32,6 +33,8 @@ export const Route = createFileRoute("/guides/$slug")({
       image: guide.ogImage,
       imageAlt: guide.ogImageAlt,
     });
+    const faq = guide.faqSchema ? faqJsonLdScript(article) : null;
+    return faq ? { ...head, scripts: [faq] } : head;
   },
   component: GuidePage,
 });

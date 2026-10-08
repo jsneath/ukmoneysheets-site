@@ -617,3 +617,246 @@ No. It's general information based on GOV.UK as at October 2026. Check the linke
 A Google Sheet can hold your MTD digital records, but it can't send anything to HMRC on its own. You'll need HMRC-recognised bridging software that links to your sheet (no copy-and-paste), or other compatible software. UkMoneySheets templates are Google Sheets record-keeping and planning tools — they are not MTD software.
 
 Tracking a side hustle or a rental this tax year? The **[Side Hustle 2026/27](https://www.etsy.com/listing/4533504008)** sheet and the **[UK Landlord / Section 24](https://www.etsy.com/listing/4467684075)** sheet are Google Sheets templates for logging gross income and expenses as you go — handy for adding up your qualifying income. They're record-keeping tools, not MTD submission software. You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;
+
+export const anic100k = `*General information, not tax, pension or financial advice. Rules are from GOV.UK for the 2026/27 tax year — check the linked pages or a regulated adviser before changing pension contributions. Example figures are made up for illustration.*
+
+---
+
+## The £100k childcare cliff in one minute
+
+**Adjusted net income** (ANI) is your total taxable income before Personal Allowances, less certain reliefs such as pension contributions and Gift Aid ([GOV.UK: adjusted net income](https://www.gov.uk/guidance/adjusted-net-income)). It's the number that decides all three thresholds in this guide.
+
+**Who loses what if either parent's expected ANI is over £100,000 for the current tax year:**
+
+- **Tax-Free Childcare (UK-wide):** the government adds £2 for every £8 you pay in, up to **£500 per child every 3 months (£2,000 a year)**, or £1,000 every 3 months (£4,000 a year) if your child is disabled. Your child must be 11 or younger (16 or younger if disabled). You're not eligible if you or your partner expect ANI over £100,000 for the current tax year ([GOV.UK: Tax-Free Childcare eligibility](https://www.gov.uk/tax-free-childcare/check-if-youre-eligible)).
+- **Free Childcare for Working Parents — the "30 hours" (England):** for children **aged 9 months to 4 years**, **30 hours a week for 38 weeks** a year. Same test: not eligible if you or your partner expect ANI over £100,000 for the current tax year ([GOV.UK: 30 hours free childcare](https://www.gov.uk/check-eligible-free-childcare-if-youre-working)).
+- **What stays:** all 3- and 4-year-olds in England still get **15 hours a week regardless of income**.
+
+Three things about the test that people often get wrong:
+
+1. **It's per parent.** Each parent's ANI is tested on its own. One parent over £100,000 is enough to lose eligibility, even if the other earns much less. It is not a test of your combined income.
+2. **"Over" means over.** The rule is ANI *over* £100,000, so exactly £100,000 isn't over the limit.
+3. **It's "expected" ANI for the current tax year** (6 April 2026 to 5 April 2027), and you reconfirm every 3 months.
+
+**Rules unchanged — pledge only.** On 3 October 2026, Conservative leader Kemi Badenoch said a Conservative government would scrap the £100,000 "cliff edge" for 30 hours' funded childcare and Tax-Free Childcare in England ([BBC News](https://www.bbc.co.uk/news/articles/cmn06l362ypeo)). The Conservative proposal is an opposition pledge; it is not law. The rules below are the ones that apply today.
+
+---
+
+## What adjusted net income is (GOV.UK's 4 steps, in plain English)
+
+### Step 1: add up your taxable income ("net income")
+
+Include things like:
+
+- Employment pay and **benefits in kind** (your P11D items, such as a company car)
+- **Bonuses**
+- **Self-employment profit** — including selling through websites or apps (see [our side-hustle Self Assessment guide](/guides/uk-self-assessment-side-hustle-sa103) for working out profit)
+- Some rental income
+- **Savings interest**
+- **Dividends**
+- Most pensions, some state benefits, trust income and foreign income
+
+Then take off **pension contributions paid gross** (made without tax relief) and **trading losses**.
+
+### Step 2: take off Gift Aid, grossed up
+
+For every £1 you donate through Gift Aid, take **£1.25** off.
+
+### Step 3: take off relief-at-source pension contributions, grossed up
+
+For every £1 you pay into a pension where the provider has already added basic-rate relief, take **£1.25** off.
+
+### Step 4: add back trade union or police superannuation relief
+
+If you took off relief of up to £100 for these payments in step 1, add it back.
+
+**GOV.UK's own examples:** Bill has £115,000 of income and pays £10,000 into a pension without tax relief, so his ANI is **£105,000**. Clara has £70,000 of income, pays £4,750 into a pension without tax relief and gives £1,000 through Gift Aid (£1,250 grossed up), so her ANI is **£64,000**.
+
+---
+
+## How pension contributions change your ANI
+
+How much a contribution moves your ANI depends on how it's paid. Check your payslip and P60 to see which type you have.
+
+| How you pay in | What happens to tax | Effect on ANI |
+| --- | --- | --- |
+| **Net pay arrangement** (workplace pension taken before tax) | Your employer takes it out of your pay before deducting Income Tax | Already left out of your taxable pay on your P60 — **don't deduct it again** |
+| **Relief at source** (all personal and stakeholder pensions, including SIPPs, and some workplace schemes) | You pay in; your provider adds 20% | Deduct the **grossed-up** amount: **× 1.25** (£4,000 paid = £5,000 off) |
+| **Salary sacrifice** | Your contractual cash pay is reduced | The sacrificed amount never enters taxable pay — **don't deduct it again** |
+
+### The double-count mistake
+
+If your pension comes out under net pay or salary sacrifice, your taxable pay figure is already lower. Deducting the contribution a second time makes your ANI look lower than it really is — which is the last thing you want near £100,000.
+
+### Higher-rate relief
+
+With relief at source, your provider only adds basic-rate relief. Higher and additional-rate taxpayers claim the extra relief through Self Assessment (or HMRC's claim service) ([GOV.UK: pension tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief)). If you've never filed a return, see our guide to [registering for Self Assessment](/guides/register-self-assessment-5-october).
+
+### Limits in one line
+
+Tax relief is limited to contributions worth up to **100% of your annual earnings**, and the **annual allowance is £60,000** (lower only if your threshold income is over £200,000 and your adjusted income is over £260,000) ([GOV.UK: annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance)). Salary sacrifice can't take your cash pay below the National Minimum Wage — your employer handles that ([GOV.UK: salary sacrifice](https://www.gov.uk/guidance/salary-sacrifice-and-the-effects-on-paye)).
+
+---
+
+## Gift Aid and other deductions
+
+- **Gift Aid:** the charity claims 25p for every £1 you give, so for ANI you deduct **£1.25** per £1 donated. Higher-rate donors can claim back the difference through Self Assessment or a tax-code change. Your donations must not be more than 4 times the tax you've paid that year ([GOV.UK: Gift Aid](https://www.gov.uk/donating-to-charity/gift-aid)).
+- **Payroll Giving:** taken before Income Tax, so it's already outside your taxable pay. Don't deduct it again.
+- **Trading losses:** come off at step 1.
+
+---
+
+## The three thresholds on one chart
+
+All three use the same ANI figure for the 2026/27 tax year.
+
+| ANI | What happens | Source |
+| --- | --- | --- |
+| Over **£60,000** up to **£80,000** | High Income Child Benefit Charge: 1% of your Child Benefit for every £200 over £60,000 | [GOV.UK](https://www.gov.uk/child-benefit-tax-charge) |
+| **£80,000** and above | Charge equals all of your Child Benefit | [GOV.UK](https://www.gov.uk/child-benefit-tax-charge) |
+| Expected ANI over **£100,000** (either parent) | No Tax-Free Childcare; no 30 hours in England (15 universal hours for 3–4s stay) | [GOV.UK](https://www.gov.uk/tax-free-childcare/check-if-youre-eligible) |
+| Over **£100,000** up to **£125,140** | Personal Allowance (£12,570) cut by £1 for every £2 over £100,000 | [GOV.UK](https://www.gov.uk/income-tax-rates) |
+| **£125,140** and above | Personal Allowance is zero | [GOV.UK](https://www.gov.uk/income-tax-rates) |
+
+Income tax bands are different in Scotland ([GOV.UK](https://www.gov.uk/income-tax-rates)).
+
+---
+
+## Work it out: the ANI worksheet
+
+*Made-up figures for illustration. Not advice — check GOV.UK or a regulated adviser.*
+
+Build this in Google Sheets with **one column per parent**, so each parent's ANI is checked separately.
+
+### Rows
+
+1. Employment taxable pay (after net-pay or salary sacrifice — from your payslip or P60)
+2. Bonus / benefits in kind
+3. Self-employment profit
+4. Property profit
+5. Savings interest
+6. Dividends
+7. Other taxable income
+8. **= Net income before reliefs**
+9. Less gross pension contributions paid without relief
+10. Less trading losses
+11. Less Gift Aid × 1.25
+12. Less relief-at-source pension contributions × 1.25
+13. Add back union or police relief
+14. **= ANI**
+
+### Flags and formulas
+
+- **Childcare limit:** \`=IF(ANI>100000,"Over £100k","Within")\`
+- **Personal Allowance:** \`=MAX(0,12570-MAX(0,ANI-100000)/2)\`
+- **HICBC %:** \`=MIN(100,MAX(0,INT((ANI-60000)/200)))\` — counts only complete £200 steps (see the rounding note below)
+- **Annual Child Benefit:** \`=Weekly_rate*Weekly_payments\` — enter your total weekly rate (£27.05 for the eldest or only child, plus £17.90 for each additional child) and the number of weekly payments in the tax year: **53 for 2026/27** (most tax years have 52)
+- **HICBC £:** \`=ROUNDDOWN(HICBC_pct/100*Annual_Child_Benefit,0)\` — rounds down to whole pounds, matching the GOV.UK calculator
+- **Target ANI** (an input you choose), then:
+  - \`Gross reduction needed = MAX(0, ANI − Target)\`
+  - \`Relief-at-source payment = Gross reduction × 0.8\`
+
+### Example A: the childcare cliff (parent in England, child aged 2)
+
+| Step | Figure |
+| --- | --- |
+| Salary £104,000 + bonus £3,000 (no net-pay pension in this example) | £107,000 taxable pay |
+| Plus savings interest | £1,000 |
+| **Net income** | **£108,000** |
+| Gift Aid paid £400 → grossed up | £500 off |
+| **ANI** | **£107,500** |
+| Childcare check | Over £100k: no Tax-Free Childcare or 30 hours |
+| Personal Allowance | Cut by £3,750 to £8,820 |
+
+Now set a target ANI of **£99,000** (a buffer this parent chooses — not a recommendation):
+
+- Gross reduction needed: £107,500 − £99,000 = **£8,500**
+- Relief-at-source payment: £8,500 × 0.8 = **£6,800**; the provider adds £1,700
+- ANI after: **£99,000** → within the £100k childcare limit, and the full £12,570 Personal Allowance is restored
+- Higher-rate relief on the contribution is claimed through Self Assessment
+- The Child Benefit charge is still **100%** at £99,000 (it's over £80,000). With one child, Child Benefit for 2026/27 is £27.05 × 53 = **£1,433.65**, so the charge is **£1,433** (rounded down to whole pounds)
+- The partner's ANI is checked separately in the second column
+
+### Example B: the Child Benefit charge taper (two children)
+
+| Scenario | ANI | Charge % | Charge |
+| --- | --- | --- | --- |
+| No extra pension | £72,000 | (£72,000 − £60,000) ÷ £200 = 60% | 60% × £2,382.35 = £1,429.41 → **£1,429** |
+| Relief-at-source payment £4,800 (gross £6,000) | £66,000 | 30% | 30% × £2,382.35 = £714.705 → **£714** |
+| Relief-at-source payment £9,600 (gross £12,000) | £60,000 | 0% | **£0** |
+
+Child Benefit in this example: (£27.05 + £17.90) × 53 = **£2,382.35** for 2026/27 (rates from [GOV.UK: what you'll get](https://www.gov.uk/child-benefit/what-youll-get)). The 2026/27 tax year has **53 weekly Child Benefit payments**; most tax years have 52. Charges are rounded down to whole pounds. When we ran these examples through the [GOV.UK Child Benefit tax calculator](https://www.gov.uk/child-benefit-tax-calculator) in October 2026, it gave the same figures.
+
+**Note:** pension money is locked away until pension age. This shows the arithmetic only — it isn't a suggestion to pay in any amount.
+
+---
+
+## The High Income Child Benefit Charge part
+
+- **Threshold:** ANI over **£60,000** (from 2024/25).
+- **The charge:** 1% of your Child Benefit for every £200 over £60,000; all of it once your ANI is £80,000 or more.
+- **Who pays:** if both partners are over £60,000, the one with the **higher** ANI pays.
+- **How to pay:** through PAYE or Self Assessment. If you already file a return for another reason, you must pay it through Self Assessment.
+- **Opting out:** you can stop the payments but stay registered for Child Benefit. That keeps your National Insurance credits, which count towards your State Pension.
+
+([GOV.UK: High Income Child Benefit Charge](https://www.gov.uk/child-benefit-tax-charge))
+
+### A note on rounding
+
+GOV.UK's guidance gives the rule as "1% for every £200" without spelling out rounding. When we tested the [GOV.UK Child Benefit tax calculator](https://www.gov.uk/child-benefit-tax-calculator) for 2026/27 in October 2026, it counted only **complete** £200 steps (part of a £200 step didn't add another 1%) and showed the estimated charge **rounded down to whole pounds**. For 2026/27 it counted 53 weekly payments (£1,433.65 for one child, £2,382.35 for two), which is what the examples above use. Use the calculator for your own estimate.
+
+---
+
+## Timing and checks
+
+- **It's an estimate made in advance.** The childcare test uses your *expected* ANI for the current tax year, and you reconfirm every 3 months.
+- **Watch for late bonuses.** A bonus paid near the end of the tax year still counts towards that year's ANI.
+- **Keep a buffer.** Aiming exactly at the limit leaves no room for an unexpected bonus, extra interest or a P11D item.
+- **Check your payslip and P60** so you know whether your pension is net pay, relief at source or salary sacrifice.
+- **Scotland:** income tax bands differ. Childcare scheme rules also differ in Scotland, Wales and Northern Ireland; the 30 hours described here is England's scheme.
+- **Plan it monthly.** If you're adding pension contributions and childcare costs to your budget, see [how to use a UK monthly budget spreadsheet in Google Sheets](/guides/uk-monthly-budget-google-sheets).
+
+---
+
+## FAQ
+
+### Is the £100,000 childcare limit based on salary or adjusted net income?
+Adjusted net income. That's your total taxable income — including bonuses, benefits in kind, savings interest and dividends — less reliefs such as pension contributions and Gift Aid ([GOV.UK](https://www.gov.uk/guidance/adjusted-net-income)).
+
+### Is the £100k childcare limit per parent or per household?
+Per parent. Each parent's ANI is tested separately, and you're not eligible if either of you expects ANI over £100,000 for the current tax year ([GOV.UK](https://www.gov.uk/tax-free-childcare/check-if-youre-eligible)).
+
+### What happens if my adjusted net income is exactly £100,000?
+The rule is ANI *over* £100,000, so exactly £100,000 isn't over the limit. Check the wording on GOV.UK and leave yourself a margin, because the test uses expected income.
+
+### Do bonuses, savings interest and dividends count?
+Yes. All three are taxable income and count towards ANI.
+
+### How much does a £1 pension contribution reduce my adjusted net income?
+For a relief-at-source pension, each £1 you pay reduces ANI by £1.25 (the grossed-up amount). Net-pay and salary-sacrifice contributions are already out of your taxable pay, so you don't deduct them again.
+
+### Do salary sacrifice and net-pay pension contributions count the same way?
+They both come out before your taxable pay is worked out, so neither is deducted again. Relief-at-source contributions are different — you deduct them grossed up (× 1.25).
+
+### Does Gift Aid reduce adjusted net income?
+Yes. Each £1 donated through Gift Aid takes £1.25 off your ANI. Payroll Giving is already taken before tax.
+
+### How is the High Income Child Benefit Charge worked out?
+It's 1% of your Child Benefit for every £200 of ANI over £60,000, and the full amount at £80,000 or more. GOV.UK's [Child Benefit tax calculator](https://www.gov.uk/child-benefit-tax-calculator) gives an estimate.
+
+### Who pays the Child Benefit charge if both parents earn over £60,000?
+The parent with the higher adjusted net income pays it ([GOV.UK](https://www.gov.uk/child-benefit-tax-charge)).
+
+### Has the £100k childcare cliff been scrapped?
+No. Scrapping it is a Conservative opposition pledge announced in October 2026. It is not law, and the current rules still apply.
+
+### Is this tax or financial advice?
+No. It's general information based on GOV.UK rules for 2026/27. Check the linked pages or a regulated adviser before changing pension contributions.
+
+---
+
+## Plan the year in a sheet
+
+There's no dedicated UkMoneySheets ANI calculator. The worksheet above is a free example layout you can build in Google Sheets. If you want to plan take-home pay, pension and childcare costs month by month, the **UK Salary / Monthly Budget** sheet is the closest fit.
+
+Planning pay, pension contributions and childcare costs across the year? The [UK Salary / Monthly Budget Google Sheet](https://www.etsy.com/listing/4460132151) helps you map take-home pay and monthly outgoings. It's not an adjusted net income calculator — use GOV.UK for the rules. You can browse the rest of the range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;

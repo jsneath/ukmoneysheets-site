@@ -66,6 +66,8 @@ Another saver might put £5,000 in April and top up later. The sheet’s only jo
 
 For the household money that funds those transfers, see [How to Use a UK Monthly Budget Spreadsheet in Google Sheets](/guides/uk-monthly-budget-google-sheets) or the seasonal [UK Christmas Savings Tracker](/guides/uk-christmas-savings-tracker).
 
+If your income is close to £100,000 and you have young children, also [work out your adjusted net income (£100k childcare cliff)](/guides/adjusted-net-income-100k-childcare-hicbc) — pension contributions can lower it, but cash ISA subscriptions don't.
+
 ## What this is not
 
 - Not Lifetime ISA / first-home deposit maths — use the [house deposit / LISA guide](/guides/house-deposit-lisa-planner)

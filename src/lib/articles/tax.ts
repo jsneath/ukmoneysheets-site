@@ -424,7 +424,7 @@ Include things like:
 
 - Employment pay and **benefits in kind** (your P11D items, such as a company car)
 - **Bonuses**
-- **Self-employment profit** — including selling through websites or apps (see [our side-hustle Self Assessment guide](https://www.ukmoneysheets.co.uk/guides/uk-self-assessment-side-hustle-sa103) for working out profit)
+- **Self-employment profit** — including selling through websites or apps (see [our side-hustle Self Assessment guide](/guides/uk-self-assessment-side-hustle-sa103) for working out profit)
 - Some rental income
 - **Savings interest**
 - **Dividends**
@@ -464,7 +464,7 @@ If your pension comes out under net pay or salary sacrifice, your taxable pay fi
 
 ### Higher-rate relief
 
-With relief at source, your provider only adds basic-rate relief. Higher and additional-rate taxpayers claim the extra relief through Self Assessment (or HMRC's claim service) ([GOV.UK: pension tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief)). If you've never filed a return, see our guide to [registering for Self Assessment](https://www.ukmoneysheets.co.uk/guides/register-self-assessment-5-october).
+With relief at source, your provider only adds basic-rate relief. Higher and additional-rate taxpayers claim the extra relief through Self Assessment (or HMRC's claim service) ([GOV.UK: pension tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief)). If you've never filed a return, see our guide to [registering for Self Assessment](/guides/register-self-assessment-5-october).
 
 ### Limits in one line
 
@@ -588,7 +588,7 @@ GOV.UK's guidance gives the rule as "1% for every £200" without spelling out ro
 - **Keep a buffer.** Aiming exactly at the limit leaves no room for an unexpected bonus, extra interest or a P11D item.
 - **Check your payslip and P60** so you know whether your pension is net pay, relief at source or salary sacrifice.
 - **Scotland:** income tax bands differ. Childcare scheme rules also differ in Scotland, Wales and Northern Ireland; the 30 hours described here is England's scheme.
-- **Plan it monthly.** If you're adding pension contributions and childcare costs to your budget, see [how to use a UK monthly budget spreadsheet in Google Sheets](https://www.ukmoneysheets.co.uk/guides/uk-monthly-budget-google-sheets).
+- **Plan it monthly.** If you're adding pension contributions and childcare costs to your budget, see [how to use a UK monthly budget spreadsheet in Google Sheets](/guides/uk-monthly-budget-google-sheets).
 
 ---
 
@@ -633,13 +633,4 @@ No. It's general information based on GOV.UK rules for 2026/27. Check the linked
 
 There's no dedicated UkMoneySheets ANI calculator. The worksheet above is a free example layout you can build in Google Sheets. If you want to plan take-home pay, pension and childcare costs month by month, the **UK Salary / Monthly Budget** sheet is the closest fit.
 
-Planning pay, pension contributions and childcare costs across the year? The **UK Salary / Monthly Budget** Google Sheet (https://www.etsy.com/listing/4460132151) helps you map take-home pay and monthly outgoings. It's not an adjusted net income calculator — use GOV.UK for the rules. You can browse the rest of the range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).
-
-### Related guides
-- [How to use a UK monthly budget spreadsheet in Google Sheets](https://www.ukmoneysheets.co.uk/guides/uk-monthly-budget-google-sheets)
-- [UK Self Assessment for side hustles (SA103)](https://www.ukmoneysheets.co.uk/guides/uk-self-assessment-side-hustle-sa103)
-- [Register for Self Assessment by 5 October](https://www.ukmoneysheets.co.uk/guides/register-self-assessment-5-october)
-
----
-
-*Disclaimer: General information, not tax, pension or financial advice. Rules are from GOV.UK for the 2026/27 tax year — check the linked pages or a regulated adviser before changing pension contributions. Example figures are made up for illustration. Childcare scheme rules differ in Scotland, Wales and Northern Ireland; the 30 hours described here is England's scheme. The Conservative proposal is an opposition pledge; it is not law. Product names and shop links may change; check the live Etsy listing before you buy.*`;
+Planning pay, pension contributions and childcare costs across the year? The [UK Salary / Monthly Budget Google Sheet](https://www.etsy.com/listing/4460132151) helps you map take-home pay and monthly outgoings. It's not an adjusted net income calculator — use GOV.UK for the rules. You can browse the rest of the range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;

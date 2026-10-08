@@ -84,7 +84,7 @@ List income lines clearly, for example:
 - Regular side income you can rely on
 - Benefits or other regular credits you treat as income
 
-If a pay rise or bonus takes either of you close to £100,000, [work out your adjusted net income (£100k childcare cliff)](https://www.ukmoneysheets.co.uk/guides/adjusted-net-income-100k-childcare-hicbc) before you plan childcare costs — it decides Tax-Free Childcare and the 30 free hours in England.
+If a pay rise or bonus takes either of you close to £100,000, [work out your adjusted net income (£100k childcare cliff)](/guides/adjusted-net-income-100k-childcare-hicbc) before you plan childcare costs — it decides Tax-Free Childcare and the 30 free hours in England.
 
 If your pay varies (shifts, freelance, commission), use a **cautious** month as the plan — a typical quieter month — and treat stronger months as bonus top-ups to savings or debt, not as a new permanent lifestyle floor.
 

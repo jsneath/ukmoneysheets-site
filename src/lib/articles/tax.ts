@@ -616,13 +616,4 @@ No. It's general information based on GOV.UK as at October 2026. Check the linke
 
 A Google Sheet can hold your MTD digital records, but it can't send anything to HMRC on its own. You'll need HMRC-recognised bridging software that links to your sheet (no copy-and-paste), or other compatible software. UkMoneySheets templates are Google Sheets record-keeping and planning tools — they are not MTD software.
 
-Tracking a side hustle or a rental this tax year? The **Side Hustle 2026/27** sheet (https://www.etsy.com/listing/4533504008) and the **UK Landlord / Section 24** sheet (https://www.etsy.com/listing/4467684075) are Google Sheets templates for logging gross income and expenses as you go — handy for adding up your qualifying income. They're record-keeping tools, not MTD submission software. You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).
-
-### Related guides
-- [UK Self Assessment for side hustles (SA103)](/guides/uk-self-assessment-side-hustle-sa103)
-- [UK landlords and Section 24](/guides/uk-landlord-section-24)
-- [Register for Self Assessment by 5 October](/guides/register-self-assessment-5-october)
-
----
-
-*Disclaimer: This guide is general information, not tax advice. Rules and dates are from GOV.UK as at October 2026 — check the linked GOV.UK pages or a qualified adviser for your situation. Example figures are made up for illustration. UkMoneySheets templates are not HMRC-recognised MTD software. Product names and shop links may change; check the live Etsy listing before you buy.*`;
+Tracking a side hustle or a rental this tax year? The **[Side Hustle 2026/27](https://www.etsy.com/listing/4533504008)** sheet and the **[UK Landlord / Section 24](https://www.etsy.com/listing/4467684075)** sheet are Google Sheets templates for logging gross income and expenses as you go — handy for adding up your qualifying income. They're record-keeping tools, not MTD submission software. You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;

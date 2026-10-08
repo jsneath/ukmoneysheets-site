@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { GuideBody } from "@/components/guide-body";
+import { FreeToolCta } from "@/components/free-tool-cta";
 import { GuideCard } from "@/components/guide-card";
 import { ShopCta } from "@/components/shop-cta";
 import { Button } from "@/components/ui/button";
@@ -90,6 +91,8 @@ function GuidePage() {
 
         <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8 sm:py-16">
           <GuideBody source={article} images={guide.inGuideImages} />
+
+          {guide.freeToolCta ? <FreeToolCta className="mt-12" /> : null}
 
           <div className="mt-14 rounded-xl border border-line bg-paper px-6 py-6 sm:px-7">
             <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">

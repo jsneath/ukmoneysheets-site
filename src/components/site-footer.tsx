@@ -38,6 +38,14 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link
+                to="/free-take-home-pay-checker"
+                className="text-ivory no-underline hover:text-mint"
+              >
+                Free take-home pay checker
+              </Link>
+            </li>
+            <li>
               <a
                 href={SITE.shopUrl}
                 target="_blank"

@@ -262,6 +262,8 @@ Plan to track at least:
 
 Keep records for the period GOV.UK requires (for property income this is commonly **at least 5 years after the 31 January deadline** for the relevant tax year — confirm on the live guidance).
 
+If your share of gross rent plus any self-employment income came to more than £30,000 in 2025/26 (before expenses), quarterly digital updates to HMRC may apply to you from 6 April 2027. See [Making Tax Digital from April 2027 (£30k check)](/guides/making-tax-digital-30k-april-2027).
+
 Whether you must register for Self Assessment, and when the **property allowance** applies, depends on your figures and situation. Use GOV.UK’s current thresholds rather than memorising a blog post.
 
 ## Section 24 in plain English (finance cost restriction)

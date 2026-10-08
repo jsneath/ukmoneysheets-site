@@ -32,6 +32,8 @@ export type GuideMeta = {
   ctaUrl?: string;
   /** Emit FAQPage JSON-LD from the article's "## FAQ" section. */
   faqSchema?: boolean;
+  /** Show the free take-home pay checker promo after the article body. */
+  freeToolCta?: boolean;
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -115,6 +117,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "register-self-assessment-5-october",
+    freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4462593252",
     title:
       "How to Register for Self Assessment (UK): Deadlines, Late Registration + Spreadsheet Setup",
@@ -342,6 +345,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-landlord-section-24",
+    freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4467684075",
     title: "UK Landlord Spreadsheet: Track Rental Income for Self Assessment",
     description:
@@ -374,6 +378,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-self-assessment-side-hustle-sa103",
+    freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4533504008",
     title:
       "UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)",
@@ -407,6 +412,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "making-tax-digital-30k-april-2027",
+    freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4533504008",
     title:
       "Making Tax Digital £30k Threshold (April 2027): Qualifying Income Check",
@@ -441,6 +447,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "adjusted-net-income-100k-childcare-hicbc",
+    freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4460132151",
     title: "£100k Childcare Cliff: Work Out Your Adjusted Net Income (UK)",
     description:

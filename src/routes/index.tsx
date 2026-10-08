@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, BookOpen, Landmark, Smartphone } from "lucide-react";
+import { FreeToolCta } from "@/components/free-tool-cta";
 import { GuideCard } from "@/components/guide-card";
 import { ShopCta } from "@/components/shop-cta";
 import { LedgerPreview } from "@/components/ledger-preview";
@@ -80,6 +81,10 @@ function Home() {
       <p className="mx-auto max-w-6xl px-5 py-3 text-center text-xs tracking-[0.08em] text-muted sm:px-8">
         As seen in your tax year — categories and dates that match 6 April to 5 April, not a US fiscal calendar.
       </p>
+
+      <section className="mx-auto max-w-6xl px-5 pt-6 sm:px-8">
+        <FreeToolCta />
+      </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
         <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">

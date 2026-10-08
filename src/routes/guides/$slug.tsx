@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { GuideBody } from "@/components/guide-body";
+import { AuthorBox } from "@/components/author-box";
 import { FreeToolCta } from "@/components/free-tool-cta";
 import { GuideCard } from "@/components/guide-card";
 import { ShopCta } from "@/components/shop-cta";
@@ -116,6 +117,8 @@ function GuidePage() {
               </a>
             </Button>
           </div>
+
+          <AuthorBox className="mt-6" />
         </div>
       </article>
 

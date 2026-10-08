@@ -21,6 +21,12 @@ export function SiteHeader() {
           >
             Guides
           </Link>
+          <Link
+            to="/about"
+            className="inline-flex h-11 items-center rounded-lg px-3.5 text-[0.95rem] font-medium text-navy no-underline hover:bg-mint/70"
+          >
+            About
+          </Link>
           <Button asChild variant="outline" size="sm" className="ml-2">
             <a
               href={SITE.shopUrl}
@@ -57,6 +63,13 @@ export function SiteHeader() {
             onClick={() => setOpen(false)}
           >
             Guides
+          </Link>
+          <Link
+            to="/about"
+            className="inline-flex min-h-11 items-center rounded-lg px-3 text-base font-medium text-navy no-underline hover:bg-mint/70"
+            onClick={() => setOpen(false)}
+          >
+            About
           </Link>
           <a
             href={SITE.shopUrl}

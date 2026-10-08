@@ -46,6 +46,14 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link
+                to="/about"
+                className="text-ivory no-underline hover:text-mint"
+              >
+                About
+              </Link>
+            </li>
+            <li>
               <a
                 href={SITE.shopUrl}
                 target="_blank"

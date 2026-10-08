@@ -30,6 +30,8 @@ export type GuideMeta = {
   shopLine?: string;
   /** Buyer link for this guide. Omit to keep the shop URL. */
   ctaUrl?: string;
+  /** Emit FAQPage JSON-LD from the article's "## FAQ" section. */
+  faqSchema?: boolean;
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -401,6 +403,29 @@ export const guides: GuideMeta[] = [
       "register-self-assessment-5-october",
       "uk-landlord-section-24",
       "uk-crypto-section-104",
+    ],
+  },
+  {
+    slug: "making-tax-digital-30k-april-2027",
+    ctaUrl: "https://www.etsy.com/listing/4533504008",
+    title:
+      "Making Tax Digital £30k Threshold (April 2027): Qualifying Income Check",
+    description:
+      "From 6 April 2027, you must use Making Tax Digital for Income Tax if you're a sole trader or landlord whose qualifying income on your 2025/26 tax return was over £30,000. Qualifying income is your self-employment and property income added together before expenses — so £18,500 of side-hustle sales plus £14,400 of rent is £32,900, even if your profit is far lower (example only). If you're in, you'll keep digital records and send quarterly updates through HMRC-recognised software; a spreadsheet can hold your records, but only if bridging software links it to HMRC.",
+    metaDescription:
+      "Does your side hustle or rental income put you in Making Tax Digital from April 2027? Add up 2025/26 gross income against £30k and plan quarterly updates.",
+    category: "Tax",
+    // No Nia pack yet: reuse the SA103 card; og falls back to /og.jpg.
+    image: "/guides/uk-self-assessment-side-hustle-sa103.jpg",
+    imageAlt: "Side hustle records for SA103: Google Sheets dashboard preview, sample data",
+    showHeaderImage: false,
+    faqSchema: true,
+    shopLine:
+      "Get the UK Side Hustle Tax Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+    related: [
+      "uk-self-assessment-side-hustle-sa103",
+      "uk-landlord-section-24",
+      "register-self-assessment-5-october",
     ],
   },
 ];

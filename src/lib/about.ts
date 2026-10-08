@@ -5,7 +5,10 @@ import { SITE, absoluteUrl } from "@/lib/site";
  * To add one later: put a square image at public/about/james.jpg and set
  *   export const ABOUT_PHOTO = { src: "/about/james.jpg", alt: "…" };
  */
-export const ABOUT_PHOTO: { src: string; alt: string } | null = null;
+export const ABOUT_PHOTO: { src: string; alt: string } | null = {
+  src: "/about/james.jpg",
+  alt: "James, founder of UkMoneySheets, smiling in a grey jacket, white shirt and maroon tie.",
+};
 
 /** Approved copy: brand/2026-10-08-about-james-copy.md, section 3 (verbatim). */
 export const ABOUT_COPY = {
@@ -50,6 +53,7 @@ export function aboutJsonLdScript() {
         "@id": PERSON_ID,
         name: "James",
         url: aboutUrl,
+        ...(ABOUT_PHOTO ? { image: absoluteUrl(ABOUT_PHOTO.src) } : {}),
         worksFor: { "@id": ORG_ID },
       },
       {

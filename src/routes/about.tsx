@@ -57,14 +57,15 @@ function AboutPage() {
           </Button>
         </div>
         {ABOUT_PHOTO ? (
-          <div className="overflow-hidden rounded-xl bg-paper hairline">
+          <div className="w-full max-w-[400px] overflow-hidden rounded-xl bg-paper hairline lg:justify-self-end">
+            {/* Native 400×400: never display larger than that. */}
             <img
               src={ABOUT_PHOTO.src}
               alt={ABOUT_PHOTO.alt}
-              width={800}
-              height={800}
+              width={400}
+              height={400}
               decoding="async"
-              className="aspect-square w-full object-cover"
+              className="block aspect-square h-auto w-full max-w-[400px] object-cover"
             />
           </div>
         ) : null}

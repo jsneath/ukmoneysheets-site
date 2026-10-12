@@ -251,6 +251,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "sheets-vs-excel-uk-budgeting",
+    ctaUrl: "https://www.etsy.com/listing/4460132151",
     title: "Google Sheets vs Excel for UK Household Budgeting",
     description:
       "For most UK households that budget together or on a phone, Google Sheets is the simpler fit; Excel still wins if you need heavy offline modelling, advanced Excel-only features, or you already live in a Microsoft 365 workflow.",
@@ -273,6 +274,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine: "Browse UkMoneySheets on Etsy — Google Sheets only, never Excel.",
+    freeToolCta: true,
     related: [
       "uk-monthly-budget-google-sheets",
       "uk-christmas-savings-tracker",

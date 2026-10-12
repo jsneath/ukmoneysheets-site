@@ -326,6 +326,8 @@ Pick a round **January buffer** target (even £100–£200 helps; larger if you 
 
 Gifts and January buffer compete for the same money. Decide the split on purpose: for example 70% gifts/food/travel, 30% January — then adjust once, not every time you see a sale.
 
+If you plan to buy gifts in the November sales, use our [Black Friday spending cap and price log](/guides/black-friday-spending-cap-price-log) guide to set a cap from your gift budget and check whether a deal is really a discount.
+
 ## Weekly rhythm from autumn
 
 Pick a 15-minute slot each week (Sunday evening works for many):

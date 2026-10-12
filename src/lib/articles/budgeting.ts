@@ -126,6 +126,8 @@ Common UK examples:
 
 Work out the yearly cost, divide by 12 (or by the months until the bill), and treat that monthly amount as a planned line. When the bill arrives, the money is already waiting in savings or a labelled pot.
 
+If some of your Christmas pot will go in the Black Friday sales, our [Black Friday spending cap and price log](/guides/black-friday-spending-cap-price-log) guide shows how to cap that spending and check sale prices.
+
 ## Shared budgets (partners)
 
 Google Sheets works well for couples because you can share **one live file** with edit access.
@@ -284,3 +286,140 @@ If you and a partner need one shared file on phones, open a Google Sheet this we
 If you want a ready-made UK layout in Sheets, get the **UK Monthly Budget Spreadsheet** (or the **Money Toolkit**) from [UkMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets), make a copy, and keep a fifteen-minute weekly review.
 
 Excel users: stick with Excel if it already works — just use UK categories.`;
+
+export const blackFriday = `*This guide is general information, not financial advice. Figures are from the sources linked, as at October 2026. Example figures are made up for illustration.*
+
+---
+
+## The short answer: cap first, then check the price
+
+Black Friday 2026 is **Friday 27 November**, and Cyber Monday is **Monday 30 November**. Two definitions are all you need:
+
+- A **spending cap** is the most you'll spend across the sales. It comes out of the gift money you've already planned for Christmas, so it isn't extra money.
+- A **genuine discount** is a price lower than the lowest price *you* saw for the same item in the weeks before. The retailer's "was" price doesn't count as proof.
+
+Your Black Friday budget is part of your Christmas gift budget, spent early. Set the cap first. Start logging the usual prices of the things you actually want now. Then only buy on the day if the price beats your own log.
+
+---
+
+## Why a cap matters this year
+
+- **More of the Christmas budget is going early.** In the IPA's 2026 Christmas Consumer Report (Opinium survey of 2,000 UK adults, 19–22 May 2026, published 30 July 2026), **22%** said they'll spend up to half their Christmas shopping budget during Black Friday. That's up from 16% in 2025 and 14% in 2023. The same report puts average expected Christmas spend at **£647**, with gifting **58%** of the average budget ([IPA](https://ipa.co.uk/news/christmas-consumer-2026)).
+- **Borrowing is on the table for many.** A Park survey reported by the Daily Mail put the average household Christmas cost at **£1,502**, including **£693.80 on presents**. It found **35%** plan to go into debt to pay for it, and only **22%** say they've saved through the year ([Daily Mail](https://www.dailymail.com/news/article-16200159/christmas-costs-debt-uk-families-budget-spending.html)). The IPA report found 15% plan to use a credit card and 14% Buy Now Pay Later.
+- **Spotting real deals is hard.** YouGov found **47% of likely Black Friday and Cyber Monday shoppers** say knowing whether discounts are genuine is "a difficult part" of the sales events ([YouGov, 8 October 2026](https://yougov.com/en-gb/reports/55674-uk-mega-sales-report-2026)).
+
+---
+
+## How to set your Black Friday cap
+
+1. **Start with your total Christmas budget** — everything: gifts, food, travel, decorations.
+2. **Take out the gift budget.** This is the money the sales can draw on.
+3. **Decide how much of the gift budget the sales can use.** That's your Black Friday cap. Whatever you spend on 27–30 November is gift money you won't have later.
+4. **Give each item on your list its own cap** where you can, so one big buy doesn't swallow the rest.
+5. **Write the cap down before the sales start**, not on the day.
+
+There's no single right amount. The point is that the cap sits *inside* your Christmas budget. If you're still saving towards Christmas, our [UK Christmas savings tracker guide](/guides/uk-christmas-savings-tracker) covers the saving side. This guide covers capping spend and checking sale prices.
+
+---
+
+## Build the price log in Google Sheets
+
+*Example figures, made up for illustration.*
+
+Use one row per item you're thinking of buying, and add a dated column each time you check the price. Start in October.
+
+| Column | Example row |
+| --- | --- |
+| Item | Kids' headphones (gift for Sam) |
+| Retailer / link | Retailer A |
+| Usual price history (dated checks) | 12 Oct £45 · 26 Oct £39 · 9 Nov £45 · 20 Nov £45 |
+| Lowest logged price | £39 (formula \`=MIN(...)\` across your dated checks) |
+| Black Friday price (27–30 Nov) | £40 (incl. delivery) |
+| "Was" price shown by retailer | £60 |
+| Cap (per item) | £40 |
+| Within cap? | Yes (\`=IF(BF<=Cap,"Yes","No")\`) |
+| Genuine discount? | No: £40 is higher than the £39 you logged (\`=IF(BF<LowestLogged,"Yes","No")\`) |
+| Buy? | Wait / consider |
+
+In this example the "was £60" label makes £40 look like a big saving, but your own log shows you saw it for £39 in October. It's within the cap, but it isn't a genuine discount.
+
+### Header block
+
+At the top of the sheet, keep:
+
+- **Total Christmas gift budget**
+- **Overall Black Friday cap**
+- **Running spend:** \`=SUMIF(Buy,"Bought",BF)\` — adds up the Black Friday price of every row marked "Bought"
+- **Cap left:** overall cap minus running spend
+
+### Make it visual
+
+Add a conditional formatting rule (Format → Conditional formatting) that turns a row red when its Black Friday price is over the cap. Keep the weekly check columns going from October to the sales.
+
+---
+
+## How to check whether a discount is genuine
+
+- **Use your own dated log, not the "was" price.** The retailer's reference price isn't a promise that the item usually sold at that price.
+- **There's no need to rush.** Which? tracked prices on 175 home, tech and health appliances at eight retailers from May 2024 to May 2025. **None** were at their cheapest price of the year on Black Friday itself, and **68%** were the same price or cheaper after the sales period. **42%** were cheaper at least once outside the sales period ([Which? news](https://www.which.co.uk/news/article/are-the-black-friday-sales-worth-the-hype-aUT1h6T5aLgj); [Which? research](https://www.which.co.uk/policy-and-insight/article/dont-believe-the-hype-most-black-friday-deals-the-same-price-or-cheaper-at-other-times-of-the-year-which-finds-a3TbD5x5KADs)).
+- **Compare like with like.** Same model, same version, and the **full price including delivery and any fees**. The CMA's price transparency guidance (CMA209) covers showing the full price, including mandatory fees and "drip pricing" ([CMA209](https://www.gov.uk/government/publications/price-transparency-cma209)).
+- **Be wary of countdown timers and "high demand" messages.** The CMA has acted against false urgency claims ([CMA: Emma Group case](https://www.gov.uk/cma-cases/emma-group-consumer-protection-case)).
+- **Don't rely on a simple legal rule.** As context only: the CMA withdrew its online mattress pricing principles on 30 July 2026 while it considers a High Court judgment on "was/now" pricing ([GOV.UK](https://www.gov.uk/government/publications/discount-and-reference-pricing-principles-selling-mattresses-online)). For shoppers, the practical point is that there's no simple rule to lean on, so your own price log is the best check. This isn't legal advice.
+- **Price-history tools exist** if you'd rather not check by hand. We don't name or rank any; your own sheet does the same job for the handful of items on your list.
+
+---
+
+## On the day: a 3-question check
+
+Before you buy anything on 27–30 November, ask:
+
+1. **Is it on my list?** If not, it isn't in the plan.
+2. **Is it below my lowest logged price?** If not, it isn't a genuine discount.
+3. **Is it within the cap that's left?** Check the "cap left" cell before you pay.
+
+Three yeses: buy it and mark the row "Bought". Anything else: wait.
+
+---
+
+## After the sales
+
+- **Update your monthly budget** with what you actually spent, so December's numbers are real. See [how to use a UK monthly budget spreadsheet in Google Sheets](/guides/uk-monthly-budget-google-sheets).
+- **Keep logging anything you didn't buy.** Which? found 68% of the deals it tracked were the same price or cheaper after the sales period.
+- **Move any unspent cap back** into the Christmas gift budget.
+
+---
+
+## FAQ
+
+### When is Black Friday 2026 in the UK?
+Friday 27 November 2026. Cyber Monday is Monday 30 November 2026.
+
+### How much should I spend on Black Friday?
+There's no single right amount. Set a cap that comes out of your Christmas gift budget, not on top of it, and write it down before the sales start.
+
+### How can I tell if a Black Friday deal is genuine?
+Compare the Black Friday price, including delivery, with the lowest price you logged for the same item in the weeks before. If it isn't lower, it isn't a genuine discount, whatever the "was" price says.
+
+### Are Black Friday prices really the cheapest of the year?
+Not in Which?'s research. Of the 175 appliances it tracked, none were at their cheapest price of the year on Black Friday itself, and 83% were the same price or cheaper at least once outside the sales period ([Which?](https://www.which.co.uk/news/article/are-the-black-friday-sales-worth-the-hype-aUT1h6T5aLgj)).
+
+### Is the "was" price always a price the shop really charged?
+Not necessarily. There's no simple legal rule shoppers can rely on, so check it against your own price log.
+
+### Should I use a credit card or Buy Now Pay Later on Black Friday?
+That's a personal decision and this isn't advice. Buy Now Pay Later is a form of borrowing, so only use credit you're confident you can repay. MoneyHelper's free, impartial guide to [Buy Now Pay Later](https://www.moneyhelper.org.uk/en/everyday-money/credit/what-are-buy-now-pay-later-purchases) explains how it works.
+
+### Is it better to wait until after Black Friday?
+Often there's no penalty for waiting. Which? found 68% of the deals it tracked were the same price or cheaper after the sales period.
+
+### Can I track prices in Google Sheets?
+Yes. One row per item, a dated column for each price check, \`=MIN()\` for the lowest logged price and \`=IF()\` checks for the cap and genuine discount — the layout above.
+
+### Is this financial advice?
+No. It's general information based on the sources linked, as at October 2026.
+
+---
+
+## Plan your gifts around the sales
+
+Planning Christmas gifts around the sales? The [UK Christmas Savings Tracker](https://www.etsy.com/listing/4568011416) is a Google Sheets template for setting your gift budget and tracking spending against it. To see how December fits into the rest of your money, the [UK Monthly Budget sheet](https://www.etsy.com/listing/4460132151) does the same month to month. You can see the full range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;

@@ -479,6 +479,28 @@ export const guides: GuideMeta[] = [
       "register-self-assessment-5-october",
     ],
   },
+  {
+    slug: "black-friday-spending-cap-price-log",
+    ctaUrl: "https://www.etsy.com/listing/4568011416",
+    title: "Black Friday Spending Cap + Price Log (UK 2026): Is the Deal Real?",
+    description:
+      "Set a Black Friday spending cap by taking it out of your Christmas gift budget, not adding it on top. Then, from now until 27 November 2026, write down the price of each item you plan to buy every week or so. On Black Friday or Cyber Monday (30 November), a deal is only a real saving if it's lower than the lowest price you logged and it's still within your cap. Which? found that 83% of Black Friday sales-period deals it tracked were the same price or cheaper at another time of year.",
+    metaDescription:
+      "Set a Black Friday spending cap from your Christmas budget and log usual prices from now, so you can see if a 27–30 Nov 2026 deal is really a discount.",
+    category: "Budgeting",
+    // No Nia pack yet: reuse the Christmas savings tracker card (same CTA listing); og falls back to /og.jpg.
+    image: "/guides/uk-christmas-savings-tracker.jpg",
+    imageAlt: "Christmas savings tracker: Google Sheets dashboard preview, sample data",
+    showHeaderImage: false,
+    faqSchema: true,
+    shopLine:
+      "Get the UK Christmas Savings Tracker for Google Sheets on UkMoneySheets Etsy.",
+    related: [
+      "uk-christmas-savings-tracker",
+      "uk-monthly-budget-google-sheets",
+      "help-to-save-deposit-bonus-tracker",
+    ],
+  },
 ];
 
 export function featuredGuides() {

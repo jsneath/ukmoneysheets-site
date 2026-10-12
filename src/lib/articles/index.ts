@@ -1,5 +1,5 @@
 import { cashIsa, christmas, helpToSave } from "./savings";
-import { monthlyBudget, sheetsVsExcel } from "./budgeting";
+import { blackFriday, monthlyBudget, sheetsVsExcel } from "./budgeting";
 import { houseDeposit, landlord, mortgage } from "./property";
 import { anic100k, crypto, mtd30k, registerSa, sideHustle } from "./tax";
 
@@ -17,6 +17,7 @@ export const articles: Record<string, string> = {
   "uk-self-assessment-side-hustle-sa103": sideHustle,
   "making-tax-digital-30k-april-2027": mtd30k,
   "adjusted-net-income-100k-childcare-hicbc": anic100k,
+  "black-friday-spending-cap-price-log": blackFriday,
 };
 
 export function getArticle(slug: string) {

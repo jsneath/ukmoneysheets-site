@@ -112,7 +112,7 @@ function GuidePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Browse UkMoneySheets on Etsy
+                {guide.ctaLabel ?? "Browse UkMoneySheets on Etsy"}
                 <ArrowUpRight />
               </a>
             </Button>
@@ -145,7 +145,7 @@ function GuidePage() {
             guide.shopLine ??
             "Browse UkMoneySheets on Etsy for calm UK Google Sheets templates."
           }
-          ctaLabel="Browse UkMoneySheets on Etsy"
+          ctaLabel={guide.ctaLabel ?? "Browse UkMoneySheets on Etsy"}
           href={guide.ctaUrl ?? SITE.shopUrl}
         />
       </section>

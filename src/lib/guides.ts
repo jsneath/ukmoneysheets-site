@@ -30,6 +30,8 @@ export type GuideMeta = {
   shopLine?: string;
   /** Buyer link for this guide. Omit to keep the shop URL. */
   ctaUrl?: string;
+  /** Label for the guide CTA buttons; falls back to "Browse UkMoneySheets on Etsy". */
+  ctaLabel?: string;
   /** Emit FAQPage JSON-LD from the article's "## FAQ" section. */
   faqSchema?: boolean;
   /** Show the free take-home pay checker promo after the article body. */
@@ -50,6 +52,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "cash-isa-12k-under-65-planner",
     ctaUrl: "https://www.etsy.com/listing/4461347110",
+    ctaLabel: "Get the UK Net Worth tracker on Etsy",
     title:
       "Cash ISA Allowance Planner for Under-65s: Last Full Year Before the £12k Cap (UK)",
     description:
@@ -84,6 +87,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "help-to-save-deposit-bonus-tracker",
     ctaUrl: "https://www.etsy.com/listing/4563932731",
+    ctaLabel: "Get the savings challenge sheet on Etsy",
     title:
       "Help to Save Tracker: Monthly Deposits and 2-Year / 4-Year Bonus Planner (UK)",
     description:
@@ -119,6 +123,7 @@ export const guides: GuideMeta[] = [
     slug: "register-self-assessment-5-october",
     freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4462593252",
+    ctaLabel: "Get the Self Assessment 2025/26 sheet on Etsy",
     title:
       "How to Register for Self Assessment (UK): Deadlines, Late Registration + Spreadsheet Setup",
     description:
@@ -153,6 +158,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "uk-monthly-budget-google-sheets",
     ctaUrl: "https://www.etsy.com/listing/4460132151",
+    ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
     title: "How to Use a UK Monthly Budget Spreadsheet in Google Sheets",
     description:
       "Copy a UK-ready Google Sheet, set categories for real UK bills (rent or mortgage, council tax, utilities, groceries), enter take-home pay and planned amounts, then log actual spend weekly and adjust.",
@@ -186,6 +192,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "house-deposit-lisa-planner",
     ctaUrl: "https://www.etsy.com/listing/4463017307",
+    ctaLabel: "Get the House Deposit Savings Planner on Etsy",
     title: "House Deposit and LISA Tracker: A Simple First-Time Buyer Planner (UK)",
     description:
       "Pick a target house price and deposit percentage, work out how much you need to save, then track monthly transfers and Lifetime ISA (LISA) contributions in one Google Sheet so the bonus and the timeline stay visible.",
@@ -219,6 +226,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "mortgage-overpayment-calculator",
     ctaUrl: "https://www.etsy.com/listing/4563937681",
+    ctaLabel: "Get the Mortgage Overpayment Calculator on Etsy",
     title: "Mortgage Overpayment Calculator: See Interest Saved in Google Sheets (UK)",
     description:
       "Enter your balance, rate, term, and a planned extra payment in a Google Sheet to compare “stick to the schedule” versus overpaying — then check your lender’s overpayment limits and any early repayment charge before you send money.",
@@ -252,6 +260,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "sheets-vs-excel-uk-budgeting",
     ctaUrl: "https://www.etsy.com/listing/4460132151",
+    ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
     title: "Google Sheets vs Excel for UK Household Budgeting",
     description:
       "For most UK households that budget together or on a phone, Google Sheets is the simpler fit; Excel still wins if you need heavy offline modelling, advanced Excel-only features, or you already live in a Microsoft 365 workflow.",
@@ -284,6 +293,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "uk-christmas-savings-tracker",
     ctaUrl: "https://www.etsy.com/listing/4568011416",
+    ctaLabel: "Get the Christmas Savings Tracker on Etsy",
     title: "UK Christmas Savings Tracker: Gift List Plus January Bills",
     description:
       "List every gift and Christmas cost with a budget cap, save a little each week from autumn, and set aside a January buffer for rent, council tax, and energy so December cheer does not become February stress.",
@@ -316,6 +326,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "uk-crypto-section-104",
     ctaUrl: "https://www.etsy.com/listing/4459672655",
+    ctaLabel: "Get the UK Crypto Portfolio Tracker on Etsy",
     title: "UK Crypto Portfolio Tracker: What to Log for Section 104 and CGT",
     description:
       "To prepare for UK Capital Gains Tax on crypto, log every acquisition and disposal in sterling — date, asset, quantity, GBP value, and fees — so you can support Section 104 pooling and same-day / 30-day matching when you work out gains.",
@@ -349,6 +360,7 @@ export const guides: GuideMeta[] = [
     slug: "uk-landlord-section-24",
     freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4467684075",
+    ctaLabel: "Get the UK Landlord sheet on Etsy",
     title: "UK Landlord Spreadsheet: Track Rental Income for Self Assessment",
     description:
       "To report UK rental income on Self Assessment, keep a clear record of rent received, allowable expenses, and residential finance costs by tax year — then use those totals when you complete the UK property pages.",
@@ -382,6 +394,7 @@ export const guides: GuideMeta[] = [
     slug: "uk-self-assessment-side-hustle-sa103",
     freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4533504008",
+    ctaLabel: "Get the Side Hustle Tax 2026/27 sheet on Etsy",
     title:
       "UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)",
     description:
@@ -416,6 +429,7 @@ export const guides: GuideMeta[] = [
     slug: "making-tax-digital-30k-april-2027",
     freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4533504008",
+    ctaLabel: "Get the Side Hustle Tax 2026/27 sheet on Etsy",
     title:
       "Making Tax Digital £30k Threshold (April 2027): Qualifying Income Check",
     description:
@@ -451,6 +465,7 @@ export const guides: GuideMeta[] = [
     slug: "adjusted-net-income-100k-childcare-hicbc",
     freeToolCta: true,
     ctaUrl: "https://www.etsy.com/listing/4460132151",
+    ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
     title: "£100k Childcare Cliff: Work Out Your Adjusted Net Income (UK)",
     description:
       "You lose Tax-Free Childcare and England's 30 hours of free childcare if you or your partner expect adjusted net income over £100,000 this tax year — and that's your total taxable income (pay, bonus, savings interest, dividends, side-hustle profit) minus certain reliefs, not your salary. Paying into a relief-at-source pension lowers it by the grossed-up amount (£1 paid = £1.25 off), as does Gift Aid, while net-pay and salary-sacrifice contributions are already out of your taxable pay. The same figure sets the High Income Child Benefit Charge (1% for every £200 over £60,000, all of it at £80,000) — and the Conservative pledge to scrap the £100k cliff hasn't changed any of these rules.",
@@ -484,6 +499,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "black-friday-spending-cap-price-log",
     ctaUrl: "https://www.etsy.com/listing/4568011416",
+    ctaLabel: "Get the Christmas Savings Tracker on Etsy",
     title: "Black Friday Spending Cap + Price Log (UK 2026): Is the Deal Real?",
     description:
       "Set a Black Friday spending cap by taking it out of your Christmas gift budget, not adding it on top. Then, from now until 27 November 2026, write down the price of each item you plan to buy every week or so. On Black Friday or Cyber Monday (30 November), a deal is only a real saving if it's lower than the lowest price you logged and it's still within your cap. Which? found that 83% of Black Friday sales-period deals it tracked were the same price or cheaper at another time of year.",

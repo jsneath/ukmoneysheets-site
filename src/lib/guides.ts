@@ -273,7 +273,7 @@ export const guides: GuideMeta[] = [
         alt: "Choosing for a UK household budget: Share one live link with a partner; Make quick edits on your phone; Free with a Google account for personal use; Need heavy offline desktop work? Excel may suit; Whichever you pick, start from a UK layout",
       },
     },
-    shopLine: "Browse UkMoneySheets on Etsy — Google Sheets only, never Excel.",
+    shopLine: "Get the UK Monthly Budget sheet for Google Sheets on UkMoneySheets Etsy",
     freeToolCta: true,
     related: [
       "uk-monthly-budget-google-sheets",

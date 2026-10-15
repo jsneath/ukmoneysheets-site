@@ -3,6 +3,7 @@ import { ArrowRight, ArrowUpRight, BookOpen, Landmark, Smartphone } from "lucide
 import { FreeToolCta } from "@/components/free-tool-cta";
 import { GuideCard } from "@/components/guide-card";
 import { ShopCta } from "@/components/shop-cta";
+import { PopularSheets } from "@/components/popular-sheets";
 import { LedgerPreview } from "@/components/ledger-preview";
 import { Button } from "@/components/ui/button";
 import { featuredGuides } from "@/lib/guides";
@@ -141,6 +142,10 @@ function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pt-16 sm:px-8 sm:pt-20">
+        <PopularSheets />
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">

@@ -9,11 +9,14 @@ import { Button } from "@/components/ui/button";
 import { featuredGuides } from "@/lib/guides";
 import { SITE, pageHead } from "@/lib/site";
 
+const HOME_META =
+  "Free 2026/27 UK take-home pay checker in Google Sheets, no email needed, plus plain-English guides and templates for budgets, ISAs and Self Assessment.";
+
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
-      title: `${SITE.name} — Google Sheets for UK tax, salaries and savings`,
-      description: SITE.metaDescription,
+      title: `UK Google Sheets & Free 2026/27 Pay Checker | ${SITE.name}`,
+      description: HOME_META,
       path: "/",
     }),
   component: Home,

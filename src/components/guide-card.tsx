@@ -5,9 +5,9 @@ import { cn } from "@/lib/utils";
 
 const CATEGORY_ACCENT: Record<string, string> = {
   Savings: "bg-teal",
-  Tax: "bg-navy",
+  Tax: "bg-teal-deep",
   Property: "bg-teal-deep",
-  Budgeting: "bg-navy-soft",
+  Budgeting: "bg-teal",
   Guides: "bg-teal",
 };
 

@@ -42,6 +42,8 @@ export type GuideMeta = {
   faqSchema?: boolean;
   /** Show the free take-home pay checker promo after the article body. */
   freeToolCta?: boolean;
+  /** Interactive tool rendered straight after the intro, before figure 1. */
+  inlineTool?: "mortgage-overpayment";
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -235,18 +237,21 @@ export const guides: GuideMeta[] = [
   {
     slug: "mortgage-overpayment-calculator",
     ctaUrl: "https://www.etsy.com/listing/4563937681",
-    ctaLabel: "Get the Mortgage Overpayment Calculator on Etsy",
-    title: "Mortgage Overpayment Calculator: See Interest Saved in Google Sheets (UK)",
+    ctaLabel: "Get the UK Mortgage Overpayment Calculator on Etsy",
+    title: "Mortgage Overpayment Calculator UK: Interest and Time Saved",
     description:
-      "Enter your balance, rate, term, and a planned extra payment in a Google Sheet to compare “stick to the schedule” versus overpaying — then check your lender’s overpayment limits and any early repayment charge before you send money.",
+      "Overpaying a repayment mortgage cuts the balance that interest is charged on, so you pay less interest and finish sooner. Use the free calculator below to see your interest saved, months saved and new end date. Then check your lender’s overpayment allowance and any early repayment charge (ERC) before you pay.",
     metaDescription:
-      "See how mortgage overpayments cut interest in a UK Google Sheet. Check your lender’s limits before you pay extra.",
+      "Free UK mortgage overpayment calculator: enter your balance, rate and term to see interest saved, months saved and your new end date. Check ERCs first.",
     category: "Property",
     featured: true,
     image: "/guides/mortgage-overpayment-calculator.jpg",
     imageAlt: "Mortgage overpayment calculator: Google Sheets dashboard preview, sample data",
     ogImage: "/og/mortgage-overpayment-calculator.jpg",
-    ogImageAlt: "Mortgage overpayment calculator \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Mortgage overpayment calculator UK \u2014 UkMoneySheets free calculator and Google Sheets guide",
+    faqSchema: true,
+    freeToolCta: true,
+    inlineTool: "mortgage-overpayment",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -259,11 +264,11 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the Mortgage Overpayment Calculator for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Mortgage Overpayment Calculator for Google Sheets on UkMoneySheets Etsy.",
     related: [
       "house-deposit-lisa-planner",
       "uk-monthly-budget-google-sheets",
-      "uk-landlord-section-24",
+      "cash-isa-12k-under-65-planner",
     ],
   },
   {

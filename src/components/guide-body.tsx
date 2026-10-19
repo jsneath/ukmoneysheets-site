@@ -1,7 +1,15 @@
 import { Markdown, parseMarkdown } from "@/components/markdown";
+import { OverpaymentCalculator } from "@/components/overpayment-calculator";
 import type { GuideMeta } from "@/lib/guides";
 
 type InGuide = NonNullable<GuideMeta["inGuideImages"]>;
+type InlineTool = GuideMeta["inlineTool"];
+
+/** Interactive tool rendered straight after the intro (before figure 1). */
+function Tool({ tool }: { tool: InlineTool }) {
+  if (tool === "mortgage-overpayment") return <OverpaymentCalculator />;
+  return null;
+}
 
 function Figure({
   src,
@@ -43,11 +51,13 @@ function isFallbackAnchor(text: string) {
 export function GuideBody({
   source,
   images,
+  inlineTool,
 }: {
   source: string;
   images?: InGuide;
+  inlineTool?: InlineTool;
 }) {
-  if (!images) {
+  if (!images && !inlineTool) {
     return <Markdown source={source} />;
   }
 
@@ -58,6 +68,16 @@ export function GuideBody({
     introEnd += 1;
   }
   if (introEnd === 0) introEnd = Math.min(1, blocks.length);
+
+  if (!images) {
+    return (
+      <div className="prose-guide">
+        <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
+        <Tool tool={inlineTool} />
+        <MarkdownBlocks blocks={blocks.slice(introEnd)} />
+      </div>
+    );
+  }
 
   let checklistAt = blocks.findIndex(
     (b, i) => i >= introEnd && b.type === "h2" && isChecklistHeading(b.text),
@@ -76,6 +96,7 @@ export function GuideBody({
   return (
     <div className="prose-guide">
       <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
+      {inlineTool ? <Tool tool={inlineTool} /> : null}
       <Figure src={images.afterIntro.src} alt={images.afterIntro.alt} />
       <MarkdownBlocks blocks={blocks.slice(introEnd, checklistAt)} />
       <Figure

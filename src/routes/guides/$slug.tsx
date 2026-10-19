@@ -91,7 +91,11 @@ function GuidePage() {
         </header>
 
         <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8 sm:py-16">
-          <GuideBody source={article} images={guide.inGuideImages} />
+          <GuideBody
+            source={article}
+            images={guide.inGuideImages}
+            inlineTool={guide.inlineTool}
+          />
 
           {guide.freeToolCta ? <FreeToolCta className="mt-12" /> : null}
 

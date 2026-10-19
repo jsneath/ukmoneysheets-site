@@ -46,6 +46,8 @@ Start with categories that match how UK households actually pay bills. Rename an
 - Council tax (often billed over **10 months**, April to January — plan for the months it is due)
 - Home insurance (if paid monthly or as a sinking fund)
 
+If your budget has room left over after the mortgage payment, our [mortgage overpayment calculator](/guides/mortgage-overpayment-calculator) shows what a small monthly overpayment could save in interest.
+
 **Utilities and home**
 
 - Gas and electricity (or a dual-fuel bill)

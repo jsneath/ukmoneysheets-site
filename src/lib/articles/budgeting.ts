@@ -54,6 +54,8 @@ Start with categories that match how UK households actually pay bills. Rename an
 - Mobile phones
 - TV licence
 
+For the gas and electricity line this winter, our [winter energy bills tracker](/guides/winter-energy-bills-tracker) guide shows how to log meter readings against the price cap rates.
+
 **Everyday living**
 
 - Groceries and household shopping
@@ -423,3 +425,178 @@ No. It's general information based on the sources linked, as at October 2026.
 ## Plan your gifts around the sales
 
 Planning Christmas gifts around the sales? The [UK Christmas Savings Tracker](https://www.etsy.com/listing/4568011416) is a Google Sheets template for setting your gift budget and tracking spending against it. To see how December fits into the rest of your money, the [UK Monthly Budget sheet](https://www.etsy.com/listing/4460132151) does the same month to month. You can see the full range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;
+
+export const winterEnergy = `*This guide is general information, not financial advice. Figures are from the sources linked, as at 19 October 2026. Forecasts are labelled as forecasts. Example figures are made up for illustration.*
+
+---
+
+## How much will my energy bill be this winter?
+
+**It depends on how much gas and electricity you use: the cap sets the maximum rates, not the total. For October to December 2026, a "typical" Direct Debit household (2,500 kWh of electricity and 9,500 kWh of gas a year) is capped at £1,723 a year.**
+
+Ofgem's average price-cap rates for **1 October to 31 December 2026**, paying by Direct Debit in England, Scotland and Wales ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges)):
+
+| | Unit rate | Daily standing charge |
+| --- | --- | --- |
+| Electricity | 26.32p per kWh | 54.83p per day |
+| Gas | 7.97p per kWh | 29.68p per day |
+
+- That's **up 4%** on the July to September cap of £1,663 ([Ofgem news, 26 August 2026](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026)).
+- **VAT:** gas rates include 5% VAT. The government has removed VAT from electricity from 1 October 2026 to 31 March 2027, so the electricity rates above have none ([Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026)).
+- **How you pay matters:** for the same typical use, the cap is £1,861 on standard credit (paying on receipt of a bill), £1,678 on prepayment and £1,046 on Economy 7 by Direct Debit ([Ofgem summary letter, PDF](https://www.ofgem.gov.uk/sites/default/files/2026-08/Summary-of-changes-to-energy-price-cap-1-October-to-31-December-2026.pdf)).
+- **Where you live matters:** standing charges and unit rates vary by region. Ofgem's [unit rates page](https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges) has a postcode lookup, but your bill is the most accurate source for your own rates.
+
+Two definitions do most of the work:
+
+- The **unit rate** is what you pay for each kilowatt hour (kWh) you use.
+- The **standing charge** is a fixed daily amount you pay even on days you use nothing ([Ofgem](https://www.ofgem.gov.uk/information-consumers/energy-advice-households/energy-price-cap)).
+
+So a winter bill is: **kWh used × unit rate + days × standing charge**, for each fuel. As a check, Ofgem's typical use at the average rates above works out at about £858 for electricity and £865 for gas — roughly the £1,723 cap (small differences are rounding).
+
+---
+
+## Energy price cap January 2027: what we know and what's forecast
+
+**Ofgem will announce the cap for 1 January to 31 March 2027 by 25 November 2026, and it may publish earlier if it needs to ([Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026)). Until then, every January figure you see is a forecast.**
+
+| January–March 2027 | Typical annual figure | What it is |
+| --- | --- | --- |
+| Cornwall Insight, 30 Sep 2026 | £1,999 (+16%) | **Forecast** ([Cornwall Insight](https://www.cornwall-insight.com/press-releases/16-price-cap-rise-forecast-in-january/)) |
+| MSE average of EDF, British Gas and E.on Next predictions (week beginning 5 Oct 2026) | £2,084 (+20.9%) | **Forecast** ([MSE](https://www.moneysavingexpert.com/utilities/what-is-the-energy-price-cap/)) |
+| Ofgem | Announced by 25 Nov 2026 | **Confirmed figure** (not yet published) |
+
+- Cornwall Insight's forecast rates are **30.28p per kWh** and **55p a day** for electricity, and **9.76p per kWh** and **31p a day** for gas ([Cornwall Insight](https://www.cornwall-insight.com/press-releases/16-price-cap-rise-forecast-in-january/)). You can drop these into your sheet as a "forecast" scenario — just label them that way.
+- The January cap's wholesale costs are measured over **19 August to 17 November 2026** ([MSE](https://www.moneysavingexpert.com/utilities/what-is-the-energy-price-cap/)), which is why forecasts can still move before Ofgem announces.
+- The cap changes every three months. Ofgem's next announcement dates are 23 February 2027 (for April to June) and 26 May 2027 (for July to September) ([Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026)).
+
+---
+
+## Build a winter energy bill tracker in Google Sheets
+
+**Make one tab for your rates and one for a monthly meter-reading log; the sheet then works out kWh used, days, and cost for each fuel. Ten minutes on the same day each month is enough.**
+
+### Tab 1: Rates
+
+One row per rate period. Copy your own rates from your bill or supplier app; the Ofgem averages are a fallback.
+
+| Period from | Period to | Elec unit (p/kWh) | Elec standing (p/day) | Gas unit (p/kWh) | Gas standing (p/day) | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| 01/10/2026 | 31/12/2026 | 26.32 | 54.83 | 7.97 | 29.68 | Ofgem average, Direct Debit (replace with my bill) |
+| 01/01/2027 | 31/03/2027 | 30.28 | 55.00 | 9.76 | 31.00 | **FORECAST** (Cornwall Insight) — replace after 25 Nov |
+
+### Tab 2: Readings log
+
+*Example figures, made up for illustration.*
+
+| Column | Example row (reading on 1 December) |
+| --- | --- |
+| Reading date | 01/12/2026 |
+| Electricity meter reading | 18,450 |
+| Gas reading in kWh | 41,300 (see note below) |
+| Days since last reading | 30 (\`=A3-A2\`) |
+| Electricity kWh used | 250 (\`=B3-B2\`) |
+| Gas kWh used | 1,200 (\`=C3-C2\`) |
+| Elec unit rate (p) | 26.32 (\`=VLOOKUP(A3,Rates!A:G,3,TRUE)\`) |
+| Elec standing charge (p/day) | 54.83 (\`=VLOOKUP(A3,Rates!A:G,4,TRUE)\`) |
+| Electricity cost (£) | £82.25 (\`=(E3*G3+D3*H3)/100\`) |
+| Gas unit rate and standing charge | Looked up the same way (Rates columns 5 and 6) |
+| Gas cost (£) | £104.54 |
+| Total this period (£) | £186.79 |
+| Paid by Direct Debit (£) | £150.00 |
+| Running balance (£) | Paid so far minus cost so far |
+
+How the example adds up: electricity is 250 kWh × 26.32p = £65.80, plus 30 days × 54.83p = £16.45, so **£82.25**. Gas is 1,200 kWh × 7.97p = £95.64, plus 30 days × 29.68p = £8.90, so **£104.54**. Together that's **£186.79** for the period.
+
+- **Gas readings:** most gas meters show cubic metres (or cubic feet on older meters), not kWh. Your bill shows how your supplier converts your reading to kWh; copy that kWh figure, or the conversion your bill uses, into the sheet rather than guessing.
+- **Economy 7 or other multi-rate meters:** add a second electricity column for the off-peak reading and a second unit rate, and add both costs together.
+- **Running balance:** if "paid" is creeping ahead of "cost" in autumn, that credit may be needed in January and February. If cost is running ahead, you'll see it before the bill does.
+- **Make it visual:** add conditional formatting (Format → Conditional formatting) to turn the running balance red when it drops below zero, and a simple line chart of kWh used per month.
+- **Readings beat estimates:** submitting your own readings each month means you're billed for what you used. Take a reading on 31 December or 1 January too, so the old and new cap rates are applied to the right days.
+
+---
+
+## Should I fix my energy tariff now or stay on the price cap?
+
+**There's no single answer: a fix is only cheaper if its unit rates and standing charges, times your own usage, come to less than the cap would over the same months — including any exit fee. Your sheet can test this in a few minutes with any fixed quote you're offered.**
+
+The price cap doesn't cover fixed tariffs, so once you fix, cap changes no longer affect your rates either way ([Ofgem](https://www.ofgem.gov.uk/information-consumers/energy-advice-households/energy-price-cap)). Martin Lewis urged people on capped tariffs to compare fixed deals now, ahead of the expected January rise ([LADbible, 15 October 2026](https://www.ladbible.com/money/energy-price-cap-prediction-2027-839722-20261015)).
+
+### The fix-or-cap check (add a third tab)
+
+1. **Your annual usage:** add up 12 months of kWh from your log, or use the annual figure on your bill.
+2. **Fixed quote:** enter the quote's electricity and gas unit rates, standing charges, length, and any exit fee.
+3. **Fix cost for 12 months:** \`=(Elec kWh × fixed elec unit + 365 × fixed elec standing + Gas kWh × fixed gas unit + 365 × fixed gas standing)/100\`.
+4. **Cap scenario for the same 12 months:** current cap rates for the months left in the October–December period, your forecast scenario for January–March (labelled), and then a choice for later months. Nobody knows the cap after March, so try two or three versions — "stays at January level", "falls back" and "rises" — rather than one guess.
+5. **Compare:** the gap between the two, per month. If it's small, a fix is mostly buying certainty; if it's big in either direction, that's your answer for the quote in front of you.
+
+Weigh up as well:
+
+- **Exit fees:** you may have to pay an exit fee if you leave a fixed tariff before it ends ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/how-manage-your-energy-supply/switch-your-home-energy-supplier)). If you have 49 days or less left on a fix, you can switch without one ([Citizens Advice](https://www.citizensadvice.org.uk/consumer/energy/energy-supply/get-a-better-energy-deal/switching-energy-supplier/)).
+- **Cooling off:** you can cancel a switch within 14 days, and a switch should complete within 5 working days ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/how-manage-your-energy-supply/switch-your-home-energy-supplier)). Take a meter reading on the day you switch ([Citizens Advice](https://www.citizensadvice.org.uk/consumer/energy/energy-supply/get-a-better-energy-deal/switching-energy-supplier/)).
+- **The forecasts can be wrong.** If wholesale prices fall, a fix taken now could end up costing more than the cap. Running more than one cap scenario shows how much that matters for your usage.
+- **Ofgem's Market Stabilisation Charge consultation:** on 16 October 2026 Ofgem proposed activating a charge that a supplier gaining a customer pays the supplier losing them, which would only apply if wholesale prices fall sharply. Ofgem says that when it was last active, fixed tariffs were "priced slightly higher than they otherwise would have been." The consultation closes on 29 October 2026, and no decision has been made ([Ofgem](https://www.ofgem.gov.uk/consultation/market-stabilisation-charge-activation); [consultation PDF](https://www.ofgem.gov.uk/sites/default/files/2026-10/MSC-activation-consultation.pdf)).
+
+This isn't a recommendation to fix or not to fix. The sheet shows what each option costs on your numbers.
+
+---
+
+## Key dates this winter
+
+**The dates that matter are 29 October (Ofgem consultation closes), 17 November (end of the January cap's wholesale window), 25 November (Ofgem announces the January cap) and 1 January 2027 (new cap starts).**
+
+| Date | What happens | Source |
+| --- | --- | --- |
+| 1 Oct 2026 | Current cap starts (£1,723 typical, Direct Debit); no VAT on electricity to 31 Mar 2027 | [Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026) |
+| 29 Oct 2026 | Market Stabilisation Charge consultation closes | [Ofgem](https://www.ofgem.gov.uk/consultation/market-stabilisation-charge-activation) |
+| 17 Nov 2026 | Wholesale assessment window for the January cap ends | [MSE](https://www.moneysavingexpert.com/utilities/what-is-the-energy-price-cap/) |
+| By 25 Nov 2026 | Ofgem announces the 1 Jan–31 Mar 2027 cap | [Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026) |
+| 31 Dec / 1 Jan | Take a meter reading so each cap's rates apply to the right days | — |
+| 1 Jan 2027 | New cap starts | [Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026) |
+
+---
+
+## Fit your energy costs into your monthly budget
+
+**Put your tracker's monthly total into the gas and electricity line of your household budget, so January's higher bills are planned for rather than a surprise. Plan from your take-home pay, not your salary.**
+
+- Not sure what actually lands in your account? Use our [free take-home pay checker](/free-take-home-pay-checker).
+- Then see [how to use a UK monthly budget spreadsheet in Google Sheets](/guides/uk-monthly-budget-google-sheets) for planned vs actual and sinking funds — a monthly set-aside works well if the cap rises in January.
+- January also brings post-Christmas bills. If you're saving towards December, our [UK Christmas savings tracker guide](/guides/uk-christmas-savings-tracker) covers the saving side.
+- If you can't pay your bill, tell your energy supplier: Ofgem says they must help you if you ask, for example with a repayment plan or emergency credit ([Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026)).
+
+---
+
+## FAQ
+
+### What is the energy price cap from October 2026?
+From 1 October to 31 December 2026, Ofgem's cap is £1,723 a year for a typical dual-fuel household paying by Direct Debit, up 4%. The average rates are 26.32p per kWh and 54.83p a day for electricity, and 7.97p per kWh and 29.68p a day for gas ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges)).
+
+### When will the January 2027 price cap be announced?
+Ofgem will announce the cap for 1 January to 31 March 2027 by 25 November 2026, and may publish earlier ([Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026)).
+
+### How much will the price cap be in January 2027?
+Nobody knows until Ofgem announces it. Forecasts include £1,999 from Cornwall Insight and an average of £2,084 from MSE's tracked predictions; these are forecasts, not Ofgem figures ([Cornwall Insight](https://www.cornwall-insight.com/press-releases/16-price-cap-rise-forecast-in-january/); [MSE](https://www.moneysavingexpert.com/utilities/what-is-the-energy-price-cap/)).
+
+### Does the price cap limit my total energy bill?
+No. It caps unit rates and standing charges, not your total bill, so the more energy you use, the more you pay ([Ofgem](https://www.ofgem.gov.uk/information-consumers/energy-advice-households/energy-price-cap)).
+
+### How do I work out my energy bill from meter readings?
+For each fuel, subtract the last reading from the new one to get kWh used, multiply by your unit rate, then add the daily standing charge times the number of days. Use the kWh conversion on your bill for gas.
+
+### Should I fix my energy tariff?
+It depends on the fixed rates you're offered, your own usage and any exit fee. Compare the fix's 12-month cost with the cap over the same months using your own kWh, and test more than one cap scenario. This is general information, not advice.
+
+### Can I leave a fixed energy deal early?
+Usually, but you may have to pay an exit fee ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/how-manage-your-energy-supply/switch-your-home-energy-supplier)). With 49 days or less left on a fix, you can switch without one ([Citizens Advice](https://www.citizensadvice.org.uk/consumer/energy/energy-supply/get-a-better-energy-deal/switching-energy-supplier/)).
+
+### Can I track energy bills in Google Sheets?
+Yes. A Rates tab, a monthly Readings log and a few formulas (\`=B3-B2\` for kWh, \`VLOOKUP\` for the rate, kWh × rate + days × standing charge) are all you need — the layout above.
+
+### Is this financial advice?
+No. It's general information based on the sources linked, as at 19 October 2026.
+
+---
+
+## Plan your winter bills
+
+Once you know your monthly energy cost, it needs a place in your budget. The [UK Monthly Budget Spreadsheet for Google Sheets](https://www.etsy.com/listing/4460132151) is a UK-ready Google Sheets layout for bills, expenses and savings, so you can plan January's bills next to everything else. You can see the full range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;

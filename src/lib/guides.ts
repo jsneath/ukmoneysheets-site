@@ -519,6 +519,30 @@ export const guides: GuideMeta[] = [
       "help-to-save-deposit-bonus-tracker",
     ],
   },
+  {
+    slug: "winter-energy-bills-tracker",
+    ctaUrl: "https://www.etsy.com/listing/4460132151",
+    ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
+    title: "Winter Energy Bill Tracker (UK): Price Cap January 2027 & Should You Fix?",
+    description:
+      "From 1 October to 31 December 2026, Ofgem's price cap for a typical household paying by Direct Debit is £1,723 a year, but the cap limits your unit rates and standing charges, not your bill — so the only way to know your own winter cost is to log your meter readings and multiply. Ofgem will announce the January to March 2027 cap by 25 November 2026; until then, analysts' forecasts range from £1,999 (Cornwall Insight) to an average of £2,084 (MSE), which are forecasts, not Ofgem figures. A simple Google Sheet with your readings, your rates and a monthly log shows what you're really paying and lets you test a fixed deal against the cap with your own usage.",
+    metaDescription:
+      "Track UK energy bills in Google Sheets with meter readings, unit rates and standing charges, and see if fixing beats the cap before Ofgem's 25 Nov update.",
+    category: "Budgeting",
+    // No Nia pack yet: reuse the monthly budget card (same CTA listing); og falls back to /og.jpg.
+    image: "/guides/uk-monthly-budget-google-sheets.jpg",
+    imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
+    showHeaderImage: false,
+    faqSchema: true,
+    freeToolCta: true,
+    shopLine:
+      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+    related: [
+      "uk-monthly-budget-google-sheets",
+      "uk-christmas-savings-tracker",
+      "black-friday-spending-cap-price-log",
+    ],
+  },
 ];
 
 export function featuredGuides() {

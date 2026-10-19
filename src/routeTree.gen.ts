@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as SplatRouteImport } from './routes/$'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as FreeTakeHomePayCheckerRouteImport } from './routes/free-take-home-pay-checker'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as GuidesIndexRouteImport } from './routes/guides/index'
 import { Route as GuidesSlugRouteImport } from './routes/guides/$slug'
 
@@ -36,6 +37,11 @@ const FreeTakeHomePayCheckerRoute = FreeTakeHomePayCheckerRouteImport.update({
   path: '/free-take-home-pay-checker',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GuidesIndexRoute = GuidesIndexRouteImport.update({
   id: '/guides/',
   path: '/guides/',
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/$': typeof SplatRoute
   '/about': typeof AboutRoute
   '/free-take-home-pay-checker': typeof FreeTakeHomePayCheckerRoute
+  '/privacy': typeof PrivacyRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/guides/': typeof GuidesIndexRoute
 }
@@ -60,6 +67,7 @@ export interface FileRoutesByTo {
   '/$': typeof SplatRoute
   '/about': typeof AboutRoute
   '/free-take-home-pay-checker': typeof FreeTakeHomePayCheckerRoute
+  '/privacy': typeof PrivacyRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/guides': typeof GuidesIndexRoute
 }
@@ -69,6 +77,7 @@ export interface FileRoutesById {
   '/$': typeof SplatRoute
   '/about': typeof AboutRoute
   '/free-take-home-pay-checker': typeof FreeTakeHomePayCheckerRoute
+  '/privacy': typeof PrivacyRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/guides/': typeof GuidesIndexRoute
 }
@@ -79,6 +88,7 @@ export interface FileRouteTypes {
     | '/$'
     | '/about'
     | '/free-take-home-pay-checker'
+    | '/privacy'
     | '/guides/$slug'
     | '/guides/'
   fileRoutesByTo: FileRoutesByTo
@@ -87,6 +97,7 @@ export interface FileRouteTypes {
     | '/$'
     | '/about'
     | '/free-take-home-pay-checker'
+    | '/privacy'
     | '/guides/$slug'
     | '/guides'
   id:
@@ -95,6 +106,7 @@ export interface FileRouteTypes {
     | '/$'
     | '/about'
     | '/free-take-home-pay-checker'
+    | '/privacy'
     | '/guides/$slug'
     | '/guides/'
   fileRoutesById: FileRoutesById
@@ -104,6 +116,7 @@ export interface RootRouteChildren {
   SplatRoute: typeof SplatRoute
   AboutRoute: typeof AboutRoute
   FreeTakeHomePayCheckerRoute: typeof FreeTakeHomePayCheckerRoute
+  PrivacyRoute: typeof PrivacyRoute
   GuidesSlugRoute: typeof GuidesSlugRoute
   GuidesIndexRoute: typeof GuidesIndexRoute
 }
@@ -138,6 +151,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FreeTakeHomePayCheckerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/guides/': {
       id: '/guides/'
       path: '/guides'
@@ -160,6 +180,7 @@ const rootRouteChildren: RootRouteChildren = {
   SplatRoute: SplatRoute,
   AboutRoute: AboutRoute,
   FreeTakeHomePayCheckerRoute: FreeTakeHomePayCheckerRoute,
+  PrivacyRoute: PrivacyRoute,
   GuidesSlugRoute: GuidesSlugRoute,
   GuidesIndexRoute: GuidesIndexRoute,
 }

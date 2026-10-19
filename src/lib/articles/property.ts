@@ -28,6 +28,8 @@ A simple way to set a target:
 
 Add a buffer for buying costs if you can (solicitor fees, surveys, moving). Those are separate from the deposit percentage a lender quotes — check current stamp duty / land tax rules for first-time buyers on GOV.UK for your nation, because reliefs change.
 
+Once you own the home, a bigger deposit means a smaller mortgage, and our [mortgage overpayment calculator](/guides/mortgage-overpayment-calculator) shows how much interest extra payments could save later on.
+
 If you and a partner both save, decide whether the sheet tracks **one shared target** or two pots that add up to the same number.
 
 ## What a Lifetime ISA (LISA) is for
@@ -131,107 +133,129 @@ If you want a UK-ready Google Sheet built for first-time buyer deposit and LISA 
 
 Then confirm every LISA figure on [GOV.UK](https://www.gov.uk/lifetime-isa) before you rely on it for a completion date.`;
 
-export const mortgage = `> This article is general information, not personalised financial or mortgage advice. Your mortgage offer rules. For free impartial guidance see [MoneyHelper](https://www.moneyhelper.org.uk/en). Your home may be repossessed if you do not keep up repayments.
+// Mortgage overpayment calculator guide (Writing Bot refresh, 19 Oct 2026).
+// The free calculator (#calculator) is rendered by GuideBody straight after the
+// intro quote, via guides.ts inlineTool: "mortgage-overpayment".
+export const mortgage = `> This article is general information, not personalised financial or mortgage advice. Your mortgage offer rules. For free impartial guidance see [MoneyHelper](https://www.moneyhelper.org.uk/en). Your home may be repossessed if you do not keep up repayments on your mortgage.
 
-## Who this is for
+## How much will I save by overpaying my mortgage?
 
-This is for UK homeowners on a **repayment mortgage** who are curious whether a regular or one-off overpayment is worth it — and who want a simple **Google Sheets** comparison before speaking to their lender.
+It depends on your balance, rate and time left: the earlier and bigger the overpayment, the more interest it can save.
 
-It is not a remortgage application, a product recommendation, or a promise of a fixed pound figure you will save.
+As a made-up example: paying an extra £150 a month on a £180,000 mortgage at 4.5% with 22 years left would cut total interest by about **£21,834** and finish **4 years 2 months** sooner, if the rate stayed the same. Try your own figures in the calculator above.
 
-## What an overpayment changes (high level)
+---
 
-On a typical capital-and-interest mortgage, each monthly payment covers interest on the outstanding balance plus some capital. Pay **extra capital** and, if the lender applies it to the balance (confirm how they treat overpayments):
+## Worked example
 
-- The balance falls faster
-- Future interest is charged on a smaller amount
-- You may finish earlier **or** keep the same end date with lower monthly payments later — depending on what you ask the lender to do
+*Made-up example, not a quote.* £180,000 balance, 4.5% for the rest of the term, 22 years left, £150 extra each month. Balances are at the end of each year.
 
-A spreadsheet’s job is to show a **side-by-side estimate** of schedule vs overpay using *your* inputs. It does not override your mortgage conditions.
+| End of year | Balance, no overpayment | Balance, £150/month extra |
+| --- | --- | --- |
+| 1 | £175,096 | £173,259 |
+| 5 | £153,122 | £143,050 |
+| 10 | £119,476 | £96,796 |
+| 15 | £77,358 | £38,896 |
+| 18 | £47,155 | £0 (cleared in month 214, about 17 years 10 months) |
+| 20 | £24,636 | £0 |
+| 22 | £0 | £0 |
 
-## Inputs to track
+| | No overpayment | £150/month extra |
+| --- | --- | --- |
+| Monthly payment | £1,075.30 | £1,225.30 |
+| Total interest | £103,878 | £82,044 |
+| Difference | | **£21,834 less interest, 4 years 2 months sooner** |
 
-Gather these from your latest mortgage offer, annual statement, or lender app:
+The saving builds slowly at first: year-one interest is £8,000 without the overpayment and £7,962 with it. The gap then grows over time.
 
-1. **Current outstanding balance (£)**
-2. **Interest rate** (and whether fixed, tracker, or SVR)
-3. **Remaining term** (years/months)
-4. **Current contractual monthly payment**
-5. **Planned overpayment** — monthly extra, annual lump sum, or both
-6. **Overpayment allowance / ERC rules** from your offer (see caveats below)
-7. **Start date** for the comparison
+---
 
-Then build or use a sheet that projects:
+## How to calculate interest saved on a mortgage
 
-- Balance over time with no overpayment
-- Balance over time with your planned extra
-- Total interest in each scenario (estimate)
-- Months or years difference (estimate)
+1. **Work out your normal monthly payment.** The standard formula is \`P = B × r / (1 − (1 + r)^−n)\`, where B is the balance, r is the annual rate ÷ 12 and n is the number of months left.
+2. **Work out total interest without overpaying:** monthly payment × months − balance.
+3. **Re-run it month by month with the extra payment**, add up the interest, then subtract that from step 2.
 
-**Worked mini-example (entirely fictional — not your mortgage, not a quote):**
+In Google Sheets: \`=PMT(rate/12, months, -balance)\` gives the payment, and \`=NPER(rate/12, -(payment+extra), balance)\` the months left with the overpayment.
 
-| Input | Example figure |
-| --- | --- |
-| Balance | £180,000 |
-| Rate | 4.5% (illustrative) |
-| Remaining term | 22 years |
-| Extra | £150 / month |
+---
 
-A calculator might show the overpay path finishing sooner and with less total interest *in that model*. Those outputs are **illustrative only**. Change the rate or balance and the picture changes. Never treat a sheet’s “interest saved” line as a guarantee.
+## Should I reduce my payment or my term?
 
-## Caveats: ERCs, allowances, and opportunity cost
+Reducing the term (keeping your payment the same) usually saves more interest. Reducing the payment frees up cash each month instead.
 
-Before you overpay:
+MoneyHelper's example is a £5,000 lump sum on a £250,000 mortgage at 5% with 25 years left. On our own illustrative calculation, keeping the payment the same saves about **£12,023** in interest. Keeping the end date and lowering the payment saves about **£3,769**. ([MoneyHelper](https://www.moneyhelper.org.uk/en/homes/buying-a-home/should-you-pay-off-your-mortgage-early) quotes £11,970 and 11 months for the first option; small differences can come from how interest is calculated.)
 
-**1. Read your mortgage offer**
+Lenders handle this differently, and some recalculate your payment automatically, so ask yours.
 
-Many fixed deals allow overpayments up to a yearly limit (often discussed online as around **10%** of the outstanding balance — **your** percentage and reset date may differ). Some lenders allow more; some products differ. Exceeding the allowance during a charge period can trigger an **early repayment charge (ERC)**.
+---
 
-**2. Ask the lender how they apply extras**
+## How much can I overpay? The 10% allowance and early repayment charges
 
-Confirm whether overpayments reduce the balance immediately, whether the contractual payment stays the same, and how the annual allowance is calculated and reset.
+Many lenders allow up to 10% a year without a penalty on fixed or discounted deals. But **the figure, how it's measured (year-start or outstanding balance) and when it resets are set by your own mortgage offer.** Above the allowance, an ERC can apply.
 
-**3. Compare other uses of the money**
+- **The 10% line:** "Many lenders will let you overpay up to 10% a year without penalties" ([MoneyHelper](https://www.moneyhelper.org.uk/en/homes/buying-a-home/should-you-pay-off-your-mortgage-early)). Some lenders publish different limits, so check your own offer.
+- **What an ERC can be:** FCA rules say an ERC must be expressible as a cash value and be a reasonable pre-estimate of the lender's costs. The maximum ERC must be shown in your mortgage illustration and offer ([FCA Handbook, MCOB 12.3](https://handbook.fca.org.uk/handbook/mcob12/mcob12s3)).
+- **How big it is:** an ERC is normally a percentage of your remaining balance and usually gets smaller as you near the end of the deal. Some lenders don't charge one ([FCA](https://www.fca.org.uk/consumers/financial-impact-rising-costs-living/support-mortgages-interest-rates)). MoneyHelper says it's "usually worked out as 1% to 5%" of the outstanding balance, though some deals use a flat rate ([MoneyHelper](https://www.moneyhelper.org.uk/en/money-troubles/cost-of-living/worried-about-rising-mortgages)).
+- **Flexible and offset mortgages** let you overpay and draw money back. If interest is charged daily, sooner is better (MoneyHelper).
 
-High-interest debt, an emergency fund, or pension contributions can matter more than shaving a cheap fixed mortgage. MoneyHelper’s homes guidance is a sensible place to read around remortgaging and charges — start at [MoneyHelper](https://www.moneyhelper.org.uk/en) and your lender’s own overpayment pages.
+---
 
-**4. Models simplify**
+## Overpay the mortgage or save the money?
 
-Rate changes at the end of a fix, fees, payment holidays, offset features, and part-and-part products can make a simple sheet wrong. Use it as a conversation starter, not a completion statement.
+Compare your mortgage rate with what your savings would pay **after tax**. If the after-tax savings rate is lower than your mortgage rate, overpaying usually comes out ahead on interest — but only once the basics are covered.
 
-## How the UkMoneySheets overpayment calculator fits
+MoneyHelper's checks: clear more expensive debts first; consider your pension, where tax relief and employer contributions may beat the mortgage interest saved; and keep at least three months' money in reserve. Overpaid money is usually hard to get back unless your mortgage is flexible or offset.
 
-[UkMoneySheets](https://www.etsy.com/listing/4563937681) sells a **Mortgage Overpayment Calculator for Google Sheets | Interest & Payoff Comparison**.
+For the savings side, interest within your Personal Savings Allowance is tax-free: **£1,000** for basic-rate taxpayers, **£500** for higher-rate and **£0** for additional-rate. The starting rate for savings can give up to **£5,000** more tax-free if your other income is below **£17,570** ([GOV.UK](https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free)). Interest in a cash ISA is tax-free too — see our [cash ISA planner](/guides/cash-isa-12k-under-65-planner).
 
-It is Google Sheets (not Excel). Delivery is typically a PDF with a Sheets link so you can **File → Make a copy** and plug in your figures.
+---
 
-Use it to compare scenarios. Then confirm every live payment with your lender.
+## Overpaying before you remortgage
 
-Related: pair with a **UK Monthly Budget Spreadsheet** so the overpayment amount is money you have actually planned for.
+A lower balance can mean a smaller new loan and a lower loan-to-value when you remortgage. That may give you access to different deals; a broker or lender can confirm.
+
+- Most people remortgage at the end of a fixed or discount deal; MoneyHelper suggests reviewing up to six months before it ends ([MoneyHelper](https://www.moneyhelper.org.uk/en/homes/buying-a-home/remortgaging-to-cut-costs)). Leaving early, or overpaying past your allowance in the final months, can trigger an ERC.
+- Ask your lender for an exact redemption figure for the switch date, and tell them about any planned overpayments ([MSE](https://www.moneysavingexpert.com/mortgages/getting-ready-remortgage/)).
+
+---
+
+## Plan it in Google Sheets
+
+The free calculator gives the headline. For a Google Sheet of your own where you can keep your numbers and compare scenarios, get the [UK Mortgage Overpayment Calculator](https://www.etsy.com/listing/4563937681) on Etsy. Its listing covers interest saved, your mortgage-free date and an amortisation schedule. It's a Google Sheet, delivered as a PDF with a copy link.
+
+Before you choose an overpayment amount, check what you actually take home with the [free take-home pay checker](/free-take-home-pay-checker), then plan it in a [monthly budget](/guides/uk-monthly-budget-google-sheets).
+
+---
 
 ## FAQ
 
-### Will overpaying always save me money?
+### Is it worth overpaying my mortgage?
+Often, if you have no costlier debt, have savings set aside and stay within your allowance. Run your own numbers above.
 
-It can reduce interest if extras hit the balance and no ERC wipe-out applies — but it is not always the best use of cash. Compare emergency savings, costlier debts, and your deal end date.
+### How much can I overpay without a penalty?
+Many lenders allow up to 10% a year on fixed or discounted deals. Your own offer sets the limit, how it's measured and when it resets.
 
 ### What is an early repayment charge?
+A charge for repaying more than allowed, or leaving a deal early. The FCA requires it to be a reasonable estimate of the lender's costs, with the maximum in your offer.
 
-A fee some lenders charge if you repay more than allowed (or leave a deal early) during a restricted period. Check your offer; do not rely on a generic “10% rule” blog.
+### Is it better to reduce my monthly payment or my mortgage term?
+Reducing the term usually saves more interest; reducing the payment helps monthly cash flow. Ask your lender which it applies.
 
-### Can a Google Sheet tell me the exact interest I will save?
+### Is a lump sum or a regular overpayment better?
+Money paid earlier saves more interest. Regular overpayments are easier to budget for, and both count towards your allowance.
 
-No. It can estimate under assumptions you type in. Your lender’s illustration and rules are authoritative.
+### Should I overpay my mortgage or put money in savings?
+Compare the after-tax savings rate with your mortgage rate, after checking debts, your pension and an emergency fund.
+
+### Does overpaying help when I remortgage?
+It lowers the balance you need to borrow. Check the ERC rules near the end of your deal.
+
+### How accurate is this mortgage overpayment calculator?
+It's an illustration using monthly interest and a fixed rate. Your lender's figure (often daily interest) is the authority.
 
 ### Is this financial advice?
-
-No. Education and organisation only.
-
-## Soft next step
-
-Find your outstanding balance, rate, remaining term, and overpayment rules in your mortgage documents. Run a cautious comparison in a sheet.
-
-If you want a ready-made Google Sheets layout for interest and payoff comparison, get the **Mortgage Overpayment Calculator** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4563937681), make your own copy, and clear any large payment with your lender first.`;
+No, it's general information. [MoneyHelper](https://www.moneyhelper.org.uk/en) offers free, impartial guidance.`;
 
 export const landlord = `> This article is general information about record-keeping for landlords, not personalised tax advice. Rules change. Check current guidance on GOV.UK or speak to a qualified adviser or accountant before you file.
 

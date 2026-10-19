@@ -91,7 +91,11 @@ function GuidePage() {
         </header>
 
         <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8 sm:py-16">
-          <GuideBody source={article} images={guide.inGuideImages} />
+          <GuideBody
+            source={article}
+            images={guide.inGuideImages}
+            inlineTool={guide.inlineTool}
+          />
 
           {guide.freeToolCta ? <FreeToolCta className="mt-12" /> : null}
 
@@ -106,7 +110,11 @@ function GuidePage() {
               only (never Excel), delivered as a PDF with a copy link, prices in
               GBP.
             </p>
-            <Button asChild variant="link" className="mt-3 px-0">
+            <Button
+              asChild
+              variant="link"
+              className="mt-3 max-w-full px-0 text-left whitespace-normal"
+            >
               <a
                 href={guide.ctaUrl ?? SITE.shopUrl}
                 target="_blank"

@@ -52,7 +52,11 @@ export function ShopCta({
       >
         {body}
       </p>
-      <Button asChild variant={navy ? "ivory" : "default"} className="mt-6">
+      <Button
+        asChild
+        variant={navy ? "ivory" : "default"}
+        className="mt-6 h-auto min-h-11 max-w-full py-2.5 text-center whitespace-normal"
+      >
         <a href={link} target="_blank" rel="noopener noreferrer">
           {ctaLabel}
           <ArrowUpRight />

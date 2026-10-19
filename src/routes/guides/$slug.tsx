@@ -110,7 +110,11 @@ function GuidePage() {
               only (never Excel), delivered as a PDF with a copy link, prices in
               GBP.
             </p>
-            <Button asChild variant="link" className="mt-3 px-0">
+            <Button
+              asChild
+              variant="link"
+              className="mt-3 max-w-full px-0 text-left whitespace-normal"
+            >
               <a
                 href={guide.ctaUrl ?? SITE.shopUrl}
                 target="_blank"

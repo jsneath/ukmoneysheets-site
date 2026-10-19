@@ -8,6 +8,8 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { NotFound } from "@/components/not-found";
 import { SiteShell } from "@/components/site-shell";
+import { CookieBanner } from "@/components/cookie-banner";
+import { GA_BOOTSTRAP } from "@/lib/analytics";
 import { SITE, pageHead } from "@/lib/site";
 import appCss from "../styles.css?url";
 
@@ -41,6 +43,9 @@ export const Route = createRootRoute({
       { rel: "manifest", href: "/__grok/manifest.webmanifest" },
       { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
     ],
+    // GA4 + Consent Mode v2: consent default runs before config, then the
+    // same inline script loads gtag.js async (see src/lib/analytics.ts).
+    scripts: [{ children: GA_BOOTSTRAP }],
   }),
   notFoundComponent: NotFound,
   component: RootDocument,
@@ -59,6 +64,7 @@ function RootDocument() {
             <Outlet />
           </SiteShell>
         </AuthProvider>
+        <CookieBanner />
         <Scripts />
       </body>
     </html>

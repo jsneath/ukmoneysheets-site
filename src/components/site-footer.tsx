@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { LogoMark } from "@/components/site-logo";
 import { SITE } from "@/lib/site";
+import { openCookieSettings } from "@/lib/analytics";
 
 export function SiteFooter() {
   return (
@@ -86,7 +87,24 @@ export function SiteFooter() {
       <div className="border-t border-ivory/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-sm text-mint/80 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>© {new Date().getFullYear()} {SITE.name}. {SITE.location}.</p>
-          <p>Digital Google Sheets templates · Instant download on Etsy</p>
+          <p className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span>
+              Digital Google Sheets templates · Instant download on Etsy
+            </span>
+            <Link
+              to="/privacy"
+              className="text-ivory no-underline hover:text-mint"
+            >
+              Privacy &amp; cookies
+            </Link>
+            <button
+              type="button"
+              onClick={openCookieSettings}
+              className="text-ivory hover:text-mint focus-visible:outline-2 focus-visible:outline-mint"
+            >
+              Cookie settings
+            </button>
+          </p>
         </div>
       </div>
     </footer>

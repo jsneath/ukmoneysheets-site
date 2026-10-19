@@ -1,6 +1,12 @@
 export type GuideMeta = {
   slug: string;
   title: string;
+  /**
+   * Optional search title (the <title>, og:title, twitter:title) before the
+   * " | UkMoneySheets" suffix. Keep ≤44 chars so the full title is ≤60.
+   * Falls back to `title`; the H1 and cards always use `title`.
+   */
+  seoTitle?: string;
   /** Long on-page AEO lead (shown in article header). */
   description: string;
   /** Short search snippet for <meta name="description"> (≤155 chars). */
@@ -88,12 +94,13 @@ export const guides: GuideMeta[] = [
     slug: "help-to-save-deposit-bonus-tracker",
     ctaUrl: "https://www.etsy.com/listing/4563932731",
     ctaLabel: "Get the savings challenge sheet on Etsy",
+    seoTitle: "Help to Save 2026: Deposits & 50% Bonus Log",
     title:
       "Help to Save Tracker: Monthly Deposits and 2-Year / 4-Year Bonus Planner (UK)",
     description:
       "If you’re eligible for Help to Save, you can pay in £1–£50 each calendar month and earn a 50% government bonus paid after year 2 and year 4 — use a simple Google Sheet to log deposits, running totals, and projected bonuses, and always confirm eligibility and bonus rules on GOV.UK.",
     metaDescription:
-      "Track Help to Save deposits and project 2-year and 4-year 50% bonuses in Google Sheets. Confirm eligibility on GOV.UK.",
+      "UK Savings Week 2026: Help to Save is now permanent. Save £1 to £50 a month, get 50p per £1. Free column layout to log deposits and estimate bonuses.",
     category: "Savings",
     featured: true,
     image: "/guides/help-to-save-deposit-bonus-tracker.jpg",
@@ -159,11 +166,12 @@ export const guides: GuideMeta[] = [
     slug: "uk-monthly-budget-google-sheets",
     ctaUrl: "https://www.etsy.com/listing/4460132151",
     ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
+    seoTitle: "UK Monthly Budget Google Sheet: 2026 Guide",
     title: "How to Use a UK Monthly Budget Spreadsheet in Google Sheets",
     description:
       "Copy a UK-ready Google Sheet, set categories for real UK bills (rent or mortgage, council tax, utilities, groceries), enter take-home pay and planned amounts, then log actual spend weekly and adjust.",
     metaDescription:
-      "Use a UK monthly budget Google Sheet for rent, council tax, utilities and take-home pay. Categories built for British bills.",
+      "Set up a UK monthly budget in Google Sheets for 2026: take-home pay, council tax, energy and sinking funds, plus a weekly planned vs actual check-in.",
     category: "Budgeting",
     featured: true,
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
@@ -193,11 +201,12 @@ export const guides: GuideMeta[] = [
     slug: "house-deposit-lisa-planner",
     ctaUrl: "https://www.etsy.com/listing/4463017307",
     ctaLabel: "Get the House Deposit Savings Planner on Etsy",
+    seoTitle: "House Deposit & LISA Planner UK (2026/27)",
     title: "House Deposit and LISA Tracker: A Simple First-Time Buyer Planner (UK)",
     description:
       "Pick a target house price and deposit percentage, work out how much you need to save, then track monthly transfers and Lifetime ISA (LISA) contributions in one Google Sheet so the bonus and the timeline stay visible.",
     metaDescription:
-      "Plan a UK house deposit and Lifetime ISA (LISA) in Google Sheets — target price, deposit % and monthly savings.",
+      "Plan a UK first-time buyer deposit for 2026/27: set a target from price and deposit %, then track LISA pay-ins (£4,000 a year, 25% bonus) in Google Sheets.",
     category: "Property",
     featured: true,
     image: "/guides/house-deposit-lisa-planner.jpg",
@@ -327,11 +336,12 @@ export const guides: GuideMeta[] = [
     slug: "uk-crypto-section-104",
     ctaUrl: "https://www.etsy.com/listing/4459672655",
     ctaLabel: "Get the UK Crypto Portfolio Tracker on Etsy",
+    seoTitle: "Crypto Section 104 Log for UK CGT (2025/26)",
     title: "UK Crypto Portfolio Tracker: What to Log for Section 104 and CGT",
     description:
       "To prepare for UK Capital Gains Tax on crypto, log every acquisition and disposal in sterling — date, asset, quantity, GBP value, and fees — so you can support Section 104 pooling and same-day / 30-day matching when you work out gains.",
     metaDescription:
-      "Log UK crypto trades for Section 104 and CGT: date, quantity, GBP value and fees in a simple spreadsheet.",
+      "What to log for UK crypto CGT: date, quantity, GBP value and fees for each Section 104 pool, same-day and 30-day rules, and the £3,000 allowance.",
     category: "Tax",
     image: "/guides/uk-crypto-section-104.jpg",
     imageAlt: "Crypto records for Section 104 and CGT: Google Sheets dashboard preview, sample data",

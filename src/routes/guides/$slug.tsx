@@ -28,7 +28,7 @@ export const Route = createFileRoute("/guides/$slug")({
     }
     const { guide, article } = loaderData;
     const head = pageHead({
-      title: `${guide.title} | ${SITE.name}`,
+      title: `${guide.seoTitle ?? guide.title} | ${SITE.name}`,
       description: guide.metaDescription,
       path: `/guides/${guide.slug}`,
       type: "article",

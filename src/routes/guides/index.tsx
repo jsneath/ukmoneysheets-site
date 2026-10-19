@@ -5,12 +5,12 @@ import { guides } from "@/lib/guides";
 import { SITE, pageHead } from "@/lib/site";
 
 const GUIDES_META =
-  "Practical UK personal-finance explainers for Google Sheets. General information only — check GOV.UK for current rules.";
+  "Free UK money guides for 2026/27: Self Assessment, MTD, ISAs, LISA, Help to Save, crypto CGT, landlord tax and budgeting, built around Google Sheets.";
 
 export const Route = createFileRoute("/guides/")({
   head: () =>
     pageHead({
-      title: `Guides | ${SITE.name}`,
+      title: `Free UK Tax, ISA & Budget Guides 2026 | ${SITE.name}`,
       description: GUIDES_META,
       path: "/guides",
     }),

@@ -24,7 +24,7 @@ export function ShopCta({
     <aside
       className={cn(
         "rounded-xl px-6 py-7 sm:px-8 sm:py-8",
-        navy ? "bg-navy text-ivory" : "bg-mint text-navy",
+        navy ? "bg-teal text-ivory" : "bg-mint text-navy",
         className,
       )}
     >

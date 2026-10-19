@@ -10,7 +10,7 @@ const buttonVariants = cva(
       variant: {
         default:
           "bg-teal text-ivory shadow-[0_1px_0_rgba(6,38,56,0.12)] hover:bg-teal-deep",
-        navy: "bg-navy text-ivory hover:bg-navy-soft",
+        navy: "bg-teal text-ivory hover:bg-teal-deep",
         outline:
           "border border-teal/40 bg-transparent text-teal hover:border-teal hover:bg-mint/60",
         ghost: "text-navy hover:bg-mint/70 hover:text-navy",

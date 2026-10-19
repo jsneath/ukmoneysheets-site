@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ivory: #faf8f1;
-  --color-navy: #062638;
-  --color-teal: #08616a;
-  --color-mint: #ddede7;
+  --color-ivory: #fefdf8;
+  --color-navy: #03243e;
+  --color-teal: #0c7378;
+  --color-mint: #d1ece5;
   --color-muted: #4a6670;
-  --color-paper: #fffdf8;
-  --color-ink: #062638;
+  --color-paper: #ffffff;
+  --color-ink: #03243e;
   --color-body: #4a6670;
-  --color-line: color-mix(in oklab, #062638 12%, transparent);
-  --color-line-strong: color-mix(in oklab, #062638 22%, transparent);
-  --color-teal-deep: #064e56;
-  --color-navy-soft: #0b3a4d;
-  --color-mint-deep: #c5dfd6;
+  --color-line: color-mix(in oklab, #03243e 12%, transparent);
+  --color-line-strong: color-mix(in oklab, #03243e 22%, transparent);
+  --color-teal-deep: #05646e;
+  --color-navy-soft: #05646e;
+  --color-mint-deep: #c5e3da;
+  --color-mint-light: #eaf5f1;
 
   --color-background: var(--color-ivory);
   --color-foreground: var(--color-navy);

@@ -11,7 +11,7 @@ export function LedgerPreview() {
   return (
     <div className="rounded-xl bg-paper p-2 hairline">
       <div className="overflow-hidden rounded-lg">
-        <div className="flex items-center justify-between gap-3 bg-navy px-4 py-3">
+        <div className="flex items-center justify-between gap-3 bg-teal px-4 py-3">
           <p className="font-display text-lg font-semibold text-ivory">
             Household · 2026/27
           </p>

@@ -192,7 +192,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Winter Energy Bill Tracker 2026/27 for Google Sheets on UkMoneySheets Etsy.",
     related: [
       "uk-christmas-savings-tracker",
       "sheets-vs-excel-uk-budgeting",
@@ -479,8 +479,8 @@ export const guides: GuideMeta[] = [
   {
     slug: "adjusted-net-income-100k-childcare-hicbc",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4460132151",
-    ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
+    ctaUrl: "https://www.etsy.com/listing/4598755762",
+    ctaLabel: "Get the Childcare Cost & £100k Calculator 2026/27 on Etsy",
     title: "£100k Childcare Cliff: Work Out Your Adjusted Net Income (UK)",
     description:
       "You lose Tax-Free Childcare and England's 30 hours of free childcare if you or your partner expect adjusted net income over £100,000 this tax year — and that's your total taxable income (pay, bonus, savings interest, dividends, side-hustle profit) minus certain reliefs, not your salary. Paying into a relief-at-source pension lowers it by the grossed-up amount (£1 paid = £1.25 off), as does Gift Aid, while net-pay and salary-sacrifice contributions are already out of your taxable pay. The same figure sets the High Income Child Benefit Charge (1% for every £200 over £60,000, all of it at £80,000) — and the Conservative pledge to scrap the £100k cliff hasn't changed any of these rules.",
@@ -504,7 +504,7 @@ export const guides: GuideMeta[] = [
     },
     faqSchema: true,
     shopLine:
-      "Get the UK Salary / Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+      "Get the Childcare Cost & £100k Calculator 2026/27 for Google Sheets on UkMoneySheets Etsy.",
     related: [
       "uk-monthly-budget-google-sheets",
       "uk-self-assessment-side-hustle-sa103",
@@ -536,15 +536,15 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "winter-energy-bills-tracker",
-    ctaUrl: "https://www.etsy.com/listing/4460132151",
-    ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
+    ctaUrl: "https://www.etsy.com/listing/4598582893",
+    ctaLabel: "Get the UK Winter Energy Bill Tracker 2026/27 on Etsy",
     title: "Winter Energy Bill Tracker (UK): Price Cap January 2027 & Should You Fix?",
     description:
       "From 1 October to 31 December 2026, Ofgem's price cap for a typical household paying by Direct Debit is £1,723 a year, but the cap limits your unit rates and standing charges, not your bill — so the only way to know your own winter cost is to log your meter readings and multiply. Ofgem will announce the January to March 2027 cap by 25 November 2026; until then, analysts' forecasts range from £1,999 (Cornwall Insight) to an average of £2,084 (MSE), which are forecasts, not Ofgem figures. A simple Google Sheet with your readings, your rates and a monthly log shows what you're really paying and lets you test a fixed deal against the cap with your own usage.",
     metaDescription:
       "Track UK energy bills in Google Sheets with meter readings, unit rates and standing charges, and see if fixing beats the cap before Ofgem's 25 Nov update.",
     category: "Budgeting",
-    // No Nia pack yet: reuse the monthly budget card (same CTA listing); og falls back to /og.jpg.
+    // No Nia pack yet: reuse the monthly budget card; og falls back to /og.jpg.
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
     imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
     showHeaderImage: false,

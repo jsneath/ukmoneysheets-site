@@ -601,4 +601,4 @@ No. It's general information based on the sources linked, as at 19 October 2026.
 
 ## Plan your winter bills
 
-Once you know your monthly energy cost, it needs a place in your budget. The [UK Monthly Budget Spreadsheet for Google Sheets](https://www.etsy.com/listing/4460132151) is a UK-ready Google Sheets layout for bills, expenses and savings, so you can plan January's bills next to everything else. You can see the full range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;
+If you'd rather not build the log yourself, the [UK Winter Energy Bill Tracker 2026/27](https://www.etsy.com/listing/4598582893) is a ready-made Google Sheet for your meter readings, rates and monthly costs. Once you know your monthly energy cost, the [UK Monthly Budget Spreadsheet for Google Sheets](https://www.etsy.com/listing/4460132151) lets you plan January's bills next to everything else. You can see the full range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;

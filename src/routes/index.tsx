@@ -41,7 +41,7 @@ const SITUATIONS = [
     strip: "bg-teal",
     benefit: "See where every pound goes each month",
     slug: "uk-monthly-budget-google-sheets",
-    image: "/guides/uk-monthly-budget-google-sheets.jpg",
+    image: "/visual/tile-budgeting.webp",
     alt: "UK monthly budget dashboard in Google Sheets, example data",
   },
   {
@@ -49,7 +49,7 @@ const SITUATIONS = [
     strip: "bg-mint-deep",
     benefit: "Track your Cash ISA allowance this tax year",
     slug: "cash-isa-12k-under-65-planner",
-    image: "/guides/cash-isa-12k-under-65-planner.jpg",
+    image: "/visual/tile-saving.webp",
     alt: "Cash ISA allowance planner in Google Sheets, example data",
   },
   {
@@ -57,7 +57,7 @@ const SITUATIONS = [
     strip: "bg-teal-deep",
     benefit: "Keep SA103-ready income and expense records",
     slug: "uk-self-assessment-side-hustle-sa103",
-    image: "/guides/uk-self-assessment-side-hustle-sa103.jpg",
+    image: "/visual/tile-side-hustle-tax.webp",
     alt: "Side hustle Self Assessment records in Google Sheets, example data",
   },
   {
@@ -65,7 +65,7 @@ const SITUATIONS = [
     strip: "bg-teal",
     benefit: "Rental income, costs and Section 24 in one place",
     slug: "uk-landlord-section-24",
-    image: "/guides/uk-landlord-section-24.jpg",
+    image: "/visual/tile-landlord.webp",
     alt: "UK landlord records for Self Assessment in Google Sheets, example data",
   },
   {
@@ -73,7 +73,7 @@ const SITUATIONS = [
     strip: "bg-mint-deep",
     benefit: "Plan your deposit and Lifetime ISA pay-ins",
     slug: "house-deposit-lisa-planner",
-    image: "/guides/house-deposit-lisa-planner.jpg",
+    image: "/visual/tile-buying-a-home.webp",
     alt: "House deposit and Lifetime ISA planner in Google Sheets, example data",
   },
   {
@@ -81,7 +81,7 @@ const SITUATIONS = [
     strip: "bg-teal-deep",
     benefit: "See the interest an overpayment could save",
     slug: "mortgage-overpayment-calculator",
-    image: "/guides/mortgage-overpayment-calculator.jpg",
+    image: "/visual/tile-mortgage.webp",
     alt: "Mortgage overpayment calculator in Google Sheets, example data",
   },
 ];
@@ -143,18 +143,21 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="relative">
-            <div className="absolute -inset-4 -z-0 rotate-2 rounded-[1.75rem] bg-gradient-to-br from-teal to-teal-deep" aria-hidden />
+          <figure className="relative">
+            <div className="absolute -inset-3 -z-0 rotate-1 rounded-[1.75rem] bg-gradient-to-br from-teal to-teal-deep" aria-hidden />
             <img
-              src="/visual/hero-energy-dashboard.webp"
-              alt="UKMoneySheets winter energy bill tracker dashboard in Google Sheets, example data shown"
-              width={1000}
-              height={1000}
+              src="/visual/hero-living.webp"
+              alt="UKMoneySheets budget planner open in Google Sheets on a laptop and phone in a calm living room, example data shown"
+              width={1200}
+              height={675}
               fetchPriority="high"
               decoding="async"
-              className="relative mx-auto w-full max-w-[520px] rounded-xl shadow-[0_20px_50px_-20px_rgba(5,100,110,0.45)] hairline"
+              className="relative aspect-[16/9] w-full rounded-xl object-cover shadow-[0_20px_50px_-20px_rgba(5,100,110,0.45)]"
             />
-          </div>
+            <figcaption className="absolute right-3 bottom-3 rounded-full bg-ivory/90 px-3 py-1 text-xs font-semibold text-teal-deep">
+              Example data shown
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -175,16 +178,15 @@ function Home() {
               params={{ slug: s.slug }}
               className="lift group overflow-hidden rounded-xl bg-paper no-underline hairline"
             >
-              <div className={`h-2 ${s.strip}`} aria-hidden />
-              <div className="aspect-[4/3] overflow-hidden bg-mint">
+              <div className="aspect-square overflow-hidden bg-mint">
                 <img
                   src={s.image}
                   alt={s.alt}
-                  width={960}
-                  height={720}
+                  width={640}
+                  height={640}
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                 />
               </div>
               <div className="p-4 sm:p-5">

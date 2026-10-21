@@ -50,6 +50,8 @@ export type GuideMeta = {
   keyFigures?: { value: string; label: string }[];
   /** Visual product card for the Etsy sheet (screenshot + name). */
   product?: { name: string; image: string; imageAlt: string };
+  /** Wide lifestyle header image for the visual guide layout (16:9). */
+  headerImage?: { src: string; alt: string };
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -259,6 +261,10 @@ export const guides: GuideMeta[] = [
     freeToolCta: true,
     inlineTool: "mortgage-overpayment",
     showHeaderImage: true,
+    headerImage: {
+      src: "/visual/guide-mortgage-header.webp",
+      alt: "Mortgage overpayment calculator open in Google Sheets on a laptop beside a model house and keys, example data shown",
+    },
     keyFacts: [
       "Overpaying cuts the balance interest is charged on, so you pay less and finish sooner.",
       "Many lenders allow up to 10% a year without a penalty; your own offer sets the limit.",

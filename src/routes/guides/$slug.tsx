@@ -100,12 +100,13 @@ function GuidePage() {
                 {showHeaderImage ? (
                   <div className="hidden overflow-hidden rounded-xl bg-paper shadow-[0_20px_50px_-24px_rgba(5,100,110,0.45)] hairline lg:block">
                     <img
-                      src={guide.image}
-                      alt={guide.imageAlt}
-                      width={960}
-                      height={960}
+                      src={guide.headerImage?.src ?? guide.image}
+                      alt={guide.headerImage?.alt ?? guide.imageAlt}
+                      width={guide.headerImage ? 1200 : 960}
+                      height={guide.headerImage ? 675 : 960}
+                      fetchPriority="high"
                       decoding="async"
-                      className="aspect-[4/3] w-full object-cover object-top"
+                      className="aspect-[16/9] w-full object-cover"
                     />
                   </div>
                 ) : null}

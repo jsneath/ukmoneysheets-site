@@ -44,6 +44,14 @@ export type GuideMeta = {
   freeToolCta?: boolean;
   /** Interactive tool rendered straight after the intro, before figure 1. */
   inlineTool?: "mortgage-overpayment";
+  /** 3–5 short key-fact bullets shown under the answer box (HTML, not images). */
+  keyFacts?: string[];
+  /** Headline figures shown in mint number boxes. */
+  keyFigures?: { value: string; label: string }[];
+  /** Visual product card for the Etsy sheet (screenshot + name). */
+  product?: { name: string; image: string; imageAlt: string };
+  /** Wide lifestyle header image for the visual guide layout (16:9). */
+  headerImage?: { src: string; alt: string };
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -252,7 +260,27 @@ export const guides: GuideMeta[] = [
     faqSchema: true,
     freeToolCta: true,
     inlineTool: "mortgage-overpayment",
-    showHeaderImage: false,
+    showHeaderImage: true,
+    headerImage: {
+      src: "/visual/guide-mortgage-header.webp",
+      alt: "Mortgage overpayment calculator open in Google Sheets on a laptop beside a model house and keys, example data shown",
+    },
+    keyFacts: [
+      "Overpaying cuts the balance interest is charged on, so you pay less and finish sooner.",
+      "Many lenders allow up to 10% a year without a penalty; your own offer sets the limit.",
+      "Above the allowance an early repayment charge (ERC) can apply, so check first.",
+      "Compare your mortgage rate with what savings would pay after tax.",
+    ],
+    keyFigures: [
+      { value: "£21,834", label: "less interest in the made-up example" },
+      { value: "4y 2m", label: "sooner, with £150 a month extra" },
+      { value: "10%", label: "a year many lenders allow penalty-free" },
+    ],
+    product: {
+      name: "UK Mortgage Overpayment Calculator",
+      image: "/guides/mortgage-overpayment-calculator.jpg",
+      imageAlt: "UK Mortgage Overpayment Calculator in Google Sheets showing interest and time saved, example data",
+    },
     inGuideImages: {
       afterIntro: {
         src: "/guides/inguide/mortgage-overpayment-calculator/1.webp",

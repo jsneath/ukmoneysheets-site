@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { LogoMark } from "@/components/site-logo";
-import { SITE } from "@/lib/site";
+import { SITE, etsyLink } from "@/lib/site";
 import { openCookieSettings } from "@/lib/analytics";
 
 export function SiteFooter() {
@@ -56,7 +56,7 @@ export function SiteFooter() {
             </li>
             <li>
               <a
-                href={SITE.shopUrl}
+                href={etsyLink(SITE.shopUrl)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-ivory no-underline hover:text-mint"

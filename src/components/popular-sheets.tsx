@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { etsyLink } from "@/lib/site";
 
 const POPULAR_SHEETS = [
   {
@@ -40,7 +41,7 @@ export function PopularSheets() {
         {POPULAR_SHEETS.map((sheet) => (
           <a
             key={sheet.href}
-            href={sheet.href}
+            href={etsyLink(sheet.href)}
             target="_blank"
             rel="noopener noreferrer"
             className="group overflow-hidden rounded-xl border border-line bg-paper no-underline transition-colors hover:bg-mint"

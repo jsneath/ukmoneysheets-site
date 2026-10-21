@@ -7,6 +7,7 @@ import {
   Download,
   PencilLine,
 } from "lucide-react";
+import { FadeUpObserver } from "@/components/fade-up";
 import { FreeToolCta } from "@/components/free-tool-cta";
 import { GuideCard } from "@/components/guide-card";
 import { ShopCta } from "@/components/shop-cta";
@@ -37,6 +38,7 @@ const HERO_TICKS = [
 const SITUATIONS = [
   {
     label: "Budgeting",
+    strip: "bg-teal",
     benefit: "See where every pound goes each month",
     slug: "uk-monthly-budget-google-sheets",
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
@@ -44,6 +46,7 @@ const SITUATIONS = [
   },
   {
     label: "Saving",
+    strip: "bg-mint-deep",
     benefit: "Track your Cash ISA allowance this tax year",
     slug: "cash-isa-12k-under-65-planner",
     image: "/guides/cash-isa-12k-under-65-planner.jpg",
@@ -51,6 +54,7 @@ const SITUATIONS = [
   },
   {
     label: "Side hustle tax",
+    strip: "bg-teal-deep",
     benefit: "Keep SA103-ready income and expense records",
     slug: "uk-self-assessment-side-hustle-sa103",
     image: "/guides/uk-self-assessment-side-hustle-sa103.jpg",
@@ -58,6 +62,7 @@ const SITUATIONS = [
   },
   {
     label: "Landlord",
+    strip: "bg-teal",
     benefit: "Rental income, costs and Section 24 in one place",
     slug: "uk-landlord-section-24",
     image: "/guides/uk-landlord-section-24.jpg",
@@ -65,6 +70,7 @@ const SITUATIONS = [
   },
   {
     label: "Buying a home",
+    strip: "bg-mint-deep",
     benefit: "Plan your deposit and Lifetime ISA pay-ins",
     slug: "house-deposit-lisa-planner",
     image: "/guides/house-deposit-lisa-planner.jpg",
@@ -72,6 +78,7 @@ const SITUATIONS = [
   },
   {
     label: "Mortgage",
+    strip: "bg-teal-deep",
     benefit: "See the interest an overpayment could save",
     slug: "mortgage-overpayment-calculator",
     image: "/guides/mortgage-overpayment-calculator.jpg",
@@ -99,8 +106,10 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="ledger-grid border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:py-20">
+      <FadeUpObserver />
+      <section className="hero-band relative overflow-hidden border-b border-line">
+        <span className="leaf-mark -left-24 -bottom-24 size-[420px] rotate-[-18deg]" aria-hidden />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:py-20">
           <div>
             <h1 className="font-display text-[2.6rem] leading-[1.05] font-semibold tracking-[-0.03em] sm:text-6xl">
               <span className="block text-navy">Simple Google Sheets</span>
@@ -109,8 +118,8 @@ function Home() {
             <ul className="mt-6 space-y-2.5">
               {HERO_TICKS.map((t) => (
                 <li key={t} className="flex items-center gap-2.5 text-[1.05rem] text-navy">
-                  <span className="grid size-6 place-items-center rounded-full bg-mint">
-                    <Check className="size-3.5 text-teal" strokeWidth={3} />
+                  <span className="grid size-7 place-items-center rounded-full bg-teal">
+                    <Check className="size-4 text-ivory" strokeWidth={3} />
                   </span>
                   {t}
                 </li>
@@ -135,7 +144,7 @@ function Home() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -inset-3 -z-0 rounded-[1.5rem] bg-mint/60" aria-hidden />
+            <div className="absolute -inset-4 -z-0 rotate-2 rounded-[1.75rem] bg-gradient-to-br from-teal to-teal-deep" aria-hidden />
             <img
               src="/visual/hero-energy-dashboard.webp"
               alt="UKMoneySheets winter energy bill tracker dashboard in Google Sheets, example data shown"
@@ -150,7 +159,8 @@ function Home() {
       </section>
 
       {/* Find your sheet */}
-      <section className="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-18">
+      <section className="bg-mint-light">
+      <div className="fade-up mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-18">
         <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
           Find your sheet
         </p>
@@ -163,9 +173,10 @@ function Home() {
               key={s.slug}
               to="/guides/$slug"
               params={{ slug: s.slug }}
-              className="group overflow-hidden rounded-xl bg-paper no-underline hairline hairline-hover"
+              className="lift group overflow-hidden rounded-xl bg-paper no-underline hairline"
             >
-              <div className="aspect-[4/3] overflow-hidden bg-mint-light">
+              <div className={`h-2 ${s.strip}`} aria-hidden />
+              <div className="aspect-[4/3] overflow-hidden bg-mint">
                 <img
                   src={s.image}
                   alt={s.alt}
@@ -186,16 +197,18 @@ function Home() {
             </Link>
           ))}
         </div>
+      </div>
       </section>
 
       {/* See inside */}
-      <section className="border-y border-line bg-mint-light">
-        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
+      <section className="teal-band relative overflow-hidden">
+        <span className="leaf-mark -right-20 -top-16 size-[380px] rotate-12" aria-hidden />
+        <div className="fade-up relative mx-auto max-w-6xl px-5 py-14 sm:px-8">
           <div className="flex flex-wrap items-end justify-between gap-2">
-            <h2 className="font-display text-4xl font-semibold tracking-[-0.03em] text-navy">
+            <h2 className="font-display text-4xl font-semibold tracking-[-0.03em] text-ivory">
               See inside
             </h2>
-            <p className="text-sm text-muted">Example data shown</p>
+            <p className="text-sm text-mint">Example data shown</p>
           </div>
           <div className="-mx-5 mt-8 flex snap-x gap-4 overflow-x-auto px-5 pb-4 sm:-mx-8 sm:px-8">
             {INSIDE.map((i) => (
@@ -207,11 +220,11 @@ function Home() {
                   height={640}
                   loading="lazy"
                   decoding="async"
-                  className="aspect-square w-full rounded-xl bg-paper object-cover object-top hairline"
+                  className="lift aspect-square w-full rounded-xl bg-paper object-cover object-top ring-4 ring-ivory/15"
                 />
-                <figcaption className="mt-2 text-sm font-semibold text-navy">
+                <figcaption className="mt-2 text-sm font-semibold text-ivory">
                   {i.caption}
-                  <span className="ml-1 font-normal text-muted">· Example data shown</span>
+                  <span className="ml-1 font-normal text-mint">· Example data shown</span>
                 </figcaption>
               </figure>
             ))}
@@ -220,16 +233,17 @@ function Home() {
       </section>
 
       {/* 3 steps */}
-      <section className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
+      <section className="bg-mint">
+      <div className="fade-up mx-auto max-w-6xl px-5 py-14 sm:px-8">
         <h2 className="text-center font-display text-3xl font-semibold tracking-[-0.03em] text-navy">
           Ready in three steps
         </h2>
         <ol className="mt-8 grid gap-4 sm:grid-cols-3">
           {STEPS.map((s, n) => (
-            <li key={s.title} className="flex items-center gap-4 rounded-xl bg-paper p-5 hairline">
-              <span className="relative grid size-14 shrink-0 place-items-center rounded-full bg-mint">
-                <s.icon className="size-6 text-teal" strokeWidth={1.75} />
-                <span className="absolute -top-1 -right-1 grid size-6 place-items-center rounded-full bg-teal text-xs font-bold text-ivory">
+            <li key={s.title} className="lift flex items-center gap-4 rounded-xl bg-ivory p-5 hairline">
+              <span className="relative grid size-14 shrink-0 place-items-center rounded-full bg-gradient-to-br from-teal to-teal-deep">
+                <s.icon className="size-6 text-ivory" strokeWidth={1.75} />
+                <span className="absolute -top-1 -right-1 grid size-6 place-items-center rounded-full bg-mint text-xs font-bold text-teal-deep ring-2 ring-ivory">
                   {n + 1}
                 </span>
               </span>
@@ -240,16 +254,18 @@ function Home() {
             </li>
           ))}
         </ol>
+      </div>
       </section>
 
       {/* Free tool */}
-      <section className="mx-auto max-w-6xl px-5 sm:px-8">
+      <section className="fade-up mx-auto max-w-6xl px-5 pt-14 sm:px-8">
         <FreeToolCta />
       </section>
 
       {/* Trust */}
       <section className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
-        <div className="grid items-center gap-6 rounded-2xl bg-mint p-6 sm:grid-cols-[auto_1fr] sm:p-8">
+        <div className="teal-band fade-up relative grid items-center gap-6 overflow-hidden rounded-2xl p-6 sm:grid-cols-[auto_1fr] sm:p-8">
+          <span className="leaf-mark -right-10 -bottom-12 size-64 rotate-[-10deg]" aria-hidden />
           <img
             src="/about/james.jpg"
             alt="James, founder of UkMoneySheets"
@@ -260,7 +276,7 @@ function Home() {
             className="size-28 rounded-full object-cover ring-4 ring-ivory sm:size-36"
           />
           <div>
-            <h2 className="font-display text-3xl font-semibold tracking-[-0.03em] text-navy">
+            <h2 className="font-display text-3xl font-semibold tracking-[-0.03em] text-ivory">
               Made by James, 18 years in finance
             </h2>
             <ul className="mt-4 flex flex-wrap gap-2">
@@ -271,7 +287,7 @@ function Home() {
                 </li>
               ))}
             </ul>
-            <Link to="/about" className="mt-4 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-teal no-underline">
+            <Link to="/about" className="relative mt-4 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-mint no-underline">
               About James <ArrowRight className="size-4" />
             </Link>
           </div>
@@ -279,8 +295,8 @@ function Home() {
       </section>
 
       {/* Guides */}
-      <section className="border-y border-line bg-paper/60">
-        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-18">
+      <section className="border-y border-line bg-mint-light">
+        <div className="fade-up mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-18">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <h2 className="font-display text-4xl font-semibold tracking-[-0.03em] text-navy">
               Latest guides
@@ -301,7 +317,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 pt-14 sm:px-8">
+      <section className="fade-up mx-auto max-w-6xl px-5 pt-14 sm:px-8">
         <PopularSheets />
       </section>
 

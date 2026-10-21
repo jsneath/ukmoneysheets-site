@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
+import { FadeUpObserver } from "@/components/fade-up";
 import { ProductCard } from "@/components/product-card";
 import { GuideBody } from "@/components/guide-body";
 import { AuthorBox } from "@/components/author-box";
@@ -49,10 +50,12 @@ function GuidePage() {
 
   return (
     <>
+      <FadeUpObserver />
       <article>
         {guide.keyFacts ? (
-          <header className="border-b border-line">
-            <div className="mx-auto grid max-w-6xl gap-8 px-5 pt-4 pb-10 sm:px-8 sm:pt-6 sm:pb-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-start">
+          <header className="hero-band relative overflow-hidden border-b border-line">
+            <span className="leaf-mark -right-24 -bottom-28 size-[420px] rotate-12" aria-hidden />
+            <div className="relative mx-auto grid max-w-6xl gap-8 px-5 pt-4 pb-10 sm:px-8 sm:pt-6 sm:pb-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-start">
               <div>
                 <Link
                   to="/guides"
@@ -64,7 +67,7 @@ function GuidePage() {
                 <h1 className="mt-2 font-display text-[1.9rem] leading-[1.12] font-semibold tracking-[-0.03em] text-navy sm:text-5xl">
                   {guide.title}
                 </h1>
-                <div className="mt-5 rounded-xl border-l-4 border-teal bg-mint-light px-5 py-4">
+                <div className="mt-5 rounded-xl border-l-4 border-teal bg-ivory px-5 py-4 shadow-[0_10px_30px_-20px_rgba(5,100,110,0.5)]">
                   <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-teal-deep uppercase">
                     Quick answer
                   </p>
@@ -75,12 +78,12 @@ function GuidePage() {
                 {guide.keyFigures ? (
                   <dl className="mt-5 grid grid-cols-3 gap-3">
                     {guide.keyFigures.map((f) => (
-                      <div key={f.label} className="rounded-xl bg-mint px-3 py-3 text-center">
+                      <div key={f.label} className="rounded-xl bg-teal px-3 py-3 text-center">
                         <dt className="sr-only">{f.label}</dt>
-                        <dd className="font-display text-2xl font-semibold text-teal-deep sm:text-3xl">
+                        <dd className="font-display text-2xl font-semibold text-ivory sm:text-3xl">
                           {f.value}
                         </dd>
-                        <dd className="mt-0.5 text-xs leading-snug text-muted">{f.label}</dd>
+                        <dd className="mt-0.5 text-xs leading-snug text-mint">{f.label}</dd>
                       </div>
                     ))}
                   </dl>
@@ -106,7 +109,7 @@ function GuidePage() {
                     />
                   </div>
                 ) : null}
-                <div className="rounded-xl bg-paper p-5 hairline">
+                <div className="rounded-xl bg-ivory p-5 hairline">
                   <p className="font-display text-xl font-semibold text-navy">Key points</p>
                   <ul className="mt-3 space-y-2.5">
                     {guide.keyFacts.map((k) => (
@@ -213,7 +216,7 @@ function GuidePage() {
       </article>
 
       {related.length > 0 ? (
-        <section className="border-t border-line bg-paper/70">
+        <section className="border-t border-line bg-mint-light">
           <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
             <h2 className="font-display text-3xl font-semibold text-navy">
               Related guides

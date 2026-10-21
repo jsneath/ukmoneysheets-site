@@ -3,7 +3,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { SiteLogo } from "@/components/site-logo";
-import { SITE } from "@/lib/site";
+import { SITE, etsyLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -29,7 +29,7 @@ export function SiteHeader() {
           </Link>
           <Button asChild variant="outline" size="sm" className="ml-2">
             <a
-              href={SITE.shopUrl}
+              href={etsyLink(SITE.shopUrl)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,7 @@ export function SiteHeader() {
             About
           </Link>
           <a
-            href={SITE.shopUrl}
+            href={etsyLink(SITE.shopUrl)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-11 items-center gap-2 rounded-lg px-3 text-base font-medium text-teal no-underline hover:bg-mint/70"

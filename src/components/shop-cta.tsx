@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SITE } from "@/lib/site";
+import { SITE, etsyLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function ShopCta({
@@ -19,7 +19,7 @@ export function ShopCta({
   className?: string;
 }) {
   const navy = tone === "navy";
-  const link = href ?? SITE.shopUrl;
+  const link = etsyLink(href ?? SITE.shopUrl);
   return (
     <aside
       className={cn(

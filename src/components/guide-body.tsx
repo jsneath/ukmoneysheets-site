@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Markdown, parseMarkdown } from "@/components/markdown";
 import { OverpaymentCalculator } from "@/components/overpayment-calculator";
 import type { GuideMeta } from "@/lib/guides";
@@ -52,10 +53,13 @@ export function GuideBody({
   source,
   images,
   inlineTool,
+  afterFirstSection,
 }: {
   source: string;
   images?: InGuide;
   inlineTool?: InlineTool;
+  /** Rendered just before the second H2 (after the first useful section). */
+  afterFirstSection?: ReactNode;
 }) {
   if (!images && !inlineTool) {
     return <Markdown source={source} />;
@@ -98,7 +102,26 @@ export function GuideBody({
       <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
       {inlineTool ? <Tool tool={inlineTool} /> : null}
       <Figure src={images.afterIntro.src} alt={images.afterIntro.alt} />
-      <MarkdownBlocks blocks={blocks.slice(introEnd, checklistAt)} />
+      {(() => {
+        const secondH2 = blocks.findIndex(
+          (b, i) => i > introEnd && b.type === "h2",
+        );
+        if (!afterFirstSection || secondH2 === -1 || secondH2 >= checklistAt) {
+          return (
+            <>
+              <MarkdownBlocks blocks={blocks.slice(introEnd, checklistAt)} />
+              {afterFirstSection}
+            </>
+          );
+        }
+        return (
+          <>
+            <MarkdownBlocks blocks={blocks.slice(introEnd, secondH2)} />
+            {afterFirstSection}
+            <MarkdownBlocks blocks={blocks.slice(secondH2, checklistAt)} />
+          </>
+        );
+      })()}
       <Figure
         src={images.nearChecklist.src}
         alt={images.nearChecklist.alt}

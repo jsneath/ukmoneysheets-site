@@ -66,3 +66,9 @@ export function pageHead({
     links: [{ rel: "canonical", href: url }],
   };
 }
+
+/** Tag outbound Etsy links so shop visits from the site can be told apart. */
+export function etsyLink(url: string): string {
+  if (!/^https:\/\/(www\.)?etsy\.com\//.test(url) || /utm_source=/.test(url)) return url;
+  return `${url}${url.includes("?") ? "&" : "?"}utm_source=site`;
+}

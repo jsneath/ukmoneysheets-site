@@ -1,3 +1,4 @@
+import { etsyLink } from "@/lib/site";
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 
@@ -51,7 +52,7 @@ function parseInline(text: string): ReactNode[] {
           nodes.push(
             <a
               key={key++}
-              href={href}
+              href={etsyLink(href)}
               {...(href.startsWith("http")
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}

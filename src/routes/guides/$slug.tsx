@@ -47,6 +47,22 @@ function GuidePage() {
   const { guide, article } = Route.useLoaderData();
   const related = relatedGuides(guide.slug);
   const showHeaderImage = guide.showHeaderImage !== false;
+  const visualImage = guide.headerImage ?? { src: guide.image, alt: guide.imageAlt };
+  const productName =
+    guide.product?.name ??
+    (guide.ctaLabel
+      ? guide.ctaLabel.replace(/^Get (the )?/, "").replace(/ on Etsy$/, "")
+      : undefined);
+  const product =
+    guide.ctaUrl && productName
+      ? {
+          name: productName,
+          image: guide.product?.image ?? guide.image,
+          imageAlt: guide.product?.imageAlt ?? guide.imageAlt,
+          href: guide.ctaUrl,
+          ctaLabel: guide.ctaLabel ?? "Get it on Etsy",
+        }
+      : null;
 
   return (
     <>
@@ -97,16 +113,16 @@ function GuidePage() {
                 </div>
               </div>
               <div className="space-y-5">
-                {showHeaderImage ? (
+                {guide.keyFacts ? (
                   <div className="hidden overflow-hidden rounded-xl bg-paper shadow-[0_20px_50px_-24px_rgba(5,100,110,0.45)] hairline lg:block">
                     <img
-                      src={guide.headerImage?.src ?? guide.image}
-                      alt={guide.headerImage?.alt ?? guide.imageAlt}
+                      src={visualImage.src}
+                      alt={visualImage.alt}
                       width={guide.headerImage ? 1200 : 960}
                       height={guide.headerImage ? 675 : 960}
                       fetchPriority="high"
                       decoding="async"
-                      className="aspect-[16/9] w-full object-cover"
+                      className={guide.headerImage ? "aspect-[16/9] w-full object-cover" : "aspect-[16/9] w-full object-cover object-top"}
                     />
                   </div>
                 ) : null}
@@ -173,14 +189,14 @@ function GuidePage() {
             images={guide.inGuideImages}
             inlineTool={guide.inlineTool}
             afterFirstSection={
-              guide.product ? (
-                <ProductCard {...guide.product} href={guide.ctaUrl ?? SITE.shopUrl} />
+              product ? (
+                <ProductCard {...product} />
               ) : undefined
             }
           />
 
-          {guide.product ? (
-            <ProductCard {...guide.product} href={guide.ctaUrl ?? SITE.shopUrl} className="mt-12" />
+          {product ? (
+            <ProductCard {...product} className="mt-12" />
           ) : null}
 
           {guide.freeToolCta ? <FreeToolCta className="mt-12" /> : null}

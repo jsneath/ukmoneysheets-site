@@ -61,7 +61,7 @@ export function GuideBody({
   /** Rendered just before the second H2 (after the first useful section). */
   afterFirstSection?: ReactNode;
 }) {
-  if (!images && !inlineTool) {
+  if (!images && !inlineTool && !afterFirstSection) {
     return <Markdown source={source} />;
   }
 
@@ -74,11 +74,15 @@ export function GuideBody({
   if (introEnd === 0) introEnd = Math.min(1, blocks.length);
 
   if (!images) {
+    const second = blocks.findIndex((b, i) => i > introEnd && b.type === "h2");
+    const split = afterFirstSection && second !== -1 ? second : blocks.length;
     return (
       <div className="prose-guide">
         <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
         <Tool tool={inlineTool} />
-        <MarkdownBlocks blocks={blocks.slice(introEnd)} />
+        <MarkdownBlocks blocks={blocks.slice(introEnd, split)} />
+        {afterFirstSection}
+        <MarkdownBlocks blocks={blocks.slice(split)} />
       </div>
     );
   }

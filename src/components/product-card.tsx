@@ -7,12 +7,14 @@ export function ProductCard({
   image,
   imageAlt,
   href,
+  ctaLabel = "Get it on Etsy",
   className,
 }: {
   name: string;
   image: string;
   imageAlt: string;
   href: string;
+  ctaLabel?: string;
   className?: string;
 }) {
   return (
@@ -50,10 +52,10 @@ export function ProductCard({
           href={etsyLink(href)}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-flex min-h-11 items-center gap-1.5 rounded-full bg-ivory px-5 text-sm font-semibold text-teal-deep no-underline hover:bg-mint"
+          className="mt-4 inline-flex min-h-11 items-center gap-1.5 rounded-full bg-ivory px-5 py-2 text-left whitespace-normal text-sm font-semibold text-teal-deep no-underline hover:bg-mint"
         >
-          Get it on Etsy
-          <ArrowUpRight className="size-4" />
+          {ctaLabel}
+          <ArrowUpRight className="size-4 shrink-0" />
         </a>
       </div>
     </aside>

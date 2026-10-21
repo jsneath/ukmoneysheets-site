@@ -588,6 +588,201 @@ export const guides: GuideMeta[] = [
   },
 ];
 
+/**
+ * Visual guide layout data (Quick answer = description; these add figure
+ * boxes and key points). Every figure and point is taken verbatim from, or is
+ * a faithful shortening of, the guide's own article text. Guides without clear
+ * headline figures have no figure boxes.
+ */
+const VISUAL: Record<
+  string,
+  Pick<GuideMeta, "keyFigures" | "keyFacts">
+> = {
+  "cash-isa-12k-under-65-planner": {
+    keyFigures: [
+      { value: "£20,000", label: "overall ISA allowance for 2026/27" },
+      { value: "£12,000", label: "cash ISA limit for under-65s from 6 April 2027" },
+      { value: "£20,000", label: "cash limit stays for people aged 65 or over" },
+    ],
+    keyFacts: [
+      "2026/27 is the last full tax year before the £12,000 cash ISA limit for under-65s.",
+      "The overall £20,000 ISA allowance stays the same.",
+      "The higher cash limit applies from the start of the tax year in which you turn 65.",
+      "Verify every figure on GOV.UK.",
+    ],
+  },
+  "help-to-save-deposit-bonus-tracker": {
+    keyFigures: [
+      { value: "£1–£50", label: "you can pay in each calendar month" },
+      { value: "50%", label: "government bonus: 50p for every £1 saved" },
+      { value: "£1,200", label: "maximum bonus over 4 years (HMRC's framing)" },
+    ],
+    keyFacts: [
+      "Bonuses are paid after year 2 and year 4.",
+      "The first bonus is 50% of the highest balance saved in years 1–2.",
+      "The final bonus depends on the highest balance in years 3–4 rising above years 1–2.",
+      "Always confirm eligibility and bonus rules on GOV.UK.",
+    ],
+  },
+  "register-self-assessment-5-october": {
+    keyFigures: [
+      { value: "5 Oct 2026", label: "tell HMRC you need to file (2025/26)" },
+      { value: "31 Oct 2026", label: "paper return deadline" },
+      { value: "31 Jan 2027", label: "online return and payment deadline" },
+    ],
+    keyFacts: [
+      "5 October is the notify date, not the filing date.",
+      "When you register, HMRC gives you a 10-digit Unique Taxpayer Reference (UTR).",
+      "Registering late does not move the 31 January payment date.",
+    ],
+  },
+  "uk-monthly-budget-google-sheets": {
+    keyFacts: [
+      "Make your own copy: File → Make a copy into your Google Drive.",
+      "Use UK categories: rent or mortgage, council tax, energy, groceries.",
+      "Start with take-home pay, then compare planned vs actual.",
+      "A weekly 15-minute check-in is what makes the sheet useful.",
+    ],
+  },
+  "house-deposit-lisa-planner": {
+    keyFigures: [
+      { value: "£4,000", label: "you can usually put into a LISA each tax year" },
+      { value: "25%", label: "government bonus, up to £1,000 a year" },
+      { value: "£450,000", label: "or less: property price for charge-free first-home use" },
+    ],
+    keyFacts: [
+      "Deposit target ≈ price × deposit %.",
+      "You must make your first LISA payment before you are 40.",
+      "The £4,000 LISA limit counts towards your £20,000 ISA allowance.",
+      "Other withdrawals can attract a 25% charge.",
+    ],
+  },
+  "sheets-vs-excel-uk-budgeting": {
+    keyFacts: [
+      "Google Sheets suits households that budget together or on a phone.",
+      "Share one live link instead of emailing versions back and forth.",
+      "The weekly habit of updating planned vs actual matters more than the app.",
+      "Start from a UK layout: council tax, GBP and the UK tax year.",
+    ],
+  },
+  "uk-christmas-savings-tracker": {
+    keyFacts: [
+      "List every gift and Christmas cost with a budget cap.",
+      "Starting before December gives you more paydays to spread the cost.",
+      "Set aside a January buffer for rent, council tax and energy.",
+      "Track actual spend so you see drift early, not on Christmas Eve.",
+    ],
+  },
+  "uk-crypto-section-104": {
+    keyFacts: [
+      "Log every acquisition and disposal in sterling: date, asset, quantity, GBP value and fees.",
+      "HMRC pools tokens of the same type in a Section 104 pool.",
+      "Same-day and 30-day matching come before the pool.",
+      "Exchange CSVs alone are messy; your log is the evidence.",
+    ],
+  },
+  "uk-landlord-section-24": {
+    keyFacts: [
+      "Record rent received, allowable expenses and finance costs by tax year.",
+      "Mortgage interest is no longer deducted in full for many individual landlords.",
+      "Keep finance costs clearly labelled, separate from repairs and agent fees.",
+      "Keep records at least 5 years after the 31 January deadline (check GOV.UK).",
+    ],
+  },
+  "uk-self-assessment-side-hustle-sa103": {
+    keyFigures: [
+      { value: "£1,000", label: "sole-trader earnings above which you must send a return" },
+      { value: "5 years", label: "keep records after the 31 January deadline" },
+      { value: "6 Apr–5 Apr", label: "the UK tax year your sheet should follow" },
+    ],
+    keyFacts: [
+      "Record every payment and allowable expense by UK tax year.",
+      "SA103 is the self-employment section of your Self Assessment return.",
+      "Your sheet holds the totals; it is not the form itself.",
+    ],
+  },
+  "making-tax-digital-30k-april-2027": {
+    keyFigures: [
+      { value: "£30,000", label: "qualifying income on your 2025/26 return" },
+      { value: "6 Apr 2027", label: "MTD for Income Tax start date if you're over" },
+      { value: "£20,000", label: "threshold from April 2028, tested on 2026/27" },
+    ],
+    keyFacts: [
+      "Qualifying income is turnover before expenses, not profit.",
+      "Self-employment and property income are added together.",
+      "For jointly owned rentals, only your share counts.",
+      "There is no penalty grace period for the £30k group in 2027/28.",
+    ],
+  },
+  "adjusted-net-income-100k-childcare-hicbc": {
+    keyFigures: [
+      { value: "£100,000", label: "expected ANI where childcare support stops" },
+      { value: "£2,000", label: "a year per child from Tax-Free Childcare" },
+      { value: "30 hours", label: "a week for 38 weeks (England)" },
+    ],
+    keyFacts: [
+      "The test applies if you or your partner expect ANI over £100,000.",
+      "Relief-at-source pension payments are deducted grossed up (× 1.25).",
+      "Gift Aid: deduct £1.25 for every £1 donated.",
+      "15 hours for 3- and 4-year-olds in England stay regardless of income.",
+    ],
+  },
+  "black-friday-spending-cap-price-log": {
+    keyFigures: [
+      { value: "27 Nov", label: "Black Friday 2026" },
+      { value: "30 Nov", label: "Cyber Monday 2026" },
+      { value: "83%", label: "of deals Which? tracked were the same or cheaper at another time" },
+    ],
+    keyFacts: [
+      "Take your Black Friday cap out of your Christmas gift budget, not on top.",
+      "Log the price of each item you plan to buy every week or so.",
+      "A deal is only real if it beats your lowest logged price and fits your cap.",
+    ],
+  },
+  "winter-energy-bills-tracker": {
+    keyFigures: [
+      { value: "£1,723", label: "a year: typical Direct Debit cap, Oct–Dec 2026" },
+      { value: "4%", label: "up on the July to September cap" },
+      { value: "25 Nov", label: "Ofgem announces the January 2027 cap" },
+    ],
+    keyFacts: [
+      "The cap limits unit rates and standing charges, not your bill.",
+      "Log your meter readings and multiply to see your own cost.",
+      "January forecasts are forecasts, not Ofgem figures.",
+      "Test a fixed deal against the cap with your own usage.",
+    ],
+  },
+};
+
+/** Nia's 16:9 lifestyle header photos (public/visual/guides/<slug>.webp). */
+const NIA_HEADERS: Record<string, string> = {
+  "cash-isa-12k-under-65-planner": "Cash ISA allowance planner",
+  "help-to-save-deposit-bonus-tracker": "Help to Save bonus tracker",
+  "register-self-assessment-5-october": "Self Assessment records sheet",
+  "uk-monthly-budget-google-sheets": "UK monthly budget",
+  "house-deposit-lisa-planner": "house deposit and LISA planner",
+  "sheets-vs-excel-uk-budgeting": "UK household budget",
+  "uk-christmas-savings-tracker": "Christmas savings tracker",
+  "uk-crypto-section-104": "crypto Section 104 records sheet",
+  "uk-landlord-section-24": "landlord rental income sheet",
+  "uk-self-assessment-side-hustle-sa103": "side hustle SA103 records sheet",
+  "making-tax-digital-30k-april-2027": "Making Tax Digital qualifying income check",
+  "adjusted-net-income-100k-childcare-hicbc": "adjusted net income and childcare calculator",
+  "black-friday-spending-cap-price-log": "Black Friday spending cap and price log",
+  "winter-energy-bills-tracker": "winter energy bill tracker",
+};
+
+for (const g of guides) {
+  const v = VISUAL[g.slug];
+  if (v) Object.assign(g, v);
+  if (!g.headerImage && NIA_HEADERS[g.slug]) {
+    g.headerImage = {
+      src: `/visual/guides/${g.slug}.webp`,
+      alt: `A ${NIA_HEADERS[g.slug]} in Google Sheets on a laptop at home, example data shown`,
+    };
+  }
+}
+
 export function featuredGuides() {
   const featured = guides.filter((g) => g.featured);
   return featured.sort((a, b) => {

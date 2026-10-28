@@ -166,7 +166,8 @@ function MarkdownBlocks({
           const rows = block.rows
             .map((r) => `| ${r.join(" | ")} |`)
             .join("\n");
-          return `${head}\n${sep}\n${rows}`;
+          const cap = block.caption ? `Table: ${block.caption}\n` : "";
+          return `${cap}${head}\n${sep}\n${rows}`;
         }
       }
     })

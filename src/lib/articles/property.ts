@@ -222,7 +222,7 @@ A lower balance can mean a smaller new loan and a lower loan-to-value when you r
 
 ## Plan it in Google Sheets
 
-The free calculator gives the headline. For a Google Sheet of your own where you can keep your numbers and compare scenarios, get the [UK Mortgage Overpayment Calculator](https://www.etsy.com/listing/4563937681) on Etsy. Its listing covers interest saved, your mortgage-free date and an amortisation schedule. It's a Google Sheet, delivered as a PDF with a copy link.
+The free calculator gives the headline. For a Google Sheet of your own where you can keep your numbers and compare scenarios, get the [UK Mortgage Overpayment Calculator](https://www.etsy.com/listing/4563937681?utm_source=site) on Etsy. Its listing covers interest saved, your mortgage-free date and an amortisation schedule. It's a Google Sheet, delivered as a PDF with a copy link.
 
 Before you choose an overpayment amount, check what you actually take home with the [free take-home pay checker](/free-take-home-pay-checker), then plan it in a [monthly budget](/guides/uk-monthly-budget-google-sheets).
 
@@ -350,7 +350,7 @@ At year end, filter by tax year and property, total income, total allowable expe
 
 ## How the UkMoneySheets landlord spreadsheet fits
 
-If you want a UK-ready layout, [UkMoneySheets](https://www.etsy.com/listing/4467684075) sells a **UK Landlord Spreadsheet 2025/26 | Property Tax Self Assessment | Rental Income | Google Sheets**.
+If you want a UK-ready layout, [UkMoneySheets](https://www.etsy.com/listing/4467684075?utm_source=site) sells a **UK Landlord Spreadsheet 2025/26 | Property Tax Self Assessment | Rental Income | Google Sheets**.
 
 It is built for Google Sheets (not Excel). Delivery is typically a PDF with the Sheets link so you can **File → Make a copy** into your Drive.
 
@@ -383,6 +383,6 @@ No. This article and any UkMoneySheets template are for organisation and educati
 
 Start a tax-year ledger with income, expenses, and finance costs in separate types. Reconcile to agent statements monthly.
 
-If you want a UK Google Sheets layout aimed at rental Self Assessment, grab the **UK Landlord Spreadsheet** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4467684075), make your own copy, and keep finance costs clearly labelled.
+If you want a UK Google Sheets layout aimed at rental Self Assessment, grab the **UK Landlord Spreadsheet** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4467684075?utm_source=site), make your own copy, and keep finance costs clearly labelled.
 
 Then confirm every tax treatment on [GOV.UK](https://www.gov.uk) before you submit.`;

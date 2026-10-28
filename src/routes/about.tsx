@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ABOUT_COPY, ABOUT_PHOTO, aboutJsonLdScript } from "@/lib/about";
-import { pageHead } from "@/lib/site";
+import { etsyLink, pageHead } from "@/lib/site";
 
 const META =
   "James has worked in finance for 18 years. Most UkMoneySheets templates are sheets he uses himself, built for UK tax years, council tax and ISAs.";
@@ -47,7 +47,7 @@ function AboutPage() {
           </p>
           <Button asChild size="lg" className="mt-6">
             <a
-              href={ABOUT_COPY.ctaUrl}
+              href={etsyLink(ABOUT_COPY.ctaUrl)}
               target="_blank"
               rel="noopener noreferrer"
             >

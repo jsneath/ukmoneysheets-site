@@ -1,9 +1,11 @@
 import { cashIsa, christmas, helpToSave } from "./savings";
 import { blackFriday, monthlyBudget, sheetsVsExcel, winterEnergy } from "./budgeting";
 import { houseDeposit, landlord, mortgage } from "./property";
+import { autumnBudget2026 } from "./budget";
 import { anic100k, crypto, mtd30k, registerSa, sideHustle } from "./tax";
 
 export const articles: Record<string, string> = {
+  "autumn-budget-2026-what-it-means": autumnBudget2026,
   "cash-isa-12k-under-65-planner": cashIsa,
   "sheets-vs-excel-uk-budgeting": sheetsVsExcel,
   "help-to-save-deposit-bonus-tracker": helpToSave,

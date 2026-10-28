@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { openCookieSettings } from "@/lib/analytics";
-import { SITE, pageHead } from "@/lib/site";
+import { SITE, etsyLink, pageHead } from "@/lib/site";
 
 export const Route = createFileRoute("/privacy")({
   head: () =>
@@ -33,7 +33,7 @@ function PrivacyPage() {
           Purchases happen on Etsy, under Etsy's own privacy policy. If you have
           a question about your data, contact us through our{" "}
           <a
-            href={SITE.shopUrl}
+            href={etsyLink(SITE.shopUrl)}
             target="_blank"
             rel="noopener noreferrer"
             className="text-teal underline underline-offset-2"

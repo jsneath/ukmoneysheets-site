@@ -9,7 +9,7 @@ type Block =
   | { type: "quote"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
-  | { type: "table"; headers: string[]; rows: string[][] }
+  | { type: "table"; headers: string[]; rows: string[][]; caption?: string }
   | { type: "hr" };
 
 function parseInline(text: string): ReactNode[] {
@@ -42,9 +42,10 @@ function parseInline(text: string): ReactNode[] {
             </Link>,
           );
         } else if (href.startsWith("/guides/")) {
-          const slug = href.replace(/^\/guides\//, "").replace(/\/$/, "");
+          const [path, hash] = href.split("#");
+          const slug = (path ?? "").replace(/^\/guides\//, "").replace(/\/$/, "");
           nodes.push(
-            <Link key={key++} to="/guides/$slug" params={{ slug }}>
+            <Link key={key++} to="/guides/$slug" params={{ slug }} hash={hash || undefined}>
               {label}
             </Link>,
           );
@@ -134,15 +135,27 @@ export function parseMarkdown(src: string): Block[] {
       blocks.push({ type: "ol", items });
       continue;
     }
-    if (line.includes("|") && i + 1 < lines.length && isTableSep(lines[i + 1] ?? "")) {
-      const headers = splitRow(line);
+    // Optional "Table: caption" line directly above a table.
+    let caption: string | undefined;
+    if (
+      line.startsWith("Table: ") &&
+      i + 2 < lines.length &&
+      (lines[i + 1] ?? "").includes("|") &&
+      isTableSep(lines[i + 2] ?? "")
+    ) {
+      caption = line.slice(7).trim();
+      i += 1;
+    }
+    const tline = lines[i] ?? "";
+    if (tline.includes("|") && i + 1 < lines.length && isTableSep(lines[i + 1] ?? "")) {
+      const headers = splitRow(tline);
       i += 2;
       const rows: string[][] = [];
       while (i < lines.length && (lines[i] ?? "").includes("|") && (lines[i] ?? "").trim()) {
         rows.push(splitRow(lines[i] ?? ""));
         i += 1;
       }
-      blocks.push({ type: "table", headers, rows });
+      blocks.push({ type: "table", headers, rows, caption });
       continue;
     }
     const parts: string[] = [line];
@@ -203,6 +216,7 @@ export function Markdown({ source }: { source: string }) {
             return (
               <div key={idx} className="table-wrap">
                 <table>
+                  {block.caption ? <caption>{block.caption}</caption> : null}
                   <thead>
                     <tr>
                       {block.headers.map((h, i) => (

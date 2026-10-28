@@ -66,8 +66,53 @@ const FEATURED_ORDER = [
 
 export const guides: GuideMeta[] = [
   {
+    slug: "autumn-budget-2026-what-it-means",
+    ctaUrl: "https://www.etsy.com/listing/4460132151?utm_source=site",
+    ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
+    seoTitle: "Autumn Budget 2026: What It Means for You",
+    title: "What the 28 Oct 2026 Budget Means for Your Money (UK)",
+    description:
+      "The 28 October 2026 Budget left income tax, National Insurance and VAT rates unchanged. From 6 April 2027 it raises savings and property income tax by a further 2 points, adds a Pension Tax Allowance and keeps the cash ISA limit at £20,000. It also brings a £100 energy payment for bands A to D in England.",
+    metaDescription:
+      "The 28 Oct 2026 Budget in plain English: pensioner tax, savings tax to 24%, cash ISA kept at £20k, energy help, first homes and MTD, with GOV.UK sources.",
+    category: "Tax",
+    image: "/guides/uk-monthly-budget-google-sheets.jpg",
+    imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
+    showHeaderImage: true,
+    headerImage: {
+      src: "/visual/guides/uk-monthly-budget-google-sheets.webp",
+      alt: "A UK monthly budget in Google Sheets on a laptop at home, example data shown",
+    },
+    keyFigures: [
+      { value: "24%", label: "savings basic rate from 6 April 2027 (now 20%)" },
+      { value: "£20,000", label: "cash ISA limit stays for all adult savers" },
+      { value: "£100", label: "energy payment, bands A to D in England, from January 2027" },
+    ],
+    keyFacts: [
+      "Income tax, National Insurance and VAT rates are unchanged; the Personal Allowance stays £12,570.",
+      "Pensioners with total income up to £13,036.40 pay no income tax from 6 April 2027, through the new Pension Tax Allowance.",
+      "Making Tax Digital still starts on 6 April 2027 for qualifying income over £30,000, with no late-submission penalty points for 2027-28 quarterly updates.",
+      "Your First Home: a 20% equity loan with a 2.5% deposit, household income caps of £110,000 (£140,000 in London), applications from February 2027.",
+      "Tax measures are to be legislated in Finance Bill 2026-27, so they are subject to legislation.",
+    ],
+    product: {
+      name: "UK Monthly Budget sheet",
+      image: "/guides/uk-monthly-budget-google-sheets.jpg",
+      imageAlt: "UK Monthly Budget template in Google Sheets showing income, bills and spending, example data",
+    },
+    faqSchema: true,
+    freeToolCta: true,
+    shopLine:
+      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+    related: [
+      "uk-monthly-budget-google-sheets",
+      "winter-energy-bills-tracker",
+      "adjusted-net-income-100k-childcare-hicbc",
+    ],
+  },
+  {
     slug: "cash-isa-12k-under-65-planner",
-    ctaUrl: "https://www.etsy.com/listing/4461347110",
+    ctaUrl: "https://www.etsy.com/listing/4461347110?utm_source=site",
     ctaLabel: "Get the UK Net Worth tracker on Etsy",
     title:
       "Cash ISA Allowance Planner for Under-65s: Last Full Year Before the £12k Cap (UK)",
@@ -102,7 +147,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "help-to-save-deposit-bonus-tracker",
-    ctaUrl: "https://www.etsy.com/listing/4563932731",
+    ctaUrl: "https://www.etsy.com/listing/4563932731?utm_source=site",
     ctaLabel: "Get the savings challenge sheet on Etsy",
     seoTitle: "Help to Save 2026: Deposits & 50% Bonus Log",
     title:
@@ -139,7 +184,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "register-self-assessment-5-october",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4462593252",
+    ctaUrl: "https://www.etsy.com/listing/4462593252?utm_source=site",
     ctaLabel: "Get the Self Assessment 2025/26 sheet on Etsy",
     title:
       "How to Register for Self Assessment (UK): Deadlines, Late Registration + Spreadsheet Setup",
@@ -174,7 +219,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-monthly-budget-google-sheets",
-    ctaUrl: "https://www.etsy.com/listing/4460132151",
+    ctaUrl: "https://www.etsy.com/listing/4460132151?utm_source=site",
     ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
     seoTitle: "UK Monthly Budget Google Sheet: 2026 Guide",
     title: "How to Use a UK Monthly Budget Spreadsheet in Google Sheets",
@@ -202,6 +247,7 @@ export const guides: GuideMeta[] = [
     shopLine:
       "Get the UK Winter Energy Bill Tracker 2026/27 for Google Sheets on UkMoneySheets Etsy.",
     related: [
+      "autumn-budget-2026-what-it-means",
       "uk-christmas-savings-tracker",
       "sheets-vs-excel-uk-budgeting",
       "house-deposit-lisa-planner",
@@ -209,7 +255,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "house-deposit-lisa-planner",
-    ctaUrl: "https://www.etsy.com/listing/4463017307",
+    ctaUrl: "https://www.etsy.com/listing/4463017307?utm_source=site",
     ctaLabel: "Get the House Deposit Savings Planner on Etsy",
     seoTitle: "House Deposit & LISA Planner UK (2026/27)",
     title: "House Deposit and LISA Tracker: A Simple First-Time Buyer Planner (UK)",
@@ -244,7 +290,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "mortgage-overpayment-calculator",
-    ctaUrl: "https://www.etsy.com/listing/4563937681",
+    ctaUrl: "https://www.etsy.com/listing/4563937681?utm_source=site",
     ctaLabel: "Get the UK Mortgage Overpayment Calculator on Etsy",
     title: "Mortgage Overpayment Calculator UK: Interest and Time Saved",
     description:
@@ -301,7 +347,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "sheets-vs-excel-uk-budgeting",
-    ctaUrl: "https://www.etsy.com/listing/4460132151",
+    ctaUrl: "https://www.etsy.com/listing/4460132151?utm_source=site",
     ctaLabel: "Get the UK Monthly Budget sheet on Etsy",
     title: "Google Sheets vs Excel for UK Household Budgeting",
     description:
@@ -334,7 +380,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-christmas-savings-tracker",
-    ctaUrl: "https://www.etsy.com/listing/4568011416",
+    ctaUrl: "https://www.etsy.com/listing/4568011416?utm_source=site",
     ctaLabel: "Get the Christmas Savings Tracker on Etsy",
     title: "UK Christmas Savings Tracker: Gift List Plus January Bills",
     description:
@@ -367,7 +413,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "uk-crypto-section-104",
-    ctaUrl: "https://www.etsy.com/listing/4459672655",
+    ctaUrl: "https://www.etsy.com/listing/4459672655?utm_source=site",
     ctaLabel: "Get the UK Crypto Portfolio Tracker on Etsy",
     seoTitle: "Crypto Section 104 Log for UK CGT (2025/26)",
     title: "UK Crypto Portfolio Tracker: What to Log for Section 104 and CGT",
@@ -402,7 +448,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "uk-landlord-section-24",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4467684075",
+    ctaUrl: "https://www.etsy.com/listing/4467684075?utm_source=site",
     ctaLabel: "Get the UK Landlord sheet on Etsy",
     title: "UK Landlord Spreadsheet: Track Rental Income for Self Assessment",
     description:
@@ -436,7 +482,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "uk-self-assessment-side-hustle-sa103",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4533504008",
+    ctaUrl: "https://www.etsy.com/listing/4533504008?utm_source=site",
     ctaLabel: "Get the Side Hustle Tax 2026/27 sheet on Etsy",
     title:
       "UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)",
@@ -471,7 +517,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "making-tax-digital-30k-april-2027",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4533504008",
+    ctaUrl: "https://www.etsy.com/listing/4533504008?utm_source=site",
     ctaLabel: "Get the Side Hustle Tax 2026/27 sheet on Etsy",
     title:
       "Making Tax Digital £30k Threshold (April 2027): Qualifying Income Check",
@@ -507,7 +553,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "adjusted-net-income-100k-childcare-hicbc",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4598755762",
+    ctaUrl: "https://www.etsy.com/listing/4598755762?utm_source=site",
     ctaLabel: "Get the Childcare Cost & £100k Calculator 2026/27 on Etsy",
     title: "£100k Childcare Cliff: Work Out Your Adjusted Net Income (UK)",
     description:
@@ -534,6 +580,7 @@ export const guides: GuideMeta[] = [
     shopLine:
       "Get the Childcare Cost & £100k Calculator 2026/27 for Google Sheets on UkMoneySheets Etsy.",
     related: [
+      "autumn-budget-2026-what-it-means",
       "uk-monthly-budget-google-sheets",
       "uk-self-assessment-side-hustle-sa103",
       "register-self-assessment-5-october",
@@ -541,7 +588,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "black-friday-spending-cap-price-log",
-    ctaUrl: "https://www.etsy.com/listing/4568011416",
+    ctaUrl: "https://www.etsy.com/listing/4568011416?utm_source=site",
     ctaLabel: "Get the Christmas Savings Tracker on Etsy",
     title: "Black Friday Spending Cap + Price Log (UK 2026): Is the Deal Real?",
     description:
@@ -564,7 +611,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "winter-energy-bills-tracker",
-    ctaUrl: "https://www.etsy.com/listing/4598582893",
+    ctaUrl: "https://www.etsy.com/listing/4598582893?utm_source=site",
     ctaLabel: "Get the UK Winter Energy Bill Tracker 2026/27 on Etsy",
     title: "Winter Energy Bill Tracker (UK): Price Cap January 2027 & Should You Fix?",
     description:
@@ -581,6 +628,7 @@ export const guides: GuideMeta[] = [
     shopLine:
       "Get the UK Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
     related: [
+      "autumn-budget-2026-what-it-means",
       "uk-monthly-budget-google-sheets",
       "uk-christmas-savings-tracker",
       "black-friday-spending-cap-price-log",

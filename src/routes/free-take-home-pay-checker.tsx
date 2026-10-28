@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Check, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FREE_TOOL } from "@/lib/free-tool";
-import { SITE, pageHead } from "@/lib/site";
+import { SITE, etsyLink, pageHead } from "@/lib/site";
 
 const META =
   "Free Google Sheet for 2026/27: estimate your UK take-home pay, then check side or rental income for the £1,000 allowance, Self Assessment and MTD.";
@@ -46,22 +46,22 @@ const FULL_VERSIONS = [
   {
     title: "UK Salary / Monthly Budget",
     body: "Turn your take-home pay into a monthly plan.",
-    href: "https://www.etsy.com/listing/4460132151",
+    href: "https://www.etsy.com/listing/4460132151?utm_source=site",
   },
   {
     title: "UK Side Hustle Tax Spreadsheet",
     body: "Log side-hustle sales, expenses and mileage for Self Assessment (SA103).",
-    href: "https://www.etsy.com/listing/4533504008",
+    href: "https://www.etsy.com/listing/4533504008?utm_source=site",
   },
   {
     title: "Self Assessment 2025/26",
     body: "Get last year’s side-hustle figures ready for the 31 January 2027 deadline.",
-    href: "https://www.etsy.com/listing/4462593252",
+    href: "https://www.etsy.com/listing/4462593252?utm_source=site",
   },
   {
     title: "UK Landlord Spreadsheet",
     body: "Track rent, expenses and mortgage interest for your Self Assessment figures.",
-    href: "https://www.etsy.com/listing/4467684075",
+    href: "https://www.etsy.com/listing/4467684075?utm_source=site",
   },
 ];
 
@@ -199,7 +199,7 @@ function FreeToolPage() {
                   {item.body}
                 </p>
                 <a
-                  href={item.href}
+                  href={etsyLink(item.href)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex min-h-11 items-center gap-1.5 self-start text-sm font-semibold text-teal no-underline"

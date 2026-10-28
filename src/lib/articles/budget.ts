@@ -92,7 +92,7 @@ Two smaller items: HMRC will offset Child Benefit overpayments against the High 
 
 Your First Home is a government equity loan for first-time buyers of new-build homes in England, used as a main home. Household income must be £110,000 or less outside London, or £140,000 or less in London.
 
-- Deposit of at least 2.5% (maximum 15%), a 20% government equity loan and a repayment mortgage from a participating lender.
+- Deposit of at least 2.5%, a 20% government equity loan and a repayment mortgage from a participating lender.
 - The equity loan is interest-free for 5 years, then 1.5% in year 6 and 3% from year 7. You repay 20% of the home's value at the time, so the amount rises and falls with the price.
 - Price caps apply by local authority, for example Reading £375,000, Manchester £355,000, North Devon £320,000 and Middlesbrough £220,000; inner London £650,000 and outer London £500,000. The full list is still to be published.
 - Pre-registration by the end of December 2026, applications from February 2027, first sales in April 2027. £4.7bn is set aside over 5 years for around 70,000 households.
@@ -115,7 +115,7 @@ Saving for a deposit? See the [house deposit LISA planner guide](/guides/house-d
 ## What else was announced?
 
 - No change to headline rates of income tax, National Insurance or VAT.
-- National Living Wage up 3.9% to £13.21 an hour from 1 April 2027; the 18 to 20 rate is £11.27, and the 16 to 17 and apprentice rate £8.31.
+- National Living Wage up 3.9% to £13.21 an hour from 1 April 2027, and the 18 to 20 rate rises to £11.27.
 - Fuel duty: the 5p cut is extended and the RPI rise deferred to 1 July 2027.
 - Mileage: the tax-free rate is made permanent at 55p for the first 10,000 business miles, and 35p above that from 6 April 2027.
 - Student loans: Plan 2 and Plan 3 interest capped at 6% from 1 September 2026 to 31 August 2027.

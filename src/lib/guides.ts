@@ -131,7 +131,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/cash-isa-12k-under-65-planner/1.webp?v=3",
+        src: "/guides/inguide/cash-isa-12k-under-65-planner/1.webp?v=4",
         alt: "Real Google Sheets screenshot: plan regular saving in Google Sheets, sample data",
       },
       nearChecklist: {

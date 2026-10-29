@@ -270,7 +270,7 @@ function Home() {
           <span className="leaf-mark -right-10 -bottom-12 size-64 rotate-[-10deg]" aria-hidden />
           <img
             src="/about/james.jpg"
-            alt="James, founder of UkMoneySheets"
+            alt="James, founder of UKMoneySheets"
             width={160}
             height={160}
             loading="lazy"

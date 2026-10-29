@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "UkMoneySheets",
+  name: "UKMoneySheets",
   tagline: "Google Sheets for UK tax, salaries and savings.",
   description:
     "Calm Google Sheets templates and free guides for UK tax, salaries, household bills and savings. Built for British tax years, GBP and council tax — not US Excel worksheets.",
@@ -10,7 +10,7 @@ export const SITE = {
   url: "https://www.ukmoneysheets.co.uk",
   /** Default social card (home, /guides, guides without a per-page image). */
   ogImage: "/og.jpg",
-  ogImageAlt: "Simple Google Sheets for UK money — UkMoneySheets Google Sheets guide",
+  ogImageAlt: "Simple Google Sheets for UK money — UKMoneySheets Google Sheets guide",
 } as const;
 
 export const NAV = [

@@ -11,10 +11,10 @@ export function AuthorBox({ className }: { className?: string }) {
         "rounded-xl border border-teal/25 bg-mint/50 px-6 py-5 sm:px-7",
         className,
       )}
-      aria-label="About UkMoneySheets"
+      aria-label="About UKMoneySheets"
     >
       <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-        About UkMoneySheets
+        About UKMoneySheets
       </p>
       <p className="mt-2 text-[0.98rem] leading-relaxed text-body">
         {ABOUT_COPY.authorBox}{" "}

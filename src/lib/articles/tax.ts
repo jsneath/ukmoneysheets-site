@@ -78,9 +78,9 @@ Add 31 January for online filing and payment. If you registered late, also add a
 
 For a fuller walkthrough of SA103-style bookkeeping and common expense categories, read [UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)](/guides/uk-self-assessment-side-hustle-sa103). That guide covers *what* to track. This page covers *registering* and getting your records started.
 
-## How UkMoneySheets fits
+## How UKMoneySheets fits
 
-If you want a ready-made **Google Sheets** layout (not Excel) for side-hustle income and Self Assessment prep, the filing-year sheet is the **UK Side Hustle Tax Spreadsheet** on [UkMoneySheets on Etsy](https://www.etsy.com/listing/4462593252?utm_source=site).
+If you want a ready-made **Google Sheets** layout (not Excel) for side-hustle income and Self Assessment prep, the filing-year sheet is the **UK Side Hustle Tax Spreadsheet** on [UKMoneySheets on Etsy](https://www.etsy.com/listing/4462593252?utm_source=site).
 
 A **Side Hustle Bookkeeping Bundle** is a separate product if you want more than one year or extra tabs. It is not this link.
 
@@ -112,7 +112,7 @@ No. This is general information and a record-keeping checklist only.
 2. Look out for your UTR by post
 3. Start (or copy) an income and expense sheet for the tax year you are reporting
 4. Read the full tracking guide: [UK Self Assessment for Side Hustles (SA103)](/guides/uk-self-assessment-side-hustle-sa103)
-5. If you want a UK Google Sheets template, see the side-hustle tax tracker from [UkMoneySheets](https://www.etsy.com/listing/4462593252?utm_source=site)`;
+5. If you want a UK Google Sheets template, see the side-hustle tax tracker from [UKMoneySheets](https://www.etsy.com/listing/4462593252?utm_source=site)`;
 
 export const sideHustle = `> This article is general information about record-keeping, not personalised tax advice. Rules change. Check current guidance on GOV.UK or speak to a qualified adviser before you file.
 
@@ -242,9 +242,9 @@ Sam tutors online and sells a few digital downloads on Etsy. In May (tax year 20
 
 At year end, Sam filters \`Tax year = 2026/27\`, sums income and expenses, and uses those totals (plus any other adjustments required by HMRC) when completing the self-employment pages. The sheet does not decide what is allowable; it keeps the trail organised.
 
-## How the UkMoneySheets SA103 sheet fits
+## How the UKMoneySheets SA103 sheet fits
 
-If you want a ready-made layout instead of building columns from scratch, the [UK Side Hustle Tax Spreadsheet 2026/27 on UkMoneySheets](https://www.etsy.com/listing/4533504008?utm_source=site) is a Google Sheets file (not Excel) for side-hustle bookkeeping and Self Assessment prep in the current tax year.
+If you want a ready-made layout instead of building columns from scratch, the [UK Side Hustle Tax Spreadsheet 2026/27 on UKMoneySheets](https://www.etsy.com/listing/4533504008?utm_source=site) is a Google Sheets file (not Excel) for side-hustle bookkeeping and Self Assessment prep in the current tax year.
 
 Worth knowing about the shop’s products:
 
@@ -269,13 +269,13 @@ A budget spreadsheet plans spending. A Self Assessment tracker logs actual busin
 
 ### Is this tax advice?
 
-No. This article and any UkMoneySheets template are for organisation and education only. They are not advice on your personal tax position. Verify rules on GOV.UK or with a qualified adviser.
+No. This article and any UKMoneySheets template are for organisation and education only. They are not advice on your personal tax position. Verify rules on GOV.UK or with a qualified adviser.
 
 ## Get a UK-ready sheet (soft next step)
 
 If you are starting from a blank grid, set up the minimum columns above and log weekly.
 
-If you would rather start from a UK tax-year template aimed at side hustles and SA103, grab the **UK Side Hustle Tax Spreadsheet 2026/27** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4533504008?utm_source=site).
+If you would rather start from a UK tax-year template aimed at side hustles and SA103, grab the **UK Side Hustle Tax Spreadsheet 2026/27** from [UKMoneySheets on Etsy](https://www.etsy.com/listing/4533504008?utm_source=site).
 
 Then keep the habit: small weekly updates beat a March scramble — and always double-check figures against [GOV.UK](https://www.gov.uk) before you submit.`;
 
@@ -358,9 +358,9 @@ Exports help, but they often:
 
 A personal tracker (or specialist UK crypto tax software) is where you reconcile CSVs into one sterling timeline. Keep the raw CSVs anyway — they are part of your evidence pack.
 
-## How the UkMoneySheets crypto tracker fits
+## How the UKMoneySheets crypto tracker fits
 
-[UkMoneySheets](https://www.etsy.com/listing/4459672655?utm_source=site) sells a **UK Crypto Portfolio Tracker 2025/26 | Section 104 Estimate | Google Sheets**.
+[UKMoneySheets](https://www.etsy.com/listing/4459672655?utm_source=site) sells a **UK Crypto Portfolio Tracker 2025/26 | Section 104 Estimate | Google Sheets**.
 
 It is Google Sheets (not Excel), delivered typically via a PDF with a Sheets link so you can **File → Make a copy**.
 
@@ -392,9 +392,9 @@ No. Education and organisation only.
 
 Export every exchange CSV you can find. Start one sterling transaction log with the columns above. Back up wallet addresses and tx ids.
 
-If you want a UK-oriented Google Sheets layout aimed at portfolio logging and Section 104-style estimates, get the **UK Crypto Portfolio Tracker** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4459672655?utm_source=site), make your own copy, and treat every gain figure as an estimate until you (or your adviser) apply the live rules.`;
+If you want a UK-oriented Google Sheets layout aimed at portfolio logging and Section 104-style estimates, get the **UK Crypto Portfolio Tracker** from [UKMoneySheets on Etsy](https://www.etsy.com/listing/4459672655?utm_source=site), make your own copy, and treat every gain figure as an estimate until you (or your adviser) apply the live rules.`;
 
-export const mtd30k = `*This guide is general information, not tax advice. Rules and dates are from GOV.UK as at 29 October 2026, including the 28 October 2026 Budget — check the linked GOV.UK pages or a qualified adviser for your situation. Example figures are made up for illustration. UkMoneySheets templates are not HMRC-recognised MTD software.*
+export const mtd30k = `*This guide is general information, not tax advice. Rules and dates are from GOV.UK as at 29 October 2026, including the 28 October 2026 Budget — check the linked GOV.UK pages or a qualified adviser for your situation. Example figures are made up for illustration. UKMoneySheets templates are not HMRC-recognised MTD software.*
 
 ---
 
@@ -625,9 +625,9 @@ No. It's general information based on GOV.UK as at 29 October 2026. Check the li
 
 ## Track the numbers as you go
 
-A Google Sheet can hold your MTD digital records, but it can't send anything to HMRC on its own. You'll need HMRC-recognised bridging software that links to your sheet (no copy-and-paste), or other compatible software. UkMoneySheets templates are Google Sheets record-keeping and planning tools — they are not MTD software.
+A Google Sheet can hold your MTD digital records, but it can't send anything to HMRC on its own. You'll need HMRC-recognised bridging software that links to your sheet (no copy-and-paste), or other compatible software. UKMoneySheets templates are Google Sheets record-keeping and planning tools — they are not MTD software.
 
-Tracking a side hustle or a rental this tax year? The **[Side Hustle 2026/27](https://www.etsy.com/listing/4533504008?utm_source=site)** sheet and the **[UK Landlord / Section 24](https://www.etsy.com/listing/4467684075?utm_source=site)** sheet are Google Sheets templates for logging gross income and expenses as you go — handy for adding up your qualifying income. They're record-keeping tools, not MTD submission software. For the rest of the Budget, including property income tax rising to 24%, 44% and 49% from 6 April 2027 in England, Wales and Northern Ireland, see [what the 28 Oct 2026 Budget means for your money](/guides/autumn-budget-2026-what-it-means). You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
+Tracking a side hustle or a rental this tax year? The **[Side Hustle 2026/27](https://www.etsy.com/listing/4533504008?utm_source=site)** sheet and the **[UK Landlord / Section 24](https://www.etsy.com/listing/4467684075?utm_source=site)** sheet are Google Sheets templates for logging gross income and expenses as you go — handy for adding up your qualifying income. They're record-keeping tools, not MTD submission software. For the rest of the Budget, including property income tax rising to 24%, 44% and 49% from 6 April 2027 in England, Wales and Northern Ireland, see [what the 28 Oct 2026 Budget means for your money](/guides/autumn-budget-2026-what-it-means). You can see everything else in the [UKMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
 
 *General information, not tax or financial advice; check GOV.UK or a regulated adviser for your situation.*`;
 
@@ -870,6 +870,6 @@ No. It's general information based on GOV.UK rules for 2026/27. Check the linked
 
 ## Plan the year in a sheet
 
-There's no dedicated UkMoneySheets ANI calculator. The worksheet above is a free example layout you can build in Google Sheets. If you want to plan take-home pay, pension and childcare costs month by month, the **UK Salary / Monthly Budget** sheet is the closest fit.
+There's no dedicated UKMoneySheets ANI calculator. The worksheet above is a free example layout you can build in Google Sheets. If you want to plan take-home pay, pension and childcare costs month by month, the **UK Salary / Monthly Budget** sheet is the closest fit.
 
-Want to run your own numbers? The [Childcare Cost & £100k Calculator 2026/27](https://www.etsy.com/listing/4598755762?utm_source=site) is a Google Sheet for working through your childcare costs against the £100k limit. Check the rules on GOV.UK too. For pay and monthly outgoings across the year, the [UK Salary / Monthly Budget Google Sheet](https://www.etsy.com/listing/4460132151?utm_source=site) still helps. You can browse the rest of the range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).`;
+Want to run your own numbers? The [Childcare Cost & £100k Calculator 2026/27](https://www.etsy.com/listing/4598755762?utm_source=site) is a Google Sheet for working through your childcare costs against the £100k limit. Check the rules on GOV.UK too. For pay and monthly outgoings across the year, the [UK Salary / Monthly Budget Google Sheet](https://www.etsy.com/listing/4460132151?utm_source=site) still helps. You can browse the rest of the range in the [UKMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).`;

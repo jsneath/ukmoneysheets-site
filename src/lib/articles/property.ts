@@ -110,9 +110,9 @@ Sam needs £24,000. They have £8,000 in a LISA (including bonuses already paid)
 
 If a month is tight, reduce the non-LISA pot first or pause extras — but note the impact on your timeline honestly on the sheet.
 
-## How the UkMoneySheets house deposit planner fits
+## How the UKMoneySheets house deposit planner fits
 
-If you want a ready-made layout, [UkMoneySheets](https://www.etsy.com/listing/4463017307?utm_source=site) sells a **House Deposit Savings Planner for Google Sheets | First-Time Buyer Budget & LISA Tracker**.
+If you want a ready-made layout, [UKMoneySheets](https://www.etsy.com/listing/4463017307?utm_source=site) sells a **House Deposit Savings Planner for Google Sheets | First-Time Buyer Budget & LISA Tracker**.
 
 It is a Google Sheets template. You typically receive a PDF with the Sheets link, then use **File → Make a copy** into your own Drive.
 
@@ -122,7 +122,7 @@ Related products if you are building a wider money system:
 - **UK Net Worth Tracker**
 - **UK Money Toolkit** bundle
 
-You can browse them all in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
+You can browse them all in the [UKMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
 
 A template organises the numbers. It does not guarantee a mortgage offer, a bonus payment, or that a property will qualify under LISA rules.
 
@@ -150,13 +150,13 @@ No. Use [MoneyHelper’s LISA guide](https://www.moneyhelper.org.uk/en/savings/t
 
 ### Is this financial advice?
 
-No. This article and any UkMoneySheets template are for organisation and education only.
+No. This article and any UKMoneySheets template are for organisation and education only.
 
 ## Soft next step
 
 Write your target price and deposit % on one line. Add every pot that will fund it. Schedule the monthly transfers.
 
-If you want a UK-ready Google Sheet built for first-time buyer deposit and LISA tracking, get the **House Deposit Savings Planner** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4463017307?utm_source=site), make your own copy, and keep the monthly update.
+If you want a UK-ready Google Sheet built for first-time buyer deposit and LISA tracking, get the **House Deposit Savings Planner** from [UKMoneySheets on Etsy](https://www.etsy.com/listing/4463017307?utm_source=site), make your own copy, and keep the monthly update.
 
 Then confirm every LISA figure on [GOV.UK](https://www.gov.uk/lifetime-isa) before you rely on it for a completion date.
 
@@ -377,9 +377,9 @@ Optional: tenant or tenancy ID, payment method, “reconciled to agent statement
 
 At year end, filter by tax year and property, total income, total allowable expenses, and total finance costs separately — then take those summaries to your return or accountant.
 
-## How the UkMoneySheets landlord spreadsheet fits
+## How the UKMoneySheets landlord spreadsheet fits
 
-If you want a UK-ready layout, [UkMoneySheets](https://www.etsy.com/listing/4467684075?utm_source=site) sells a **UK Landlord Spreadsheet 2025/26 | Property Tax Self Assessment | Rental Income | Google Sheets**.
+If you want a UK-ready layout, [UKMoneySheets](https://www.etsy.com/listing/4467684075?utm_source=site) sells a **UK Landlord Spreadsheet 2025/26 | Property Tax Self Assessment | Rental Income | Google Sheets**.
 
 It is built for Google Sheets (not Excel). Delivery is typically a PDF with the Sheets link so you can **File → Make a copy** into your Drive.
 
@@ -406,12 +406,12 @@ The restriction described for individuals does not work the same way for compani
 
 ### Is this tax advice?
 
-No. This article and any UkMoneySheets template are for organisation and education only.
+No. This article and any UKMoneySheets template are for organisation and education only.
 
 ## Soft next step
 
 Start a tax-year ledger with income, expenses, and finance costs in separate types. Reconcile to agent statements monthly.
 
-If you want a UK Google Sheets layout aimed at rental Self Assessment, grab the **UK Landlord Spreadsheet** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4467684075?utm_source=site), make your own copy, and keep finance costs clearly labelled.
+If you want a UK Google Sheets layout aimed at rental Self Assessment, grab the **UK Landlord Spreadsheet** from [UKMoneySheets on Etsy](https://www.etsy.com/listing/4467684075?utm_source=site), make your own copy, and keep finance costs clearly labelled.
 
 Then confirm every tax treatment on [GOV.UK](https://www.gov.uk) before you submit.`;

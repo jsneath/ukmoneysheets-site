@@ -7,7 +7,7 @@ export const Route = createFileRoute("/privacy")({
     pageHead({
       title: `Privacy & Cookies | ${SITE.name}`,
       description:
-        "How UkMoneySheets uses Google Analytics cookies, which are only set if you accept, and how to change your cookie choice at any time.",
+        "How UKMoneySheets uses Google Analytics cookies, which are only set if you accept, and how to change your cookie choice at any time.",
       path: "/privacy",
     }),
   component: PrivacyPage,

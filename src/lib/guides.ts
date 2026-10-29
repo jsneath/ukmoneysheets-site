@@ -3,7 +3,7 @@ export type GuideMeta = {
   title: string;
   /**
    * Optional search title (the <title>, og:title, twitter:title) before the
-   * " | UkMoneySheets" suffix. Keep ≤44 chars so the full title is ≤60.
+   * " | UKMoneySheets" suffix. Keep ≤44 chars so the full title is ≤60.
    * Falls back to `title`; the H1 and cards always use `title`.
    */
   seoTitle?: string;
@@ -36,7 +36,7 @@ export type GuideMeta = {
   shopLine?: string;
   /** Buyer link for this guide. Omit to keep the shop URL. */
   ctaUrl?: string;
-  /** Label for the guide CTA buttons; falls back to "Browse UkMoneySheets on Etsy". */
+  /** Label for the guide CTA buttons; falls back to "Browse UKMoneySheets on Etsy". */
   ctaLabel?: string;
   /** Emit FAQPage JSON-LD from the article's "## FAQ" section. */
   faqSchema?: boolean;
@@ -103,7 +103,7 @@ export const guides: GuideMeta[] = [
     faqSchema: true,
     freeToolCta: true,
     shopLine:
-      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "uk-monthly-budget-google-sheets",
       "winter-energy-bills-tracker",
@@ -127,7 +127,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/cash-isa-12k-under-65-planner.jpg?v=2",
     imageAlt: "Cash ISA allowance planner for 2026/27: Google Sheets dashboard preview, sample data",
     ogImage: "/og/cash-isa-12k-under-65-planner.jpg?v=2",
-    ogImageAlt: "Cash ISA allowance planner for 2026/27 \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Cash ISA allowance planner for 2026/27 \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -163,7 +163,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/help-to-save-deposit-bonus-tracker.jpg",
     imageAlt: "Help to Save deposits and bonus planner: Google Sheets dashboard preview, sample data",
     ogImage: "/og/help-to-save-deposit-bonus-tracker.jpg",
-    ogImageAlt: "Help to Save deposits and bonus planner \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Help to Save deposits and bonus planner \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -176,7 +176,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Browse UkMoneySheets on Etsy for UK Google Sheets that sit beside your Help to Save habit.",
+      "Browse UKMoneySheets on Etsy for UK Google Sheets that sit beside your Help to Save habit.",
     related: [
       "uk-monthly-budget-google-sheets",
       "uk-christmas-savings-tracker",
@@ -199,7 +199,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/register-self-assessment-5-october.jpg",
     imageAlt: "Register for Self Assessment: Google Sheets dashboard preview, sample data",
     ogImage: "/og/register-self-assessment-5-october.jpg?v=2",
-    ogImageAlt: "Register for Self Assessment \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Register for Self Assessment \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -212,7 +212,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Browse side-hustle and Self Assessment Google Sheets on UkMoneySheets Etsy.",
+      "Browse side-hustle and Self Assessment Google Sheets on UKMoneySheets Etsy.",
     related: [
       "uk-self-assessment-side-hustle-sa103",
       "uk-landlord-section-24",
@@ -234,7 +234,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
     imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-monthly-budget-google-sheets.jpg",
-    ogImageAlt: "UK monthly budget in Google Sheets \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "UK monthly budget in Google Sheets \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -247,7 +247,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the UK Winter Energy Bill Tracker 2026/27 for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Winter Energy Bill Tracker 2026/27 for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "autumn-budget-2026-what-it-means",
       "uk-christmas-savings-tracker",
@@ -271,7 +271,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/house-deposit-lisa-planner.jpg",
     imageAlt: "House deposit and LISA planner: Google Sheets dashboard preview, sample data",
     ogImage: "/og/house-deposit-lisa-planner.jpg",
-    ogImageAlt: "House deposit and LISA planner \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "House deposit and LISA planner \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -284,7 +284,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the House Deposit Savings Planner (FTB & LISA) on UkMoneySheets Etsy.",
+      "Get the House Deposit Savings Planner (FTB & LISA) on UKMoneySheets Etsy.",
     related: [
       "mortgage-overpayment-calculator",
       "uk-monthly-budget-google-sheets",
@@ -305,7 +305,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/mortgage-overpayment-calculator.jpg",
     imageAlt: "Mortgage overpayment calculator: Google Sheets dashboard preview, sample data",
     ogImage: "/og/mortgage-overpayment-calculator.jpg",
-    ogImageAlt: "Mortgage overpayment calculator UK \u2014 UkMoneySheets free calculator and Google Sheets guide",
+    ogImageAlt: "Mortgage overpayment calculator UK \u2014 UKMoneySheets free calculator and Google Sheets guide",
     faqSchema: true,
     freeToolCta: true,
     inlineTool: "mortgage-overpayment",
@@ -341,7 +341,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the UK Mortgage Overpayment Calculator for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Mortgage Overpayment Calculator for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "house-deposit-lisa-planner",
       "uk-monthly-budget-google-sheets",
@@ -361,7 +361,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/sheets-vs-excel-uk-budgeting.jpg",
     imageAlt: "Google Sheets vs Excel for UK budgets: Google Sheets dashboard preview, sample data",
     ogImage: "/og/sheets-vs-excel-uk-budgeting.jpg",
-    ogImageAlt: "Google Sheets vs Excel for UK budgets \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Google Sheets vs Excel for UK budgets \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -373,7 +373,7 @@ export const guides: GuideMeta[] = [
         alt: "Choosing for a UK household budget: Share one live link with a partner; Make quick edits on your phone; Free with a Google account for personal use; Need heavy offline desktop work? Excel may suit; Whichever you pick, start from a UK layout",
       },
     },
-    shopLine: "Get the UK Monthly Budget sheet for Google Sheets on UkMoneySheets Etsy",
+    shopLine: "Get the UK Monthly Budget sheet for Google Sheets on UKMoneySheets Etsy",
     freeToolCta: true,
     related: [
       "uk-monthly-budget-google-sheets",
@@ -394,7 +394,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/uk-christmas-savings-tracker.jpg",
     imageAlt: "Christmas savings tracker: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-christmas-savings-tracker.jpg",
-    ogImageAlt: "Christmas savings tracker \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Christmas savings tracker \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -407,7 +407,7 @@ export const guides: GuideMeta[] = [
       },
     },
     // Soft evergreen shop line only — no Christmas chrome CTA
-    shopLine: "Browse UkMoneySheets on Etsy for calm UK Google Sheets templates.",
+    shopLine: "Browse UKMoneySheets on Etsy for calm UK Google Sheets templates.",
     related: [
       "uk-monthly-budget-google-sheets",
       "help-to-save-deposit-bonus-tracker",
@@ -428,7 +428,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/uk-crypto-section-104.jpg",
     imageAlt: "Crypto records for Section 104 and CGT: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-crypto-section-104.jpg",
-    ogImageAlt: "Crypto records for Section 104 and CGT \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Crypto records for Section 104 and CGT \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -441,7 +441,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the UK Crypto Portfolio Tracker for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Crypto Portfolio Tracker for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "uk-self-assessment-side-hustle-sa103",
       "register-self-assessment-5-october",
@@ -462,7 +462,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/uk-landlord-section-24.jpg",
     imageAlt: "Landlord records for Self Assessment: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-landlord-section-24.jpg",
-    ogImageAlt: "Landlord records for Self Assessment \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Landlord records for Self Assessment \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -475,7 +475,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the UK Landlord Spreadsheet for Self Assessment on UkMoneySheets Etsy.",
+      "Get the UK Landlord Spreadsheet for Self Assessment on UKMoneySheets Etsy.",
     related: [
       "uk-self-assessment-side-hustle-sa103",
       "register-self-assessment-5-october",
@@ -497,7 +497,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/uk-self-assessment-side-hustle-sa103.jpg",
     imageAlt: "Side hustle records for SA103: Google Sheets dashboard preview, sample data",
     ogImage: "/og/uk-self-assessment-side-hustle-sa103.jpg",
-    ogImageAlt: "Side hustle records for SA103 \u2014 UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Side hustle records for SA103 \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -510,7 +510,7 @@ export const guides: GuideMeta[] = [
       },
     },
     shopLine:
-      "Get the UK Side Hustle Tax Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Side Hustle Tax Spreadsheet for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "register-self-assessment-5-october",
       "uk-landlord-section-24",
@@ -532,7 +532,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/making-tax-digital-30k-april-2027.jpg",
     imageAlt: "Making Tax Digital £30k qualifying income check: Google Sheets dashboard preview, sample data",
     ogImage: "/og/making-tax-digital-30k-april-2027.jpg",
-    ogImageAlt: "Making Tax Digital £30k qualifying income check — UkMoneySheets Google Sheets guide",
+    ogImageAlt: "Making Tax Digital £30k qualifying income check — UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -546,7 +546,7 @@ export const guides: GuideMeta[] = [
     },
     faqSchema: true,
     shopLine:
-      "Get the UK Side Hustle Tax Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Side Hustle Tax Spreadsheet for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "uk-self-assessment-side-hustle-sa103",
       "uk-landlord-section-24",
@@ -567,7 +567,7 @@ export const guides: GuideMeta[] = [
     image: "/guides/adjusted-net-income-100k-childcare-hicbc.jpg",
     imageAlt: "The £100k childcare cliff and adjusted net income: Google Sheets dashboard preview, sample data",
     ogImage: "/og/adjusted-net-income-100k-childcare-hicbc.jpg",
-    ogImageAlt: "The £100k childcare cliff and adjusted net income — UkMoneySheets Google Sheets guide",
+    ogImageAlt: "The £100k childcare cliff and adjusted net income — UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
@@ -581,7 +581,7 @@ export const guides: GuideMeta[] = [
     },
     faqSchema: true,
     shopLine:
-      "Get the Childcare Cost & £100k Calculator 2026/27 for Google Sheets on UkMoneySheets Etsy.",
+      "Get the Childcare Cost & £100k Calculator 2026/27 for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "autumn-budget-2026-what-it-means",
       "uk-monthly-budget-google-sheets",
@@ -605,7 +605,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     faqSchema: true,
     shopLine:
-      "Get the UK Christmas Savings Tracker for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Christmas Savings Tracker for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "uk-christmas-savings-tracker",
       "uk-monthly-budget-google-sheets",
@@ -629,7 +629,7 @@ export const guides: GuideMeta[] = [
     faqSchema: true,
     freeToolCta: true,
     shopLine:
-      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UkMoneySheets Etsy.",
+      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UKMoneySheets Etsy.",
     related: [
       "autumn-budget-2026-what-it-means",
       "uk-monthly-budget-google-sheets",

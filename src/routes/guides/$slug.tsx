@@ -208,7 +208,7 @@ function GuidePage() {
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Not tax or financial advice. Rules, allowances and product names
               change — GOV.UK is the source of truth. Confirm the live Etsy
-              listing before purchase. UkMoneySheets templates are Google Sheets
+              listing before purchase. UKMoneySheets templates are Google Sheets
               only (never Excel), delivered as a PDF with a copy link, prices in
               GBP.
             </p>
@@ -222,7 +222,7 @@ function GuidePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {guide.ctaLabel ?? "Browse UkMoneySheets on Etsy"}
+                {guide.ctaLabel ?? "Browse UKMoneySheets on Etsy"}
                 <ArrowUpRight />
               </a>
             </Button>
@@ -253,9 +253,9 @@ function GuidePage() {
           title="Shop UK Google Sheets on Etsy"
           body={
             guide.shopLine ??
-            "Browse UkMoneySheets on Etsy for calm UK Google Sheets templates."
+            "Browse UKMoneySheets on Etsy for calm UK Google Sheets templates."
           }
-          ctaLabel={guide.ctaLabel ?? "Browse UkMoneySheets on Etsy"}
+          ctaLabel={guide.ctaLabel ?? "Browse UKMoneySheets on Etsy"}
           href={guide.ctaUrl ?? SITE.shopUrl}
         />
       </section>

@@ -97,9 +97,9 @@ For everything else in the Budget, see [what the 28 Oct 2026 Budget means for yo
 - Not stocks-vs-cash investment advice
 - Not a guide to getting round ISA rules
 
-## How a UkMoneySheets-style sheet fits
+## How a UKMoneySheets-style sheet fits
 
-There is no Cash ISA calculator in the shop. The nearest sheet is the [UK Net Worth tracker on UkMoneySheets](https://www.etsy.com/listing/4461347110?utm_source=site), which can sit beside an ISA plan. It is not a Cash ISA calculator.
+There is no Cash ISA calculator in the shop. The nearest sheet is the [UK Net Worth tracker on UKMoneySheets](https://www.etsy.com/listing/4461347110?utm_source=site), which can sit beside an ISA plan. It is not a Cash ISA calculator.
 
 Files are Google Sheets templates, usually delivered via a PDF with a Sheets link, then **File → Make a copy**.
 
@@ -140,7 +140,7 @@ No. Education and organisation only.
 1. Confirm the live limits on [GOV.UK ISAs](https://www.gov.uk/individual-savings-accounts)
 2. Set a cash target for the tax year and log subscriptions in a Google Sheet
 3. Each April, re-check the limits and the savings tax rates before you set standing orders
-4. If you want a sheet for the wider picture, the nearest fit is the [UK Net Worth tracker on UkMoneySheets](https://www.etsy.com/listing/4461347110?utm_source=site). It is not a Cash ISA calculator. You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
+4. If you want a sheet for the wider picture, the nearest fit is the [UK Net Worth tracker on UKMoneySheets](https://www.etsy.com/listing/4461347110?utm_source=site). It is not a Cash ISA calculator. You can see everything else in the [UKMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
 
 Plan the year. Verify the rules. Do not invent loopholes.
 
@@ -255,9 +255,9 @@ For household budgeting around the standing order, see [UK monthly budget in Goo
 
 Do not merge them into one muddled tab if that hides Help to Save’s calendar-month £50 cap.
 
-## How UkMoneySheets sheets fit
+## How UKMoneySheets sheets fit
 
-There is no Help to Save calculator in the shop. The nearest sheet is the [savings challenge sheet on UkMoneySheets](https://www.etsy.com/listing/4563932731?utm_source=site), a habit tracker for regular saving. It is not a Help to Save calculator.
+There is no Help to Save calculator in the shop. The nearest sheet is the [savings challenge sheet on UKMoneySheets](https://www.etsy.com/listing/4563932731?utm_source=site), a habit tracker for regular saving. It is not a Help to Save calculator.
 
 Google Sheets only (not Excel); PDF delivery with a Sheets link; **File → Make a copy**.
 
@@ -298,7 +298,7 @@ No.
 1. Check eligibility and open (if you qualify) on [GOV.UK](https://www.gov.uk/get-help-savings-low-income) or the HMRC app
 2. Log each calendar month’s deposit in a Google Sheet
 3. Treat bonus columns as estimates until HMRC shows the official figure
-4. If you want a habit sheet beside this log, the nearest fit is the [savings challenge sheet on UkMoneySheets](https://www.etsy.com/listing/4563932731?utm_source=site). It is not a Help to Save calculator.
+4. If you want a habit sheet beside this log, the nearest fit is the [savings challenge sheet on UKMoneySheets](https://www.etsy.com/listing/4563932731?utm_source=site). It is not a Help to Save calculator.
 
 Small monthly amounts. Official bonus rules. Your sheet keeps the habit honest.`;
 
@@ -376,9 +376,9 @@ Pick a 15-minute slot each week (Sunday evening works for many):
 
 From early December, freeze new “nice to have” names on the list unless something comes off.
 
-## How the UkMoneySheets Christmas tracker fits
+## How the UKMoneySheets Christmas tracker fits
 
-If you want a ready-made layout, [UkMoneySheets](https://www.etsy.com/listing/4568011416?utm_source=site) sells a **UK Christmas Savings Tracker 2026 Gift List, January Bills Google Sheets**.
+If you want a ready-made layout, [UKMoneySheets](https://www.etsy.com/listing/4568011416?utm_source=site) sells a **UK Christmas Savings Tracker 2026 Gift List, January Bills Google Sheets**.
 
 It is Google Sheets (not Excel). You typically get a PDF with the Sheets link, then **File → Make a copy** into your own Drive.
 
@@ -408,6 +408,6 @@ No — organisation and planning ideas only.
 
 Write a household Christmas cap and a January buffer target today. Add every name on your gift list. Schedule the weekly transfer.
 
-If you want a UK-ready Google Sheet for gifts plus January bills, grab the **UK Christmas Savings Tracker** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4568011416?utm_source=site), make your own copy, and keep the autumn habit going.
+If you want a UK-ready Google Sheet for gifts plus January bills, grab the **UK Christmas Savings Tracker** from [UKMoneySheets on Etsy](https://www.etsy.com/listing/4568011416?utm_source=site), make your own copy, and keep the autumn habit going.
 
 December is brighter when January is already funded.`;

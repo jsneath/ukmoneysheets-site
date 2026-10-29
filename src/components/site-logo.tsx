@@ -32,7 +32,7 @@ export function SiteLogo({
       <LogoMark />
       <span className="flex min-w-0 flex-col">
         <span className="font-display text-[1.45rem] leading-none font-semibold tracking-[-0.03em]">
-          UkMoneySheets
+          UKMoneySheets
         </span>
         {compact ? null : (
           <span className="mt-1 hidden text-[0.72rem] leading-snug text-muted sm:block">

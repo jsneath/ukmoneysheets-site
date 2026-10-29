@@ -5,12 +5,12 @@ import { ABOUT_COPY, ABOUT_PHOTO, aboutJsonLdScript } from "@/lib/about";
 import { etsyLink, pageHead } from "@/lib/site";
 
 const META =
-  "James has worked in finance for 18 years. Most UkMoneySheets templates are sheets he uses himself, built for UK tax years, council tax and ISAs.";
+  "James has worked in finance for 18 years. Most UKMoneySheets templates are sheets he uses himself, built for UK tax years, council tax and ISAs.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     ...pageHead({
-      // Brand is already in the title, so no " | UkMoneySheets" suffix.
+      // Brand is already in the title, so no " | UKMoneySheets" suffix.
       title: ABOUT_COPY.title,
       description: META,
       path: "/about",

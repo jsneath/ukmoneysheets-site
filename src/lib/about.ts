@@ -7,16 +7,16 @@ import { SITE, absoluteUrl } from "@/lib/site";
  */
 export const ABOUT_PHOTO: { src: string; alt: string } | null = {
   src: "/about/james.jpg",
-  alt: "James, founder of UkMoneySheets, smiling in a grey jacket, white shirt and maroon tie.",
+  alt: "James, founder of UKMoneySheets, smiling in a grey jacket, white shirt and maroon tie.",
 };
 
 /** Approved copy: brand/2026-10-08-about-james-copy.md, section 3 (verbatim). */
 export const ABOUT_COPY = {
-  title: "About UkMoneySheets",
+  title: "About UKMoneySheets",
   h1: "Hi, I'm James",
   body: [
     "I've worked in finance for 18 years, and spreadsheets became a slight obsession in my job. Over time I used the same approach for my own money, with spreadsheets I kept coming back to every month.",
-    "Friends and family started asking me for budget advice, and I'd share the sheets I actually use. That led me to make them properly, for anyone in the UK to use. Most of the UkMoneySheets templates are ones I use personally; a few others are sheets I believe will be truly helpful to many more people.",
+    "Friends and family started asking me for budget advice, and I'd share the sheets I actually use. That led me to make them properly, for anyone in the UK to use. Most of the UKMoneySheets templates are ones I use personally; a few others are sheets I believe will be truly helpful to many more people.",
     "Why UK-only? Most templates online are American. UK money runs on different rules: tax years from 6 April, Self Assessment, council tax, ISAs and the Lifetime ISA. Every sheet here is built around those.",
     "The free guides on this site explain the rules in plain English, with links to GOV.UK. They're general information, not financial or tax advice.",
   ],
@@ -27,7 +27,7 @@ export const ABOUT_COPY = {
   ctaUrl: SITE.shopUrl,
   /** Author box shown at the bottom of every guide (section 3, verbatim). */
   authorBox:
-    "UkMoneySheets is run by James, who has worked in finance for 18 years and builds UK budgeting and tax spreadsheets he uses himself. General information, not financial or tax advice.",
+    "UKMoneySheets is run by James, who has worked in finance for 18 years and builds UK budgeting and tax spreadsheets he uses himself. General information, not financial or tax advice.",
   authorBoxLink: "About James",
 } as const;
 

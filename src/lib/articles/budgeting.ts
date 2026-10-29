@@ -158,9 +158,9 @@ In fifteen minutes:
 
 Consistency beats a perfect spreadsheet you never open.
 
-## How the UkMoneySheets monthly budget sheet fits
+## How the UKMoneySheets monthly budget sheet fits
 
-If you would rather start from a UK-ready layout than build columns yourself, [UkMoneySheets](https://www.etsy.com/listing/4460132151?utm_source=site) sells a **UK Monthly Budget Spreadsheet for Google Sheets | Bills, Expenses & Savings**.
+If you would rather start from a UK-ready layout than build columns yourself, [UKMoneySheets](https://www.etsy.com/listing/4460132151?utm_source=site) sells a **UK Monthly Budget Spreadsheet for Google Sheets | Bills, Expenses & Savings**.
 
 It is built for Google Sheets (not Excel). Delivery is typically a PDF that gives you the Sheets link so you can make a copy in your own Drive.
 
@@ -189,13 +189,13 @@ Either can work. Digital “envelopes” are just categories with planned limits
 
 ### Is this financial advice?
 
-No. This article and any UkMoneySheets template are for organisation and education only. They are not advice on investments, debt solutions, or your personal finances. For free impartial guidance, try [MoneyHelper](https://www.moneyhelper.org.uk/en).
+No. This article and any UKMoneySheets template are for organisation and education only. They are not advice on investments, debt solutions, or your personal finances. For free impartial guidance, try [MoneyHelper](https://www.moneyhelper.org.uk/en).
 
 ## Get a UK monthly budget sheet (soft next step)
 
 You can build the structure above in a blank Google Sheet this weekend.
 
-If you want a ready-made UK layout for bills, expenses, and savings, grab the **UK Monthly Budget Spreadsheet for Google Sheets** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4460132151?utm_source=site), make your own copy, and keep the fifteen-minute weekly review.
+If you want a ready-made UK layout for bills, expenses, and savings, grab the **UK Monthly Budget Spreadsheet for Google Sheets** from [UKMoneySheets on Etsy](https://www.etsy.com/listing/4460132151?utm_source=site), make your own copy, and keep the fifteen-minute weekly review.
 
 The sheet holds the plan. You make it true.`;
 
@@ -249,11 +249,11 @@ The tool matters less than whether the template speaks **UK life**: council tax 
 
 US Excel budgets full of “401(k)” and calendar-year tabs waste setup time. Whether you pick Sheets or Excel, start from a **UK** layout.
 
-UkMoneySheets builds for **Google Sheets only** — UK monthly budgets, deposit planners, landlord and Self Assessment trackers — delivered as a PDF with a Sheets link so you can make your own copy.
+UKMoneySheets builds for **Google Sheets only** — UK monthly budgets, deposit planners, landlord and Self Assessment trackers — delivered as a PDF with a Sheets link so you can make your own copy.
 
-## When UkMoneySheets fits
+## When UKMoneySheets fits
 
-Pick UkMoneySheets if:
+Pick UKMoneySheets if:
 
 - You want **Google Sheets**, not Excel files
 - You need UK categories and GBP out of the box
@@ -261,7 +261,7 @@ Pick UkMoneySheets if:
 
 Start with the **UK Monthly Budget Spreadsheet for Google Sheets | Bills, Expenses & Savings**, or the wider **UK Money Toolkit** if you want several planners together.
 
-Browse: [UkMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets?utm_source=site)
+Browse: [UKMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets?utm_source=site)
 
 If you are firmly an Excel-only household, look for UK Excel templates elsewhere — this shop will not convert to \`.xlsx\` for you.
 
@@ -287,7 +287,7 @@ No — only a practical comparison of tools.
 
 If you and a partner need one shared file on phones, open a Google Sheet this week and list income, bills, and sinking funds.
 
-If you want a ready-made UK layout in Sheets, get the **UK Monthly Budget Spreadsheet** (or the **Money Toolkit**) from [UkMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets?utm_source=site), make a copy, and keep a fifteen-minute weekly review.
+If you want a ready-made UK layout in Sheets, get the **UK Monthly Budget Spreadsheet** (or the **Money Toolkit**) from [UKMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets?utm_source=site), make a copy, and keep a fifteen-minute weekly review.
 
 Excel users: stick with Excel if it already works — just use UK categories.`;
 
@@ -426,7 +426,7 @@ No. It's general information based on the sources linked, as at October 2026.
 
 ## Plan your gifts around the sales
 
-Planning Christmas gifts around the sales? The [UK Christmas Savings Tracker](https://www.etsy.com/listing/4568011416?utm_source=site) is a Google Sheets template for setting your gift budget and tracking spending against it. To see how December fits into the rest of your money, the [UK Monthly Budget sheet](https://www.etsy.com/listing/4460132151?utm_source=site) does the same month to month. You can see the full range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).`;
+Planning Christmas gifts around the sales? The [UK Christmas Savings Tracker](https://www.etsy.com/listing/4568011416?utm_source=site) is a Google Sheets template for setting your gift budget and tracking spending against it. To see how December fits into the rest of your money, the [UK Monthly Budget sheet](https://www.etsy.com/listing/4460132151?utm_source=site) does the same month to month. You can see the full range in the [UKMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).`;
 
 export const winterEnergy = `*This guide is general information, not financial advice. Figures are from the sources linked, as at 19 October 2026. Forecasts are labelled as forecasts. Example figures are made up for illustration.*
 
@@ -601,4 +601,4 @@ No. It's general information based on the sources linked, as at 19 October 2026.
 
 ## Plan your winter bills
 
-If you'd rather not build the log yourself, the [UK Winter Energy Bill Tracker 2026/27](https://www.etsy.com/listing/4598582893?utm_source=site) is a ready-made Google Sheet for your meter readings, rates and monthly costs. Once you know your monthly energy cost, the [UK Monthly Budget Spreadsheet for Google Sheets](https://www.etsy.com/listing/4460132151?utm_source=site) lets you plan January's bills next to everything else. You can see the full range in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).`;
+If you'd rather not build the log yourself, the [UK Winter Energy Bill Tracker 2026/27](https://www.etsy.com/listing/4598582893?utm_source=site) is a ready-made Google Sheet for your meter readings, rates and monthly costs. Once you know your monthly energy cost, the [UK Monthly Budget Spreadsheet for Google Sheets](https://www.etsy.com/listing/4460132151?utm_source=site) lets you plan January's bills next to everything else. You can see the full range in the [UKMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).`;

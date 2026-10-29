@@ -114,12 +114,13 @@ export const guides: GuideMeta[] = [
     slug: "cash-isa-12k-under-65-planner",
     ctaUrl: "https://www.etsy.com/listing/4461347110?utm_source=site",
     ctaLabel: "Get the UK Net Worth tracker on Etsy",
+    seoTitle: "Cash ISA Limit Stays £20,000: 2026/27 Allowance Planner (UK)",
     title:
-      "Cash ISA Allowance Planner for Under-65s: Last Full Year Before the £12k Cap (UK)",
+      "Cash ISA Allowance Planner (UK): The £12k Cut Is Cancelled and the £20,000 Limit Stays",
     description:
-      "From 6 April 2027, under-65s’ annual cash ISA subscriptions are limited to £12,000 within the overall £20,000 ISA allowance (people aged 65 and over keep a £20,000 cash limit) — so use tax year 2026/27 to plan monthly or annual cash subscriptions against your remaining allowance, then verify every figure on GOV.UK.",
+      "The planned cut to £12,000 for under-65s has been cancelled. At the 28 October 2026 Budget the government said the cash ISA limit stays £20,000 for all savers aged 18 or over from April 2027, inside the overall £20,000 ISA allowance. So you can plan cash ISA subscriptions the same way each tax year; check GOV.UK before you act.",
     metaDescription:
-      "Plan Cash ISA subscriptions before the £12k under-65 cap from April 2027. Track 2026/27 allowance in Google Sheets. Check GOV.UK.",
+      "The planned £12k cash ISA cut for under-65s is cancelled, so the cash ISA limit stays £20,000 from April 2027. Plan your allowance in Google Sheets.",
     category: "Savings",
     featured: true,
     image: "/guides/cash-isa-12k-under-65-planner.jpg",
@@ -133,8 +134,8 @@ export const guides: GuideMeta[] = [
         alt: "Real Google Sheets screenshot: plan regular saving in Google Sheets, sample data",
       },
       nearChecklist: {
-        src: "/guides/inguide/cash-isa-12k-under-65-planner/2.webp",
-        alt: "Plan your 2026/27 Cash ISA allowance: Overall ISA allowance is £20,000 for 2026/27; From 6 April 2027: £12,000 cash limit if under 65; Allowances reset each 6 April and don't roll over; Log each subscription with its date and amount; Check your remaining allowance before paying in",
+        src: "/guides/inguide/cash-isa-12k-under-65-planner/2.webp?v=2",
+        alt: "Plan your Cash ISA allowance: The cash ISA limit stays £20,000 from April 2027; Overall ISA allowance is £20,000; Allowances reset each 6 April and don't roll over; Log each subscription with its date and amount; Check your remaining allowance before paying in",
       },
     },
     shopLine:
@@ -262,7 +263,7 @@ export const guides: GuideMeta[] = [
     description:
       "Pick a target house price and deposit percentage, work out how much you need to save, then track monthly transfers and Lifetime ISA (LISA) contributions in one Google Sheet so the bonus and the timeline stay visible.",
     metaDescription:
-      "Plan a UK first-time buyer deposit for 2026/27: set a target from price and deposit %, then track LISA pay-ins (£4,000 a year, 25% bonus) in Google Sheets.",
+      "Plan a UK first-time buyer deposit: set a target, track LISA pay-ins (£4,000 a year, 25% bonus) in Google Sheets, plus the new 20% charge above £450k.",
     category: "Property",
     featured: true,
     image: "/guides/house-deposit-lisa-planner.jpg",
@@ -648,15 +649,15 @@ const VISUAL: Record<
 > = {
   "cash-isa-12k-under-65-planner": {
     keyFigures: [
-      { value: "£20,000", label: "overall ISA allowance for 2026/27" },
-      { value: "£12,000", label: "cash ISA limit for under-65s from 6 April 2027" },
-      { value: "£20,000", label: "cash limit stays for people aged 65 or over" },
+      { value: "£20,000", label: "overall ISA allowance, 2026/27 and from April 2027" },
+      { value: "£20,000", label: "cash ISA limit for savers aged 18 or over from 6 April 2027" },
+      { value: "24%", label: "basic-rate tax on savings interest outside ISAs from 6 April 2027" },
     ],
     keyFacts: [
-      "2026/27 is the last full tax year before the £12,000 cash ISA limit for under-65s.",
-      "The overall £20,000 ISA allowance stays the same.",
-      "The higher cash limit applies from the start of the tax year in which you turn 65.",
-      "Verify every figure on GOV.UK.",
+      "The planned £12,000 cash ISA limit for under-65s will not happen.",
+      "The cash ISA limit stays £20,000 for all savers aged 18 or over from April 2027.",
+      "Savings interest outside ISAs is taxed at 24%, 44% or 49% from 6 April 2027, above your allowances.",
+      "Allowances reset each 6 April and don't roll over.",
     ],
   },
   "help-to-save-deposit-bonus-tracker": {
@@ -702,7 +703,8 @@ const VISUAL: Record<
       "Deposit target ≈ price × deposit %.",
       "You must make your first LISA payment before you are 40.",
       "The £4,000 LISA limit counts towards your £20,000 ISA allowance.",
-      "Other withdrawals can attract a 25% charge.",
+      "Above the £450,000 cap the charge is 20% from 29 Oct 2026; other withdrawals stay 25%.",
+      "A First Time Buyer ISA replaces the LISA for new savers from 6 April 2029.",
     ],
   },
   "sheets-vs-excel-uk-budgeting": {
@@ -759,7 +761,7 @@ const VISUAL: Record<
       "Qualifying income is turnover before expenses, not profit.",
       "Self-employment and property income are added together.",
       "For jointly owned rentals, only your share counts.",
-      "There is no penalty grace period for the £30k group in 2027/28.",
+      "No late-submission penalty points on 2027/28 quarterly updates, but you still have to send them.",
     ],
   },
   "adjusted-net-income-100k-childcare-hicbc": {

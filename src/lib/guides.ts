@@ -124,9 +124,9 @@ export const guides: GuideMeta[] = [
       "The planned £12k cash ISA cut for under-65s is cancelled, so the cash ISA limit stays £20,000 from April 2027. Plan your allowance in Google Sheets.",
     category: "Savings",
     featured: true,
-    image: "/guides/cash-isa-12k-under-65-planner.jpg?v=2",
+    image: "/guides/cash-isa-12k-under-65-planner.jpg?v=3",
     imageAlt: "Cash ISA allowance planner for 2026/27: Google Sheets dashboard preview, sample data",
-    ogImage: "/og/cash-isa-12k-under-65-planner.jpg?v=2",
+    ogImage: "/og/cash-isa-12k-under-65-planner.jpg?v=3",
     ogImageAlt: "Cash ISA allowance planner for 2026/27 \u2014 UKMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {

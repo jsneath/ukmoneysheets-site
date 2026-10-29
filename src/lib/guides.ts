@@ -112,6 +112,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "cash-isa-12k-under-65-planner",
+    faqSchema: true,
     ctaUrl: "https://www.etsy.com/listing/4461347110?utm_source=site",
     ctaLabel: "Get the UK Net Worth tracker on Etsy",
     seoTitle: "Cash ISA Limit Stays £20,000: 2026/27 Allowance Planner (UK)",
@@ -123,9 +124,9 @@ export const guides: GuideMeta[] = [
       "The planned £12k cash ISA cut for under-65s is cancelled, so the cash ISA limit stays £20,000 from April 2027. Plan your allowance in Google Sheets.",
     category: "Savings",
     featured: true,
-    image: "/guides/cash-isa-12k-under-65-planner.jpg",
+    image: "/guides/cash-isa-12k-under-65-planner.jpg?v=3",
     imageAlt: "Cash ISA allowance planner for 2026/27: Google Sheets dashboard preview, sample data",
-    ogImage: "/og/cash-isa-12k-under-65-planner.jpg",
+    ogImage: "/og/cash-isa-12k-under-65-planner.jpg?v=3",
     ogImageAlt: "Cash ISA allowance planner for 2026/27 \u2014 UkMoneySheets Google Sheets guide",
     showHeaderImage: false,
     inGuideImages: {
@@ -256,6 +257,7 @@ export const guides: GuideMeta[] = [
   },
   {
     slug: "house-deposit-lisa-planner",
+    faqSchema: true,
     ctaUrl: "https://www.etsy.com/listing/4463017307?utm_source=site",
     ctaLabel: "Get the House Deposit Savings Planner on Etsy",
     seoTitle: "House Deposit & LISA Planner UK (2026/27)",

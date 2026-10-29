@@ -131,7 +131,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/cash-isa-12k-under-65-planner/1.webp",
+        src: "/guides/inguide/cash-isa-12k-under-65-planner/1.webp?v=3",
         alt: "Real Google Sheets screenshot: plan regular saving in Google Sheets, sample data",
       },
       nearChecklist: {
@@ -203,7 +203,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/register-self-assessment-5-october/1.webp",
+        src: "/guides/inguide/register-self-assessment-5-october/1.webp?v=3",
         alt: "Real Google Sheets screenshot: records ready for your 2025/26 return, sample data",
       },
       nearChecklist: {
@@ -275,7 +275,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/house-deposit-lisa-planner/1.webp",
+        src: "/guides/inguide/house-deposit-lisa-planner/1.webp?v=3",
         alt: "Real Google Sheets screenshot: inside a first-time buyer planner, sample data",
       },
       nearChecklist: {
@@ -466,7 +466,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/uk-landlord-section-24/1.webp",
+        src: "/guides/inguide/uk-landlord-section-24/1.webp?v=3",
         alt: "Real Google Sheets screenshot: a 2025/26 rental income tracker, sample data",
       },
       nearChecklist: {
@@ -501,7 +501,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/uk-self-assessment-side-hustle-sa103/1.webp",
+        src: "/guides/inguide/uk-self-assessment-side-hustle-sa103/1.webp?v=3",
         alt: "Real Google Sheets screenshot: a 2026/27 side hustle tracker, sample data",
       },
       nearChecklist: {
@@ -536,7 +536,7 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/making-tax-digital-30k-april-2027/1.webp",
+        src: "/guides/inguide/making-tax-digital-30k-april-2027/1.webp?v=3",
         alt: "Real Google Sheets screenshot: log gross income and expenses as you go, sample data (a record-keeping sheet, not MTD software)",
       },
       nearChecklist: {

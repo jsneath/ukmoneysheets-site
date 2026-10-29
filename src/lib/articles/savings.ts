@@ -2,109 +2,134 @@ export const cashIsa = `> This article is general information about ISA allowanc
 
 ## Who this is for
 
-This is for UK savers **under 65** who use (or are considering) a **cash ISA** and want a simple Google Sheets plan for **2026/27** — the last full tax year before the new cash subscription cap.
+This is for UK savers who use (or are considering) a **cash ISA** and want a simple Google Sheets plan for **2026/27 and 2027/28**. If you read our earlier version of this page and were rushing to use cash ISA room before April 2027, that deadline has gone: the cut was cancelled.
 
 If your main goal is a first-home deposit with a Lifetime ISA, use our separate guide instead: [House Deposit and LISA Tracker](/guides/house-deposit-lisa-planner).
 
 A **cash ISA subscription** here means money you pay into a cash ISA in a tax year (6 April to 5 April), counting towards your annual ISA limits.
 
-## What’s changing (plain English)
+## What changed at the Budget (plain English)
 
-As of the live GOV.UK guidance and Tax Information and Impact Note published **17 September 2026**:
+In September 2026 GOV.UK published a note saying the annual cash ISA limit would fall to £12,000 for people under 65 from 6 April 2027. On **28 October 2026** the Budget reversed that. The Red Book says "the government has decided not to reduce the cash ISA limit, so that it remains at £20,000", and HMRC's overview says it will "retain the cash ISA limit at £20,000 for all savers over 18 years old from April 2027".
 
-| Rule | What GOV.UK / HMRC say (re-check before you rely on it) |
+| Rule | Where it stands after the 28 October 2026 Budget (re-check before you rely on it) |
 | --- | --- |
-| Overall ISA allowance **2026/27** | **£20,000** — [ISAs overview](https://www.gov.uk/individual-savings-accounts) |
-| From **6 April 2027** | Annual **cash ISA** subscription limit falls to **£12,000** for people **aged under 65**, still inside the overall **£20,000** ISA limit — [Cash ISA limit reduction](https://www.gov.uk/government/publications/reduction-in-the-cash-individual-savings-account-isa-limit/cash-individual-savings-account-isa-limit-reduction) |
-| Aged **65 or over** | Cash ISA limit stays **£20,000** |
-| When “65” kicks in | Entitlement to the higher cash limit applies from the **start of the tax year in which you turn 65** — [ISA reform 2027 factsheet](https://www.gov.uk/government/publications/fiscal-events-2026-factsheets/isa-reform-2027-anti-circumvention-rules-factsheet) |
+| Overall ISA allowance **2026/27** | **£20,000** ([ISAs overview](https://www.gov.uk/individual-savings-accounts)) |
+| Cash ISA limit from **6 April 2027** | Stays **£20,000** for all savers aged 18 or over ([Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html); [HMRC overview, section 2.5](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)) |
+| The planned **£12,000** limit for under-65s | **Cancelled**, so there's no separate age test for cash ([Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html)) |
+| Junior ISA limit **2026/27** | **£9,000** ([GOV.UK Junior ISAs](https://www.gov.uk/junior-individual-savings-accounts)) |
+| First-time stocks and shares ISA investors | The government will work with industry to explore a new incentive; no detail yet ([HMRC overview, section 2.5](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)) |
 
-You can still split the overall allowance across eligible ISA types (cash, stocks and shares, innovative finance, Lifetime ISA subject to its own rules). From 2027/28, if you are under 65, only **£12,000** of that overall room can go into **cash ISA** subscriptions. Any remaining overall allowance can go to other eligible ISA types under the live rules — that is not a hard instruction to buy investments; it is how the limits interact on GOV.UK.
+You can still split the overall allowance across eligible ISA types (cash, stocks and shares, innovative finance, Lifetime ISA subject to its own rules). With the cut cancelled, the whole £20,000 can still go into cash if that is what you choose. That is how the limits interact on GOV.UK, not a suggestion to hold cash or to invest.
 
-**What else is changing (one screen):** from April 2027 the government is also introducing anti-circumvention rules (for example a charge on interest on cash held in non-cash ISAs, and restrictions on transfers from non-cash ISAs into cash ISAs). Skim the [factsheet](https://www.gov.uk/government/publications/fiscal-events-2026-factsheets/isa-reform-2027-anti-circumvention-rules-factsheet) if that might affect you — this page’s job is the **allowance planner**, not a deep dive on those rules.
+**What about the anti-circumvention rules?** GOV.UK's September note said the cut would come with rules such as a charge on interest from cash held in non-cash ISAs and limits on transfers into cash ISAs, designed "to ensure the reduced cash ISA limit operates as intended". The Budget documents don't say what now happens to them, so check the [Cash ISA limit reduction note](https://www.gov.uk/government/publications/reduction-in-the-cash-individual-savings-account-isa-limit/cash-individual-savings-account-isa-limit-reduction) and the [ISA reform factsheet](https://www.gov.uk/government/publications/fiscal-events-2026-factsheets/isa-reform-2027-anti-circumvention-rules-factsheet) for updates. We'll update this page when GOV.UK confirms.
 
-## Why 2026/27 matters
+## Why an ISA still matters from April 2027: savings tax goes up
 
-Until **5 April 2027**, the current overall framework still applies for planning purposes: you can use your **£20,000** annual ISA allowance in line with [how ISAs work](https://www.gov.uk/individual-savings-accounts/how-isas-work), including larger cash subscriptions than the under-65 cash cap that starts the next day.
+Outside an ISA, savings tax rises from **6 April 2027**. Budget 2025 had already added 2 points, and Budget 2026 adds a further 2, so savings interest above your allowances will be taxed at **24%** (basic rate), **44%** (higher rate) and **49%** (additional rate), up from 20%, 40% and 45% in 2026/27 ([Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html); [Annex A](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances)). The Personal Savings Allowance stays £1,000 for basic-rate and £500 for higher-rate taxpayers, and the starting rate for savings still covers up to £5,000. Interest inside an ISA isn't taxed.
 
-So **2026/27 is the last full tax year** before under-65s face the **£12,000** annual cash ISA subscription limit.
+Table: Tax on savings interest outside an ISA
+| Savings band | 2026/27 | From 6 April 2027 |
+| --- | --- | --- |
+| Basic rate | 20% | 24% |
+| Higher rate | 40% | 44% |
+| Additional rate | 45% | 49% |
+| Personal Savings Allowance | £1,000 / £500 | Unchanged |
+| Starting rate for savings | 0% on up to £5,000 | Unchanged |
 
-ISA allowances are **per tax year**. Unused room does **not** roll into the next year — each 6 April resets the annual subscription limits (confirm on GOV.UK). If you want to use 2026/27 cash flexibility, the window closes at the end of that tax year.
+**Worked example (fictional, our arithmetic, assuming the starting rate for savings doesn't apply):** Priya is a basic-rate taxpayer with £30,000 in an easy-access account outside an ISA earning 4%, so £1,200 of interest in 2027/28. The first £1,000 is covered by her Personal Savings Allowance. The other £200 is taxed at 24%, so she pays **£48**. At this year's 20% rate it would have been £40. If the same £1,200 of interest were earned inside a cash ISA, the tax would be **£0**.
+
+The Treasury says in the Red Book that a basic-rate taxpayer would need over £25,000 in savings outside ISAs before paying any tax, so this matters most for bigger balances and higher-rate taxpayers.
+
+## How to plan 2026/27 and 2027/28
+
+There's no longer a "last full year" to beat. Each tax year still has its own allowance, and the rhythm is the same:
+
+- Until **5 April 2027**, you can use your **£20,000** annual ISA allowance in line with [how ISAs work](https://www.gov.uk/individual-savings-accounts/how-isas-work).
+- From **6 April 2027**, the overall allowance and the cash ISA limit are both **£20,000** for savers aged 18 or over.
+- ISA allowances are **per tax year**. Unused room does **not** roll into the next year; each 6 April resets the annual subscription limits (confirm on GOV.UK).
 
 ## Planner columns for a Google Sheet
 
 Keep one row per contribution (or one monthly summary line):
 
 1. **Date**
-2. **Tax year** — e.g. 2026/27
+2. **Tax year**, e.g. 2026/27
 3. **Provider / account** (optional)
 4. **Amount subscribed (£)**
-5. **YTD cash subscribed (£)** — running total for the tax year
-6. **Annual cash target (£)** — your plan for the year
-7. **Remaining to target (£)** — target minus YTD
-8. **Notes** — standing order, lump sum, fixed vs easy-access (no product picks here)
+5. **YTD cash subscribed (£)**: running total for the tax year
+6. **Annual cash target (£)**: your plan for the year
+7. **Remaining to target (£)**: target minus YTD
+8. **Notes**: standing order, lump sum, fixed vs easy-access (no product picks here)
 
 At the top of the sheet, store:
 
-- Overall ISA allowance for the year (check GOV.UK — **£20,000** for 2026/27 at time of writing)
+- Overall ISA allowance for the year (check GOV.UK: **£20,000** for 2026/27 and, per the Budget, from April 2027)
 - Your planned cash vs other ISA split
-- A reminder flag for **6 April 2027** if you will still be under 65
+- A note to re-check GOV.UK each April for any change to the limits
 
 ## Monthly vs lump-sum rhythm (fictional example)
 
-**Example only — not a recommendation or a real person’s plan.**
+**Example only, not a recommendation or a real person's plan.**
 
 |  |  |
 | --- | --- |
-| Tax year | 2026/27 |
-| Annual cash target | £12,000 |
-| Monthly standing order | £1,000 |
-| After 6 months YTD | £6,000 |
-| Remaining to target | £6,000 |
+| Tax year | 2027/28 |
+| Annual cash target | £9,000 |
+| Monthly standing order | £750 |
+| After 6 months YTD | £4,500 |
+| Remaining to target | £4,500 |
+| Room left in the £20,000 allowance | £15,500 |
 
-Another saver might put £5,000 in April and top up later. The sheet’s only job is: **remaining = annual target − YTD**, then decide whether the next payday transfer still fits your wider budget.
+Another saver might put £5,000 in April and top up later. The sheet's only job is: **remaining = annual target − YTD**, then decide whether the next payday transfer still fits your wider budget.
 
 Weighing saving against overpaying a mortgage? Compare your after-tax savings rate with your mortgage rate, and try the numbers in our [mortgage overpayment calculator](/guides/mortgage-overpayment-calculator).
 
 For the household money that funds those transfers, see [How to Use a UK Monthly Budget Spreadsheet in Google Sheets](/guides/uk-monthly-budget-google-sheets) or the seasonal [UK Christmas Savings Tracker](/guides/uk-christmas-savings-tracker).
 
-If your income is close to £100,000 and you have young children, also [work out your adjusted net income (£100k childcare cliff)](/guides/adjusted-net-income-100k-childcare-hicbc) — pension contributions can lower it, but cash ISA subscriptions don't.
+If your income is close to £100,000 and you have young children, also [work out your adjusted net income (£100k childcare cliff)](/guides/adjusted-net-income-100k-childcare-hicbc). Pension contributions can lower it, but cash ISA subscriptions don't.
+
+For everything else in the Budget, see [what the 28 Oct 2026 Budget means for your money](/guides/autumn-budget-2026-what-it-means).
 
 ## What this is not
 
-- Not Lifetime ISA / first-home deposit maths — use the [house deposit / LISA guide](/guides/house-deposit-lisa-planner)
+- Not Lifetime ISA / first-home deposit maths: use the [house deposit / LISA guide](/guides/house-deposit-lisa-planner)
 - Not stocks-vs-cash investment advice
-- Not a guide to sidestepping the 2027 rules
+- Not a guide to getting round ISA rules
 
 ## How a UkMoneySheets-style sheet fits
 
-There is no Cash ISA calculator in the shop. The nearest sheet is the [UK Net Worth tracker on UkMoneySheets](https://www.etsy.com/listing/4461347110), which can sit beside an ISA plan. It is not a Cash ISA calculator.
+There is no Cash ISA calculator in the shop. The nearest sheet is the [UK Net Worth tracker on UkMoneySheets](https://www.etsy.com/listing/4461347110?utm_source=site), which can sit beside an ISA plan. It is not a Cash ISA calculator.
 
-Files are Google Sheets (not Excel), usually delivered via a PDF with a Sheets link — then **File → Make a copy**.
+Files are Google Sheets templates, usually delivered via a PDF with a Sheets link, then **File → Make a copy**.
 
 A template organises numbers. Your provider and GOV.UK decide what actually counts as a subscription.
 
 ## FAQ
 
-### When does the £12k cash ISA limit for under-65s start?
+### Is the £12k cash ISA limit for under-65s still happening?
 
-**6 April 2027**, per the [Cash ISA limit reduction note](https://www.gov.uk/government/publications/reduction-in-the-cash-individual-savings-account-isa-limit/cash-individual-savings-account-isa-limit-reduction). Re-check GOV.UK.
+No. The planned cut to £12,000 for under-65s was cancelled at the 28 October 2026 Budget. The cash ISA limit stays £20,000 for all savers aged 18 or over from April 2027 ([Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html); [HMRC overview, section 2.5](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)).
 
 ### Is the overall ISA allowance still £20,000 after April 2027?
 
-Yes — the TIIN keeps the overall annual ISA subscription limit at **£20,000**, with the **cash** portion capped at **£12,000** for under-65s. Confirm on GOV.UK nearer the time.
+Yes. The overall annual ISA allowance stays £20,000, and the whole of it can still go into a cash ISA if you choose. Confirm on GOV.UK nearer the time.
 
-### Do people aged 65 or over keep a £20,000 cash ISA limit?
+### Does my age still matter for the cash ISA limit?
 
-Yes, according to GOV.UK’s published note and factsheet. Entitlement to the higher cash limit applies from the **start of the tax year in which you turn 65**.
+Not for the amount. With the under-65 cut cancelled, HMRC says the £20,000 cash ISA limit applies to all savers over 18 from April 2027.
+
+### What is the tax on savings outside an ISA from April 2027?
+
+From 6 April 2027 savings interest above your allowances is taxed at 24% for basic-rate, 44% for higher-rate and 49% for additional-rate taxpayers. The Personal Savings Allowance stays £1,000 or £500 and the starting rate for savings still covers up to £5,000 ([Annex A](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances)).
 
 ### Does unused cash ISA allowance roll over to next year?
 
-No — annual ISA subscription limits are per tax year. Unused room does not carry forward. See [how ISAs work](https://www.gov.uk/individual-savings-accounts/how-isas-work).
+No. Annual ISA subscription limits are per tax year, and unused room does not carry forward. See [how ISAs work](https://www.gov.uk/individual-savings-accounts/how-isas-work).
 
 ### How is this different from a Lifetime ISA / house deposit plan?
 
-A LISA has its own annual limit and first-home / later-life rules. This page is about **cash ISA** subscription caps for under-65s. For deposit planning, use the [LISA / house deposit guide](/guides/house-deposit-lisa-planner).
+A LISA has its own annual limit and first-home / later-life rules. This page is about **cash ISA** subscriptions. For deposit planning, use the [LISA / house deposit guide](/guides/house-deposit-lisa-planner).
 
 ### Is this tax or financial advice?
 
@@ -112,12 +137,21 @@ No. Education and organisation only.
 
 ## Soft next step
 
-1. Confirm your age band and the live limits on [GOV.UK ISAs](https://www.gov.uk/individual-savings-accounts)
-2. Set a 2026/27 cash target and log subscriptions in a Google Sheet
-3. From April 2027, re-check the under-65 cash cap before you set standing orders
-4. If you want a sheet for the wider picture, the nearest fit is the [UK Net Worth tracker on UkMoneySheets](https://www.etsy.com/listing/4461347110). It is not a Cash ISA calculator.
+1. Confirm the live limits on [GOV.UK ISAs](https://www.gov.uk/individual-savings-accounts)
+2. Set a cash target for the tax year and log subscriptions in a Google Sheet
+3. Each April, re-check the limits and the savings tax rates before you set standing orders
+4. If you want a sheet for the wider picture, the nearest fit is the [UK Net Worth tracker on UkMoneySheets](https://www.etsy.com/listing/4461347110?utm_source=site). It is not a Cash ISA calculator. You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
 
-Plan the year. Verify the rules. Do not invent loopholes.`;
+Plan the year. Verify the rules. Do not invent loopholes.
+
+## Sources
+
+- [Budget 2026 (Red Book)](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html)
+- [HMRC Overview of Tax Legislation and Rates, section 2.5](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar) and [Annex A: rates and allowances](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances)
+- [GOV.UK: Individual Savings Accounts](https://www.gov.uk/individual-savings-accounts)
+- [Cash ISA limit reduction note (17 September 2026, now superseded on the limit)](https://www.gov.uk/government/publications/reduction-in-the-cash-individual-savings-account-isa-limit/cash-individual-savings-account-isa-limit-reduction)
+
+*General information, not tax or financial advice; check GOV.UK or a regulated adviser for your situation.*`;
 
 export const helpToSave = `> This article is general information about the Help to Save scheme and record-keeping, not personalised financial advice. Rules and eligibility can change. Check GOV.UK Help to Save or the HMRC app before you open an account or rely on a projected bonus.
 

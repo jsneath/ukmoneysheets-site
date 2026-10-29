@@ -394,13 +394,15 @@ Export every exchange CSV you can find. Start one sterling transaction log with 
 
 If you want a UK-oriented Google Sheets layout aimed at portfolio logging and Section 104-style estimates, get the **UK Crypto Portfolio Tracker** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4459672655?utm_source=site), make your own copy, and treat every gain figure as an estimate until you (or your adviser) apply the live rules.`;
 
-export const mtd30k = `*This guide is general information, not tax advice. Rules and dates are from GOV.UK as at October 2026 — check the linked GOV.UK pages or a qualified adviser for your situation. Example figures are made up for illustration. UkMoneySheets templates are not HMRC-recognised MTD software.*
+export const mtd30k = `*This guide is general information, not tax advice. Rules and dates are from GOV.UK as at 29 October 2026, including the 28 October 2026 Budget — check the linked GOV.UK pages or a qualified adviser for your situation. Example figures are made up for illustration. UkMoneySheets templates are not HMRC-recognised MTD software.*
 
 ---
 
 ## Do I need Making Tax Digital from April 2027? (the short answer)
 
 HMRC's press release of **5 October 2026** puts it plainly: there are "just six months to go" until sole traders and landlords with turnover over **£30,000** must use Making Tax Digital (MTD) for Income Tax, from **6 April 2027** ([HMRC press release](https://www.gov.uk/government/news/sole-traders-and-landlords-earning-more-than-30000-urged-to-act-now)). HMRC estimates **around 1,077,000 more** sole traders and landlords will need to join from that date, based on its analysis of 2024 to 2025 Self Assessment returns.
+
+**Budget update (28 October 2026):** the Budget didn't change who joins or when; the £30,000 group still starts on 6 April 2027. It did add a first-year easement: people joining in April 2027 won't get late-submission penalty points for their 2027/28 quarterly updates ([HMRC overview of tax legislation and rates, section 2.36](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar); [Budget 2026 Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html)). More below.
 
 You need MTD for Income Tax if **all three** apply ([GOV.UK: find out if and when you need MTD](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax)):
 
@@ -511,7 +513,7 @@ Everything else (overseas income, averaging relief, amended returns) is on the [
 - **Your tax return** for 2027/28 is completed through compatible software.
 - **Signing up.** To sign up you must be registered for Self Assessment and have submitted a tax return in the last two years ([GOV.UK: sign up for MTD](https://www.gov.uk/guidance/sign-up-for-making-tax-digital-for-income-tax)). Not registered yet? Start with our guide to [registering for Self Assessment](/guides/register-self-assessment-5-october).
 - **HMRC's letter.** HMRC checks each return and writes if you're over the threshold. **No letter does not mean you're out** — GOV.UK says it's still your responsibility to check and sign up.
-- **Exemptions** exist (for example if you're digitally excluded) — some are automatic, some you apply for. See [GOV.UK: MTD exemptions](https://www.gov.uk/guidance/find-out-if-you-can-get-an-exemption-from-making-tax-digital-for-income-tax).
+- **Exemptions** exist (for example if you're digitally excluded) — some are automatic, some you apply for. See [GOV.UK: MTD exemptions](https://www.gov.uk/guidance/find-out-if-you-can-get-an-exemption-from-making-tax-digital-for-income-tax). The Budget also exempts these groups until further notice: people eligible for qualifying care relief, non-UK-resident entertainers and sportspeople, and expected non-residents ([HMRC overview, section 2.37](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)).
 
 (If you've been in MTD since April 2026 because you were over £50,000, your second quarterly update is due **7 November**.)
 
@@ -540,9 +542,18 @@ Things to know about the updates ([GOV.UK: send quarterly updates](https://www.g
 - **Calendar periods:** if you use 1 April–31 March periods instead, the deadlines are the same.
 - **Sending early:** you can send up to 10 days before a period ends if you don't expect any more transactions.
 
-### Penalties: no grace period for the £30k group
+### Penalties: no points for late quarterly updates in your first year (2027/28)
 
-HMRC isn't applying penalty points for late quarterly updates in **2026/27** only — that's the £50k group's first year. **There is no penalty grace period for the £30k group in 2027/28.** From your first year, each late quarterly update earns a penalty point, and **4 points = a £200 penalty**. Points also apply to late tax returns. The new MTD penalty regime replaces the current Self Assessment penalties from the tax year you join; the current penalties still apply to earlier years ([GOV.UK: MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
+The 28 October 2026 Budget added a penalty easement for the £30k group. HMRC's overview says the government "will not apply late submission penalty points to quarterly updates for the 2027-28 tax year" for people required to join MTD in April 2027 ([HMRC overview, section 2.36](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)). The Red Book calls it a 12-month penalty easement covering your first four quarterly updates ([Budget 2026 Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html)).
+
+What it does and doesn't cover:
+
+- **Quarterly updates for 2027/28:** no late-submission penalty points.
+- **You still have to send them.** HMRC says you'll need to send your quarterly updates before you can submit your 2027/28 tax return.
+- **Tax returns aren't covered.** Points still apply to a late tax return under the new regime, which replaces the current Self Assessment penalties from the tax year you join; the current penalties still apply to earlier years ([GOV.UK: MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
+- **From 2028/29,** each late quarterly update earns a penalty point, and **4 points = a £200 penalty** ([GOV.UK: MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
+
+The £50k group already has the same no-points treatment for 2026/27, its first year. At the time of writing (29 October 2026) the GOV.UK MTD penalties page hadn't yet been updated for the Budget change, so check it before you rely on the dates.
 
 ### Calendar tab for your sheet
 
@@ -602,13 +613,13 @@ For keeping records, yes — but you need HMRC-recognised bridging software that
 7 August, 7 November, 7 February and 7 May (in the following tax year). For the £30k group's first year, that's 7 August 2027 to 7 May 2028 ([GOV.UK](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates)).
 
 ### Is there a penalty for a late quarterly update in my first year?
-Yes, if you're in the £30k group. The no-points year applies to 2026/27 only, so there's no penalty grace period in 2027/28. Each late update earns a point, and 4 points means a £200 penalty ([GOV.UK](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
+No penalty points, if you join in April 2027. The 28 October 2026 Budget said late quarterly updates for 2027/28 won't get penalty points, though you still have to send them before filing your return. From 2028/29 each late update earns a point, and 4 points means a £200 penalty ([HMRC overview, section 2.36](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)).
 
 ### What happens in April 2028?
 The threshold drops to £20,000. If your 2026/27 qualifying income is over £20,000, you start on 6 April 2028.
 
 ### Is this tax advice?
-No. It's general information based on GOV.UK as at October 2026. Check the linked GOV.UK pages or a qualified adviser for your situation.
+No. It's general information based on GOV.UK as at 29 October 2026. Check the linked GOV.UK pages or a qualified adviser for your situation.
 
 ---
 
@@ -616,7 +627,9 @@ No. It's general information based on GOV.UK as at October 2026. Check the linke
 
 A Google Sheet can hold your MTD digital records, but it can't send anything to HMRC on its own. You'll need HMRC-recognised bridging software that links to your sheet (no copy-and-paste), or other compatible software. UkMoneySheets templates are Google Sheets record-keeping and planning tools — they are not MTD software.
 
-Tracking a side hustle or a rental this tax year? The **[Side Hustle 2026/27](https://www.etsy.com/listing/4533504008)** sheet and the **[UK Landlord / Section 24](https://www.etsy.com/listing/4467684075)** sheet are Google Sheets templates for logging gross income and expenses as you go — handy for adding up your qualifying income. They're record-keeping tools, not MTD submission software. You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets).`;
+Tracking a side hustle or a rental this tax year? The **[Side Hustle 2026/27](https://www.etsy.com/listing/4533504008?utm_source=site)** sheet and the **[UK Landlord / Section 24](https://www.etsy.com/listing/4467684075?utm_source=site)** sheet are Google Sheets templates for logging gross income and expenses as you go — handy for adding up your qualifying income. They're record-keeping tools, not MTD submission software. For the rest of the Budget, including property income tax rising to 24%, 44% and 49% from 6 April 2027 in England, Wales and Northern Ireland, see [what the 28 Oct 2026 Budget means for your money](/guides/autumn-budget-2026-what-it-means). You can see everything else in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
+
+*General information, not tax or financial advice; check GOV.UK or a regulated adviser for your situation.*`;
 
 export const anic100k = `*General information, not tax, pension or financial advice. Rules are from GOV.UK for the 2026/27 tax year — check the linked pages or a regulated adviser before changing pension contributions. Example figures are made up for illustration.*
 

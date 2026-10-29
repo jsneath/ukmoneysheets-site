@@ -43,8 +43,24 @@ As of the live GOV.UK guidance at the time of writing (always re-check):
 - The £4,000 LISA limit **counts towards** your overall annual ISA allowance (**£20,000** for the **2026 to 2027** tax year on GOV.UK)
 - For a first home, charge-free use generally requires conditions such as the property costing **£450,000 or less**, buying with a mortgage, and waiting **at least 12 months** after your first LISA payment — see [withdrawing from a Lifetime ISA](https://www.gov.uk/lifetime-isa/withdrawing-money-from-your-lifetime-isa)
 - Other withdrawals can attract a **25% charge**
+- **New from 29 October 2026:** if you use your LISA to buy a first home that costs **more than £450,000** (and the purchase otherwise meets the qualifying rules), the withdrawal charge is **20%**, not 25%. Other unauthorised withdrawals stay at 25% ([HMRC overview of tax legislation and rates, section 2.4](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar); [Budget 2026 Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html))
+
+**What the 20% charge means in pounds (our arithmetic, fictional figures, no growth):** you pay in £8,000 and get a £2,000 bonus, so the pot is £10,000. At the old 25% charge on a home above £450,000, you'd lose £2,500 and keep £7,500, less than you paid in. At 20% you lose £2,000 and keep £8,000, which is your own money back without the bonus. The Red Book says the change is meant to protect "the value of individual contributions" when the home costs more than the cap. On a home of £450,000 or less, there's no charge and you keep the bonus.
 
 Do not treat these figures as frozen forever. Before you max a contribution or book a completion date, open the GOV.UK page and confirm the current caps and conditions.
+
+### The First Time Buyer ISA (from April 2029)
+
+The 28 October 2026 Budget announced a new **First Time Buyer ISA** that replaces the Lifetime ISA **for new savers from 6 April 2029** ([Budget 2026 Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html); [HMRC overview, section 2.3](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)). From the Budget documents:
+
+- Contributions of up to **£4,000 a year** with a **25% government bonus**
+- The bonus is paid on the account balance when you withdraw for a qualifying first home worth **up to £450,000**, capped at **£20,000**, so there's no withdrawal charge to avoid
+- **No upper age limit**
+- **Existing LISA holders can carry on** paying in and using their accounts under the current rules
+
+It's subject to legislation and the detail may change, so if you're planning that far ahead, add a note on your sheet to re-check GOV.UK nearer April 2029.
+
+The Budget also confirmed **Your First Home**, a government equity loan for first-time buyers of new-build homes in England with a deposit of at least 2.5%. The [Budget guide](/guides/autumn-budget-2026-what-it-means) covers who qualifies.
 
 A LISA is only one piece of a deposit. Many buyers also use a plain savings account, Help to Buy / shared ownership schemes where relevant, gifts, or other ISAs. Your sheet should show **all** pots that will fund the deposit, not only the LISA.
 
@@ -78,6 +94,7 @@ You do not need a complex model. These fields cover most first-time buyer plans:
 - Planned monthly total vs actual
 - Gap to deposit target
 - Reminder: first LISA payment date (for the 12-month rule)
+- A flag if your target price is above £450,000 (the 20% charge applies, and you lose the bonus)
 
 **Worked mini-example (fictional only):**
 
@@ -95,15 +112,17 @@ If a month is tight, reduce the non-LISA pot first or pause extras — but note 
 
 ## How the UkMoneySheets house deposit planner fits
 
-If you want a ready-made layout, [UkMoneySheets](https://www.etsy.com/listing/4463017307) sells a **House Deposit Savings Planner for Google Sheets | First-Time Buyer Budget & LISA Tracker**.
+If you want a ready-made layout, [UkMoneySheets](https://www.etsy.com/listing/4463017307?utm_source=site) sells a **House Deposit Savings Planner for Google Sheets | First-Time Buyer Budget & LISA Tracker**.
 
-It is Google Sheets (not Excel). You typically receive a PDF with the Sheets link, then use **File → Make a copy** into your own Drive.
+It is a Google Sheets template. You typically receive a PDF with the Sheets link, then use **File → Make a copy** into your own Drive.
 
 Related products if you are building a wider money system:
 
 - **UK Monthly Budget Spreadsheet** — for the household plan that frees up the monthly transfer
 - **UK Net Worth Tracker**
 - **UK Money Toolkit** bundle
+
+You can browse them all in the [UkMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).
 
 A template organises the numbers. It does not guarantee a mortgage offer, a bonus payment, or that a property will qualify under LISA rules.
 
@@ -117,6 +136,14 @@ It depends on the price and the LTV your lender will accept. Many first-time buy
 
 Check [GOV.UK Lifetime ISA](https://www.gov.uk/lifetime-isa). At the time of writing the annual contribution limit shown there is **£4,000**, with a **25%** bonus up to **£1,000** a year, counting towards the wider ISA allowance. Re-check before you pay in.
 
+### What if the home I want costs more than £450,000?
+
+From 29 October 2026 you can still use LISA money for a qualifying first-home purchase above the £450,000 cap, but a 20% withdrawal charge applies instead of 25%. In practice that takes back the bonus and leaves your own contributions ([HMRC overview, section 2.4](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)). Other unauthorised withdrawals stay at 25%.
+
+### What is the First Time Buyer ISA?
+
+A new ISA announced at the 28 October 2026 Budget that replaces the LISA for new savers from 6 April 2029. It allows up to £4,000 a year with a 25% bonus, paid on withdrawal for a first home worth up to £450,000, with the bonus capped at £20,000 and no upper age limit. Existing LISA holders can carry on ([Budget 2026 Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html)).
+
 ### Can a spreadsheet replace MoneyHelper or a broker?
 
 No. Use [MoneyHelper’s LISA guide](https://www.moneyhelper.org.uk/en/savings/types-of-savings/a-guide-to-lifetime-isas) for impartial explanations, and a regulated adviser or broker for product and mortgage decisions. The sheet is your tracker.
@@ -129,9 +156,11 @@ No. This article and any UkMoneySheets template are for organisation and educati
 
 Write your target price and deposit % on one line. Add every pot that will fund it. Schedule the monthly transfers.
 
-If you want a UK-ready Google Sheet built for first-time buyer deposit and LISA tracking, get the **House Deposit Savings Planner** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4463017307), make your own copy, and keep the monthly update.
+If you want a UK-ready Google Sheet built for first-time buyer deposit and LISA tracking, get the **House Deposit Savings Planner** from [UkMoneySheets on Etsy](https://www.etsy.com/listing/4463017307?utm_source=site), make your own copy, and keep the monthly update.
 
-Then confirm every LISA figure on [GOV.UK](https://www.gov.uk/lifetime-isa) before you rely on it for a completion date.`;
+Then confirm every LISA figure on [GOV.UK](https://www.gov.uk/lifetime-isa) before you rely on it for a completion date.
+
+*General information, not tax or financial advice; check GOV.UK or a regulated adviser for your situation.*`;
 
 // Mortgage overpayment calculator guide (Writing Bot refresh, 19 Oct 2026).
 // The free calculator (#calculator) is rendered by GuideBody straight after the

@@ -21,7 +21,8 @@ export function FreeToolCta({ className }: { className?: string }) {
       </p>
       <p className="mt-2 max-w-2xl text-[0.98rem] leading-relaxed text-muted">
         Estimate your 2026/27 take-home pay, then check any side or rental
-        income against the £1,000 allowances, Self Assessment and Making Tax
+        income against the £1,000 allowances (trading allowance £3,000 from
+        2027/28), Self Assessment and Making Tax
         Digital. No email needed.
       </p>
       <Button asChild className="mt-5">

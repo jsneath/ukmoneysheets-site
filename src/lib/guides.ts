@@ -467,8 +467,8 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/uk-landlord-section-24/1.webp?v=3",
-        alt: "Real Google Sheets screenshot: a 2025/26 rental income tracker, sample data",
+        src: "/guides/inguide/uk-landlord-section-24/1.webp?v=4",
+        alt: "Real Google Sheets screenshot: a 2026/27 rental income tracker, sample data",
       },
       nearChecklist: {
         src: "/guides/inguide/uk-landlord-section-24/2.webp",

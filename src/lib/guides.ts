@@ -451,6 +451,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "uk-landlord-section-24",
     freeToolCta: true,
+    faqSchema: true,
     ctaUrl: "https://www.etsy.com/listing/4467684075?utm_source=site",
     ctaLabel: "Get the UK Landlord sheet on Etsy",
     title: "UK Landlord Spreadsheet: Track Rental Income for Self Assessment",
@@ -466,8 +467,8 @@ export const guides: GuideMeta[] = [
     showHeaderImage: false,
     inGuideImages: {
       afterIntro: {
-        src: "/guides/inguide/uk-landlord-section-24/1.webp?v=3",
-        alt: "Real Google Sheets screenshot: a 2025/26 rental income tracker, sample data",
+        src: "/guides/inguide/uk-landlord-section-24/1.webp?v=4",
+        alt: "Real Google Sheets screenshot: a 2026/27 rental income tracker, sample data",
       },
       nearChecklist: {
         src: "/guides/inguide/uk-landlord-section-24/2.webp",
@@ -485,6 +486,7 @@ export const guides: GuideMeta[] = [
   {
     slug: "uk-self-assessment-side-hustle-sa103",
     freeToolCta: true,
+    faqSchema: true,
     ctaUrl: "https://www.etsy.com/listing/4533504008?utm_source=site",
     ctaLabel: "Get the Side Hustle Tax 2026/27 sheet on Etsy",
     title:
@@ -743,7 +745,7 @@ const VISUAL: Record<
   },
   "uk-self-assessment-side-hustle-sa103": {
     keyFigures: [
-      { value: "£1,000", label: "sole-trader earnings above which you must send a return" },
+      { value: "£1,000", label: "sole-trader earnings above which you must send a return (£3,000 from 2027/28)" },
       { value: "5 years", label: "keep records after the 31 January deadline" },
       { value: "6 Apr–5 Apr", label: "the UK tax year your sheet should follow" },
     ],

@@ -165,6 +165,37 @@ You still decide how to classify each cost under HMRC’s rules. The spreadsheet
 
 From the 2024 to 2025 tax year, cash basis is the default accounting method for many sole traders (you can opt out in some cases). That choice affects *when* you record income and expenses. See [Business records overview](https://www.gov.uk/self-employed-records) for the official explanation.
 
+## What changes from April 2027 for side hustles?
+
+> **Quick answer:** From 6 April 2027, the Trading Allowance rises from £1,000 to £3,000, and the Self Assessment reporting threshold for trading income also rises to £3,000, subject to Finance Bill 2026-27. This tax year (2026/27) the limit is still £1,000, so if you earn more than £1,000, register by 5 October 2027.
+
+**Key point:** Don't skip registering this year: the £3,000 limit only applies from the 2027/28 tax year.
+
+HMRC's [Overview of Tax Legislation and Rates (section 1.5)](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar) says the government will "increase the Trading Allowance from £1,000 to £3,000" and that "the trading income reporting threshold for Self Assessment will also be increased to £3,000", from 6 April 2027, through Finance Bill 2026-27. HMRC's note [Increasing the trading allowance](https://www.gov.uk/government/publications/income-tax-increasing-the-trading-allowance/increasing-the-trading-allowance) says it has effect "for the tax year 2027 to 2028 onwards" and covers trading and miscellaneous income. See also the [Budget 2026 Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html).
+
+The Budget documents do not announce any change to the property allowance; it stays £1,000 ([tax-free allowances on property and trading income](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income)).
+
+Table: Side-hustle limits before and after April 2027
+| | 2026/27 (6 Apr 2026–5 Apr 2027) | 2027/28 onwards |
+| --- | --- | --- |
+| Trading Allowance | £1,000 | £3,000 |
+| Self Assessment reporting threshold for trading income | £1,000 | £3,000 |
+| Property allowance | £1,000 | £1,000 (no change announced) |
+| Register by (if you need to) | 5 Oct 2027 | 5 Oct 2028 |
+
+Subject to Finance Bill 2026-27. GOV.UK says to [register for Self Assessment](https://www.gov.uk/register-for-self-assessment) by 5 October after the end of the tax year, or you could get a penalty.
+
+**Worked example (fictional):** Priya makes £2,400 in gross side-hustle sales (income before expenses, as GOV.UK describes it).
+
+- In 2026/27, £2,400 is more than the £1,000 limit, so she needs Self Assessment for 2026/27 and must register by 5 October 2027.
+- If she made the same £2,400 in 2027/28, it would be under the £3,000 threshold.
+
+**Sheet tip:** keep logging every sale in Google Sheets, with gross income before expenses, so you can show whether you are under £3,000 for the year.
+
+For the full Budget picture, see [Autumn Budget 2026: what it means](/guides/autumn-budget-2026-what-it-means). For the deadline, see [how to register for Self Assessment by 5 October](/guides/register-self-assessment-5-october).
+
+*General information, not tax or financial advice; check GOV.UK or a regulated adviser for your situation.*
+
 ## Why US or generic budget templates fail UK side hustlers
 
 A lot of free templates are built for US 1099 freelancers or for household budgeting. They often:
@@ -222,7 +253,7 @@ Typical side-hustle categories people track (examples only — check whether *yo
 
 Rules on mileage, working from home, and mixed-use costs are detailed and change. Do not copy someone else’s percentages. Read the current GOV.UK pages or ask an adviser.
 
-**Trading allowance:** GOV.UK explains a £1,000 trading allowance. You generally cannot claim that allowance *and* deduct actual expenses for the same income in the same way — check which option is better for you on the official guidance.
+**Trading allowance:** GOV.UK explains a £1,000 trading allowance for 2026/27 (rising to £3,000 from 6 April 2027, subject to Finance Bill 2026-27). You generally cannot claim that allowance *and* deduct actual expenses for the same income in the same way — check which option is better for you on the official guidance.
 
 ## Worked mini-example (fictional numbers only)
 
@@ -257,7 +288,7 @@ Files are delivered as a PDF with the Google Sheets link, so you can copy the sh
 
 ### Do I need Self Assessment for a small side hustle?
 
-Often yes if you are self-employed as a sole trader and your income is above the threshold GOV.UK sets for that year (currently described as more than £1,000 before reliefs), or if another Self Assessment rule applies. Check [who must send a tax return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) for your situation.
+Often yes if you are self-employed as a sole trader and your income is above the threshold GOV.UK sets for that year (currently described as more than £1,000 before reliefs), or if another Self Assessment rule applies. From 6 April 2027 that trading threshold rises to £3,000, subject to Finance Bill 2026-27. Check [who must send a tax return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) for your situation.
 
 ### Can I use Google Sheets for HMRC records?
 
@@ -266,6 +297,18 @@ Yes — HMRC allows digital records if they are accurate and you can produce the
 ### What’s the difference between a budget spreadsheet and a Self Assessment tracker?
 
 A budget spreadsheet plans spending. A Self Assessment tracker logs actual business income and expenses by UK tax year so you can complete SA103 (and keep evidence). Categories and tax-year tags matter more than “left to spend this month.”
+
+### Is the Trading Allowance going up to £3,000?
+
+Yes. The Budget on 28 October 2026 announced the Trading Allowance rises from £1,000 to £3,000 from 6 April 2027, and the Self Assessment reporting threshold for trading income also rises to £3,000. It is subject to Finance Bill 2026-27.
+
+### Do I still need to register for 2026/27 if I earn over £1,000?
+
+Yes. The £3,000 limit starts with the 2027/28 tax year. For 2026/27 the limit is still £1,000, and GOV.UK says to tell HMRC by 5 October after the tax year ends, so by 5 October 2027.
+
+### Is the property allowance going up too?
+
+No change to the £1,000 property allowance was announced in the Budget documents.
 
 ### Is this tax advice?
 

@@ -339,6 +339,49 @@ What that means for your spreadsheet:
 
 This article does **not** invent or guarantee a tax rate for your case. Basic-rate relief and transitional history are explained on GOV.UK; confirm the current position for the tax year you are filing.
 
+## What changes for landlords from April 2027?
+
+> **Quick answer:** From 6 April 2027, rental profits will be taxed at new property rates: 24% basic, 44% higher and 49% additional, in England, Wales and Northern Ireland. That is 2 percentage points higher, subject to Finance Bill 2026-27. The 2026/27 tax year is unchanged. The Budget did not say whether the 20% mortgage-interest tax reduction changes.
+
+The Autumn Budget on 28 October 2026 announced separate Income Tax rates for property income. HMRC's [Overview of Tax Legislation and Rates (section 1.2)](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar) says: "From 2027 to 2028, the property basic rate will be 24%, the property higher rate will be 44%, and the property additional rate will be 49%." The [Budget 2026 Red Book](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html) says the rise is 2 percentage points, to be legislated in Finance Bill 2026-27 and in force from 6 April 2027. HMRC's [property and savings rates note](https://www.gov.uk/government/publications/income-tax-changes-resulting-from-new-savings-and-property-rates/changes-to-savings-and-property-rates-of-income-tax) covers the follow-on legislation changes.
+
+Table: Property income tax rates
+| Band | 2026/27 (main rate) | From 6 April 2027 (property rate) |
+| --- | --- | --- |
+| Basic | 20% | 24% |
+| Higher | 40% | 44% |
+| Additional | 45% | 49% |
+
+*England, Wales and Northern Ireland. The government has given the devolved governments of Scotland and Wales the ability to set property income rates. Subject to Finance Bill 2026-27.*
+
+### How much more tax will I pay on rent from April 2027?
+
+Worked example (fictional): a basic-rate landlord with £10,000 rental profit and no finance costs.
+
+- 2026/27: £10,000 × 20% = **£2,000** tax
+- 2027/28: £10,000 × 24% = **£2,400** tax
+- Difference: **£400 more**
+
+If you have a mortgage, the finance-cost tax reduction also applies; its 2027-28 rate has not been confirmed.
+
+### Does the Section 24 mortgage-interest credit change?
+
+The Budget documents do not say whether the 20% tax reduction for mortgage interest and other finance costs will change from April 2027. Under current GOV.UK guidance it is worked out at the basic rate (currently 20%). We'll update this guide when HMRC confirms.
+
+### Does it change my 2026/27 tax return?
+
+No. The new rates take effect from 6 April 2027, so they first apply to the 2027/28 tax year.
+
+### Who it doesn't affect
+
+If you let through a limited company, the individual property rates above are not the rules that apply to you (see the company question in the FAQ below). If you are a Scottish taxpayer, check GOV.UK for the rates that apply to you.
+
+**Sheet tip:** add a "2027/28 rate" column next to your tax-year totals in your Google Sheets ledger, so you can compare the same profit at this year's and next year's rates.
+
+For the wider Budget picture, see [Autumn Budget 2026: what it means](/guides/autumn-budget-2026-what-it-means), and check whether quarterly updates apply to you in [Making Tax Digital from April 2027 (£30k check)](/guides/making-tax-digital-30k-april-2027).
+
+*General information, not tax or financial advice; check GOV.UK or a regulated adviser for your situation.*
+
 ## Why generic US landlord sheets fail in the UK
 
 US and “global” landlord templates often:
@@ -403,6 +446,14 @@ Keep finance costs separate. Under the residential finance-cost restriction, the
 ### Is Section 24 the same for limited companies?
 
 The restriction described for individuals does not work the same way for companies. If you let through a company, get advice and use the guidance that matches your structure.
+
+### What are the property income tax rates from April 2027?
+
+From 6 April 2027, property income in England, Wales and Northern Ireland will be taxed at 24% (basic), 44% (higher) and 49% (additional), subject to Finance Bill 2026-27. Rates for 2026/27 do not change.
+
+### Does the Section 24 mortgage-interest tax credit rise to 24%?
+
+The Budget documents do not say whether the 20% tax reduction for mortgage interest and other finance costs will change from April 2027. Under current GOV.UK guidance it is worked out at the basic rate (currently 20%). We'll update this guide when HMRC confirms.
 
 ### Is this tax advice?
 

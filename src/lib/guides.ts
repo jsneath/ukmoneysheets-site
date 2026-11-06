@@ -186,8 +186,8 @@ export const guides: GuideMeta[] = [
   {
     slug: "register-self-assessment-5-october",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4462593252?utm_source=site",
-    ctaLabel: "Get the Self Assessment 2025/26 sheet on Etsy",
+    ctaUrl: "https://www.etsy.com/listing/4564156155?utm_source=site&utm_medium=guide&utm_campaign=sa-mtd-nov2026",
+    ctaLabel: "Get the Google Sheets Self Assessment bundle (2025/26 & 2026/27) on Etsy",
     title:
       "How to Register for Self Assessment (UK): Deadlines, Late Registration + Spreadsheet Setup",
     description:
@@ -487,8 +487,8 @@ export const guides: GuideMeta[] = [
     slug: "uk-self-assessment-side-hustle-sa103",
     freeToolCta: true,
     faqSchema: true,
-    ctaUrl: "https://www.etsy.com/listing/4533504008?utm_source=site",
-    ctaLabel: "Get the Side Hustle Tax 2026/27 sheet on Etsy",
+    ctaUrl: "https://www.etsy.com/listing/4564156155?utm_source=site&utm_medium=guide&utm_campaign=sa-mtd-nov2026",
+    ctaLabel: "Get the Google Sheets Self Assessment bundle (2025/26 & 2026/27) on Etsy",
     title:
       "UK Self Assessment for Side Hustles: What to Track in a Spreadsheet (SA103)",
     description:
@@ -522,8 +522,8 @@ export const guides: GuideMeta[] = [
   {
     slug: "making-tax-digital-30k-april-2027",
     freeToolCta: true,
-    ctaUrl: "https://www.etsy.com/listing/4533504008?utm_source=site",
-    ctaLabel: "Get the Side Hustle Tax 2026/27 sheet on Etsy",
+    ctaUrl: "https://www.etsy.com/listing/4564156155?utm_source=site&utm_medium=guide&utm_campaign=sa-mtd-nov2026",
+    ctaLabel: "Get the Google Sheets Self Assessment bundle (2025/26 & 2026/27) on Etsy",
     title:
       "Making Tax Digital £30k Threshold (April 2027): Qualifying Income Check",
     description:

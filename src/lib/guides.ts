@@ -72,9 +72,9 @@ export const guides: GuideMeta[] = [
     seoTitle: "Autumn Budget 2026: What It Means for You",
     title: "What the 28 Oct 2026 Budget Means for Your Money (UK)",
     description:
-      "The 28 October 2026 Budget left income tax, National Insurance and VAT rates unchanged. From 6 April 2027 it raises savings and property income tax by a further 2 points, adds a Pension Tax Allowance and keeps the cash ISA limit at £20,000. It also brings a £100 energy payment for bands A to D in England.",
+      "The 28 October 2026 Budget left income tax, National Insurance and VAT rates unchanged. From 6 April 2027 it raises savings and property income tax by a further 2 points, adds a Pension Tax Allowance and announces the cash ISA limit will stay at £20,000 (legislation pending). It also brings a £100 energy payment for bands A to D in England.",
     metaDescription:
-      "The 28 Oct 2026 Budget in plain English: pensioner tax, savings tax to 24%, cash ISA kept at £20k, energy help, first homes and MTD, with GOV.UK sources.",
+      "The 28 Oct 2026 Budget in plain English: pensioner tax, savings tax to 24%, cash ISA £20k (announced), energy help, first homes and MTD, with GOV.UK sources.",
     category: "Tax",
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
     imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
@@ -85,7 +85,7 @@ export const guides: GuideMeta[] = [
     },
     keyFigures: [
       { value: "24%", label: "savings basic rate from 6 April 2027 (now 20%)" },
-      { value: "£20,000", label: "cash ISA limit stays for all adult savers" },
+      { value: "£20,000", label: "cash ISA limit announced to stay for adult savers, legislation pending" },
       { value: "£100", label: "energy payment, bands A to D in England, from January 2027" },
     ],
     keyFacts: [
@@ -115,13 +115,13 @@ export const guides: GuideMeta[] = [
     faqSchema: true,
     ctaUrl: "https://www.etsy.com/listing/4461347110?utm_source=site",
     ctaLabel: "Get the UK Net Worth tracker on Etsy",
-    seoTitle: "Cash ISA Limit Stays £20,000: 2026/27 Allowance Planner (UK)",
+    seoTitle: "Cash ISA Limit £20,000 Announced, Law Pending: Planner (UK)",
     title:
-      "Cash ISA Allowance Planner (UK): The £12k Cut Is Cancelled and the £20,000 Limit Stays",
+      "Cash ISA Allowance Planner (UK): £20,000 Limit Announced to Stay, Legislation Pending",
     description:
-      "The planned cut to £12,000 for under-65s has been cancelled. At the 28 October 2026 Budget the government said the cash ISA limit stays £20,000 for all savers aged 18 or over from April 2027, inside the overall £20,000 ISA allowance. So you can plan cash ISA subscriptions the same way each tax year; check GOV.UK before you act.",
+      "At the 28 October 2026 Budget the government announced the cash ISA limit will stay £20,000 for all savers aged 18 or over from April 2027, inside the overall £20,000 ISA allowance. Legislation is pending: until a new SI revokes it, the £12,000 limit for anyone 64 or under at the end of the tax year, set by SI 2026/1018 from 6 April 2027, is still in law today. Check GOV.UK before you act.",
     metaDescription:
-      "The planned £12k cash ISA cut for under-65s is cancelled, so the cash ISA limit stays £20,000 from April 2027. Plan your allowance in Google Sheets.",
+      "Budget 2026 announced the cash ISA limit stays £20,000 from April 2027. Legislation pending: the £12k under-65 rule is still law today. Plan in Google Sheets.",
     category: "Savings",
     featured: true,
     image: "/guides/cash-isa-12k-under-65-planner.jpg?v=3",
@@ -620,9 +620,9 @@ export const guides: GuideMeta[] = [
     ctaLabel: "Get the UK Winter Energy Bill Tracker 2026/27 on Etsy",
     title: "Winter Energy Bill Tracker (UK): Price Cap January 2027 & Should You Fix?",
     description:
-      "From 1 October to 31 December 2026, Ofgem's price cap for a typical household paying by Direct Debit is £1,723 a year, but the cap limits your unit rates and standing charges, not your bill — so the only way to know your own winter cost is to log your meter readings and multiply. Ofgem will announce the January to March 2027 cap by 25 November 2026; until then, analysts' forecasts range from £1,999 (Cornwall Insight) to an average of £2,084 (MSE), which are forecasts, not Ofgem figures. A simple Google Sheet with your readings, your rates and a monthly log shows what you're really paying and lets you test a fixed deal against the cap with your own usage.",
+      "From 1 October to 31 December 2026, Ofgem's price cap for a typical household in Great Britain (England, Scotland and Wales) paying by Direct Debit is £1,723 a year, but the cap limits your unit rates and standing charges, not your bill — so the only way to know your own winter cost is to log your meter readings and multiply. Ofgem will announce the January to March 2027 cap by 25 November 2026; until then, analysts' forecasts range from £1,999 (Cornwall Insight) to an average of £2,084 (MSE), which are forecasts, not Ofgem figures. A simple Google Sheet with your readings, your rates and a monthly log shows what you're really paying and lets you test a fixed deal against the cap with your own usage. Northern Ireland prices are set differently, so the cap doesn't apply there.",
     metaDescription:
-      "Track UK energy bills in Google Sheets with meter readings, unit rates and standing charges, and see if fixing beats the cap before Ofgem's 25 Nov update.",
+      "Track UK energy bills in Google Sheets with meter readings and rates. In Great Britain, see if fixing beats Ofgem's cap before its 25 Nov update.",
     category: "Budgeting",
     // No Nia pack yet: reuse the monthly budget card; og falls back to /og.jpg.
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
@@ -654,12 +654,12 @@ const VISUAL: Record<
   "cash-isa-12k-under-65-planner": {
     keyFigures: [
       { value: "£20,000", label: "overall ISA allowance, 2026/27 and from April 2027" },
-      { value: "£20,000", label: "cash ISA limit for savers aged 18 or over from 6 April 2027" },
+      { value: "£20,000", label: "cash ISA limit from 6 April 2027, announced at Budget 2026, legislation pending" },
       { value: "24%", label: "basic-rate tax on savings interest outside ISAs from 6 April 2027" },
     ],
     keyFacts: [
-      "The planned £12,000 cash ISA limit for under-65s will not happen.",
-      "The cash ISA limit stays £20,000 for all savers aged 18 or over from April 2027.",
+      "Budget 2026 announced the cash ISA limit will stay £20,000 for all savers aged 18 or over from April 2027, with legislation pending.",
+      "Until a new SI revokes it, SI 2026/1018 still sets a £12,000 cash ISA limit from 6 April 2027 for anyone 64 or under at the end of the tax year.",
       "Savings interest outside ISAs is taxed at 24%, 44% or 49% from 6 April 2027, above your allowances.",
       "Allowances reset each 6 April and don't roll over.",
     ],
@@ -795,11 +795,12 @@ const VISUAL: Record<
   },
   "winter-energy-bills-tracker": {
     keyFigures: [
-      { value: "£1,723", label: "a year: typical Direct Debit cap, Oct–Dec 2026" },
+      { value: "£1,723", label: "a year: typical Direct Debit cap in Great Britain, Oct–Dec 2026" },
       { value: "4%", label: "up on the July to September cap" },
       { value: "25 Nov", label: "Ofgem announces the January 2027 cap" },
     ],
     keyFacts: [
+      "Ofgem's cap covers England, Scotland and Wales; Northern Ireland prices are set differently.",
       "The cap limits unit rates and standing charges, not your bill.",
       "Log your meter readings and multiply to see your own cost.",
       "January forecasts are forecasts, not Ofgem figures.",

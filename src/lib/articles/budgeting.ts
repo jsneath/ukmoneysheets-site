@@ -430,11 +430,13 @@ Planning Christmas gifts around the sales? The [UK Christmas Savings Tracker](ht
 
 export const winterEnergy = `*This guide is general information, not financial advice. Figures are from the sources linked, as at 19 October 2026. Forecasts are labelled as forecasts. Example figures are made up for illustration.*
 
+> **Where the price cap applies:** Ofgem's energy price cap covers **England, Scotland and Wales (Great Britain)**. Ofgem is "the energy regulator for Great Britain" ([Ofgem](https://www.ofgem.gov.uk/about-us)). **Northern Ireland energy prices are set differently**, through the Utility Regulator's own price regulation ([Utility Regulator](https://www.uregni.gov.uk/price-regulation)), so the cap figures and the fix-or-cap comparison on this page don't apply there. The meter-reading tracker still works anywhere in the UK with your own supplier's rates.
+
 ---
 
 ## How much will my energy bill be this winter?
 
-**It depends on how much gas and electricity you use: the cap sets the maximum rates, not the total. For October to December 2026, a "typical" Direct Debit household (2,500 kWh of electricity and 9,500 kWh of gas a year) is capped at £1,723 a year.**
+**It depends on how much gas and electricity you use: the cap sets the maximum rates, not the total. For October to December 2026, a "typical" Direct Debit household in Great Britain (2,500 kWh of electricity and 9,500 kWh of gas a year) is capped at £1,723 a year.**
 
 Ofgem's average price-cap rates for **1 October to 31 December 2026**, paying by Direct Debit in England, Scotland and Wales ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges)):
 
@@ -571,7 +573,10 @@ This isn't a recommendation to fix or not to fix. The sheet shows what each opti
 ## FAQ
 
 ### What is the energy price cap from October 2026?
-From 1 October to 31 December 2026, Ofgem's cap is £1,723 a year for a typical dual-fuel household paying by Direct Debit, up 4%. The average rates are 26.32p per kWh and 54.83p a day for electricity, and 7.97p per kWh and 29.68p a day for gas ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges)).
+From 1 October to 31 December 2026, Ofgem's cap is £1,723 a year for a typical dual-fuel household in England, Scotland and Wales paying by Direct Debit, up 4%. The average rates are 26.32p per kWh and 54.83p a day for electricity, and 7.97p per kWh and 29.68p a day for gas ([Ofgem](https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges)).
+
+### Does the energy price cap apply in Northern Ireland?
+No. Ofgem's price cap covers England, Scotland and Wales (Great Britain). Northern Ireland energy prices are set differently, through the Utility Regulator ([Utility Regulator](https://www.uregni.gov.uk/price-regulation)), so the cap comparison on this page doesn't apply there.
 
 ### When will the January 2027 price cap be announced?
 Ofgem will announce the cap for 1 January to 31 March 2027 by 25 November 2026, and may publish earlier ([Ofgem](https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026)).

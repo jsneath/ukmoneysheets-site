@@ -28,7 +28,7 @@ const TELLS_YOU = [
 
 const TABS = [
   { name: "Start here", body: "What the checker does, how to use it, and the GOV.UK sources." },
-  { name: "Inputs", body: "Overwrite the sample figures in the yellow cells: where you live (Scottish or UK rates), salary, pension, student loan plan, and any side-hustle or rental income." },
+  { name: "Inputs", body: "Overwrite the sample figures in the white input cells with a teal border: where you live (Scottish or UK rates), salary, pension, student loan plan, and any side-hustle or rental income." },
   { name: "Results", body: "Your take-home pay and your side-income checks, updated as you type." },
   { name: "What next?", body: "Links to the UKMoneySheets tracker that fits your situation." },
 ];

@@ -811,7 +811,7 @@ const VISUAL: Record<
 /** Nia's 16:9 lifestyle header photos (public/visual/guides/<slug>.webp). */
 const NIA_HEADERS: Record<string, string> = {
   "cash-isa-12k-under-65-planner": "Cash ISA allowance planner",
-  "help-to-save-deposit-bonus-tracker": "Help to Save bonus tracker",
+  "help-to-save-deposit-bonus-tracker": "Help to Save deposit and bonus log",
   "register-self-assessment-5-october": "Self Assessment records sheet",
   "uk-monthly-budget-google-sheets": "UK monthly budget",
   "house-deposit-lisa-planner": "house deposit and LISA planner",
@@ -830,8 +830,10 @@ for (const g of guides) {
   const v = VISUAL[g.slug];
   if (v) Object.assign(g, v);
   if (!g.headerImage && NIA_HEADERS[g.slug]) {
+    const bust =
+      g.slug === "help-to-save-deposit-bonus-tracker" ? "?v=2" : "";
     g.headerImage = {
-      src: `/visual/guides/${g.slug}.webp`,
+      src: `/visual/guides/${g.slug}.webp${bust}`,
       alt: `A ${NIA_HEADERS[g.slug]} in Google Sheets on a laptop at home, example data shown`,
     };
   }

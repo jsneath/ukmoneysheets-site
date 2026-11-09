@@ -135,8 +135,10 @@ export const guides: GuideMeta[] = [
         src: "/guides/inguide/cash-isa-12k-under-65-planner/1.webp?v=4",
         alt: "Real Google Sheets screenshot: plan regular saving in Google Sheets, sample data",
       },
-      // nearChecklist removed 9 Nov 2026: image 2 stated the £20,000 cash ISA
-      // limit as settled fact. File kept for Nia to replace.
+      nearChecklist: {
+        src: "/guides/inguide/cash-isa-12k-under-65-planner/2.webp?v=3",
+        alt: "Plan your Cash ISA allowance: Budget 2026 announced £20,000 stays for all adults, legislation pending. The law today (SI 2026/1018) sets £12,000 for under-65s from 6 April 2027; Overall ISA allowance is £20,000; Allowances reset each 6 April and don't roll over; Log each subscription with its date and amount; Check your remaining allowance before paying in",
+      },
     },
     shopLine:
       "Browse UK Google Sheets for budgeting and savings alongside your ISA plan on Etsy.",

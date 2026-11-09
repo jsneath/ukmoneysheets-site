@@ -110,7 +110,7 @@ Table: Your First Home: GOV.UK example for a £300,000 home
 
 **Lifetime ISA:** from 29 October 2026 the withdrawal charge falls to 20% for first-time buyers buying above the £450,000 LISA cap; other unauthorised withdrawals stay at 25%. A new First Time Buyer ISA replaces the LISA for new savers from 6 April 2029 (£4,000 a year, 25% bonus, homes up to £450,000, bonus capped at £20,000, no upper age limit). Existing LISA holders carry on.
 
-**Not announced in the Budget:** any change to Stamp Duty Land Tax rates or first-time buyer relief. Bank Rate is a Bank of England decision (next on 5 November), not part of the Budget.
+**Not announced in the Budget:** any change to Stamp Duty Land Tax rates or first-time buyer relief. Bank Rate is a Bank of England decision (4% after the 5 November 2026 rise; next decision 17 December 2026), not part of the Budget.
 
 Saving for a deposit? See the [house deposit LISA planner guide](/guides/house-deposit-lisa-planner) and its [Google Sheets planner](https://www.etsy.com/listing/4463017307?utm_source=site). Already have a mortgage? Try the [mortgage overpayment calculator](/guides/mortgage-overpayment-calculator#calculator) and the [Mortgage Overpayment Calculator for Google Sheets](https://www.etsy.com/listing/4563937681?utm_source=site).
 

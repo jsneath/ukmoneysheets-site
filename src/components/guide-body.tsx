@@ -126,10 +126,12 @@ export function GuideBody({
           </>
         );
       })()}
-      <Figure
-        src={images.nearChecklist.src}
-        alt={images.nearChecklist.alt}
-      />
+      {images.nearChecklist ? (
+        <Figure
+          src={images.nearChecklist.src}
+          alt={images.nearChecklist.alt}
+        />
+      ) : null}
       <MarkdownBlocks blocks={blocks.slice(checklistAt)} />
     </div>
   );

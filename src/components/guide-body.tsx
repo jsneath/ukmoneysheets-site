@@ -80,13 +80,25 @@ export function GuideBody({
   if (!images) {
     const second = blocks.findIndex((b, i) => i > introEnd && b.type === "h2");
     const split = afterFirstSection && second !== -1 ? second : blocks.length;
+    const body = (
+      <>
+        <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
+        <Tool tool={inlineTool} />
+        <MarkdownBlocks blocks={blocks.slice(introEnd, split)} />
+        {afterFirstSection}
+        <MarkdownBlocks blocks={blocks.slice(split)} />
+      </>
+    );
+    if (!freeDownload) {
+      return <div className="prose-guide">{body}</div>;
+    }
     return (
       <div>
         <div className="prose-guide">
           <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
         </div>
         <Tool tool={inlineTool} />
-        {freeDownload ? <FreeDownloadBox {...freeDownload} /> : null}
+        <FreeDownloadBox {...freeDownload} />
         <div className="prose-guide">
           <MarkdownBlocks blocks={blocks.slice(introEnd, split)} />
           {afterFirstSection}
@@ -110,13 +122,56 @@ export function GuideBody({
 
   // Render via Markdown by reconstructing with HTML markers — simpler to map
   // blocks through the same Markdown renderer pieces.
+  const afterIntro = (
+    <>
+      {inlineTool ? <Tool tool={inlineTool} /> : null}
+      <Figure src={images.afterIntro.src} alt={images.afterIntro.alt} />
+      {(() => {
+        const secondH2 = blocks.findIndex(
+          (b, i) => i > introEnd && b.type === "h2",
+        );
+        if (!afterFirstSection || secondH2 === -1 || secondH2 >= checklistAt) {
+          return (
+            <>
+              <MarkdownBlocks blocks={blocks.slice(introEnd, checklistAt)} />
+              {afterFirstSection}
+            </>
+          );
+        }
+        return (
+          <>
+            <MarkdownBlocks blocks={blocks.slice(introEnd, secondH2)} />
+            {afterFirstSection}
+            <MarkdownBlocks blocks={blocks.slice(secondH2, checklistAt)} />
+          </>
+        );
+      })()}
+      {images.nearChecklist ? (
+        <Figure
+          src={images.nearChecklist.src}
+          alt={images.nearChecklist.alt}
+        />
+      ) : null}
+      <MarkdownBlocks blocks={blocks.slice(checklistAt)} />
+    </>
+  );
+
+  if (!freeDownload) {
+    return (
+      <div className="prose-guide">
+        <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
+        {afterIntro}
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="prose-guide">
         <MarkdownBlocks blocks={blocks.slice(0, introEnd)} />
       </div>
       {inlineTool ? <Tool tool={inlineTool} /> : null}
-      {freeDownload ? <FreeDownloadBox {...freeDownload} /> : null}
+      <FreeDownloadBox {...freeDownload} />
       <div className="prose-guide">
         <Figure src={images.afterIntro.src} alt={images.afterIntro.alt} />
         {(() => {

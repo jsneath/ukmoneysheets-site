@@ -43,6 +43,14 @@ export type GuideMeta = {
   faqSchema?: boolean;
   /** Show the free take-home pay checker promo after the article body. */
   freeToolCta?: boolean;
+  /** Optional free Google Sheets download box near the top of the guide. */
+  freeDownload?: {
+    title: string;
+    body: string;
+    buttonLabel: string;
+    href: string;
+    smallPrint: string;
+  };
   /** Interactive tool rendered straight after the intro, before figure 1. */
   inlineTool?: "mortgage-overpayment";
   /** 3–5 short key-fact bullets shown under the answer box (HTML, not images). */
@@ -386,6 +394,13 @@ export const guides: GuideMeta[] = [
     slug: "uk-christmas-savings-tracker",
     ctaUrl: "https://www.etsy.com/listing/4568011416?utm_source=site",
     ctaLabel: "Get the Christmas Savings Tracker on Etsy",
+    freeDownload: {
+      title: "Free: UK Christmas Gift List & Budget (Google Sheets)",
+      body: "List up to 25 people, with a budget, actual spend and a Bought? tickbox for each. The sheet works out the remaining budget and over/under for you.",
+      buttonLabel: "Get your free copy",
+      href: "https://docs.google.com/spreadsheets/d/1nKkQg2H9G94HNeTAmRSkuXt8ftlAxCK45jskyuFGweU/copy",
+      smallPrint: "You'll need a free Google account to make your copy.",
+    },
     title: "UK Christmas Savings Tracker: Gift List Plus January Bills",
     description:
       "List every gift and Christmas cost with a budget cap, save a little each week from autumn, and set aside a January buffer for rent, council tax, and energy so December cheer does not become February stress.",

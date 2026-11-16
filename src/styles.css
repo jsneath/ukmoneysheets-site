@@ -306,3 +306,16 @@ html.js-fade .fade-up.is-in { opacity: 1; transform: none; }
 .prose-guide .teal-band li { color: inherit; }
 .prose-guide .teal-band ul { list-style: none; padding-left: 0; }
 .prose-guide .teal-band a { text-decoration: none; }
+
+/* Keep the free-download CTA button ivory if the box sits inside .prose-guide. */
+.prose-guide .free-download h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.prose-guide .free-download p { color: unset; }
+.prose-guide .free-download a {
+  color: var(--color-ivory);
+  text-decoration: none;
+}
+.prose-guide .free-download a:hover { color: var(--color-ivory); }

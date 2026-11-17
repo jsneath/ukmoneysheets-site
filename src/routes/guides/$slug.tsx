@@ -188,6 +188,7 @@ function GuidePage() {
             source={article}
             images={guide.inGuideImages}
             inlineTool={guide.inlineTool}
+            freeDownload={guide.freeDownload}
             afterFirstSection={
               product ? (
                 <ProductCard {...product} />

@@ -848,7 +848,10 @@ for (const g of guides) {
   if (v) Object.assign(g, v);
   if (!g.headerImage && NIA_HEADERS[g.slug]) {
     const bust =
-      g.slug === "help-to-save-deposit-bonus-tracker" ? "?v=2" : "";
+      g.slug === "help-to-save-deposit-bonus-tracker" ||
+      g.slug === "uk-crypto-section-104"
+        ? "?v=2"
+        : "";
     g.headerImage = {
       src: `/visual/guides/${g.slug}.webp${bust}`,
       alt: `A ${NIA_HEADERS[g.slug]} in Google Sheets on a laptop at home, example data shown`,

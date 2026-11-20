@@ -81,9 +81,9 @@ export const guides: GuideMeta[] = [
     seoTitle: "Autumn Budget 2026: What It Means for You",
     title: "What the 28 Oct 2026 Budget Means for Your Money (UK)",
     description:
-      "The 28 October 2026 Budget left income tax, National Insurance and VAT rates unchanged. From 6 April 2027 it raises savings and property income tax by a further 2 points, adds a Pension Tax Allowance and announces the cash ISA limit will stay at £20,000 (legislation pending). It also brings a £100 energy payment for bands A to D in England.",
+      "The 28 October 2026 Budget left income tax, National Insurance and VAT rates unchanged. From 6 April 2027 it raises savings and property income tax by a further 2 points, adds a Pension Tax Allowance and keeps the cash ISA limit at £20,000, now in law through SI 2026/1218. It also brings a £100 energy payment for bands A to D in England.",
     metaDescription:
-      "The 28 Oct 2026 Budget in plain English: pensioner tax, savings tax to 24%, cash ISA £20k (announced), energy help, first homes and MTD, with GOV.UK sources.",
+      "The 28 Oct 2026 Budget in plain English: pensioner tax, savings tax to 24%, cash ISA stays £20k, energy help, first homes and MTD, with GOV.UK sources.",
     category: "Tax",
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
     imageAlt: "UK monthly budget in Google Sheets: Google Sheets dashboard preview, sample data",
@@ -94,7 +94,7 @@ export const guides: GuideMeta[] = [
     },
     keyFigures: [
       { value: "24%", label: "savings basic rate from 6 April 2027 (now 20%)" },
-      { value: "£20,000", label: "cash ISA limit announced to stay for adult savers, legislation pending" },
+      { value: "£20,000", label: "cash ISA limit stays for adult savers from April 2027 (SI 2026/1218)" },
       { value: "£100", label: "energy payment, bands A to D in England, from January 2027" },
     ],
     keyFacts: [
@@ -124,13 +124,13 @@ export const guides: GuideMeta[] = [
     faqSchema: true,
     ctaUrl: "https://www.etsy.com/listing/4461347110?utm_source=site",
     ctaLabel: "Get the UK Net Worth tracker on Etsy",
-    seoTitle: "Cash ISA Limit £20,000 Announced, Law Pending: Planner (UK)",
+    seoTitle: "Cash ISA Limit Stays £20,000 from April 2027: Planner (UK)",
     title:
-      "Cash ISA Allowance Planner (UK): £20,000 Limit Announced to Stay, Legislation Pending",
+      "Cash ISA Allowance Planner (UK): £20,000 Limit Stays from April 2027",
     description:
-      "At the 28 October 2026 Budget the government announced the cash ISA limit will stay £20,000 for all savers aged 18 or over from April 2027, inside the overall £20,000 ISA allowance. Legislation is pending: until a new SI revokes it, the £12,000 limit for anyone 64 or under at the end of the tax year, set by SI 2026/1018 from 6 April 2027, is still in law today. Check GOV.UK before you act.",
+      "The cash ISA limit stays £20,000 from 6 April 2027 for all savers aged 18 or over, inside the overall £20,000 ISA allowance. SI 2026/1218, made on 18 November 2026, revokes SI 2026/1018, so the planned £12,000 limit for anyone 64 or under will not happen. Check GOV.UK before you act.",
     metaDescription:
-      "Budget 2026 announced the cash ISA limit stays £20,000 from April 2027. Legislation pending: the £12k under-65 rule is still law today. Plan in Google Sheets.",
+      "The cash ISA limit stays £20,000 from April 2027: SI 2026/1218 revokes the £12k under-65 rule. Plan your ISA allowance in Google Sheets.",
     category: "Savings",
     featured: true,
     image: "/guides/cash-isa-12k-under-65-planner.jpg?v=3",
@@ -144,8 +144,8 @@ export const guides: GuideMeta[] = [
         alt: "Real Google Sheets screenshot: plan regular saving in Google Sheets, sample data",
       },
       nearChecklist: {
-        src: "/guides/inguide/cash-isa-12k-under-65-planner/2.webp?v=3",
-        alt: "Plan your Cash ISA allowance: Budget 2026 announced £20,000 stays for all adults, legislation pending. The law today (SI 2026/1018) sets £12,000 for under-65s from 6 April 2027; Overall ISA allowance is £20,000; Allowances reset each 6 April and don't roll over; Log each subscription with its date and amount; Check your remaining allowance before paying in",
+        src: "/guides/inguide/cash-isa-12k-under-65-planner/2.webp?v=4",
+        alt: "Plan your Cash ISA allowance: Cash ISA limit stays £20,000 from 6 April 2027. SI 2026/1218 revokes the planned £12,000 under-65 limit (SI 2026/1018); Overall ISA allowance is £20,000; Allowances reset each 6 April and don't roll over; Log each subscription with its date and amount; Check your remaining allowance before paying in",
       },
     },
     shopLine:
@@ -670,12 +670,12 @@ const VISUAL: Record<
   "cash-isa-12k-under-65-planner": {
     keyFigures: [
       { value: "£20,000", label: "overall ISA allowance, 2026/27 and from April 2027" },
-      { value: "£20,000", label: "cash ISA limit from 6 April 2027, announced at Budget 2026, legislation pending" },
+      { value: "£20,000", label: "cash ISA limit from 6 April 2027, kept by SI 2026/1218" },
       { value: "24%", label: "basic-rate tax on savings interest outside ISAs from 6 April 2027" },
     ],
     keyFacts: [
-      "Budget 2026 announced the cash ISA limit will stay £20,000 for all savers aged 18 or over from April 2027, with legislation pending.",
-      "Until a new SI revokes it, SI 2026/1018 still sets a £12,000 cash ISA limit from 6 April 2027 for anyone 64 or under at the end of the tax year.",
+      "The cash ISA limit stays £20,000 from 6 April 2027 for all savers aged 18 or over.",
+      "SI 2026/1218, made on 18 November 2026, revokes SI 2026/1018, so the planned £12,000 limit for anyone 64 or under won't take effect.",
       "Savings interest outside ISAs is taxed at 24%, 44% or 49% from 6 April 2027, above your allowances.",
       "Allowances reset each 6 April and don't roll over.",
     ],

@@ -2,9 +2,9 @@
 // Figures checked against the GOV.UK Budget 2026 documents on 28 Oct 2026.
 export const autumnBudget2026 = `*General information, not tax or financial advice; check GOV.UK or a regulated adviser for your situation.*
 
-Tax measures below are to be legislated in Finance Bill 2026-27, so they are subject to legislation. The cash ISA change is made by a separate statutory instrument that has not been made yet.
+Tax measures below are to be legislated in Finance Bill 2026-27, so they are subject to legislation. The cash ISA change is made by a separate statutory instrument, SI 2026/1218, made on 18 November 2026.
 
-**Last checked: 9 November 2026**, against GOV.UK and legislation.gov.uk.
+**Last checked: 20 November 2026**, against GOV.UK and legislation.gov.uk.
 
 ---
 
@@ -38,7 +38,7 @@ If you are tracking a pension income alongside other money coming in, the [UK mo
 
 ## What happens to tax on savings, and did the cash ISA limit change?
 
-Savings tax goes up, and the government announced that the cash ISA limit will not go down. Budget 2025 had already set a 2-point rise in savings tax from April 2027, and Budget 2026 adds a further 2 points, so from 6 April 2027 savings income is taxed at 24% basic, 44% higher and 49% additional rate across the whole UK.
+Savings tax goes up, and the cash ISA limit will not go down. Budget 2025 had already set a 2-point rise in savings tax from April 2027, and Budget 2026 adds a further 2 points, so from 6 April 2027 savings income is taxed at 24% basic, 44% higher and 49% additional rate across the whole UK.
 
 Table: Savings income tax rates, 2026-27 and from 6 April 2027
 | Savings band | 2026-27 | From 6 April 2027 |
@@ -51,7 +51,7 @@ Table: Savings income tax rates, 2026-27 and from 6 April 2027
 
 The Personal Savings Allowance stays £1,000 for basic-rate and £500 for higher-rate taxpayers, the starting rate for savings still covers up to £5,000, and the dividend allowance stays £500. The Treasury says a basic-rate taxpayer would need over £25,000 in savings outside ISAs before paying tax, and up to £150,000 if they also get the starting rate.
 
-**Cash ISA (announced at Budget 2026, legislation pending):** the government announced that the cash ISA limit will stay £20,000 for all savers aged 18 or over from April 2027, so the planned cut to £12,000 will not go ahead. This is done by secondary legislation, not the Finance Bill: HMRC says it will be "laid before parliament in November 2026" ([HMRC overview, section 2.5](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)) and that SI 2026/1018 "will be revoked" ([Tax-free savings newsletter 24](https://www.gov.uk/government/publications/tax-free-savings-newsletter-24/tax-free-savings-newsletter-24-october-2026)). Until then, the £12,000 cash ISA limit from 6 April 2027 for anyone 64 or under at the end of the tax year is still in law today in [SI 2026/1018](https://www.legislation.gov.uk/uksi/2026/1018/made). The overall ISA limit stays £20,000 and the Junior ISA limit stays £9,000. The government will also explore a new incentive for first-time stocks and shares ISA investors, with the design to be worked out with industry later. Last checked: 9 November 2026.
+**Cash ISA (now in law):** the government announced at Budget 2026 that the cash ISA limit will stay £20,000 for all savers aged 18 or over from April 2027, so the planned cut to £12,000 will not go ahead. This was done by secondary legislation, not the Finance Bill: [SI 2026/1218](https://www.legislation.gov.uk/uksi/2026/1218/made) was made on 18 November 2026 and laid before Parliament on 19 November 2026, and its regulation 12 revokes [SI 2026/1018](https://www.legislation.gov.uk/uksi/2026/1018/made), which held the £12,000 limit for anyone 64 or under at the end of the tax year, from 6 April 2027. HMRC's [Tax Information and Impact Note](https://www.gov.uk/government/publications/changes-to-individual-savings-account-reporting/individual-savings-account-changes-to-reporting) says it "maintains the annual cash ISA subscription limit at £20,000 for individuals under 65 from 6 April 2027". The overall ISA limit stays £20,000 and the Junior ISA limit stays £9,000. The government will also explore a new incentive for first-time stocks and shares ISA investors, with the design to be worked out with industry later. Last checked: 20 November 2026.
 
 Help to Save moves to a multi-provider model from spring 2028. If you use it, the [Help to Save deposit bonus tracker guide](/guides/help-to-save-deposit-bonus-tracker) and the [Help to Save tracker for Google Sheets](https://www.etsy.com/listing/4563932731?utm_source=site) may help you keep count.
 
@@ -133,7 +133,7 @@ Saving for a deposit? See the [house deposit LISA planner guide](/guides/house-d
 
 ### What does the 2026 Budget mean for me?
 
-Income tax, National Insurance and VAT rates are unchanged and the Personal Allowance stays £12,570. From 6 April 2027 savings and property income are taxed 2 points more again (24%, 44%, 49%). The cash ISA limit is announced to stay £20,000 (legislation pending), households in bands A to D in England get a £100 energy payment from January 2027, and Your First Home opens in 2027.
+Income tax, National Insurance and VAT rates are unchanged and the Personal Allowance stays £12,570. From 6 April 2027 savings and property income are taxed 2 points more again (24%, 44%, 49%). The cash ISA limit stays £20,000 (now in law through SI 2026/1218), households in bands A to D in England get a £100 energy payment from January 2027, and Your First Home opens in 2027.
 
 ### Will I pay tax on my State Pension from April 2027?
 
@@ -141,7 +141,7 @@ Not if your total income is no more than £13,036.40, the full new State Pension
 
 ### Has the cash ISA limit changed?
 
-Not yet in law. The 28 October 2026 Budget announced that the cash ISA limit will stay £20,000 for all savers aged 18 or over from April 2027, inside the overall £20,000 ISA allowance, with legislation pending. Until a new SI revokes it, SI 2026/1018 still sets a £12,000 cash ISA limit from 6 April 2027 for anyone 64 or under at the end of the tax year. Last checked: 9 November 2026.
+No, it stays £20,000. The 28 October 2026 Budget announced that the planned cut to £12,000 from April 2027 would not go ahead, and SI 2026/1218, made on 18 November 2026, revokes SI 2026/1018 (the £12,000 limit for anyone 64 or under at the end of the tax year) from 6 April 2027. The cash ISA limit stays £20,000 for all savers aged 18 or over, inside the overall £20,000 ISA allowance. Last checked: 20 November 2026.
 
 ### What will savings tax be from April 2027?
 
@@ -166,7 +166,8 @@ Yes. Households in council tax bands A to D in England get a £100 payment from 
 ## Sources
 
 - [Budget 2026 (Red Book)](https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html)
-- [SI 2026/1018, the Individual Savings Account (Amendment) (No. 2) Regulations 2026](https://www.legislation.gov.uk/uksi/2026/1018/made) and [HMRC Tax-free savings newsletter 24](https://www.gov.uk/government/publications/tax-free-savings-newsletter-24/tax-free-savings-newsletter-24-october-2026)
+- [SI 2026/1218, the Individual Savings Account (Amendment and Revocation) Regulations 2026](https://www.legislation.gov.uk/uksi/2026/1218/made) and [HMRC Tax Information and Impact Note (19 November 2026)](https://www.gov.uk/government/publications/changes-to-individual-savings-account-reporting/individual-savings-account-changes-to-reporting)
+- [SI 2026/1018, the Individual Savings Account (Amendment) (No. 2) Regulations 2026 (revoked from 6 April 2027)](https://www.legislation.gov.uk/uksi/2026/1018/made) and [HMRC Tax-free savings newsletter 24](https://www.gov.uk/government/publications/tax-free-savings-newsletter-24/tax-free-savings-newsletter-24-october-2026)
 - [HM Treasury Budget 2026 press release](https://www.gov.uk/government/news/budget-2026-breathing-space-for-today-hope-for-the-future)
 - [HMRC Overview of Tax Legislation and Rates](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar) and [Annex A: rates and allowances](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances)
 - [Pension Tax Allowance explainer](https://www.gov.uk/government/publications/pension-tax-allowance-explainer/pension-tax-allowance-explainer)

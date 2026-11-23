@@ -663,7 +663,7 @@ export const guides: GuideMeta[] = [
     articleSchema: { datePublished: "2026-11-23", dateModified: "2026-11-23" },
     ctaUrl: "https://www.etsy.com/listing/4564156155?utm_source=site&utm_medium=guide&utm_campaign=sa-31jan-2027",
     ctaLabel: "Get the Google Sheets Self Assessment bundle (2025/26 & 2026/27) on Etsy",
-    seoTitle: "31 January 2027 Self Assessment Deadline: UK Checklist",
+    seoTitle: "31 January 2027 Self Assessment Deadline",
     title:
       "31 January 2027 Self Assessment Deadline: Payments on Account, Penalties and What to Gather",
     description:

@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { getGuide, relatedGuides } from "@/lib/guides";
 import { getArticle } from "@/lib/articles";
 import { faqJsonLdScript } from "@/lib/faq";
+import { articleJsonLdScript } from "@/lib/article-schema";
 import { SITE, etsyLink, pageHead } from "@/lib/site";
 
 export const Route = createFileRoute("/guides/$slug")({
@@ -38,7 +39,11 @@ export const Route = createFileRoute("/guides/$slug")({
       imageAlt: guide.ogImageAlt,
     });
     const faq = guide.faqSchema ? faqJsonLdScript(article) : null;
-    return faq ? { ...head, scripts: [faq] } : head;
+    const articleLd = articleJsonLdScript(guide);
+    const scripts = [articleLd, faq].filter(
+      (s): s is NonNullable<typeof s> => s !== null,
+    );
+    return scripts.length ? { ...head, scripts } : head;
   },
   component: GuidePage,
 });

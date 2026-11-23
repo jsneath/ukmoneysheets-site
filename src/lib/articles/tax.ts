@@ -916,3 +916,164 @@ No. It's general information based on GOV.UK rules for 2026/27. Check the linked
 There's no dedicated UKMoneySheets ANI calculator. The worksheet above is a free example layout you can build in Google Sheets. If you want to plan take-home pay, pension and childcare costs month by month, the **UK Salary / Monthly Budget** sheet is the closest fit.
 
 Want to run your own numbers? The [Childcare Cost & £100k Calculator 2026/27](https://www.etsy.com/listing/4598755762?utm_source=site) is a Google Sheet for working through your childcare costs against the £100k limit. Check the rules on GOV.UK too. For pay and monthly outgoings across the year, the [UK Salary / Monthly Budget Google Sheet](https://www.etsy.com/listing/4460132151?utm_source=site) still helps. You can browse the rest of the range in the [UKMoneySheets shop](https://www.etsy.com/shop/UkMoneySheets?utm_source=site).`;
+
+// Source: /workspace/ukms/briefs/self-assessment-31-january-2027-deadline.md (Writing Bot r2;
+// Grok Bot Stage 2 round 2 PASS, 23 Nov 2026). Body copied verbatim; the H1 is guide.title and
+// the short answer is guide.description. Figures re-checked on GOV.UK / HMRC / Bank of England
+// on 23 Nov 2026. Re-check the HMRC interest rate (8.00% from 24 Nov 2026) on publish day and
+// after the Bank of England decision on 17 Dec 2026.
+export const saDeadline31Jan2027 = `*General information, not tax or financial advice. Figures in our example are estimates; your HMRC online account or Self Assessment statement shows what you actually owe.*
+
+*Last checked: 23 November 2026, against GOV.UK and the Bank of England. HMRC late payment interest checked on GOV.UK on 23 November 2026.*
+
+## What's due on 31 January 2027
+
+GOV.UK sets [two deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines) at 11:59pm on 31 January 2027: your 2025/26 online return, and payment of the 2025/26 balancing payment plus any first payment on account for 2026/27.
+
+The paper deadline (11:59pm, 31 October 2026) has passed.
+
+### Registered after 5 October 2026?
+
+GOV.UK says HMRC will send you a letter or email with a different deadline for your return, 3 months from the date on it. You must still pay the tax you owe by 11:59pm on 31 January 2027, and if you don't pay it all by then you may get a "failure to notify" penalty. See our [registration guide](/guides/register-self-assessment-5-october).
+
+### 31 January 2027 is a Sunday
+
+If a deadline falls on a weekend or bank holiday, [GOV.UK says](https://www.gov.uk/pay-self-assessment-tax-bill) your payment must reach HMRC on the last working day before, unless you pay by Faster Payments or debit or credit card.
+
+For 31 January 2027, the last working day before is **Friday 29 January 2027**. [GOV.UK says](https://www.gov.uk/pay-self-assessment-tax-bill/bank-details) Faster Payments usually reach HMRC the same or next day, including weekends and bank holidays. CHAPS usually arrives the same working day if you pay within your bank's processing times, and Bacs usually takes 3 working days. The online return deadline stays 11:59pm on 31 January 2027.
+
+Allow 3 working days for an existing HMRC Direct Debit, or 5 for a first one.
+
+Your payment reference is your Unique Taxpayer Reference (UTR) plus "K".
+
+### Paying through your tax code
+
+HMRC collects through your tax code only if all three apply: you file online by 11:59pm on 30 December 2026, you owe less than £3,000, and you already pay tax through PAYE ([GOV.UK](https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code)).
+
+## Payments on account, explained
+
+[Payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account) are advance payments towards your next bill, including Class 4 National Insurance if self-employed. Each is usually half of the previous year's tax, due by 31 January and 31 July.
+
+You don't need to make them if last year's Self Assessment tax was under £1,000, or you paid more than 80% of your tax outside Self Assessment, such as through your tax code.
+
+### Worked example (fictional, first year filing)
+
+Our own maths, using GOV.UK's method. Sam's 2025/26 bill is £2,400 of Income Tax and Class 4 National Insurance (no Capital Gains Tax or student loan, which aren't included in payments on account), with no payments on account last year and less than 80% collected at source.
+
+| Due | What for | Amount |
+|---|---|---|
+| 31 Jan 2027 | 2025/26 bill | £2,400 |
+| 31 Jan 2027 | First payment on account, 2026/27 (half of £2,400) | £1,200 |
+| **31 Jan 2027 total** | | **£3,600** |
+| 31 Jul 2027 | Second payment on account, 2026/27 | £1,200 |
+
+If Sam's 2026/27 bill comes out above £2,400, the difference is a balancing payment due 31 January 2028.
+
+### Reducing payments on account (SA303)
+
+If income goes down, tax relief goes up or more tax is deducted at source, you can ask HMRC to reduce them online or with [form SA303](https://www.gov.uk/guidance/claim-to-reduce-payments-on-account). GOV.UK says you must claim by 31 January after the end of the tax year. If the final bill is higher, HMRC charges interest on the difference.
+
+## Late filing penalties
+
+GOV.UK lists these [late filing penalties](https://www.gov.uk/self-assessment-tax-returns/penalties):
+
+- an initial £100 penalty
+- after 3 months, £10 a day, up to £900
+- after 6 months, a further 5% of the tax due or £300, whichever is greater
+- after 12 months, another 5% or £300, whichever is greater
+
+HMRC has a [penalty estimator](https://www.gov.uk/estimate-self-assessment-penalties). Pay within 30 days of the notice date, or appeal if you have a reasonable excuse.
+
+## Late payment penalties and interest
+
+For paying late, HMRC charges 5% of the tax unpaid at 30 days, 6 months and 12 months, plus interest.
+
+HMRC's [late payment interest](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates) is Bank of England base rate plus 4% (from 6 April 2025): 8.00% from 24 November 2026 (check GOV.UK for the latest rate). It can change, as [Bank Rate](https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate) is next reviewed on 17 December 2026.
+
+Different penalties apply under Making Tax Digital for Income Tax ([our MTD guide](/guides/making-tax-digital-30k-april-2027)).
+
+## If you can't pay in full
+
+You may be able to set up a [payment plan](https://www.gov.uk/difficulties-paying-hmrc) ("Time to Pay") for an overdue bill if HMRC finds it affordable. You'll need your UTR, UK bank details with Direct Debit authority, and your income and spending.
+
+There's no set time limit. HMRC usually asks for around half of the money you have left over each month after rent, food or utility bills and fixed outgoings. Interest still runs on the unpaid amount.
+
+GOV.UK lists free debt advice from MoneyHelper (England and Wales), Scotland Debt Solutions and Advice NI.
+
+## What to gather before you file
+
+- **UTR (10 digits):** usually arrives by post around 15 days after registering.
+- **HMRC sign-in:** Government Gateway or GOV.UK One Login. Proving your identity may need photo ID, so allow time.
+- **Employment forms:** P60 (in a job on 5 April 2026), P45 (left a job), P11D (expenses and benefits).
+- **Self-employment records** for the SA103 pages, including any mileage and use-of-home records ([SA103 guide](/guides/uk-self-assessment-side-hustle-sa103)).
+- **Other income:** rent, savings interest, dividends and other untaxed income.
+
+Keep records at least 5 years after the 31 January deadline if you're self-employed. Otherwise, keep them at least 22 months after the end of the tax year if you file on time, or 15 months after you send a late return.
+
+Our [Self Assessment Spreadsheet UK 2025/26](https://www.etsy.com/listing/4462593252?utm_source=site&utm_medium=guide&utm_campaign=sa-31jan-2027) for Excel and Google Sheets tracks income, expenses, mileage and home office costs, and gives your SA103 figures plus an estimate of your tax. It doesn't work out payments on account.
+
+## Who needs to file a 2025/26 return
+
+GOV.UK says [you must send a return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) if, among other reasons, you:
+
+- were a self-employed sole trader earning more than £1,000 before taking off anything you can claim tax relief on
+- were a partner in a business partnership
+- had Capital Gains Tax to pay
+- had to pay the High Income Child Benefit Charge and don't pay it through PAYE
+- were asked to by HMRC
+
+Untaxed income, such as rent or dividends, may also mean filing. [Check on GOV.UK](https://www.gov.uk/check-if-you-need-tax-return).
+
+### Scotland
+
+Deadlines, payments on account and penalties are UK-wide. [Scottish Income Tax](https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year) bands differ: for 2025/26, starter 19%, basic 20%, intermediate 21%, higher 42%, advanced 45% and top 48%. Savings and dividends are taxed as elsewhere in the UK. The online return has a Scottish Income Tax box.
+
+The [Self Assessment bundle](https://www.etsy.com/listing/4564156155?utm_source=site&utm_medium=guide&utm_campaign=sa-31jan-2027) covers 2025/26 and 2026/27 in Google Sheets.
+
+## FAQ
+
+### When is the Self Assessment deadline for 2025/26?
+
+11:59pm on 31 January 2027, for online returns and paying what you owe.
+
+### What are payments on account?
+
+Advance payments towards your next tax bill, each usually half of last year's Self Assessment tax, due by 31 January and 31 July.
+
+### Why is my first Self Assessment bill so high?
+
+In your first year, the 31 January payment can include last year's full bill plus the first payment on account for this year.
+
+### Do I have to make payments on account?
+
+Not if last year's Self Assessment tax was under £1,000, or more than 80% of your tax was collected another way, such as through your tax code.
+
+### Can I reduce my payments on account?
+
+Yes, online or with form SA303, if you expect lower tax. If the reduced amount proves too low, HMRC charges interest on the difference.
+
+### What is the penalty for filing late?
+
+£100 initially. After 3 months, £10 a day up to £900. After 6 and 12 months, 5% of the tax due or £300, whichever is greater, each time.
+
+### What interest does HMRC charge on late tax?
+
+Base rate plus 4%: 8.00% from 24 November 2026. It can change with Bank Rate, so check GOV.UK for the current rate.
+
+### What if I can't pay my tax bill by 31 January?
+
+You may be able to set up a payment plan (Time to Pay). Interest still applies to what's unpaid.
+
+### 31 January 2027 is a Sunday: does the deadline move?
+
+The online return deadline stays 11:59pm on 31 January 2027. For payments, GOV.UK says the money must reach HMRC on the last working day before, Friday 29 January 2027, unless you pay by Faster Payments or debit or credit card.
+
+### Are the rules different in Scotland?
+
+The deadlines and penalties are UK-wide, but Scottish Income Tax bands differ.
+
+## Sources
+
+Checked 23 November 2026: GOV.UK [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines), [penalties](https://www.gov.uk/self-assessment-tax-returns/penalties), [who must file](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return), [paying](https://www.gov.uk/pay-self-assessment-tax-bill), [payment timings](https://www.gov.uk/pay-self-assessment-tax-bill/bank-details), [tax code](https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code), [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account), [SA303](https://www.gov.uk/guidance/claim-to-reduce-payments-on-account), [HMRC interest](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates), [payment plans](https://www.gov.uk/difficulties-paying-hmrc), [UTR](https://www.gov.uk/find-utr-number), [sign-in](https://www.gov.uk/log-in-register-hmrc-online-services), [filing online](https://www.gov.uk/log-in-file-self-assessment-tax-return), [pay records](https://www.gov.uk/keeping-your-pay-tax-records), [business records](https://www.gov.uk/self-employed-records), [Scotland 2025/26](https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year), [penalty estimator](https://www.gov.uk/estimate-self-assessment-penalties); [Bank of England](https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate).
+
+*General information, not tax or financial advice. UKMoneySheets makes UK tax spreadsheets that give estimates; they don't file anything with HMRC.*`;

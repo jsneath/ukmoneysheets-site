@@ -61,6 +61,8 @@ export type GuideMeta = {
   product?: { name: string; image: string; imageAlt: string };
   /** Wide lifestyle header image for the visual guide layout (16:9). */
   headerImage?: { src: string; alt: string };
+  /** Emit Article JSON-LD (ISO dates, YYYY-MM-DD). */
+  articleSchema?: { datePublished: string; dateModified: string };
 };
 
 /** Homepage featured priority (Cash ISA → Help to Save → Register SA → budget / LISA / mortgage). */
@@ -655,6 +657,32 @@ export const guides: GuideMeta[] = [
       "black-friday-spending-cap-price-log",
     ],
   },
+  {
+    slug: "self-assessment-31-january-2027-deadline",
+    faqSchema: true,
+    articleSchema: { datePublished: "2026-11-23", dateModified: "2026-11-23" },
+    ctaUrl: "https://www.etsy.com/listing/4564156155?utm_source=site&utm_medium=guide&utm_campaign=sa-31jan-2027",
+    ctaLabel: "Get the Google Sheets Self Assessment bundle (2025/26 & 2026/27) on Etsy",
+    seoTitle: "31 January 2027 Self Assessment Deadline: UK Checklist",
+    title:
+      "31 January 2027 Self Assessment Deadline: Payments on Account, Penalties and What to Gather",
+    description:
+      "By 11:59pm on 31 January 2027, HMRC must receive your 2025/26 online tax return and any tax you owe. That payment can include a balancing payment for 2025/26 and your first payment on account for 2026/27. The second payment on account is due 31 July 2027. 31 January 2027 is a Sunday, so check the payment timing below.",
+    metaDescription:
+      "What's due by 31 January 2027: the 2025/26 return, balancing payment and first payment on account, plus the £100 late filing penalty and HMRC interest.",
+    category: "Tax",
+    // No Nia pack yet: reuse the register-SA card (2025/26, 31 Jan 2027); og falls back to /og.jpg.
+    image: "/guides/register-self-assessment-5-october.jpg",
+    imageAlt: "Self Assessment records for 2025/26: Google Sheets dashboard preview, sample data",
+    showHeaderImage: false,
+    shopLine:
+      "Get the Self Assessment bundle for Google Sheets (2025/26 and 2026/27) on UKMoneySheets Etsy.",
+    related: [
+      "register-self-assessment-5-october",
+      "uk-self-assessment-side-hustle-sa103",
+      "making-tax-digital-30k-april-2027",
+    ],
+  },
 ];
 
 /**
@@ -807,6 +835,20 @@ const VISUAL: Record<
       "Take your Black Friday cap out of your Christmas gift budget, not on top.",
       "Log the price of each item you plan to buy every week or so.",
       "A deal is only real if it beats your lowest logged price and fits your cap.",
+    ],
+  },
+  "self-assessment-31-january-2027-deadline": {
+    keyFigures: [
+      { value: "31 Jan 2027", label: "2025/26 online return and payment deadline (11:59pm)" },
+      { value: "£100", label: "initial late filing penalty" },
+      { value: "8.00%", label: "HMRC late payment interest from 24 Nov 2026" },
+    ],
+    keyFacts: [
+      "File your 2025/26 return online and pay what you owe by 11:59pm on 31 January 2027.",
+      "31 January 2027 is a Sunday: unless you pay by Faster Payments or debit or credit card, your payment must reach HMRC by Friday 29 January 2027.",
+      "Payments on account are each usually half of last year's tax, due by 31 January and 31 July.",
+      "Late filing starts with a £100 penalty; paying late brings 5% penalties at 30 days, 6 months and 12 months, plus interest.",
+      "Deadlines, payments on account and penalties are UK-wide; Scottish Income Tax bands differ.",
     ],
   },
   "winter-energy-bills-tracker": {

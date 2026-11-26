@@ -75,7 +75,7 @@ The nil-rate band stays £325,000 and the residence nil-rate band £175,000 in 2
 
 ## Did the Budget do anything about energy bills?
 
-Yes, in three main ways. A **£100 Household Energy Payment** goes to households in council tax bands A to D in England from January 2027, the VAT cut on household electricity is extended to 1 July 2027, and Ofgem has been asked to abolish gas standing charges.
+Yes, in three main ways. A **£100 Household Energy Payment** goes to households in council tax bands A to D in England from January 2027, the VAT cut on household electricity is extended until 30 June 2027, and Ofgem has been asked to abolish gas standing charges.
 
 - **£100 payment:** if you pay council tax by Direct Debit you don't need to do anything; others will be invited to apply by their council. Scotland, Wales and Northern Ireland get funding to decide their own support, and councils get £100m for discretionary help. Only your council will contact you about it, so treat any other message as a possible scam.
 - **Electricity VAT:** HM Treasury says the extension takes around £50 off the Ofgem cap in April 2027.
@@ -157,7 +157,7 @@ The Budget didn't change the plan. Most unused pension funds and death benefits 
 
 ### Did the Budget do anything about energy bills?
 
-Yes. Households in council tax bands A to D in England get a £100 payment from January 2027, the VAT cut on electricity runs to 1 July 2027, and Ofgem has been asked to abolish gas standing charges, aiming for the end of 2027, moving the cost onto unit rates.
+Yes. Households in council tax bands A to D in England get a £100 payment from January 2027, the VAT cut on electricity runs until 30 June 2027, and Ofgem has been asked to abolish gas standing charges, aiming for the end of 2027, moving the cost onto unit rates.
 
 ### What is the Your First Home income cap?
 

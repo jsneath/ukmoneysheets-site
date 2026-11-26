@@ -1010,7 +1010,7 @@ GOV.UK lists free debt advice from MoneyHelper (England and Wales), Scotland Deb
 
 Keep records at least 5 years after the 31 January deadline if you're self-employed. Otherwise, keep them at least 22 months after the end of the tax year if you file on time, or 15 months after you send a late return.
 
-Our [Self Assessment Spreadsheet UK 2025/26](https://www.etsy.com/listing/4462593252?utm_source=site&utm_medium=guide&utm_campaign=sa-31jan-2027) for Google Sheets tracks income, expenses, mileage and home office costs, and gives your SA103 figures plus an estimate of your tax. It doesn't work out payments on account.
+Our [Self Assessment Spreadsheet UK 2025/26](https://www.etsy.com/listing/4462593252?utm_source=site&utm_medium=guide&utm_campaign=sa-31jan-2027) for Excel and Google Sheets tracks income, expenses, mileage and home office costs, and gives your SA103 figures plus an estimate of your tax. It doesn't work out payments on account.
 
 ## Who needs to file a 2025/26 return
 

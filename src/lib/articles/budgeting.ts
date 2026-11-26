@@ -249,13 +249,13 @@ The tool matters less than whether the template speaks **UK life**: council tax 
 
 US Excel budgets full of “401(k)” and calendar-year tabs waste setup time. Whether you pick Sheets or Excel, start from a **UK** layout.
 
-UKMoneySheets builds for **Google Sheets only** — UK monthly budgets, deposit planners, landlord and Self Assessment trackers — delivered as a PDF with a Sheets link so you can make your own copy.
+UKMoneySheets builds for **Google Sheets** (a few listings also include an Excel file) — UK monthly budgets, deposit planners, landlord and Self Assessment trackers — delivered as a PDF with a Sheets link so you can make your own copy.
 
 ## When UKMoneySheets fits
 
 Pick UKMoneySheets if:
 
-- You want **Google Sheets**, not Excel files
+- You want **Google Sheets** as the main format (a few listings also include an Excel file)
 - You need UK categories and GBP out of the box
 - You are fine making a copy in your own Drive
 
@@ -263,7 +263,7 @@ Start with the **UK Monthly Budget Spreadsheet for Google Sheets | Bills, Expens
 
 Browse: [UKMoneySheets on Etsy](https://www.etsy.com/shop/UkMoneySheets?utm_source=site)
 
-If you are firmly an Excel-only household, look for UK Excel templates elsewhere — this shop will not convert to \`.xlsx\` for you.
+Most templates are Google Sheets only. If you need an Excel file, check the listing — a few include one.
 
 ## FAQ
 

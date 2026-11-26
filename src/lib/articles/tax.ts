@@ -80,7 +80,7 @@ For a fuller walkthrough of SA103-style bookkeeping and common expense categorie
 
 ## How UKMoneySheets fits
 
-If you want a ready-made **Google Sheets** layout (not Excel) for side-hustle income and Self Assessment prep, the filing-year sheet is the **UK Side Hustle Tax Spreadsheet** on [UKMoneySheets on Etsy](https://www.etsy.com/listing/4462593252?utm_source=site).
+If you want a ready-made layout for side-hustle income and Self Assessment prep, the filing-year sheet is the **UK Side Hustle Tax Spreadsheet** on [UKMoneySheets on Etsy](https://www.etsy.com/listing/4462593252?utm_source=site), for Excel and Google Sheets.
 
 A **Side Hustle Bookkeeping Bundle** is a separate product if you want more than one year or extra tabs. It is not this link.
 

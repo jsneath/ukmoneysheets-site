@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { getGuide, relatedGuides } from "@/lib/guides";
 import { getArticle } from "@/lib/articles";
 import { faqJsonLdScript } from "@/lib/faq";
+import { articleJsonLdScript } from "@/lib/article-schema";
 import { SITE, etsyLink, pageHead } from "@/lib/site";
 
 export const Route = createFileRoute("/guides/$slug")({
@@ -38,7 +39,11 @@ export const Route = createFileRoute("/guides/$slug")({
       imageAlt: guide.ogImageAlt,
     });
     const faq = guide.faqSchema ? faqJsonLdScript(article) : null;
-    return faq ? { ...head, scripts: [faq] } : head;
+    const articleLd = articleJsonLdScript(guide);
+    const scripts = [articleLd, faq].filter(
+      (s): s is NonNullable<typeof s> => s !== null,
+    );
+    return scripts.length ? { ...head, scripts } : head;
   },
   component: GuidePage,
 });
@@ -209,8 +214,9 @@ function GuidePage() {
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Not tax or financial advice. Rules, allowances and product names
               change — GOV.UK is the source of truth. Confirm the live Etsy
-              listing before purchase. UKMoneySheets templates are Google Sheets
-              only (never Excel), delivered as a PDF with a copy link, prices in
+              listing before purchase. UKMoneySheets templates are made for
+              Google Sheets and delivered as a PDF with a copy link; a few
+              listings also include an Excel file (check the listing). Prices in
               GBP.
             </p>
             <Button

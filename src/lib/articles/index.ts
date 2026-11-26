@@ -2,7 +2,7 @@ import { cashIsa, christmas, helpToSave } from "./savings";
 import { blackFriday, monthlyBudget, sheetsVsExcel, winterEnergy } from "./budgeting";
 import { houseDeposit, landlord, mortgage } from "./property";
 import { autumnBudget2026 } from "./budget";
-import { anic100k, crypto, mtd30k, registerSa, sideHustle } from "./tax";
+import { anic100k, crypto, mtd30k, registerSa, saDeadline31Jan2027, sideHustle } from "./tax";
 
 export const articles: Record<string, string> = {
   "autumn-budget-2026-what-it-means": autumnBudget2026,
@@ -21,6 +21,7 @@ export const articles: Record<string, string> = {
   "adjusted-net-income-100k-childcare-hicbc": anic100k,
   "black-friday-spending-cap-price-log": blackFriday,
   "winter-energy-bills-tracker": winterEnergy,
+  "self-assessment-31-january-2027-deadline": saDeadline31Jan2027,
 };
 
 export function getArticle(slug: string) {

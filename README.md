@@ -1,6 +1,6 @@
 # UKMoneySheets site
 
-SEO/AEO guide site for **UKMoneySheets** — calm UK money articles that soft-sell the [Etsy shop](https://www.etsy.com/shop/UkMoneySheets). Templates are **Google Sheets** (not Excel).
+SEO/AEO guide site for **UKMoneySheets** — calm UK money articles that soft-sell the [Etsy shop](https://www.etsy.com/shop/UkMoneySheets). Templates are made for Google Sheets (some listings also include Excel).
 
 Stack: **Vite + TanStack Router/Start + TypeScript** (Style B: ivory / navy / teal / mint). Deployed on Vercel (Nitro preset).
 

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export function ShopCta({
   tone = "navy",
   title = "Shop UK Google Sheets on Etsy",
-  body = "Calm templates for British tax years, GBP and household bills. Google Sheets only — never Excel. Soft next step when a ready-made file helps.",
+  body = "Calm templates for British tax years, GBP and household bills. Made for Google Sheets (some listings also include Excel). Soft next step when a ready-made file helps.",
   ctaLabel = "Browse UKMoneySheets on Etsy",
   href,
   className,

@@ -924,7 +924,7 @@ Want to run your own numbers? The [Childcare Cost & £100k Calculator 2026/27](h
 // after the Bank of England decision on 17 Dec 2026.
 export const saDeadline31Jan2027 = `*General information, not tax or financial advice. Figures in our example are estimates; your HMRC online account or Self Assessment statement shows what you actually owe.*
 
-*Last checked: 23 November 2026, against GOV.UK and the Bank of England. HMRC late payment interest checked on GOV.UK on 23 November 2026.*
+*Last checked: 26 November 2026, against GOV.UK and the Bank of England. HMRC late payment interest checked on GOV.UK on 26 November 2026.*
 
 ## What's due on 31 January 2027
 

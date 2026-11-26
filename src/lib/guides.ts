@@ -634,11 +634,11 @@ export const guides: GuideMeta[] = [
     slug: "winter-energy-bills-tracker",
     ctaUrl: "https://www.etsy.com/listing/4598582893?utm_source=site",
     ctaLabel: "Get the UK Winter Energy Bill Tracker 2026/27 on Etsy",
-    title: "Winter Energy Bill Tracker (UK): Price Cap January 2027 & Should You Fix?",
+    title: "Winter Energy Bill Tracker (UK): Price Cap £2,166 from January 2027 & Should You Fix?",
     description:
-      "From 1 October to 31 December 2026, Ofgem's price cap for a typical household in Great Britain (England, Scotland and Wales) paying by Direct Debit is £1,723 a year, but the cap limits your unit rates and standing charges, not your bill — so the only way to know your own winter cost is to log your meter readings and multiply. Ofgem will announce the January to March 2027 cap by 25 November 2026; until then, analysts' forecasts range from £1,999 (Cornwall Insight) to an average of £2,084 (MSE), which are forecasts, not Ofgem figures. A simple Google Sheet with your readings, your rates and a monthly log shows what you're really paying and lets you test a fixed deal against the cap with your own usage. Northern Ireland prices are set differently, so the cap doesn't apply there.",
+      "From 1 January to 31 March 2027, Ofgem's price cap for a typical household in Great Britain (England, Scotland and Wales) paying by Direct Debit is £2,166 a year, up 26% from the £1,723 cap that applies from 1 October to 31 December 2026. Ofgem announced the figure on 25 November 2026. The cap still limits your unit rates and standing charges, not your bill — so the only way to know your own winter cost is to log your meter readings and multiply. A simple Google Sheet with your readings, your rates and a monthly log shows what you're really paying and lets you test a fixed deal against the confirmed January cap with your own usage. Northern Ireland prices are set differently, so the cap doesn't apply there.",
     metaDescription:
-      "Track UK energy bills in Google Sheets with meter readings and rates. In Great Britain, see if fixing beats Ofgem's cap before its 25 Nov update.",
+      "Ofgem's January 2027 price cap is £2,166 a year for a typical Direct Debit household in Great Britain. Track readings and compare a fix.",
     category: "Budgeting",
     // No Nia pack yet: reuse the monthly budget card; og falls back to /og.jpg.
     image: "/guides/uk-monthly-budget-google-sheets.jpg",
@@ -647,7 +647,7 @@ export const guides: GuideMeta[] = [
     faqSchema: true,
     freeToolCta: true,
     shopLine:
-      "Get the UK Monthly Budget Spreadsheet for Google Sheets on UKMoneySheets Etsy.",
+      "Get the UK Winter Energy Bill Tracker 2026/27 on UKMoneySheets Etsy.",
     related: [
       "autumn-budget-2026-what-it-means",
       "uk-monthly-budget-google-sheets",
@@ -811,15 +811,14 @@ const VISUAL: Record<
   },
   "winter-energy-bills-tracker": {
     keyFigures: [
-      { value: "£1,723", label: "a year: typical Direct Debit cap in Great Britain, Oct–Dec 2026" },
-      { value: "4%", label: "up on the July to September cap" },
-      { value: "25 Nov", label: "Ofgem announces the January 2027 cap" },
+      { value: "£2,166", label: "a year: typical Direct Debit cap in Great Britain, Jan–Mar 2027" },
+      { value: "26%", label: "up on the October to December cap" },
+      { value: "1 Jan 2027", label: "new cap starts" },
     ],
     keyFacts: [
       "Ofgem's cap covers England, Scotland and Wales; Northern Ireland prices are set differently.",
       "The cap limits unit rates and standing charges, not your bill.",
       "Log your meter readings and multiply to see your own cost.",
-      "January forecasts are forecasts, not Ofgem figures.",
       "Test a fixed deal against the cap with your own usage.",
     ],
   },

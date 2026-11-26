@@ -214,8 +214,9 @@ function GuidePage() {
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Not tax or financial advice. Rules, allowances and product names
               change — GOV.UK is the source of truth. Confirm the live Etsy
-              listing before purchase. UKMoneySheets templates are Google Sheets
-              only (never Excel), delivered as a PDF with a copy link, prices in
+              listing before purchase. UKMoneySheets templates are made for
+              Google Sheets and delivered as a PDF with a copy link; a few
+              listings also include an Excel file (check the listing). Prices in
               GBP.
             </p>
             <Button

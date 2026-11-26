@@ -72,7 +72,7 @@ export function SiteFooter() {
             Notes
           </p>
           <p className="mt-4 text-[0.9rem] leading-relaxed text-mint/90">
-            Google Sheets only — never Excel. Prices in GBP. General information
+            Made for Google Sheets (some listings also include Excel). Prices in GBP. General information
             only, not tax or financial advice. Check{" "}
             <a
               href="https://www.gov.uk"
